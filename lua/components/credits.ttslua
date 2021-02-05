@@ -1,0 +1,16 @@
+require("utils/string_to_num")
+require("mov/value_tiles/set_tile_value")
+
+local grp = 1
+
+function getVal()
+  return stringToNum(self.getGMNotes())
+end
+
+function onSpawn()
+  setTileValue(getVal(), grp)
+end
+
+function onLoad()
+  setTileValue(getVal(), grp)
+end
