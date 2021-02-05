@@ -34,6 +34,13 @@
         "width": 6.75,
         "height": 4.5
       }
+    },
+    {
+      "type": "player_token",
+      "dimensions": {
+        "width": 0.75,
+        "height": 0.8
+      }
     }
   ],
   "equipment": [
@@ -434,5 +441,8 @@
         "spaceport": 160
       }
     }
+  ],
+  "demands": [
+
   ]
 }
