@@ -1,4 +1,4 @@
-require("mov/value_tiles/update_tile_value")
+require("lua/components/value_tiles/update_tile_value")
 
 function onObjectEnterContainer(container, obj)
   updateTileValue(container)
