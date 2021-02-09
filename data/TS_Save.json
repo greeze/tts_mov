@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/8/2021 7:02:56 PM",
+  "Date": "2/8/2021 8:05:44 PM",
   "VersionNumber": "v13.0.4",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -5949,9 +5949,9 @@
         "posX": 20.0,
         "posY": 1.49999654,
         "posZ": -23.0,
-        "rotX": 1.06839062E-08,
+        "rotX": -4.108325E-08,
         "rotY": 179.973892,
-        "rotZ": 1.00250418E-05,
+        "rotZ": 9.79797551E-06,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -8103,9 +8103,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": 9.5,
-        "rotX": 1.27233664E-08,
+        "rotX": -5.6770002E-08,
         "rotY": 179.999908,
-        "rotZ": 1.00333473E-05,
+        "rotZ": 1.00062707E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -9105,301 +9105,6 @@
       "XmlUI": ""
     },
     {
-      "GUID": "8b9c5f",
-      "Name": "Custom_Tile_Stack",
-      "Transform": {
-        "posX": 1.99999964,
-        "posY": 1.49999988,
-        "posZ": -23.0,
-        "rotX": -2.02710826E-08,
-        "rotY": 179.98703,
-        "rotZ": 1.00516909E-05,
-        "scaleX": 0.75,
-        "scaleY": 1.0,
-        "scaleZ": 0.75
-      },
-      "Nickname": "Encounter",
-      "Description": "",
-      "GMNotes": "Hazard - Blue 10",
-      "ColorDiffuse": {
-        "r": 0.0342270657,
-        "g": 0.163782179,
-        "b": 0.311845869
-      },
-      "Tags": [
-        "encounter",
-        "hazard",
-        "token"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 2,
-      "CustomImage": {
-        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_10.png",
-        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.1,
-          "Stackable": true,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "4a97e0",
-      "Name": "Custom_Tile_Stack",
-      "Transform": {
-        "posX": 4.0,
-        "posY": 1.49999952,
-        "posZ": -23.0,
-        "rotX": -1.18049179E-07,
-        "rotY": 179.98526,
-        "rotZ": 9.937413E-06,
-        "scaleX": 0.75,
-        "scaleY": 1.0,
-        "scaleZ": 0.75
-      },
-      "Nickname": "Encounter",
-      "Description": "",
-      "GMNotes": "Hazard - Blue 20",
-      "ColorDiffuse": {
-        "r": 0.0342270657,
-        "g": 0.163782179,
-        "b": 0.311845869
-      },
-      "Tags": [
-        "encounter",
-        "hazard",
-        "token"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 2,
-      "CustomImage": {
-        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_20.png",
-        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.1,
-          "Stackable": true,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "a4bf9e",
-      "Name": "Custom_Tile_Stack",
-      "Transform": {
-        "posX": 5.999995,
-        "posY": 1.49999917,
-        "posZ": -23.0,
-        "rotX": -9.140406E-09,
-        "rotY": 180.007553,
-        "rotZ": 9.924036E-06,
-        "scaleX": 0.75,
-        "scaleY": 1.0,
-        "scaleZ": 0.75
-      },
-      "Nickname": "Encounter",
-      "Description": "",
-      "GMNotes": "Hazard - Blue 30",
-      "ColorDiffuse": {
-        "r": 0.0342270657,
-        "g": 0.163782179,
-        "b": 0.311845869
-      },
-      "Tags": [
-        "encounter",
-        "hazard",
-        "token"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 2,
-      "CustomImage": {
-        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_30.png",
-        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.1,
-          "Stackable": true,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "3e54b4",
-      "Name": "Custom_Tile_Stack",
-      "Transform": {
-        "posX": 12.0000019,
-        "posY": 1.49999809,
-        "posZ": -23.0,
-        "rotX": 8.5714E-09,
-        "rotY": 179.984619,
-        "rotZ": 1.01047854E-05,
-        "scaleX": 0.75,
-        "scaleY": 1.0,
-        "scaleZ": 0.75
-      },
-      "Nickname": "Encounter",
-      "Description": "",
-      "GMNotes": "Hazard - Red 20",
-      "ColorDiffuse": {
-        "r": 0.0342270657,
-        "g": 0.163782179,
-        "b": 0.311845869
-      },
-      "Tags": [
-        "encounter",
-        "hazard",
-        "token"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 2,
-      "CustomImage": {
-        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_red_20.png",
-        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.1,
-          "Stackable": true,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "7366b2",
-      "Name": "Custom_Tile_Stack",
-      "Transform": {
-        "posX": 14.0,
-        "posY": 1.49999774,
-        "posZ": -23.0,
-        "rotX": 2.75827379E-08,
-        "rotY": 180.010849,
-        "rotZ": 1.00791349E-05,
-        "scaleX": 0.75,
-        "scaleY": 1.0,
-        "scaleZ": 0.75
-      },
-      "Nickname": "Encounter",
-      "Description": "",
-      "GMNotes": "Hazard - Red 30",
-      "ColorDiffuse": {
-        "r": 0.0342270657,
-        "g": 0.16378212,
-        "b": 0.3118458
-      },
-      "Tags": [
-        "encounter",
-        "hazard",
-        "token"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 2,
-      "CustomImage": {
-        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_red_30.png",
-        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.1,
-          "Stackable": true,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
       "GUID": "072475",
       "Name": "HandTrigger",
       "Transform": {
@@ -9521,176 +9226,6 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": ""
-    },
-    {
-      "GUID": "981715",
-      "Name": "Deck",
-      "Transform": {
-        "posX": -29.5,
-        "posY": -2.73074818,
-        "posZ": -40.5,
-        "rotX": 8.613429E-06,
-        "rotY": 180.024521,
-        "rotZ": 1.72072232E-05,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "SidewaysCard": false,
-      "DeckIDs": [
-        300,
-        200
-      ],
-      "CustomDeck": {
-        "3": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        },
-        "2": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ContainedObjects": [
-        {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -30.0,
-            "posY": -2.78199553,
-            "posZ": -40.0,
-            "rotX": 2.24431915E-05,
-            "rotY": 180.038376,
-            "rotZ": -3.122594E-06,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 300,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "3": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "25cd30",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -29.0,
-            "posY": -2.732694,
-            "posZ": -41.0,
-            "rotX": 359.967133,
-            "rotY": 180.024521,
-            "rotZ": 359.980072,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 200,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "2": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
     },
     {
       "GUID": "34d565",
@@ -9863,15 +9398,779 @@
       ]
     },
     {
-      "GUID": "0bcc9c",
+      "GUID": "5597f6",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 38.5,
+        "posY": 1.54999316,
+        "posZ": 16.5,
+        "rotX": -3.453079E-09,
+        "rotY": 180.001938,
+        "rotZ": 1.34682114E-05,
+        "scaleX": 0.5,
+        "scaleY": 1.0,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/equipment/equipment_drive_combo.png?1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "StandUp": false,
+          "Stackable": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "f038b5",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 38.5,
+        "posY": 1.54999328,
+        "posZ": 14.5,
+        "rotX": -7.09894948E-06,
+        "rotY": 180.0,
+        "rotZ": 8.66323353E-06,
+        "scaleX": 0.5,
+        "scaleY": 1.0,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/equipment/equipment_drive_yellow.png?1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "StandUp": false,
+          "Stackable": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "aca17e",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 38.5,
+        "posY": 1.54999328,
+        "posZ": 12.5,
+        "rotX": 4.53492746E-08,
+        "rotY": 179.997879,
+        "rotZ": 1.255282E-05,
+        "scaleX": 0.5,
+        "scaleY": 1.0,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/equipment/equipment_drive_red.png?1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "StandUp": false,
+          "Stackable": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "ef035b",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 38.5,
+        "posY": 1.49999344,
+        "posZ": 19.5,
+        "rotX": -4.17267536E-08,
+        "rotY": 180.0,
+        "rotZ": 1.00027228E-05,
+        "scaleX": 1.25,
+        "scaleY": 1.0,
+        "scaleZ": 1.25
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/equipment/equipment_shield.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/equipment/equipment_shield.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 3,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "8b9c5f",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 1.99999952,
+        "posY": 1.49999964,
+        "posZ": -23.0,
+        "rotX": 1.74500485E-08,
+        "rotY": 179.98703,
+        "rotZ": 1.00210555E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Blue 10",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_10.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "ea52f1",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 2.0,
+        "posY": 1.49999964,
+        "posZ": -25.0,
+        "rotX": 1.75864841E-07,
+        "rotY": 179.987015,
+        "rotZ": 1.00385851E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Blue 10",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_10.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "4a97e0",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 4.0,
+        "posY": 1.49999928,
+        "posZ": -23.0,
+        "rotX": -1.03438964E-08,
+        "rotY": 179.98526,
+        "rotZ": 1.00193447E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Blue 20",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_20.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "ceb85e",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 4.0,
+        "posY": 1.49999928,
+        "posZ": -25.0,
+        "rotX": -3.47328344E-09,
+        "rotY": 179.98526,
+        "rotZ": 1.00015632E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Blue 20",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_20.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "a4bf9e",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 5.99999428,
+        "posY": 1.49999893,
+        "posZ": -23.0,
+        "rotX": 3.354011E-09,
+        "rotY": 180.007553,
+        "rotZ": 1.0015342E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Blue 30",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_30.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "366b4e",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 6.0,
+        "posY": 1.499999,
+        "posZ": -25.0,
+        "rotX": 1.03967137E-08,
+        "rotY": 180.007553,
+        "rotZ": 1.0013372E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Blue 30",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_blue_30.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "3e54b4",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 12.0000038,
+        "posY": 1.49999785,
+        "posZ": -23.0,
+        "rotX": 1.28601272E-08,
+        "rotY": 179.984619,
+        "rotZ": 1.0029501E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Red 20",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_red_20.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "11ad29",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 12.0,
+        "posY": 1.49999785,
+        "posZ": -25.0,
+        "rotX": -3.62176045E-09,
+        "rotY": 179.9846,
+        "rotZ": 1.00207972E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Red 20",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378215,
+        "b": 0.311845839
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_red_20.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "7366b2",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 14.0000019,
+        "posY": 1.4999975,
+        "posZ": -23.0,
+        "rotX": 2.64256417E-09,
+        "rotY": 180.010834,
+        "rotZ": 1.00221287E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Red 30",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378209,
+        "b": 0.311845779
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_red_30.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "3de3c6",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 14.0,
+        "posY": 1.49999762,
+        "posZ": -25.0,
+        "rotX": -1.814305E-08,
+        "rotY": 180.010818,
+        "rotZ": 1.00100042E-05,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Encounter",
+      "Description": "",
+      "GMNotes": "Hazard - Red 30",
+      "ColorDiffuse": {
+        "r": 0.0342270657,
+        "g": 0.16378209,
+        "b": 0.311845779
+      },
+      "Tags": [
+        "encounter",
+        "hazard",
+        "token"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_hazard_red_30.png",
+        "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "434942",
       "Name": "Deck",
       "Transform": {
         "posX": 29.5,
-        "posY": -2.7307477,
+        "posY": -2.73074722,
         "posZ": -40.5,
-        "rotX": -5.490865E-06,
+        "rotX": -5.90013542E-06,
         "rotY": 180.0,
-        "rotZ": -1.04160131E-06,
+        "rotZ": -9.832389E-07,
         "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 3.0
@@ -9931,11 +10230,11 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 29.5,
-            "posY": -2.74770451,
+            "posY": -2.747704,
             "posZ": -40.5,
-            "rotX": -5.39119E-06,
+            "rotX": -5.797398E-06,
             "rotY": 180.0,
-            "rotZ": -1.07039762E-06,
+            "rotZ": -1.01623414E-06,
             "scaleX": 3.0,
             "scaleY": 1.0,
             "scaleZ": 3.0
@@ -9982,12 +10281,12 @@
           "GUID": "25cd30",
           "Name": "CardCustom",
           "Transform": {
-            "posX": 30.0,
-            "posY": -2.71375155,
-            "posZ": -41.0,
-            "rotX": -2.04381126E-06,
-            "rotY": 180.0,
-            "rotZ": -9.864875E-07,
+            "posX": 29.5,
+            "posY": -2.71375132,
+            "posZ": -40.5,
+            "rotX": -3.68199585E-06,
+            "rotY": 180.000259,
+            "rotZ": -1.03230389E-06,
             "scaleX": 3.0,
             "scaleY": 1.0,
             "scaleZ": 3.0
@@ -10033,15 +10332,15 @@
       ]
     },
     {
-      "GUID": "a5f8a1",
+      "GUID": "0def1c",
       "Name": "Deck",
       "Transform": {
-        "posX": 59.00003,
-        "posY": -2.730746,
-        "posZ": -3.39174039E-05,
-        "rotX": 2.84788962E-06,
-        "rotY": 90.00001,
-        "rotZ": 1.03337588E-05,
+        "posX": 59.0000572,
+        "posY": -2.730747,
+        "posZ": 6.429969E-05,
+        "rotX": 8.85450149E-08,
+        "rotY": 90.00005,
+        "rotZ": -1.71525535E-05,
         "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 3.0
@@ -10100,12 +10399,12 @@
           "GUID": "14b32b",
           "Name": "CardCustom",
           "Transform": {
-            "posX": 59.00003,
-            "posY": -2.74767065,
-            "posZ": -3.44642976E-05,
-            "rotX": -1.49464977E-05,
-            "rotY": 90.00001,
-            "rotZ": -2.38483881E-05,
+            "posX": 59.0000572,
+            "posY": -2.74769831,
+            "posZ": 6.460093E-05,
+            "rotX": -3.053387E-06,
+            "rotY": 90.00005,
+            "rotZ": 2.293942E-06,
             "scaleX": 3.0,
             "scaleY": 1.0,
             "scaleZ": 3.0
@@ -10152,12 +10451,12 @@
           "GUID": "25cd30",
           "Name": "CardCustom",
           "Transform": {
-            "posX": 59.0,
-            "posY": -2.71371961,
-            "posZ": 5.23482129E-08,
-            "rotX": -0.000143167737,
-            "rotY": 90.0,
-            "rotZ": 2.84451489E-05,
+            "posX": 59.5,
+            "posY": -2.71373153,
+            "posZ": 0.499999344,
+            "rotX": -0.00042063315,
+            "rotY": 90.00005,
+            "rotZ": -0.000162027674,
             "scaleX": 3.0,
             "scaleY": 1.0,
             "scaleZ": 3.0
@@ -10189,6 +10488,176 @@
             "8": {
               "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_orange.jpg",
               "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_orange.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "d136ea",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -29.5,
+        "posY": -2.7307477,
+        "posZ": -40.5,
+        "rotX": 3.33986427E-05,
+        "rotY": 180.024521,
+        "rotZ": -1.43665443E-06,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        300,
+        200
+      ],
+      "CustomDeck": {
+        "3": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        },
+        "2": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -28.5130367,
+            "posY": -2.74770355,
+            "posZ": -39.5040436,
+            "rotX": 8.579318E-06,
+            "rotY": 180.024521,
+            "rotZ": 3.99253436E-10,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "3": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "25cd30",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -27.5,
+            "posY": -2.71376324,
+            "posZ": -39.5,
+            "rotX": -0.000262362184,
+            "rotY": 180.024551,
+            "rotZ": 9.27379442E-05,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 200,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
               "NumWidth": 1,
               "NumHeight": 1,
               "BackIsHidden": true,
