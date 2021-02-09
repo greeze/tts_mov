@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/8/2021 5:48:09 PM",
+  "Date": "2/8/2021 7:02:56 PM",
   "VersionNumber": "v13.0.4",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -326,141 +326,18 @@
   ],
   "ObjectStates": [
     {
-      "GUID": "0bc234",
-      "Name": "HandTrigger",
-      "Transform": {
-        "posX": 29.25,
-        "posY": 8.25,
-        "posZ": 26.4999962,
-        "rotX": 0.0,
-        "rotY": 180.0,
-        "rotZ": 0.0,
-        "scaleX": 28.9308243,
-        "scaleY": 11.6707745,
-        "scaleZ": 3.91088
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.117999978,
-        "g": 0.53,
-        "b": 1.0,
-        "a": 0.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "FogColor": "Blue",
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "d91292",
-      "Name": "HandTrigger",
-      "Transform": {
-        "posX": -29.25,
-        "posY": 8.25,
-        "posZ": 26.4999962,
-        "rotX": 0.0,
-        "rotY": 180.0,
-        "rotZ": 0.0,
-        "scaleX": 28.93,
-        "scaleY": 11.6707745,
-        "scaleZ": 3.9108
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.191999972,
-        "g": 0.701,
-        "b": 0.167999953,
-        "a": 0.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "FogColor": "Green",
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "e63060",
-      "Name": "HandTrigger",
-      "Transform": {
-        "posX": 44.7500076,
-        "posY": 8.25,
-        "posZ": -8.191646E-07,
-        "rotX": 0.0,
-        "rotY": 270.0,
-        "rotZ": 0.0,
-        "scaleX": 28.8024731,
-        "scaleY": 11.6707745,
-        "scaleZ": 3.96429181
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.96,
-        "g": 0.438999981,
-        "b": 0.807,
-        "a": 0.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "FogColor": "Pink",
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
       "GUID": "9f9496",
       "Name": "HandTrigger",
       "Transform": {
         "posX": -29.25,
-        "posY": 8.25,
-        "posZ": -26.4999962,
+        "posY": -0.7967949,
+        "posZ": -40.76365,
         "rotX": 0.0,
         "rotY": 0.0,
         "rotZ": 0.0,
         "scaleX": 28.93,
-        "scaleY": 11.6707745,
-        "scaleZ": 3.9108
+        "scaleY": 4.0239687,
+        "scaleZ": 16.08687
       },
       "Nickname": "",
       "Description": "",
@@ -490,88 +367,6 @@
       "XmlUI": ""
     },
     {
-      "GUID": "82fce0",
-      "Name": "HandTrigger",
-      "Transform": {
-        "posX": 29.25,
-        "posY": 8.25,
-        "posZ": -26.4999962,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 28.93,
-        "scaleY": 11.6707745,
-        "scaleZ": 3.9108
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 0.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "FogColor": "White",
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "4ee84e",
-      "Name": "HandTrigger",
-      "Transform": {
-        "posX": -44.7500076,
-        "posY": 8.25,
-        "posZ": 0.0,
-        "rotX": 0.0,
-        "rotY": 90.0,
-        "rotZ": 0.0,
-        "scaleX": 28.8023643,
-        "scaleY": 11.6707745,
-        "scaleZ": 3.96427035
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.905,
-        "g": 0.898,
-        "b": 0.171999961,
-        "a": 0.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "FogColor": "Yellow",
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
       "GUID": "1c51d7",
       "Name": "Custom_Assetbundle_Bag",
       "Transform": {
@@ -579,7 +374,7 @@
         "posY": -1.4034574,
         "posZ": -29.4,
         "rotX": 0.2778704,
-        "rotY": 0.00755985128,
+        "rotY": 0.00755985826,
         "rotZ": 0.0159046128,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -839,7 +634,7 @@
         "posY": -1.4,
         "posZ": -29.4,
         "rotX": 0.2778704,
-        "rotY": 0.007559853,
+        "rotY": 0.00755985966,
         "rotZ": 0.0159046128,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1145,7 +940,7 @@
         "posY": -1.4,
         "posZ": 29.4,
         "rotX": 0.2778704,
-        "rotY": 0.007559853,
+        "rotY": 0.00755985966,
         "rotZ": 0.0159046128,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1197,7 +992,7 @@
         "posY": -1.4,
         "posZ": 29.4,
         "rotX": 0.2778704,
-        "rotY": 0.007559853,
+        "rotY": 0.00755985966,
         "rotZ": 0.0159046128,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1652,9 +1447,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": 19.5,
-        "rotX": -8.687446E-09,
+        "rotX": 9.559505E-09,
         "rotY": 179.9855,
-        "rotZ": 1.00269435E-05,
+        "rotZ": 9.966493E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1663,9 +1458,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -1708,9 +1503,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": 16.5,
-        "rotX": 4.825017E-08,
+        "rotX": 3.518021E-08,
         "rotY": 179.988876,
-        "rotZ": 1.00293573E-05,
+        "rotZ": 1.00257848E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1719,9 +1514,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -1761,12 +1556,12 @@
       "GUID": "9e7a19",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -40.5,
+        "posX": -40.4999771,
         "posY": 1.50000727,
         "posZ": 13.5,
-        "rotX": 5.283546E-09,
+        "rotX": -3.5232714E-10,
         "rotY": 179.977875,
-        "rotZ": 1.00271618E-05,
+        "rotZ": 1.00146726E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1775,9 +1570,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -1820,9 +1615,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": 10.5,
-        "rotX": -2.04235526E-08,
+        "rotX": -2.24866668E-08,
         "rotY": 179.982452,
-        "rotZ": 9.997302E-06,
+        "rotZ": 9.98664E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1831,9 +1626,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -1876,9 +1671,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": 7.5,
-        "rotX": 4.711328E-08,
+        "rotX": 3.61388572E-08,
         "rotY": 179.985565,
-        "rotZ": 1.00127454E-05,
+        "rotZ": 1.0010921E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1887,9 +1682,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -1932,9 +1727,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": 4.5,
-        "rotX": 5.69283358E-08,
+        "rotX": -4.97739E-08,
         "rotY": 179.989838,
-        "rotZ": 1.00581192E-05,
+        "rotZ": 1.00874677E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1943,9 +1738,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -1987,10 +1782,10 @@
       "Transform": {
         "posX": -40.5,
         "posY": 1.50000727,
-        "posZ": 1.5,
-        "rotX": 3.41058239E-08,
+        "posZ": 1.49999917,
+        "rotX": -7.306092E-08,
         "rotY": 179.972366,
-        "rotZ": 1.00402567E-05,
+        "rotZ": 1.01037094E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1999,9 +1794,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -2043,10 +1838,10 @@
       "Transform": {
         "posX": -40.5,
         "posY": 1.50000727,
-        "posZ": -1.5,
-        "rotX": -3.79041261E-08,
+        "posZ": -1.50000072,
+        "rotX": 6.897897E-08,
         "rotY": 179.974319,
-        "rotZ": 1.00699062E-05,
+        "rotZ": 9.967555E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2055,9 +1850,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -2100,9 +1895,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": -4.5,
-        "rotX": -4.22795043E-09,
+        "rotX": -7.717622E-08,
         "rotY": 179.977051,
-        "rotZ": 9.991667E-06,
+        "rotZ": 1.00746129E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2111,9 +1906,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -2155,10 +1950,10 @@
       "Transform": {
         "posX": -37.5,
         "posY": 1.50000417,
-        "posZ": 19.5,
-        "rotX": 3.26738773E-05,
-        "rotY": 179.999512,
-        "rotZ": 0.000161265532,
+        "posZ": 19.5000038,
+        "rotX": 3.26984518E-05,
+        "rotY": 179.999359,
+        "rotZ": 0.0001612982,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2169,7 +1964,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2209,12 +2004,12 @@
       "GUID": "d1c36c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999924,
         "posY": 1.50000489,
-        "posZ": 16.5,
-        "rotX": 2.42967217E-05,
-        "rotY": 180.0227,
-        "rotZ": 0.000122267607,
+        "posZ": 16.4999924,
+        "rotX": 2.35193929E-05,
+        "rotY": 180.022629,
+        "rotZ": 0.000122619982,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2225,7 +2020,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2265,12 +2060,12 @@
       "GUID": "4f1d86",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999924,
         "posY": 1.50000489,
-        "posZ": 13.5,
-        "rotX": 2.4079347E-05,
-        "rotY": 180.01712,
-        "rotZ": 0.0001225937,
+        "posZ": 13.4999962,
+        "rotX": 2.37412587E-05,
+        "rotY": 180.017044,
+        "rotZ": 0.000122568556,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2281,7 +2076,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2323,10 +2118,10 @@
       "Transform": {
         "posX": -37.5,
         "posY": 1.50000417,
-        "posZ": 10.5,
-        "rotX": 3.248488E-05,
-        "rotY": 179.999634,
-        "rotZ": 0.000161500473,
+        "posZ": 10.4999981,
+        "rotX": 3.25325636E-05,
+        "rotY": 179.999557,
+        "rotZ": 0.0001615119,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2337,7 +2132,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2377,12 +2172,12 @@
       "GUID": "3517e2",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999924,
         "posY": 1.50000489,
-        "posZ": 7.5,
-        "rotX": 2.40729041E-05,
-        "rotY": 179.999817,
-        "rotZ": 0.000122557743,
+        "posZ": 7.500004,
+        "rotX": 2.37615113E-05,
+        "rotY": 179.999756,
+        "rotZ": 0.000122665107,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2393,7 +2188,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2436,9 +2231,9 @@
         "posX": -37.5,
         "posY": 1.50000489,
         "posZ": 4.5,
-        "rotX": 2.400995E-05,
+        "rotX": 2.39505789E-05,
         "rotY": 180.000259,
-        "rotZ": 0.000122613128,
+        "rotZ": 0.0001225828,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2449,7 +2244,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2492,9 +2287,9 @@
         "posX": -37.5,
         "posY": 1.50000489,
         "posZ": 1.49999988,
-        "rotX": 2.38562261E-05,
+        "rotX": 2.40247628E-05,
         "rotY": 179.9999,
-        "rotZ": 0.000122641475,
+        "rotZ": 0.000122643411,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2505,7 +2300,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2547,10 +2342,10 @@
       "Transform": {
         "posX": -37.5,
         "posY": 1.50000453,
-        "posZ": -1.49999988,
-        "rotX": 2.791253E-05,
+        "posZ": -1.5000006,
+        "rotX": 2.78975022E-05,
         "rotY": 179.9949,
-        "rotZ": 0.00014026335,
+        "rotZ": 0.000140221076,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2561,7 +2356,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2601,12 +2396,12 @@
       "GUID": "ada97b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999847,
         "posY": 1.50000489,
-        "posZ": -4.5,
-        "rotX": 2.407478E-05,
-        "rotY": 179.987442,
-        "rotZ": 0.000122564612,
+        "posZ": -4.499999,
+        "rotX": 2.409138E-05,
+        "rotY": 179.987381,
+        "rotZ": 0.000122614831,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2617,7 +2412,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2657,12 +2452,12 @@
       "GUID": "a9a716",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999847,
         "posY": 1.50000489,
-        "posZ": -7.5,
-        "rotX": 2.4470537E-05,
-        "rotY": 179.9946,
-        "rotZ": 0.000122564161,
+        "posZ": -7.499996,
+        "rotX": 2.4043431E-05,
+        "rotY": 179.994537,
+        "rotZ": 0.000122568163,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2673,7 +2468,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2713,12 +2508,12 @@
       "GUID": "874ca5",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -40.5,
+        "posX": -40.4999771,
         "posY": 1.50000727,
         "posZ": -7.5,
-        "rotX": -6.528416E-08,
+        "rotX": 4.96862143E-08,
         "rotY": 180.024826,
-        "rotZ": 9.953823E-06,
+        "rotZ": 1.00173111E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2727,9 +2522,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -2769,12 +2564,12 @@
       "GUID": "a92c79",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.5000076,
         "posY": 1.50000453,
-        "posZ": -10.5,
-        "rotX": 2.77034414E-05,
-        "rotY": 179.999542,
-        "rotZ": 0.00014025651,
+        "posZ": -10.5000057,
+        "rotX": 2.79848173E-05,
+        "rotY": 179.999481,
+        "rotZ": 0.000140185643,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2785,7 +2580,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2828,9 +2623,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": -10.5,
-        "rotX": 6.15949247E-08,
+        "rotX": 7.91118637E-08,
         "rotY": 180.013947,
-        "rotZ": 1.00681773E-05,
+        "rotZ": 1.00457883E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2839,9 +2634,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -2883,10 +2678,10 @@
       "Transform": {
         "posX": -37.5,
         "posY": 1.50000477,
-        "posZ": -13.5,
-        "rotX": 2.57583233E-05,
-        "rotY": 179.9704,
-        "rotZ": 0.000126256142,
+        "posZ": -13.5000057,
+        "rotX": 2.49665954E-05,
+        "rotY": 179.970352,
+        "rotZ": 0.000126304541,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2897,7 +2692,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -2940,9 +2735,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": -13.5,
-        "rotX": -6.709205E-08,
+        "rotX": -1.08237659E-08,
         "rotY": 180.011765,
-        "rotZ": 9.981498E-06,
+        "rotZ": 9.984125E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2951,9 +2746,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -2995,10 +2790,10 @@
       "Transform": {
         "posX": -37.5,
         "posY": 1.59999561,
-        "posZ": 19.5,
-        "rotX": -0.000162361044,
+        "posZ": 19.4999886,
+        "rotX": -0.000162105,
         "rotY": 180.000122,
-        "rotZ": 1.1402889E-05,
+        "rotZ": 1.14017812E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3009,7 +2804,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3051,11 +2846,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.599998,
-        "posZ": 13.5,
-        "rotX": 3.00937336E-05,
+        "posY": 1.59999812,
+        "posZ": 13.4999962,
+        "rotX": 2.81382618E-05,
         "rotY": 180.006439,
-        "rotZ": 0.0004771883,
+        "rotZ": 0.0004769417,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3066,7 +2861,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3107,12 +2902,12 @@
       "GUID": "a8ea37",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999924,
         "posY": 1.59999561,
         "posZ": 10.5,
-        "rotX": -0.000162164142,
-        "rotY": 180.000519,
-        "rotZ": 1.1312758E-05,
+        "rotX": -0.000162149037,
+        "rotY": 180.00058,
+        "rotZ": 1.13412916E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3123,7 +2918,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3164,12 +2959,12 @@
       "GUID": "e0477f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999924,
         "posY": 1.59999812,
-        "posZ": 7.49999952,
-        "rotX": 3.02038479E-05,
-        "rotY": 180.000076,
-        "rotZ": 0.0004772742,
+        "posZ": 7.499999,
+        "rotX": 2.87872717E-05,
+        "rotY": 180.000046,
+        "rotZ": 0.000477227062,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3180,7 +2975,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3221,12 +3016,12 @@
       "GUID": "0030d6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
-        "posY": 1.59999824,
-        "posZ": 4.5,
-        "rotX": 2.9703453E-05,
-        "rotY": 180.000031,
-        "rotZ": 0.000477072666,
+        "posX": -37.4999924,
+        "posY": 1.59999812,
+        "posZ": 4.499998,
+        "rotX": 2.93923531E-05,
+        "rotY": 180.000015,
+        "rotZ": 0.000477333582,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3237,7 +3032,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3278,12 +3073,12 @@
       "GUID": "149602",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
-        "posY": 1.59999812,
-        "posZ": 1.5,
-        "rotX": 2.9084762E-05,
-        "rotY": 180.000015,
-        "rotZ": 0.0004771516,
+        "posX": -37.4999771,
+        "posY": 1.599998,
+        "posZ": 1.50000143,
+        "rotX": 2.98713076E-05,
+        "rotY": 180.0,
+        "rotZ": 0.000477473921,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3294,7 +3089,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3336,11 +3131,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.59999669,
-        "posZ": -1.4999994,
-        "rotX": -0.0002445304,
-        "rotY": 180.000046,
-        "rotZ": 0.0003348807,
+        "posY": 1.59999681,
+        "posZ": -1.49999762,
+        "rotX": -0.000244810828,
+        "rotY": 180.000031,
+        "rotZ": 0.0003348271,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3351,7 +3146,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3392,12 +3187,12 @@
       "GUID": "d6312e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999771,
         "posY": 1.59999812,
-        "posZ": -4.5,
-        "rotX": 2.9601777E-05,
+        "posZ": -4.500003,
+        "rotX": 3.0099156E-05,
         "rotY": 180.000092,
-        "rotZ": 0.000477677648,
+        "rotZ": 0.0004773647,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3408,7 +3203,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3449,12 +3244,12 @@
       "GUID": "205ecb",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999924,
         "posY": 1.59999812,
-        "posZ": -7.5,
-        "rotX": 3.21751941E-05,
-        "rotY": 180.000046,
-        "rotZ": 0.000477679074,
+        "posZ": -7.500001,
+        "rotX": 3.01086438E-05,
+        "rotY": 180.000015,
+        "rotZ": 0.0004773951,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3465,7 +3260,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3506,12 +3301,12 @@
       "GUID": "537dca",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.4999847,
         "posY": 1.59999669,
         "posZ": -10.5,
-        "rotX": -0.000245429255,
-        "rotY": 180.000778,
-        "rotZ": 0.000335043878,
+        "rotX": -0.000244073148,
+        "rotY": 180.000961,
+        "rotZ": 0.000334631419,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3522,7 +3317,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3563,12 +3358,12 @@
       "GUID": "92b15b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
-        "posY": 1.59999812,
+        "posX": -37.4999847,
+        "posY": 1.59999824,
         "posZ": 16.5,
-        "rotX": 3.02152639E-05,
-        "rotY": 180.020981,
-        "rotZ": 0.00047722843,
+        "rotX": 2.74348658E-05,
+        "rotY": 180.021118,
+        "rotZ": 0.000477118941,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3579,7 +3374,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3621,11 +3416,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.59999764,
-        "posZ": -13.5,
-        "rotX": -7.22660261E-05,
+        "posY": 1.59999776,
+        "posZ": -13.5000057,
+        "rotX": -7.624975E-05,
         "rotY": 180.000122,
-        "rotZ": 0.000468155922,
+        "rotZ": 0.000467309816,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3636,7 +3431,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3677,12 +3472,12 @@
       "GUID": "a860f6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
-        "posY": 1.599998,
-        "posZ": -16.5,
-        "rotX": 3.01311356E-05,
-        "rotY": 180.000031,
-        "rotZ": 0.000477435649,
+        "posX": -37.4999771,
+        "posY": 1.59999824,
+        "posZ": -16.4999962,
+        "rotX": 3.02437547E-05,
+        "rotY": 180.000092,
+        "rotZ": 0.000477486348,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3693,7 +3488,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3736,10 +3531,10 @@
       "Transform": {
         "posX": -37.5,
         "posY": 1.50000489,
-        "posZ": -16.5,
-        "rotX": 2.40879617E-05,
-        "rotY": 180.021774,
-        "rotZ": 0.000122609665,
+        "posZ": -16.5000038,
+        "rotX": 2.41207981E-05,
+        "rotY": 180.0217,
+        "rotZ": 0.000122650512,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3750,7 +3545,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -3793,9 +3588,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": -16.5,
-        "rotX": -3.20318669E-08,
+        "rotX": 6.47246452E-08,
         "rotY": 180.024948,
-        "rotZ": 1.00234565E-05,
+        "rotZ": 9.975319E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3804,9 +3599,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -3849,9 +3644,9 @@
         "posX": -37.5,
         "posY": 1.59999561,
         "posZ": -19.5,
-        "rotX": -0.000161846881,
+        "rotX": -0.000162167926,
         "rotY": 179.974136,
-        "rotZ": 1.13533033E-05,
+        "rotZ": 1.15639559E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3862,7 +3657,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "deed",
@@ -3903,12 +3698,12 @@
       "GUID": "5f434d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
+        "posX": -37.5000076,
         "posY": 1.50000417,
-        "posZ": -19.5,
-        "rotX": 3.2525204E-05,
-        "rotY": 179.999054,
-        "rotZ": 0.000161555814,
+        "posZ": -19.5000038,
+        "rotX": 3.25150941E-05,
+        "rotY": 179.998886,
+        "rotZ": 0.000161631251,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3919,7 +3714,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171999365
+        "b": 0.171999246
       },
       "Tags": [
         "factory",
@@ -3962,9 +3757,9 @@
         "posX": -40.5,
         "posY": 1.50000727,
         "posZ": -19.5,
-        "rotX": 4.43743922E-08,
+        "rotX": 4.96109251E-08,
         "rotY": 180.002853,
-        "rotZ": 1.00440493E-05,
+        "rotZ": 1.00618181E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3973,9 +3768,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999333,
-        "g": 0.230999321,
-        "b": 0.0899994746
+        "r": 0.4429992,
+        "g": 0.2309992,
+        "b": 0.08999937
       },
       "Tags": [
         "good",
@@ -4016,11 +3811,11 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.5,
-        "posY": 1.68793225,
+        "posY": 1.687932,
         "posZ": 19.5,
-        "rotX": 2.045318E-07,
-        "rotY": -0.00236032973,
-        "rotZ": -9.81669E-06,
+        "rotX": 3.716718E-07,
+        "rotY": -0.00236029364,
+        "rotZ": -9.816694E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4065,11 +3860,11 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.5,
-        "posY": 1.6879319,
+        "posY": 1.68793178,
         "posZ": 16.5,
-        "rotX": 5.66917E-10,
-        "rotY": -0.0003384322,
-        "rotZ": -1.00318421E-05,
+        "rotX": -1.73618744E-07,
+        "rotY": -0.0003383379,
+        "rotZ": -1.00318412E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4116,9 +3911,9 @@
         "posX": -34.5,
         "posY": 1.68793213,
         "posZ": 13.5,
-        "rotX": 4.64056939E-07,
-        "rotY": -0.00034415003,
-        "rotZ": -9.604955E-06,
+        "rotX": 3.46722231E-07,
+        "rotY": -0.0003441548,
+        "rotZ": -9.604954E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4165,8 +3960,8 @@
         "posX": -34.5,
         "posY": 1.68793213,
         "posZ": 10.5,
-        "rotX": -1.36321546E-07,
-        "rotY": 2.51341517E-05,
+        "rotX": -2.43982043E-07,
+        "rotY": 2.51729289E-05,
         "rotZ": -1.003184E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4214,8 +4009,8 @@
         "posX": -34.5,
         "posY": 1.68793213,
         "posZ": 7.5,
-        "rotX": -3.32627081E-08,
-        "rotY": -0.000333900127,
+        "rotX": -3.12369224E-08,
+        "rotY": -0.0003338638,
         "rotZ": -9.818397E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4263,9 +4058,9 @@
         "posX": -34.5,
         "posY": 1.6879319,
         "posZ": 4.5,
-        "rotX": -1.12879924E-07,
-        "rotY": -9.198978E-05,
-        "rotZ": -9.818397E-06,
+        "rotX": -1.581043E-07,
+        "rotY": -9.189031E-05,
+        "rotZ": -1.003184E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4312,9 +4107,9 @@
         "posX": -34.5,
         "posY": 1.687932,
         "posZ": 1.5,
-        "rotX": -4.33482285E-07,
-        "rotY": -0.00180953287,
-        "rotZ": -1.00318448E-05,
+        "rotX": -4.62357633E-07,
+        "rotY": -0.00180946116,
+        "rotZ": -1.0031843E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4359,11 +4154,11 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.5,
-        "posY": 1.6879319,
+        "posY": 1.68793178,
         "posZ": -1.5,
-        "rotX": -4.10798833E-07,
-        "rotY": -0.0009270823,
-        "rotZ": -1.00318421E-05,
+        "rotX": -2.902152E-07,
+        "rotY": -0.0009269712,
+        "rotZ": -1.0031843E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4410,8 +4205,8 @@
         "posX": -34.5,
         "posY": 1.687932,
         "posZ": -4.5,
-        "rotX": 1.75133025E-07,
-        "rotY": 0.000108736145,
+        "rotX": -3.62312447E-09,
+        "rotY": 0.000108812987,
         "rotZ": -9.818397E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4459,9 +4254,9 @@
         "posX": -34.5,
         "posY": 1.68793213,
         "posZ": -7.5,
-        "rotX": -1.14734796E-07,
-        "rotY": 0.00154069532,
-        "rotZ": -9.818389E-06,
+        "rotX": -9.334843E-08,
+        "rotY": 0.0015407108,
+        "rotZ": -9.81839E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4506,10 +4301,10 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.5,
-        "posY": 1.68793213,
+        "posY": 1.6879319,
         "posZ": -10.5,
-        "rotX": -3.66503542E-07,
-        "rotY": -0.000443633733,
+        "rotX": -3.36468531E-07,
+        "rotY": -0.00044356336,
         "rotZ": -1.00318421E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4555,10 +4350,10 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.5,
-        "posY": 1.68793213,
+        "posY": 1.68793178,
         "posZ": -13.5,
-        "rotX": -5.15558334E-08,
-        "rotY": 0.000104221617,
+        "rotX": 1.515651E-08,
+        "rotY": 0.000104307692,
         "rotZ": -1.003184E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4604,11 +4399,11 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.5,
-        "posY": 1.68793178,
+        "posY": 1.6879319,
         "posZ": -16.5,
-        "rotX": -1.8022709E-07,
-        "rotY": 0.00121531414,
-        "rotZ": -1.00318357E-05,
+        "rotX": -2.37962E-07,
+        "rotY": 0.00121543917,
+        "rotZ": -1.00318366E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4653,11 +4448,11 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.5,
-        "posY": 1.687932,
+        "posY": 1.68793178,
         "posZ": -19.5,
-        "rotX": -1.288379E-07,
-        "rotY": 0.00116647466,
-        "rotZ": -1.00318357E-05,
+        "rotX": -2.056872E-07,
+        "rotY": 0.00116654031,
+        "rotZ": -1.00318366E-05,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -4701,12 +4496,12 @@
       "GUID": "770aae",
       "Name": "Card",
       "Transform": {
-        "posX": -12.5001659,
-        "posY": 1.68342924,
+        "posX": -12.5001688,
+        "posY": 1.68344319,
         "posZ": 24.50214,
-        "rotX": 3.91424918,
-        "rotY": 180.0212,
-        "rotZ": 0.00152169249,
+        "rotX": 3.91457176,
+        "rotY": 180.021179,
+        "rotZ": 0.0015871973,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -4758,11 +4553,11 @@
       "Name": "Card",
       "Transform": {
         "posX": -27.5003338,
-        "posY": 1.68341494,
+        "posY": 1.68341374,
         "posZ": 24.5017986,
-        "rotX": 3.91377449,
-        "rotY": 179.9956,
-        "rotZ": -0.000251753081,
+        "rotX": 3.91374326,
+        "rotY": 179.995621,
+        "rotZ": -0.000300386077,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -4814,11 +4609,11 @@
       "Name": "Card",
       "Transform": {
         "posX": -17.5003872,
-        "posY": 1.68336,
+        "posY": 1.68336046,
         "posZ": 24.5005016,
-        "rotX": 3.912592,
-        "rotY": 180.00856,
-        "rotZ": 0.0006179377,
+        "rotX": 3.91259956,
+        "rotY": 180.008575,
+        "rotZ": 0.0006103502,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -4870,11 +4665,11 @@
       "Name": "Card",
       "Transform": {
         "posX": -32.4999847,
-        "posY": 1.68333268,
+        "posY": 1.68333733,
         "posZ": 24.4997578,
-        "rotX": 3.91183043,
-        "rotY": 179.9897,
-        "rotZ": -0.0007494027,
+        "rotX": 3.91194,
+        "rotY": 179.989655,
+        "rotZ": -0.0007621922,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -4925,12 +4720,12 @@
       "GUID": "7cb6c1",
       "Name": "Card",
       "Transform": {
-        "posX": 7.499948,
-        "posY": 1.683383,
+        "posX": 7.49994659,
+        "posY": 1.68338156,
         "posZ": 24.50111,
-        "rotX": 3.9132328,
+        "rotX": 3.91320324,
         "rotY": 180.010452,
-        "rotZ": 0.000792080536,
+        "rotZ": 0.0008318248,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -4981,12 +4776,12 @@
       "GUID": "06a41f",
       "Name": "Card",
       "Transform": {
-        "posX": 17.5001583,
-        "posY": 1.68339634,
+        "posX": 17.50016,
+        "posY": 1.6833899,
         "posZ": 24.5012932,
-        "rotX": 3.91351867,
-        "rotY": 179.99292,
-        "rotZ": -0.0005433174,
+        "rotX": 3.91337276,
+        "rotY": 179.992966,
+        "rotZ": -0.000483668671,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5037,12 +4832,12 @@
       "GUID": "dac0e2",
       "Name": "Card",
       "Transform": {
-        "posX": -2.49982214,
-        "posY": 1.68332863,
+        "posX": -2.499823,
+        "posY": 1.68333185,
         "posZ": 24.4997959,
-        "rotX": 3.91192,
-        "rotY": 180.007019,
-        "rotZ": 0.00050253357,
+        "rotX": 3.91199613,
+        "rotY": 180.007034,
+        "rotZ": 0.0004930398,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5094,11 +4889,11 @@
       "Name": "Card",
       "Transform": {
         "posX": 27.5001621,
-        "posY": 1.68338752,
-        "posZ": 24.5012913,
-        "rotX": 3.91334748,
-        "rotY": 179.990631,
-        "rotZ": -0.0007654874,
+        "posY": 1.68339324,
+        "posZ": 24.50129,
+        "rotX": 3.91348147,
+        "rotY": 179.990677,
+        "rotZ": -0.0006845071,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5150,11 +4945,11 @@
       "Name": "Card",
       "Transform": {
         "posX": 22.5001659,
-        "posY": 1.68338609,
+        "posY": 1.68338931,
         "posZ": 24.5011215,
-        "rotX": 3.91332841,
-        "rotY": 180.001556,
-        "rotZ": 3.635418E-05,
+        "rotX": 3.9134047,
+        "rotY": 180.001572,
+        "rotZ": 4.72387765E-05,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5206,11 +5001,11 @@
       "Name": "Card",
       "Transform": {
         "posX": -22.5003853,
-        "posY": 1.6833638,
-        "posZ": 24.5005035,
-        "rotX": 3.912662,
-        "rotY": 180.009155,
-        "rotZ": 0.0007793848,
+        "posY": 1.68336618,
+        "posZ": 24.5005016,
+        "rotX": 3.91271138,
+        "rotY": 180.009109,
+        "rotZ": 6.124595E-05,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5261,12 +5056,12 @@
       "GUID": "9d6127",
       "Name": "Card",
       "Transform": {
-        "posX": 12.4999485,
-        "posY": 1.68338132,
-        "posZ": 24.5011177,
-        "rotX": 3.913196,
-        "rotY": 180.005325,
-        "rotZ": 0.000370182825,
+        "posX": 12.4999495,
+        "posY": 1.68338859,
+        "posZ": 24.5011158,
+        "rotX": 3.91336966,
+        "rotY": 180.0053,
+        "rotZ": 0.000462284457,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5318,11 +5113,11 @@
       "Name": "Card",
       "Transform": {
         "posX": 32.50014,
-        "posY": 1.68337274,
+        "posY": 1.68336928,
         "posZ": 24.500843,
-        "rotX": 3.91302133,
-        "rotY": 179.987854,
-        "rotZ": -0.0007635621,
+        "rotX": 3.912937,
+        "rotY": 179.987839,
+        "rotZ": -0.0008310435,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5373,12 +5168,12 @@
       "GUID": "b019ff",
       "Name": "Card",
       "Transform": {
-        "posX": 2.50018144,
-        "posY": 1.68332851,
+        "posX": 2.50018167,
+        "posY": 1.68333018,
         "posZ": 24.4997883,
-        "rotX": 3.91189432,
-        "rotY": 179.993637,
-        "rotZ": -0.00044064637,
+        "rotX": 3.91193032,
+        "rotY": 179.993668,
+        "rotZ": -0.000407371233,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5429,12 +5224,12 @@
       "GUID": "dabbf8",
       "Name": "Card",
       "Transform": {
-        "posX": -7.501082,
-        "posY": 1.68333066,
+        "posX": -7.501083,
+        "posY": 1.68333638,
         "posZ": 24.499794,
-        "rotX": 3.91193914,
-        "rotY": 180.005112,
-        "rotZ": 0.00037597763,
+        "rotX": 3.91206551,
+        "rotY": 180.005127,
+        "rotZ": 0.000342710642,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -5488,9 +5283,9 @@
         "posX": 35.0,
         "posY": 1.4999938,
         "posZ": 7.0,
-        "rotX": -1.3267023E-08,
+        "rotX": -2.84532877E-08,
         "rotY": 179.999878,
-        "rotZ": 1.00080842E-05,
+        "rotZ": 1.00019852E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -5499,9 +5294,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.181926787,
-        "g": 0.290940076,
-        "b": 0.17689541
+        "r": 0.181926668,
+        "g": 0.290939927,
+        "b": 0.176895291
       },
       "Tags": [
         "deed",
@@ -5544,9 +5339,9 @@
         "posX": 35.0,
         "posY": 1.49999416,
         "posZ": 11.0,
-        "rotX": -1.180835E-07,
+        "rotX": -2.20411778E-07,
         "rotY": 180.0009,
-        "rotZ": 1.00727075E-05,
+        "rotZ": 1.009001E-05,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -5599,9 +5394,9 @@
         "posX": 35.0,
         "posY": 1.49999416,
         "posZ": 13.0,
-        "rotX": -5.74711621E-08,
+        "rotX": 4.464249E-08,
         "rotY": 180.000732,
-        "rotZ": 1.00505467E-05,
+        "rotZ": 9.967224E-06,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -5654,9 +5449,9 @@
         "posX": 35.0,
         "posY": 1.49999416,
         "posZ": 15.0,
-        "rotX": 1.15845786E-07,
+        "rotX": 1.05789034E-07,
         "rotY": 180.000885,
-        "rotZ": 1.00252455E-05,
+        "rotZ": 9.940481E-06,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -5709,9 +5504,9 @@
         "posX": 35.0,
         "posY": 1.49999416,
         "posZ": 17.0,
-        "rotX": -2.00846486E-08,
+        "rotX": -2.76300476E-08,
         "rotY": 180.001648,
-        "rotZ": 1.00261168E-05,
+        "rotZ": 9.959576E-06,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -5764,9 +5559,9 @@
         "posX": 35.0,
         "posY": 1.49999416,
         "posZ": 19.0,
-        "rotX": -4.31385345E-08,
+        "rotX": 2.374138E-08,
         "rotY": 180.001343,
-        "rotZ": 9.920327E-06,
+        "rotZ": 1.00150746E-05,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -5819,9 +5614,9 @@
         "posX": 35.0,
         "posY": 1.49999416,
         "posZ": 21.0,
-        "rotX": -7.323423E-08,
+        "rotX": 2.14931276E-07,
         "rotY": 180.001678,
-        "rotZ": 9.962248E-06,
+        "rotZ": 1.00441084E-05,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -5874,9 +5669,9 @@
         "posX": 24.0,
         "posY": 1.49999583,
         "posZ": -23.0,
-        "rotX": 1.45620014E-08,
+        "rotX": -5.191306E-09,
         "rotY": 180.018387,
-        "rotZ": 1.00008147E-05,
+        "rotZ": 1.00051184E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -5886,8 +5681,8 @@
       "GMNotes": "Hazard - Yellow 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -5930,9 +5725,9 @@
         "posX": 7.999999,
         "posY": 1.49999857,
         "posZ": -23.0,
-        "rotX": 1.04613624E-08,
+        "rotX": -1.76145232E-08,
         "rotY": 180.016815,
-        "rotZ": 1.00046136E-05,
+        "rotZ": 1.00162915E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -5942,8 +5737,8 @@
       "GMNotes": "Hazard - Blue 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -5986,9 +5781,9 @@
         "posX": 10.0,
         "posY": 1.49999821,
         "posZ": -23.0,
-        "rotX": 2.82656032E-09,
+        "rotX": -4.49862236E-09,
         "rotY": 180.020676,
-        "rotZ": 1.004197E-05,
+        "rotZ": 1.00266634E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -5998,8 +5793,8 @@
       "GMNotes": "Hazard - Red 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6042,9 +5837,9 @@
         "posX": 15.999999,
         "posY": 1.49999726,
         "posZ": -23.0,
-        "rotX": 1.30701823E-08,
+        "rotX": 1.78512387E-08,
         "rotY": 179.989487,
-        "rotZ": 1.00005345E-05,
+        "rotZ": 9.9955E-06,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6054,8 +5849,8 @@
       "GMNotes": "Hazard - Red 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6098,9 +5893,9 @@
         "posX": 18.0,
         "posY": 1.4999969,
         "posZ": -23.0,
-        "rotX": -9.871738E-09,
+        "rotX": 2.71095235E-09,
         "rotY": 180.002,
-        "rotZ": 1.00270654E-05,
+        "rotZ": 1.000904E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6110,8 +5905,8 @@
       "GMNotes": "Hazard - Yellow 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6154,9 +5949,9 @@
         "posX": 20.0,
         "posY": 1.49999654,
         "posZ": -23.0,
-        "rotX": -2.29569541E-09,
+        "rotX": 1.06839062E-08,
         "rotY": 179.973892,
-        "rotZ": 1.00257857E-05,
+        "rotZ": 1.00250418E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6166,8 +5961,8 @@
       "GMNotes": "Hazard - Yellow 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6210,9 +6005,9 @@
         "posX": 22.0,
         "posY": 1.49999619,
         "posZ": -23.0,
-        "rotX": -2.52324259E-08,
+        "rotX": -1.5723991E-08,
         "rotY": 180.018768,
-        "rotZ": 1.00378929E-05,
+        "rotZ": 1.00195566E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6222,8 +6017,8 @@
       "GMNotes": "Hazard - Yellow 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6266,9 +6061,9 @@
         "posX": -18.0,
         "posY": 1.5000031,
         "posZ": -23.0,
-        "rotX": 1.00754374E-08,
+        "rotX": -3.51821039E-09,
         "rotY": 180.000153,
-        "rotZ": 1.00187126E-05,
+        "rotZ": 1.0026356E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6278,8 +6073,8 @@
       "GMNotes": "Relic - Air Foil",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6320,12 +6115,12 @@
       "GUID": "0982b2",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -15.9999809,
+        "posX": -15.9999695,
         "posY": 1.50000274,
         "posZ": -23.0,
-        "rotX": 1.71334129E-08,
+        "rotX": -7.708482E-09,
         "rotY": 179.985855,
-        "rotZ": 1.00160423E-05,
+        "rotZ": 1.00079624E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6335,8 +6130,8 @@
       "GMNotes": "Relic - Auto Pilot",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6380,9 +6175,9 @@
         "posX": -14.0,
         "posY": 1.50000238,
         "posZ": -23.0,
-        "rotX": -2.95875324E-09,
+        "rotX": 2.7729806E-08,
         "rotY": 179.979065,
-        "rotZ": 1.00192865E-05,
+        "rotZ": 1.00224843E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6392,8 +6187,8 @@
       "GMNotes": "Relic - Gate Lock",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6437,9 +6232,9 @@
         "posX": -12.0,
         "posY": 1.500002,
         "posZ": -23.0,
-        "rotX": -2.1735147E-08,
+        "rotX": -2.50390872E-08,
         "rotY": 180.012741,
-        "rotZ": 1.00228217E-05,
+        "rotZ": 1.003274E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6449,8 +6244,8 @@
       "GMNotes": "Relic - Jump Start",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6494,9 +6289,9 @@
         "posX": -10.0,
         "posY": 1.50000179,
         "posZ": -23.0,
-        "rotX": 3.637933E-08,
+        "rotX": 9.852108E-09,
         "rotY": 179.986328,
-        "rotZ": 1.00280777E-05,
+        "rotZ": 1.00394027E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6506,8 +6301,8 @@
       "GMNotes": "Relic - Mulligan Gear",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6551,9 +6346,9 @@
         "posX": -8.0,
         "posY": 1.50000143,
         "posZ": -23.0,
-        "rotX": 6.723874E-09,
+        "rotX": 8.039391E-09,
         "rotY": 180.02243,
-        "rotZ": 1.000055E-05,
+        "rotZ": 9.996712E-06,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6563,8 +6358,8 @@
       "GMNotes": "Relic - Shield",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6608,9 +6403,9 @@
         "posX": -6.0,
         "posY": 1.50000107,
         "posZ": -23.0,
-        "rotX": 1.63630585E-08,
+        "rotX": -2.64461288E-08,
         "rotY": 180.018768,
-        "rotZ": 1.00196521E-05,
+        "rotZ": 1.00310872E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6620,8 +6415,8 @@
       "GMNotes": "Relic - Spy Eye",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6662,12 +6457,12 @@
       "GUID": "0cc3d4",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -4.000005,
+        "posX": -4.00000763,
         "posY": 1.50000072,
         "posZ": -23.0,
-        "rotX": -9.651958E-09,
+        "rotX": 5.095182E-09,
         "rotY": 180.0206,
-        "rotZ": 9.974385E-06,
+        "rotZ": 1.000894E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6677,8 +6472,8 @@
       "GMNotes": "Relic - Switch Switch",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6722,9 +6517,9 @@
         "posX": -2.00000048,
         "posY": 1.50000036,
         "posZ": -23.0,
-        "rotX": 1.41455008E-08,
+        "rotX": -1.3587077E-09,
         "rotY": 179.999939,
-        "rotZ": 1.00123043E-05,
+        "rotZ": 1.00138868E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6734,8 +6529,8 @@
       "GMNotes": "Relic - Yellow Drive",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6779,9 +6574,9 @@
         "posX": 28.0,
         "posY": 1.49999511,
         "posZ": -23.0,
-        "rotX": 3.94791577E-09,
+        "rotX": 1.13601946E-08,
         "rotY": 180.000031,
-        "rotZ": 1.00264033E-05,
+        "rotZ": 9.98608E-06,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6791,8 +6586,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6835,9 +6630,9 @@
         "posX": -28.0,
         "posY": 1.50000489,
         "posZ": -23.0,
-        "rotX": -8.679033E-09,
+        "rotX": -7.25542737E-09,
         "rotY": 180.011292,
-        "rotZ": 1.00178568E-05,
+        "rotZ": 1.00288125E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6847,8 +6642,8 @@
       "GMNotes": "Telegate 3",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6891,9 +6686,9 @@
         "posX": -26.0,
         "posY": 1.50000453,
         "posZ": -23.0,
-        "rotX": 1.8986718E-08,
+        "rotX": 2.30059669E-08,
         "rotY": 179.983276,
-        "rotZ": 1.00300531E-05,
+        "rotZ": 1.00582656E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6903,8 +6698,8 @@
       "GMNotes": "Telegate 4",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -6947,9 +6742,9 @@
         "posX": -24.0,
         "posY": 1.50000417,
         "posZ": -23.0,
-        "rotX": -1.76510611E-08,
+        "rotX": -1.424213E-09,
         "rotY": 180.015,
-        "rotZ": 9.99732947E-06,
+        "rotZ": 1.00516281E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -6959,8 +6754,8 @@
       "GMNotes": "Telegate 5",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -7000,12 +6795,12 @@
       "GUID": "cbd165",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -21.99998,
+        "posX": -21.99997,
         "posY": 1.50000381,
         "posZ": -23.0,
-        "rotX": 1.23315944E-08,
+        "rotX": -9.65937552E-09,
         "rotY": 179.999954,
-        "rotZ": 1.00172829E-05,
+        "rotZ": 1.00118605E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -7015,8 +6810,8 @@
       "GMNotes": "Telegate 6",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -7059,9 +6854,9 @@
         "posX": 29.99028,
         "posY": 1.49999475,
         "posZ": -22.9979286,
-        "rotX": -1.79358872E-09,
+        "rotX": -3.85394223E-08,
         "rotY": 180.112961,
-        "rotZ": 1.00053521E-05,
+        "rotZ": 1.00095149E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -7071,8 +6866,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -7112,12 +6907,12 @@
       "GUID": "c50a55",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 32.00004,
+        "posX": 32.00006,
         "posY": 1.4999944,
         "posZ": -23.0,
-        "rotX": 8.274082E-09,
+        "rotX": -2.95668334E-09,
         "rotY": 180.0,
-        "rotZ": 1.0033772E-05,
+        "rotZ": 1.00061025E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -7127,8 +6922,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782328,
-        "b": 0.311846018
+        "g": 0.163782209,
+        "b": 0.3118459
       },
       "Tags": [
         "encounter",
@@ -7171,9 +6966,9 @@
         "posX": -32.0,
         "posY": 1.5000056,
         "posZ": -23.0,
-        "rotX": 5.785255E-09,
+        "rotX": -1.90224565E-08,
         "rotY": 179.999725,
-        "rotZ": 1.00194784E-05,
+        "rotZ": 1.00207535E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -7183,8 +6978,8 @@
       "GMNotes": "Telegate 1",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637823,
-        "b": 0.311846
+        "g": 0.163782179,
+        "b": 0.311845869
       },
       "Tags": [
         "encounter",
@@ -7227,9 +7022,9 @@
         "posX": -30.0,
         "posY": 1.50000525,
         "posZ": -23.0,
-        "rotX": -2.08396056E-08,
+        "rotX": -2.35187763E-08,
         "rotY": 180.019531,
-        "rotZ": 1.00251782E-05,
+        "rotZ": 1.00118914E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -7239,8 +7034,8 @@
       "GMNotes": "Telegate 2",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637823,
-        "b": 0.311846
+        "g": 0.163782179,
+        "b": 0.311845869
       },
       "Tags": [
         "encounter",
@@ -7283,9 +7078,9 @@
         "posX": 35.0,
         "posY": 1.49999416,
         "posZ": 9.0,
-        "rotX": 1.43182334E-07,
+        "rotX": -3.567951E-08,
         "rotY": 180.00061,
-        "rotZ": 9.990552E-06,
+        "rotZ": 9.965189E-06,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -7397,9 +7192,9 @@
         "posX": 38.5,
         "posY": 1.49999344,
         "posZ": -11.5,
-        "rotX": 4.680989E-08,
+        "rotX": -4.303009E-08,
         "rotY": 180.019073,
-        "rotZ": 9.981471E-06,
+        "rotZ": 1.00464331E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7454,9 +7249,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": -14.5,
-        "rotX": -7.3268545E-08,
+        "rotX": 6.07752639E-08,
         "rotY": 179.997726,
-        "rotZ": 1.00518528E-05,
+        "rotZ": 1.00423758E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7511,9 +7306,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": -17.5,
-        "rotX": 2.01729E-08,
+        "rotX": 5.952502E-08,
         "rotY": 180.000748,
-        "rotZ": 1.0052684E-05,
+        "rotZ": 9.958877E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7568,9 +7363,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": -23.5,
-        "rotX": -4.33285763E-08,
+        "rotX": 1.11114824E-08,
         "rotY": 180.0036,
-        "rotZ": 1.00463458E-05,
+        "rotZ": 1.00459347E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7622,12 +7417,12 @@
       "GUID": "034730",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 41.5,
+        "posX": 41.5000229,
         "posY": 1.499993,
         "posZ": -20.5,
-        "rotX": 1.726819E-07,
+        "rotX": -6.190352E-08,
         "rotY": 179.979858,
-        "rotZ": 1.00501638E-05,
+        "rotZ": 1.006083E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7682,9 +7477,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": -11.5,
-        "rotX": -2.61292374E-08,
+        "rotX": 5.6638555E-10,
         "rotY": 180.0049,
-        "rotZ": 1.00080069E-05,
+        "rotZ": 1.00391107E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7739,9 +7534,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": -14.5,
-        "rotX": 5.549645E-08,
+        "rotX": 1.67057088E-08,
         "rotY": 180.011154,
-        "rotZ": 1.002435E-05,
+        "rotZ": 9.987911E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7796,9 +7591,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": -17.5,
-        "rotX": 2.87175681E-07,
+        "rotX": -5.18196046E-08,
         "rotY": 179.977921,
-        "rotZ": 1.01331216E-05,
+        "rotZ": 9.999755E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7853,9 +7648,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": -20.5,
-        "rotX": 1.87256362E-07,
+        "rotX": 3.706229E-08,
         "rotY": 179.975708,
-        "rotZ": 1.01470141E-05,
+        "rotZ": 1.00568914E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7910,9 +7705,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": -23.5,
-        "rotX": 5.25367527E-09,
-        "rotY": 179.975708,
-        "rotZ": 1.0288938E-05,
+        "rotX": -2.80684045E-08,
+        "rotY": 179.9686,
+        "rotZ": 9.983523E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7964,12 +7759,12 @@
       "GUID": "daa476",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.5,
+        "posX": 35.5000229,
         "posY": 1.499994,
         "posZ": -11.5,
-        "rotX": -5.43125944E-09,
+        "rotX": 5.49397E-08,
         "rotY": 179.997375,
-        "rotZ": 9.964242E-06,
+        "rotZ": 1.007105E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8024,9 +7819,9 @@
         "posX": 38.5,
         "posY": 1.49999356,
         "posZ": -14.5,
-        "rotX": 3.62569324E-07,
+        "rotX": 1.63116418E-08,
         "rotY": 179.9754,
-        "rotZ": 1.02586228E-05,
+        "rotZ": 1.01031628E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8081,9 +7876,9 @@
         "posX": 38.5,
         "posY": 1.49999356,
         "posZ": -17.5,
-        "rotX": 1.95566912E-07,
+        "rotX": 5.87213167E-09,
         "rotY": 180.029953,
-        "rotZ": 1.01027526E-05,
+        "rotZ": 1.00480365E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8136,11 +7931,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 38.5,
-        "posY": 1.49999356,
+        "posY": 1.49999344,
         "posZ": -20.5,
-        "rotX": 6.139845E-08,
+        "rotX": -2.85922557E-08,
         "rotY": 179.994965,
-        "rotZ": 9.98986252E-06,
+        "rotZ": 1.01020087E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8195,9 +7990,9 @@
         "posX": 38.5,
         "posY": 1.49999356,
         "posZ": -23.5,
-        "rotX": 2.41138132E-08,
+        "rotX": -3.228828E-09,
         "rotY": 179.978943,
-        "rotZ": 1.02654021E-05,
+        "rotZ": 1.00672E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8250,11 +8045,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 38.5,
-        "posY": 1.49999356,
+        "posY": 1.49999344,
         "posZ": 9.5,
-        "rotX": 7.481177E-09,
+        "rotX": -7.83276555E-09,
         "rotY": 180.001541,
-        "rotZ": 1.00196348E-05,
+        "rotZ": 1.005753E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8308,9 +8103,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": 9.5,
-        "rotX": -8.40705E-08,
+        "rotX": 1.27233664E-08,
         "rotY": 179.999908,
-        "rotZ": 9.949167E-06,
+        "rotZ": 1.00333473E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8362,11 +8157,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 38.5,
-        "posY": 1.49999356,
+        "posY": 1.49999344,
         "posZ": 6.5,
-        "rotX": 6.969758E-08,
+        "rotX": -4.19806234E-08,
         "rotY": 180.0,
-        "rotZ": 1.009082E-05,
+        "rotZ": 1.00195448E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8420,9 +8215,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": 6.5,
-        "rotX": -4.80803131E-08,
+        "rotX": 8.295063E-08,
         "rotY": 180.0,
-        "rotZ": 9.984279E-06,
+        "rotZ": 1.0090429E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8476,9 +8271,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": 3.5,
-        "rotX": -1.45417047E-08,
+        "rotX": 6.16566851E-08,
         "rotY": 180.0,
-        "rotZ": 1.00718926E-05,
+        "rotZ": 1.00513425E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8530,11 +8325,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 38.5,
-        "posY": 1.49999356,
+        "posY": 1.49999344,
         "posZ": 3.5,
-        "rotX": -9.31213E-08,
+        "rotX": -7.35341246E-08,
         "rotY": 180.0,
-        "rotZ": 1.00733387E-05,
+        "rotZ": 9.999584E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8587,10 +8382,10 @@
       "Transform": {
         "posX": 35.5,
         "posY": 1.499994,
-        "posZ": 0.5,
-        "rotX": -2.342732E-08,
+        "posZ": 0.499999583,
+        "rotX": -5.74999319E-08,
         "rotY": 180.0,
-        "rotZ": 1.0025441E-05,
+        "rotZ": 1.00202351E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8643,10 +8438,10 @@
       "Transform": {
         "posX": 38.5,
         "posY": 1.49999344,
-        "posZ": 0.49999994,
-        "rotX": -2.63588831E-08,
+        "posZ": 0.4999995,
+        "rotX": -1.33171829E-09,
         "rotY": 179.9959,
-        "rotZ": 1.00724046E-05,
+        "rotZ": 9.989404E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8699,10 +8494,10 @@
       "Transform": {
         "posX": 41.5,
         "posY": 1.499993,
-        "posZ": 0.5,
-        "rotX": 4.6617405E-08,
+        "posZ": 0.4999994,
+        "rotX": -1.74024155E-08,
         "rotY": 180.0,
-        "rotZ": 1.00510442E-05,
+        "rotZ": 1.0079234E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8756,9 +8551,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": -2.5,
-        "rotX": 4.05650162E-08,
+        "rotX": -6.3578625E-08,
         "rotY": 180.00444,
-        "rotZ": 1.00840271E-05,
+        "rotZ": 1.008673E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8809,12 +8604,12 @@
       "GUID": "9a9ce1",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 38.5,
+        "posX": 38.5000229,
         "posY": 1.49999344,
         "posZ": -2.5,
-        "rotX": -2.05843058E-08,
+        "rotX": -7.639638E-08,
         "rotY": 180.000916,
-        "rotZ": 1.004705E-05,
+        "rotZ": 9.998448E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8868,9 +8663,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": -2.5,
-        "rotX": -6.06147239E-08,
+        "rotX": 2.62410582E-09,
         "rotY": 180.000732,
-        "rotZ": 9.989954E-06,
+        "rotZ": 1.00506768E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8924,9 +8719,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": -5.5,
-        "rotX": 6.999423E-08,
+        "rotX": -2.30590409E-08,
         "rotY": 180.0,
-        "rotZ": 1.00515035E-05,
+        "rotZ": 9.961527E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8980,9 +8775,9 @@
         "posX": 38.5,
         "posY": 1.49999344,
         "posZ": -5.5,
-        "rotX": 1.73381061E-08,
+        "rotX": -1.80389286E-08,
         "rotY": 180.0,
-        "rotZ": 9.949986E-06,
+        "rotZ": 1.00031566E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -9036,9 +8831,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": -5.5,
-        "rotX": 3.33457457E-08,
+        "rotX": 1.28272086E-08,
         "rotY": 179.995911,
-        "rotZ": 9.978977E-06,
+        "rotZ": 1.00001625E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -9092,9 +8887,9 @@
         "posX": 35.5,
         "posY": 1.499994,
         "posZ": -8.5,
-        "rotX": 6.185782E-08,
+        "rotX": 6.559179E-08,
         "rotY": 180.0,
-        "rotZ": 1.004274E-05,
+        "rotZ": 9.997227E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -9146,11 +8941,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 38.5,
-        "posY": 1.49999356,
+        "posY": 1.49999344,
         "posZ": -8.5,
-        "rotX": -5.976195E-08,
+        "rotX": -1.59488023E-09,
         "rotY": 180.0,
-        "rotZ": 1.00967018E-05,
+        "rotZ": 1.0031622E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -9204,9 +8999,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": -8.5,
-        "rotX": -6.138573E-08,
+        "rotX": -1.74398878E-08,
         "rotY": 180.003525,
-        "rotZ": 9.994187E-06,
+        "rotZ": 1.00028774E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -9260,9 +9055,9 @@
         "posX": 41.5,
         "posY": 1.499993,
         "posZ": 3.5,
-        "rotX": -2.94477087E-09,
+        "rotX": 2.982171E-08,
         "rotY": 180.0,
-        "rotZ": 1.00904263E-05,
+        "rotZ": 1.00522038E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -9313,12 +9108,12 @@
       "GUID": "8b9c5f",
       "Name": "Custom_Tile_Stack",
       "Transform": {
-        "posX": 1.99999893,
-        "posY": 1.49999976,
+        "posX": 1.99999964,
+        "posY": 1.49999988,
         "posZ": -23.0,
-        "rotX": -6.086274E-08,
+        "rotX": -2.02710826E-08,
         "rotY": 179.98703,
-        "rotZ": 9.993918E-06,
+        "rotZ": 1.00516909E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -9328,8 +9123,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637823,
-        "b": 0.311846
+        "g": 0.163782179,
+        "b": 0.311845869
       },
       "Tags": [
         "encounter",
@@ -9375,9 +9170,9 @@
         "posX": 4.0,
         "posY": 1.49999952,
         "posZ": -23.0,
-        "rotX": -6.29872643E-09,
+        "rotX": -1.18049179E-07,
         "rotY": 179.98526,
-        "rotZ": 1.00301913E-05,
+        "rotZ": 9.937413E-06,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -9387,8 +9182,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637823,
-        "b": 0.311846
+        "g": 0.163782179,
+        "b": 0.311845869
       },
       "Tags": [
         "encounter",
@@ -9434,9 +9229,9 @@
         "posX": 5.999995,
         "posY": 1.49999917,
         "posZ": -23.0,
-        "rotX": -1.21858065E-07,
+        "rotX": -9.140406E-09,
         "rotY": 180.007553,
-        "rotZ": 1.01566538E-05,
+        "rotZ": 9.924036E-06,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -9446,8 +9241,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637823,
-        "b": 0.311846
+        "g": 0.163782179,
+        "b": 0.311845869
       },
       "Tags": [
         "encounter",
@@ -9490,12 +9285,12 @@
       "GUID": "3e54b4",
       "Name": "Custom_Tile_Stack",
       "Transform": {
-        "posX": 12.0,
+        "posX": 12.0000019,
         "posY": 1.49999809,
         "posZ": -23.0,
-        "rotX": -9.250023E-08,
-        "rotY": 179.9846,
-        "rotZ": 1.01455726E-05,
+        "rotX": 8.5714E-09,
+        "rotY": 179.984619,
+        "rotZ": 1.01047854E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -9505,8 +9300,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637823,
-        "b": 0.311846
+        "g": 0.163782179,
+        "b": 0.311845869
       },
       "Tags": [
         "encounter",
@@ -9552,9 +9347,9 @@
         "posX": 14.0,
         "posY": 1.49999774,
         "posZ": -23.0,
-        "rotX": -5.84757E-09,
-        "rotY": 180.010864,
-        "rotZ": 1.00828411E-05,
+        "rotX": 2.75827379E-08,
+        "rotY": 180.010849,
+        "rotZ": 1.00791349E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -9564,8 +9359,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163782239,
-        "b": 0.311845928
+        "g": 0.16378212,
+        "b": 0.3118458
       },
       "Tags": [
         "encounter",
@@ -9603,6 +9398,809 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": ""
+    },
+    {
+      "GUID": "072475",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 29.1604881,
+        "posY": -0.7046962,
+        "posZ": -40.90182,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 28.93,
+        "scaleY": 4.0239687,
+        "scaleZ": 16.08687
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.191999972,
+        "g": 0.701,
+        "b": 0.167999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Green",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "63dfa5",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 58.73323,
+        "posY": -0.6745405,
+        "posZ": 0.03228569,
+        "rotX": 0.0,
+        "rotY": 269.999817,
+        "rotZ": 0.0,
+        "scaleX": 28.3139057,
+        "scaleY": 4.0239687,
+        "scaleZ": 16.9683685
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9559999,
+        "g": 0.39199996,
+        "b": 0.112999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Orange",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "4c8dd9",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -58.79587,
+        "posY": -0.8017483,
+        "posZ": 0.0365158245,
+        "rotX": 0.0,
+        "rotY": 89.99977,
+        "rotZ": 0.0,
+        "scaleX": 29.9865341,
+        "scaleY": 4.0239687,
+        "scaleZ": 15.8779335
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.171999961,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Yellow",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "981715",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -29.5,
+        "posY": -2.73074818,
+        "posZ": -40.5,
+        "rotX": 8.613429E-06,
+        "rotY": 180.024521,
+        "rotZ": 1.72072232E-05,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        300,
+        200
+      ],
+      "CustomDeck": {
+        "3": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        },
+        "2": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -30.0,
+            "posY": -2.78199553,
+            "posZ": -40.0,
+            "rotX": 2.24431915E-05,
+            "rotY": 180.038376,
+            "rotZ": -3.122594E-06,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "3": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "25cd30",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -29.0,
+            "posY": -2.732694,
+            "posZ": -41.0,
+            "rotX": 359.967133,
+            "rotY": 180.024521,
+            "rotZ": 359.980072,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 200,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "34d565",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -59.0,
+        "posY": -2.73073864,
+        "posZ": -6.787889E-07,
+        "rotX": -5.26982558E-06,
+        "rotY": 270.000031,
+        "rotZ": 1.09965922E-05,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        500,
+        400
+      ],
+      "CustomDeck": {
+        "5": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        },
+        "4": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -59.0,
+            "posY": -2.74768019,
+            "posZ": 2.00000072,
+            "rotX": 7.25163363E-06,
+            "rotY": 270.000031,
+            "rotZ": 1.73577446E-05,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 500,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "25cd30",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -59.4999962,
+            "posY": -2.71365857,
+            "posZ": 1.50000072,
+            "rotX": 4.392905E-05,
+            "rotY": 270.0,
+            "rotZ": 2.73970618E-05,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 400,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "4": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "0bcc9c",
+      "Name": "Deck",
+      "Transform": {
+        "posX": 29.5,
+        "posY": -2.7307477,
+        "posZ": -40.5,
+        "rotX": -5.490865E-06,
+        "rotY": 180.0,
+        "rotZ": -1.04160131E-06,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        700,
+        600
+      ],
+      "CustomDeck": {
+        "7": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_green.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_green.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        },
+        "6": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_green.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_green.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 29.5,
+            "posY": -2.74770451,
+            "posZ": -40.5,
+            "rotX": -5.39119E-06,
+            "rotY": 180.0,
+            "rotZ": -1.07039762E-06,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 700,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "7": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_green.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_green.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "25cd30",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 30.0,
+            "posY": -2.71375155,
+            "posZ": -41.0,
+            "rotX": -2.04381126E-06,
+            "rotY": 180.0,
+            "rotZ": -9.864875E-07,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 600,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "6": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_green.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_green.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "a5f8a1",
+      "Name": "Deck",
+      "Transform": {
+        "posX": 59.00003,
+        "posY": -2.730746,
+        "posZ": -3.39174039E-05,
+        "rotX": 2.84788962E-06,
+        "rotY": 90.00001,
+        "rotZ": 1.03337588E-05,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        900,
+        800
+      ],
+      "CustomDeck": {
+        "9": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_orange.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_orange.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        },
+        "8": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_orange.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_orange.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 59.00003,
+            "posY": -2.74767065,
+            "posZ": -3.44642976E-05,
+            "rotX": -1.49464977E-05,
+            "rotY": 90.00001,
+            "rotZ": -2.38483881E-05,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 900,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "9": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_orange.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_orange.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "25cd30",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 59.0,
+            "posY": -2.71371961,
+            "posZ": 5.23482129E-08,
+            "rotX": -0.000143167737,
+            "rotY": 90.0,
+            "rotZ": 2.84451489E-05,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 800,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "8": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_orange.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_orange.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
     }
   ]
 }
