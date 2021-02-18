@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/10/2021 9:08:34 PM",
+  "Date": "2/17/2021 7:56:38 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -313,7 +313,7 @@
   "DecalPallet": [],
   "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Global.-1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Global.-1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/global\")\n\nend)\n__bundle_register(\"lua/global\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/update_tile_value\")\r\n\r\nfunction onObjectEnterContainer(container, obj)\r\n  updateTileValue(container)\r\nend\r\n\r\nfunction onObjectLeaveContainer(container, obj)\r\n  updateTileValue(container)\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/update_tile_value\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction updateTileValue(object)\r\n  if object.tag == \"Tile\" then\r\n    local value = object.getVar(\"val\") or object.value\r\n    local quantity = object.getQuantity()\r\n\r\n    if quantity > -1 then\r\n      value = value * quantity\r\n    end\r\n\r\n    object.value = value\r\n  end\r\nend\r\n\nend)\nreturn __bundle_require(\"Global.-1.lua\")",
   "LuaScriptState": "{\"chimeraExtA\":true,\"chimeraExtB\":true}",
-  "XmlUI": "<!-- UI Widget 650 -->\r\n<Panel\r\n    id=\"chimeraWidgetBG\"\r\n    width=\"131\"\r\n\theight=\"47\"\r\n\toffsetXY=\"64 -6\"\r\n    color=\"rgba(0,0,0,0)\"\r\n    rectAlignment=\"UpperLeft\"\r\n    allowDragging=\"true\"\r\n    returnToOriginalPositionWhenReleased=\"false\"\r\n    >\r\n\t\t<Image\r\n\t\tid=\"ui_x_x\"\r\n\t\timage=\"ui_x_x\"\r\n\t\tpreserveAspect=\"true\"\r\n\t\twidth=\"256\"\r\n\t\theight=\"256\"\r\n\t\trectAlignment=\"UpperLeft\"\r\n\t\toffsetXY=\"-63 105\"\r\n\t\tactive=\"false\"\r\n\t\t>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"61 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtAOn\"></Button>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"128 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtBOn\"></Button>\r\n\t\t</Image>\r\n\t\t\r\n\t\t<Image\r\n\t\tid=\"ui_a_x\"\r\n\t\timage=\"ui_a_x\"\r\n\t\tpreserveAspect=\"true\"\r\n\t\twidth=\"256\"\r\n\t\theight=\"256\"\r\n\t\trectAlignment=\"UpperLeft\"\r\n\t\toffsetXY=\"-63 105\"\r\n\t\tactive=\"true\"\r\n\t\t>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"61 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtAOff\"></Button>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"128 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtBOn\"></Button>\r\n\t\t</Image>\r\n\t\t\r\n\t\t<Image\r\n\t\tid=\"ui_x_b\"\r\n\t\timage=\"ui_x_b\"\r\n\t\tpreserveAspect=\"true\"\r\n\t\twidth=\"256\"\r\n\t\theight=\"256\"\r\n\t\trectAlignment=\"UpperLeft\"\r\n\t\toffsetXY=\"-63 105\"\r\n\t\tactive=\"false\"\r\n\t\t>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"61 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtAOn\"></Button>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"128 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtBOff\"></Button>\r\n\t\t</Image>\r\n\t\t\r\n\t\t<Image\r\n\t\tid=\"ui_a_b\"\r\n\t\timage=\"ui_a_b\"\r\n\t\tpreserveAspect=\"true\"\r\n\t\twidth=\"256\"\r\n\t\theight=\"256\"\r\n\t\trectAlignment=\"UpperLeft\"\r\n\t\toffsetXY=\"-63 105\"\r\n\t\tactive=\"false\"\r\n\t\t>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"61 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtAOff\"></Button>\r\n\t\t\t<Button width=\"67\" height=\"19\" color=\"rgba(0,0,0,0)\" offsetXY=\"128 -133\" rectAlignment=\"UpperLeft\" onClick=\"2f6619/ChimeraExtBOff\"></Button>\r\n\t\t</Image>\r\n</Panel>",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
   "CustomUIAssets": [
     {
       "Name": "ui_x_x",
@@ -337,15 +337,15 @@
       "GUID": "9f9496",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": -29.25,
-        "posY": -0.7967949,
-        "posZ": -47.70621,
+        "posX": -12.33,
+        "posY": 2.5,
+        "posZ": -45.5,
         "rotX": 0.0,
         "rotY": 0.0,
         "rotZ": 0.0,
-        "scaleX": 28.93,
-        "scaleY": 4.0239687,
-        "scaleZ": 2.88309622
+        "scaleX": 24.0,
+        "scaleY": 3.0,
+        "scaleZ": 3.0
       },
       "Nickname": "",
       "Description": "",
@@ -375,1089 +375,15 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1c51d7",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -29.2507019,
-        "posY": -1.4034574,
-        "posZ": -29.4,
-        "rotX": 0.2778704,
-        "rotY": 0.007559873,
-        "rotZ": 0.0159046128,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Large)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416245/7A7B80B77853568EC2F6CF5789DFC9D9BD0F048D/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "4bd142",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -18.1961536,
-        "posY": -1.39815342,
-        "posZ": -29.4,
-        "rotX": 0.303759128,
-        "rotY": 359.9348,
-        "rotZ": 359.79657,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "6b58e8",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -40.295887,
-        "posY": -1.4,
-        "posZ": -29.4,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "a7b813",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 18.2,
-        "posY": -1.4,
-        "posZ": -29.4,
-        "rotX": 0.303759128,
-        "rotY": 359.9348,
-        "rotZ": 359.79657,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "5ab388",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 40.3,
-        "posY": -1.42632532,
-        "posZ": -29.4,
-        "rotX": 0.303759128,
-        "rotY": 359.9348,
-        "rotZ": 359.79657,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "7fd12d",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 29.25,
-        "posY": -1.4,
-        "posZ": -29.4,
-        "rotX": 0.2778704,
-        "rotY": 0.00755987456,
-        "rotZ": 0.0159046128,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Large)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416245/7A7B80B77853568EC2F6CF5789DFC9D9BD0F048D/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "77517f",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 40.3,
-        "posY": -1.4,
-        "posZ": 29.4,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "009bc0",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 18.2,
-        "posY": -1.4,
-        "posZ": 29.4,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "a14a8a",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -18.2,
-        "posY": -1.4,
-        "posZ": 29.4,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "f7cc44",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -40.3,
-        "posY": -1.4,
-        "posZ": 29.4,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "98eaa8",
-      "Name": "Custom_Assetbundle",
-      "Transform": {
-        "posX": 0.0,
-        "posY": -38.0,
-        "posZ": 0.0,
-        "rotX": 0.0,
-        "rotY": 180.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "ChimeraExtensionB",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": false,
-      "Autoraise": false,
-      "Sticky": true,
-      "Tooltip": false,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289668226558189703/6E350368EBE92501D0B45EAD6089D5C3C844552E/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 1,
-        "TypeIndex": 4,
-        "LoopingEffectIndex": 0
-      },
-      "LuaScript": "--Runs when game is loaded.\r\nfunction onLoad( saveData )\r\n\tself.interactable = false;\r\nend\r\n\r\nfunction onChat( message, player )\r\n\tif player.host then\r\n\t\tif message == \"chimeralock\" then\r\n\t\t\tself.interactable = not self.interactable;\r\n\t\tend\r\n\tend\r\nend",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "0ec7af",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 29.25,
-        "posY": -1.4,
-        "posZ": 29.4,
-        "rotX": 0.2778704,
-        "rotY": 0.00755987456,
-        "rotZ": 0.0159046128,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Large)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416245/7A7B80B77853568EC2F6CF5789DFC9D9BD0F048D/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "8eddd1",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -29.25,
-        "posY": -1.4,
-        "posZ": 29.4,
-        "rotX": 0.2778704,
-        "rotY": 0.00755987456,
-        "rotZ": 0.0159046128,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Large)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416245/7A7B80B77853568EC2F6CF5789DFC9D9BD0F048D/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "88b63c",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -47.35,
-        "posY": -1.40149629,
-        "posZ": 1.35035574E-08,
-        "rotX": 0.0,
-        "rotY": 90.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Large)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416245/7A7B80B77853568EC2F6CF5789DFC9D9BD0F048D/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "e9b800",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -47.35,
-        "posY": -1.4,
-        "posZ": 11.05,
-        "rotX": 0.0,
-        "rotY": 90.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "e05fbf",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": -47.35,
-        "posY": -1.4,
-        "posZ": -11.0528307,
-        "rotX": 0.0,
-        "rotY": 90.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "393ac9",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 47.35,
-        "posY": -1.4,
-        "posZ": 11.05,
-        "rotX": 0.0,
-        "rotY": 90.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "a0f037",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 47.35,
-        "posY": -1.4,
-        "posZ": -11.05,
-        "rotX": 0.0,
-        "rotY": 90.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Small)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416339/171377FAB918EC24F767B642CDEEA4705262CEF3/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "a5951b",
-      "Name": "Custom_Assetbundle_Bag",
-      "Transform": {
-        "posX": 47.35,
-        "posY": -1.4,
-        "posZ": 0.0,
-        "rotX": 0.0,
-        "rotY": 90.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Container (Large)",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": false,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927416245/7A7B80B77853568EC2F6CF5789DFC9D9BD0F048D/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 2,
-        "TypeIndex": 6,
-        "LoopingEffectIndex": 0
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "c94261",
-      "Name": "Custom_Assetbundle",
-      "Transform": {
-        "posX": 0.0,
-        "posY": -38.0,
-        "posZ": 0.0,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "ChimeraExtensionA",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": false,
-      "Autoraise": false,
-      "Sticky": true,
-      "Tooltip": false,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289668226558189703/6E350368EBE92501D0B45EAD6089D5C3C844552E/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 1,
-        "TypeIndex": 4,
-        "LoopingEffectIndex": 0
-      },
-      "LuaScript": "--Runs when game is loaded.\r\nfunction onLoad( saveData )\r\n\tself.interactable = false;\r\nend\r\n\r\nfunction onChat( message, player )\r\n\tif player.host then\r\n\t\tif message == \"chimeralock\" then\r\n\t\t\tself.interactable = not self.interactable;\r\n\t\tend\r\n\tend\r\nend",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "2f6619",
-      "Name": "Custom_Assetbundle",
-      "Transform": {
-        "posX": 0.0,
-        "posY": -38.0,
-        "posZ": 0.0,
-        "rotX": 0.0,
-        "rotY": 0.0,
-        "rotZ": 0.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Chimera Table",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": false,
-      "Autoraise": false,
-      "Sticky": true,
-      "Tooltip": false,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomAssetbundle": {
-        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1289668226558189803/E41729D579CDAE7D63DFEC0F71203FB1D104F947/",
-        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1289667909927415950/5CB07A2B1FF681724C32484F9B2FEBAC55F31532/",
-        "MaterialIndex": 1,
-        "TypeIndex": 4,
-        "LoopingEffectIndex": 0
-      },
-      "LuaScript": "-- Configuration / may change\r\nlocal ConcealedStorageHeight = 3.0\r\nlocal ConceiledStorageOffset = -10000.0\r\n\r\nlocal ChimeraExtAvailable = true;\r\nlocal ChimeraObjExtA = nil;\r\nlocal ChimeraObjExtB = nil;\r\n\r\nlocal ChimeraExtAState = true;\r\nlocal ChimeraExtBState = false;\r\n\r\nfunction onSave()\r\n    local saveObj = {chimeraExtA=ChimeraExtAState,chimeraExtB=ChimeraExtBState};\r\n\t\r\n    return JSON.encode( saveObj );\r\nend\r\n\r\n--Runs when game is loaded.\r\nfunction onLoad( saveData )\r\n\tself.interactable = false;\r\n\t\r\n    if saveData ~= \"\" then\r\n        local saveObj = JSON.decode( saveData );\r\n\t\tChimeraExtAState = saveObj.chimeraExtA;\r\n\t\tChimeraExtBState = saveObj.chimeraExtB;\r\n    end\r\n\t\r\n\tChimeraObjExtA = GetObjectByName( \"ChimeraExtensionA\" );\r\n\tChimeraObjExtB = GetObjectByName( \"ChimeraExtensionB\" );\r\n\t\r\n\tif( ChimeraObjExtA == nil or ChimeraObjExtB == nil ) then\r\n\t\tprintToAll( \"Chimera Extension Widget disabled: unable to find object name(s) 'ChimeraExtensionA' and/or 'ChimeraExtensionB'.\", {0.8, 0.0, 0.0, 1.0} );\r\n\t\tChimeraExtAvailable = false;\r\n\t\tUI.setAttribute( \"chimeraWidget\", \"active\", false );\r\n\telse\r\n\t\tif ChimeraExtAState == false then\r\n\t\t\tChimeraExtAOff();\r\n\t\telse\r\n\t\t\tChimeraExtAOn();\r\n\t\tend\r\n\t\t\r\n\t\tif ChimeraExtBState == true then\r\n\t\t\tChimeraExtBOn();\r\n\t\telse\r\n\t\t\tChimeraExtBOff();\r\n\t\tend\r\n\t\t\r\n\tend\r\nend\r\n\r\nfunction onChat( message, player )\r\n\tif player.host then\r\n\t\tif message == \"chimeralock\" then\r\n\t\t\tself.interactable = not self.interactable;\r\n\t\t\t\r\n\t\t\tif self.interactable then\r\n\t\t\t\tprintToColor( \"Table can now be edited.\", player.color, {r=0, g=1, b=0} );\r\n\t\t\telse\r\n\t\t\t\tprintToColor( \"Table is now safe from editing.\", player.color, {r=0, g=1, b=0} );\r\n\t\t\tend\r\n\t\tend\r\n\tend\r\nend\r\n\r\nfunction GetObjectByName( name )\r\n    for k,v in pairs( getAllObjects() ) do\r\n\t\tif( v.getName() == name ) then\r\n\t\t\treturn v;\r\n\t\tend\r\n    end\r\nend\r\n\r\nfunction Store( obj )\r\n\tlocal bounds = obj.getBounds()\r\n\t\r\n\tbounds.center.y = bounds.center.y + 5.0;\r\n\tbounds.size.y = bounds.size.y + 5.0;\r\n\t\r\n\tlocal found = Physics.cast({\r\n\t\torigin = bounds.center,\r\n\t\tdirection = {0, 1, 0},\r\n\t\ttype = 3,\r\n\t\tsize = bounds.size,\r\n\t\tmax_distance = 0,\r\n\t\tdebug = false\r\n\t});\r\n\t\r\n    for k,v in pairs( found ) do\r\n\t\tif v.hit_object ~= obj then\r\n\t\t\tHide( v.hit_object );\r\n\t\tend\r\n    end\r\n\t\r\n\tHide( obj );\r\nend\r\n\r\nfunction Dispense( obj )\r\n\tlocal bounds = obj.getBounds();\r\n\t\r\n\tbounds.center.y = bounds.center.y + 5.0;\r\n\tbounds.size.y = bounds.size.y + 5.0;\r\n\t\r\n\tlocal found = Physics.cast({\r\n\t\torigin = bounds.center,\r\n\t\tdirection = {0, 1, 0},\r\n\t\ttype = 3,\r\n\t\tsize = bounds.size,\r\n\t\tmax_distance = 0,\r\n\t\tdebug = false\r\n\t});\r\n\t\r\n\tShow( obj );\r\n\t\r\n    for k,v in pairs( found ) do\r\n\t\tif v.hit_object ~= obj then\r\n\t\t\tShow( v.hit_object );\r\n\t\tend\r\n    end\r\nend\r\n\r\nfunction Hide( obj )\r\n\tlocal pos = obj.getPosition();\r\n\t\r\n\tif pos.y < ConceiledStorageOffset + 1000 then\r\n\t\treturn;\r\n\tend\r\n\t\r\n    obj.setPosition({\r\n       x = pos.x,\r\n       y = pos.y + ConceiledStorageOffset,\r\n       z = pos.z\r\n    });\r\nend\r\n\r\nfunction Show( obj )\r\n\tlocal pos = obj.getPosition();\r\n\t\r\n\tif pos.y > ConceiledStorageOffset + 1000 then\r\n\t\treturn;\r\n\tend\r\n\t\r\n\tobj.setPosition({\r\n\t\tx = pos.x,\r\n\t\ty = pos.y - ConceiledStorageOffset,\r\n\t\tz = pos.z\r\n\t});\r\n\t\r\nend\r\n\r\n---\r\n--- Widget functionality\r\n---\r\nfunction ChimeraExtAOn()\r\n\tChimeraExtAState = true;\r\n\tChimeraExtRender();\r\n\t\r\n\tUI.setAttribute( \"chimeraWidgetExtAOn\", \"active\", true );\r\n\tUI.setAttribute( \"chimeraWidgetExtAOff\", \"active\", false );\r\n\t\r\n\tDispense( ChimeraObjExtA );\r\nend\r\n\r\nfunction ChimeraExtAOff()\r\n\tChimeraExtAState = false;\r\n\tChimeraExtRender();\r\n\t\r\n\tUI.setAttribute( \"chimeraWidgetExtAOn\", \"active\", false );\r\n\tUI.setAttribute( \"chimeraWidgetExtAOff\", \"active\", true );\r\n\t\r\n\tStore( ChimeraObjExtA );\r\nend\r\n\r\nfunction ChimeraExtBOn()\r\n\tChimeraExtBState = true;\r\n\tChimeraExtRender();\r\n\tUI.setAttribute( \"chimeraWidgetExtBOn\", \"active\", true );\r\n\tUI.setAttribute( \"chimeraWidgetExtBOff\", \"active\", false );\r\n\t\r\n\tDispense( ChimeraObjExtB );\r\nend\r\n\r\nfunction ChimeraExtBOff()\r\n\tChimeraExtBState = false;\r\n\tChimeraExtRender();\r\n\tUI.setAttribute( \"chimeraWidgetExtBOn\", \"active\", false );\r\n\tUI.setAttribute( \"chimeraWidgetExtBOff\", \"active\", true );\r\n\t\r\n\tStore( ChimeraObjExtB );\r\nend\r\n\r\nfunction ChimeraExtRender()\r\n\tUI.setAttribute( \"ui_x_x\", \"active\", (not ChimeraExtAState and not ChimeraExtBState) );\r\n\tUI.setAttribute( \"ui_a_x\", \"active\", (ChimeraExtAState and not ChimeraExtBState) );\r\n\tUI.setAttribute( \"ui_x_b\", \"active\", (not ChimeraExtAState and ChimeraExtBState) );\r\n\tUI.setAttribute( \"ui_a_b\", \"active\", (ChimeraExtAState and ChimeraExtBState) );\r\nend",
-      "LuaScriptState": "{\"chimeraExtA\":true,\"chimeraExtB\":true}",
-      "XmlUI": ""
-    },
-    {
       "GUID": "226076",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5000229,
-        "posY": 1.50000417,
-        "posZ": 19.4999962,
-        "rotX": 3.252135E-05,
-        "rotY": 179.999054,
-        "rotZ": 0.0001616339,
+        "posX": -37.50003,
+        "posY": 0.999999762,
+        "posZ": 19.4999924,
+        "rotX": 8.246444E-06,
+        "rotY": 179.998886,
+        "rotZ": -3.178535E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1468,7 +394,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1476,7 +402,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1508,12 +434,12 @@
       "GUID": "d1c36c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.4999847,
-        "posY": 1.50000489,
-        "posZ": 16.4999886,
-        "rotX": 2.35033549E-05,
-        "rotY": 180.02243,
-        "rotZ": 0.000122663347,
+        "posX": -37.4999924,
+        "posY": 0.999999762,
+        "posZ": 16.4999847,
+        "rotX": 9.576326E-06,
+        "rotY": 180.022324,
+        "rotZ": -2.77155887E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1524,7 +450,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1532,7 +458,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1565,11 +491,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999847,
-        "posY": 1.50000489,
-        "posZ": 13.4999866,
-        "rotX": 2.4121422E-05,
-        "rotY": 180.016953,
-        "rotZ": 0.000122574493,
+        "posY": 0.999999762,
+        "posZ": 13.4999847,
+        "rotX": 6.68605344E-06,
+        "rotY": 180.016937,
+        "rotZ": -2.749673E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1580,7 +506,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1588,7 +514,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1621,11 +547,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5000153,
-        "posY": 1.50000417,
+        "posY": 0.999999762,
         "posZ": 10.4999962,
-        "rotX": 3.339774E-05,
+        "rotX": 8.432545E-06,
         "rotY": 179.999481,
-        "rotZ": 0.0001614746,
+        "rotZ": -3.239726E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1636,7 +562,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1644,7 +570,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1677,11 +603,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999924,
-        "posY": 1.50000489,
-        "posZ": 7.50001335,
-        "rotX": 2.38438133E-05,
-        "rotY": 179.999741,
-        "rotZ": 0.000122652244,
+        "posY": 0.999999762,
+        "posZ": 7.50001526,
+        "rotX": 7.901108E-06,
+        "rotY": 179.999725,
+        "rotZ": -2.725696E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1692,7 +618,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1700,7 +626,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1733,11 +659,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.50000489,
+        "posY": 0.999999762,
         "posZ": 4.5,
-        "rotX": 2.38864941E-05,
-        "rotY": 180.000259,
-        "rotZ": 0.000122556419,
+        "rotX": 7.519498E-06,
+        "rotY": 180.000244,
+        "rotZ": -2.77882536E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1748,7 +674,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1756,7 +682,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1789,11 +715,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.50000489,
+        "posY": 0.999999762,
         "posZ": 1.49999988,
-        "rotX": 2.4003868E-05,
-        "rotY": 179.9999,
-        "rotZ": 0.000122653466,
+        "rotX": 8.107485E-06,
+        "rotY": 179.999878,
+        "rotZ": -2.73688256E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1804,7 +730,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1812,7 +738,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1845,11 +771,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.50000453,
-        "posZ": -1.50000179,
-        "rotX": 2.79202486E-05,
-        "rotY": 179.9949,
-        "rotZ": 0.000140230128,
+        "posY": 0.999999762,
+        "posZ": -1.500002,
+        "rotX": 7.919848E-06,
+        "rotY": 179.994888,
+        "rotZ": -2.72081725E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1860,7 +786,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1868,7 +794,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1901,11 +827,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999847,
-        "posY": 1.50000489,
+        "posY": 0.999999762,
         "posZ": -4.499999,
-        "rotX": 2.38531939E-05,
+        "rotX": 7.432731E-06,
         "rotY": 179.98735,
-        "rotZ": 0.000122533878,
+        "rotZ": -2.69546836E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1916,7 +842,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1924,7 +850,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -1956,12 +882,12 @@
       "GUID": "a9a716",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.4999466,
-        "posY": 1.50000489,
-        "posZ": -7.49999142,
-        "rotX": 2.43332761E-05,
+        "posX": -37.49994,
+        "posY": 0.999999762,
+        "posZ": -7.49999046,
+        "rotX": 6.95887957E-06,
         "rotY": 179.994522,
-        "rotZ": 0.000122547164,
+        "rotZ": -2.75435159E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1972,7 +898,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -1980,7 +906,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2012,12 +938,12 @@
       "GUID": "a92c79",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5000458,
-        "posY": 1.50000453,
+        "posX": -37.5000534,
+        "posY": 0.999999762,
         "posZ": -10.5000057,
-        "rotX": 2.8311666E-05,
+        "rotX": 7.088183E-06,
         "rotY": 179.999481,
-        "rotZ": 0.000140306875,
+        "rotZ": -2.47269527E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2028,7 +954,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -2036,7 +962,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2069,11 +995,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999847,
-        "posY": 1.50000477,
-        "posZ": -13.5000134,
-        "rotX": 2.50159646E-05,
-        "rotY": 179.970139,
-        "rotZ": 0.000126217434,
+        "posY": 0.999999762,
+        "posZ": -13.5000153,
+        "rotX": 9.232044E-06,
+        "rotY": 179.970016,
+        "rotZ": -2.82430319E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2084,7 +1010,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -2092,7 +1018,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2125,11 +1051,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.59999561,
-        "posZ": 19.49997,
-        "rotX": -0.00016215512,
-        "rotY": 180.000122,
-        "rotZ": 1.15362354E-05,
+        "posY": 1.099997,
+        "posZ": 19.4999657,
+        "rotX": -6.26448164E-05,
+        "rotY": 180.000046,
+        "rotZ": -0.000148088729,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2140,7 +1066,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2149,7 +1075,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2181,12 +1107,12 @@
       "GUID": "b7c152",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.5,
-        "posY": 1.59999812,
+        "posX": -37.4999924,
+        "posY": 1.099997,
         "posZ": 13.4999943,
-        "rotX": 3.01712316E-05,
-        "rotY": 180.0064,
-        "rotZ": 0.000477335358,
+        "rotX": 4.889321E-06,
+        "rotY": 180.006348,
+        "rotZ": 7.510778E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2197,7 +1123,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2206,7 +1132,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2239,11 +1165,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999924,
-        "posY": 1.59999561,
+        "posY": 1.099997,
         "posZ": 10.5,
-        "rotX": -0.000157900664,
-        "rotY": 180.000778,
-        "rotZ": 1.23822947E-05,
+        "rotX": -6.248882E-05,
+        "rotY": 180.000717,
+        "rotZ": -0.000148602878,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2254,7 +1180,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2263,7 +1189,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2296,11 +1222,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999847,
-        "posY": 1.59999824,
+        "posY": 1.09999692,
         "posZ": 7.49999857,
-        "rotX": 2.91195811E-05,
-        "rotY": 180.000031,
-        "rotZ": 0.000477407,
+        "rotX": 6.07520633E-06,
+        "rotY": 180.0,
+        "rotZ": 7.52227E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2311,7 +1237,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2320,7 +1246,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2353,11 +1279,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.49997,
-        "posY": 1.59999812,
-        "posZ": 4.499996,
-        "rotX": 2.932076E-05,
-        "rotY": 180.000015,
-        "rotZ": 0.000477260735,
+        "posY": 1.09999692,
+        "posZ": 4.499995,
+        "rotX": 6.04841125E-06,
+        "rotY": 180.0,
+        "rotZ": 7.45211437E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2368,7 +1294,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2377,7 +1303,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2409,12 +1335,12 @@
       "GUID": "149602",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.49994,
-        "posY": 1.599998,
-        "posZ": 1.50000286,
-        "rotX": 2.99298863E-05,
+        "posX": -37.49993,
+        "posY": 1.09999692,
+        "posZ": 1.50000346,
+        "rotX": 6.003577E-06,
         "rotY": 180.0,
-        "rotZ": 0.000477473921,
+        "rotZ": 7.519662E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2425,7 +1351,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2434,7 +1360,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2467,11 +1393,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.59999681,
-        "posZ": -1.499994,
-        "rotX": -0.000244319526,
-        "rotY": 180.000031,
-        "rotZ": 0.000334755139,
+        "posY": 1.09999716,
+        "posZ": -1.49999261,
+        "rotX": -9.771932E-05,
+        "rotY": 180.000015,
+        "rotZ": -1.45480826E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2482,7 +1408,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2491,7 +1417,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2524,11 +1450,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999771,
-        "posY": 1.59999812,
+        "posY": 1.09999692,
         "posZ": -4.500003,
-        "rotX": 2.89925829E-05,
+        "rotX": 6.25736629E-06,
         "rotY": 180.0001,
-        "rotZ": 0.000476959627,
+        "rotZ": 7.58910246E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2539,7 +1465,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2548,7 +1474,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2580,12 +1506,12 @@
       "GUID": "205ecb",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.49996,
-        "posY": 1.59999812,
+        "posX": -37.4999542,
+        "posY": 1.099997,
         "posZ": -7.500002,
-        "rotX": 3.130977E-05,
-        "rotY": 180.000015,
-        "rotZ": 0.000477561232,
+        "rotX": 5.105918E-06,
+        "rotY": 180.0,
+        "rotZ": 7.514922E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2596,7 +1522,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2605,7 +1531,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2638,11 +1564,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.49996,
-        "posY": 1.59999681,
-        "posZ": -10.5,
-        "rotX": -0.000242642171,
-        "rotY": 180.001373,
-        "rotZ": 0.000335189,
+        "posY": 1.099997,
+        "posZ": -10.499999,
+        "rotX": -9.838054E-05,
+        "rotY": 180.001541,
+        "rotZ": -1.20492377E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2653,7 +1579,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2662,7 +1588,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2694,12 +1620,12 @@
       "GUID": "92b15b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.4999771,
-        "posY": 1.599998,
-        "posZ": 16.5000038,
-        "rotX": 2.72205689E-05,
-        "rotY": 180.021347,
-        "rotZ": 0.0004773982,
+        "posX": -37.49997,
+        "posY": 1.09999692,
+        "posZ": 16.5000076,
+        "rotX": 7.675495E-06,
+        "rotY": 180.021378,
+        "rotZ": 7.483648E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2710,7 +1636,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2719,7 +1645,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2752,11 +1678,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.5,
-        "posY": 1.59999776,
+        "posY": 1.099997,
         "posZ": -13.5000134,
-        "rotX": -7.6002776E-05,
+        "rotX": -3.921459E-05,
         "rotY": 180.0001,
-        "rotZ": 0.000467293925,
+        "rotZ": 5.834315E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2767,7 +1693,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2776,7 +1702,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2809,11 +1735,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4999466,
-        "posY": 1.59999812,
+        "posY": 1.099997,
         "posZ": -16.4999886,
-        "rotX": 3.39945946E-05,
-        "rotY": 180.000275,
-        "rotZ": 0.000478295464,
+        "rotX": 7.071849E-06,
+        "rotY": 180.00029,
+        "rotZ": 7.45861762E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2824,7 +1750,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2833,7 +1759,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2865,12 +1791,12 @@
       "GUID": "266bc7",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -37.4999847,
-        "posY": 1.50000489,
-        "posZ": -16.5000076,
-        "rotX": 2.4875264E-05,
-        "rotY": 180.021484,
-        "rotZ": 0.000122564583,
+        "posX": -37.4999924,
+        "posY": 0.999999762,
+        "posZ": -16.5000114,
+        "rotX": 9.03197E-06,
+        "rotY": 180.021378,
+        "rotZ": -2.79957858E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2881,7 +1807,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -2889,7 +1815,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2922,11 +1848,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.49993,
-        "posY": 1.59999561,
+        "posY": 1.09999716,
         "posZ": -19.5,
-        "rotX": -0.000162086973,
-        "rotY": 180.000092,
-        "rotZ": 1.1496003E-05,
+        "rotX": -6.264949E-05,
+        "rotY": 180.000015,
+        "rotZ": -0.000147543789,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2937,7 +1863,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "deed",
@@ -2946,7 +1872,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -2979,11 +1905,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -37.4998779,
-        "posY": 1.50000417,
+        "posY": 0.999999762,
         "posZ": -19.5000038,
-        "rotX": 3.24980247E-05,
-        "rotY": 179.999771,
-        "rotZ": 0.000161595352,
+        "rotX": 8.277102E-06,
+        "rotY": 179.999619,
+        "rotZ": -3.10411669E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2994,7 +1920,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171998978
+        "b": 0.171998739
       },
       "Tags": [
         "factory",
@@ -3002,7 +1928,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3034,12 +1960,12 @@
       "GUID": "7d54db",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793213,
+        "posX": -34.4999962,
+        "posY": 1.18792582,
         "posZ": 19.5,
-        "rotX": 3.78983515E-07,
-        "rotY": -0.00236025243,
-        "rotZ": -9.816695E-06,
+        "rotX": -1.61781441E-06,
+        "rotY": -0.00236302684,
+        "rotZ": 1.49412369E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3057,7 +1983,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3083,12 +2009,12 @@
       "GUID": "34704e",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.6879319,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": 16.5,
-        "rotX": -8.195609E-08,
-        "rotY": -0.0003381455,
-        "rotZ": -1.00318421E-05,
+        "rotX": -9.966886E-08,
+        "rotY": -0.0003373496,
+        "rotZ": -2.13445091E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3106,7 +2032,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3132,12 +2058,12 @@
       "GUID": "996172",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.687932,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": 13.5,
-        "rotX": 2.497673E-08,
-        "rotY": -0.000344115339,
-        "rotZ": -9.604953E-06,
+        "rotX": -1.18249872E-07,
+        "rotY": -0.0003444637,
+        "rotZ": 3.55460642E-13,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3155,7 +2081,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3181,12 +2107,12 @@
       "GUID": "6d34d1",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793225,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": 10.5,
-        "rotX": -3.397367E-07,
-        "rotY": 2.52254249E-05,
-        "rotZ": -1.003184E-05,
+        "rotX": 4.57654636E-07,
+        "rotY": 2.70466E-05,
+        "rotZ": -8.537735E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3204,7 +2130,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3230,12 +2156,12 @@
       "GUID": "12bd02",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793213,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": 7.5,
-        "rotX": 2.3026422E-07,
-        "rotY": -0.000333777629,
-        "rotZ": -9.818336E-06,
+        "rotX": -1.21621281E-06,
+        "rotY": -0.000333039963,
+        "rotZ": 1.28072486E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3253,7 +2179,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3279,12 +2205,12 @@
       "GUID": "4597e5",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793213,
+        "posX": -34.4999962,
+        "posY": 1.18792617,
         "posZ": 4.5,
-        "rotX": 2.7002406E-07,
-        "rotY": -9.166659E-05,
-        "rotZ": -1.003184E-05,
+        "rotX": 6.83439737E-07,
+        "rotY": -8.956116E-05,
+        "rotZ": -1.06721814E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3302,7 +2228,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3328,12 +2254,12 @@
       "GUID": "da90d3",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793213,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": 1.5,
-        "rotX": -1.35527273E-07,
-        "rotY": -0.00180344179,
-        "rotZ": -1.02452814E-05,
+        "rotX": 9.448167E-07,
+        "rotY": -0.00181248807,
+        "rotZ": -1.49441119E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3351,7 +2277,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3377,12 +2303,12 @@
       "GUID": "d9434b",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793178,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": -1.5,
-        "rotX": -2.202627E-07,
-        "rotY": -0.0009273766,
-        "rotZ": -1.00318439E-05,
+        "rotX": 1.88797E-07,
+        "rotY": -0.0009260131,
+        "rotZ": -6.403372E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3400,7 +2326,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3426,12 +2352,12 @@
       "GUID": "a07a0d",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.687932,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": -4.5,
-        "rotX": -5.960594E-07,
-        "rotY": 0.000108967339,
-        "rotZ": -9.818398E-06,
+        "rotX": 4.37979878E-07,
+        "rotY": 0.000109624831,
+        "rotZ": 2.1344438E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3449,7 +2375,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3475,12 +2401,12 @@
       "GUID": "533b17",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793213,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": -7.5,
-        "rotX": -1.304281E-07,
-        "rotY": 0.00154075481,
-        "rotZ": -9.818389E-06,
+        "rotX": 8.27976351E-07,
+        "rotY": 0.00154259207,
+        "rotZ": 2.005095E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3498,7 +2424,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3524,12 +2450,12 @@
       "GUID": "31560e",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.687932,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": -10.5,
-        "rotX": -6.878095E-08,
-        "rotY": -0.000443275232,
-        "rotZ": -1.00318439E-05,
+        "rotX": 9.443857E-07,
+        "rotY": -0.000443106022,
+        "rotZ": 2.13437E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3547,7 +2473,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3573,12 +2499,12 @@
       "GUID": "683d47",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.687932,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": -13.5,
-        "rotX": -3.58685753E-07,
-        "rotY": 0.000104562365,
-        "rotZ": -1.003184E-05,
+        "rotX": 1.96157217E-07,
+        "rotY": 0.00010468837,
+        "rotZ": 2.13444153E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3596,7 +2522,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3622,12 +2548,12 @@
       "GUID": "8222bb",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.68793178,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": -16.5,
-        "rotX": -1.32191218E-07,
-        "rotY": 0.00121567945,
-        "rotZ": -1.00318357E-05,
+        "rotX": 2.24889064E-07,
+        "rotY": 0.00121648982,
+        "rotZ": 4.268963E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3645,7 +2571,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3671,12 +2597,12 @@
       "GUID": "23441f",
       "Name": "Figurine_Custom",
       "Transform": {
-        "posX": -34.5,
-        "posY": 1.687932,
+        "posX": -34.4999962,
+        "posY": 1.187926,
         "posZ": -19.5,
-        "rotX": -1.5426177E-07,
-        "rotY": 0.00116676826,
-        "rotZ": -1.00309908E-05,
+        "rotX": 5.98240831E-07,
+        "rotY": 0.00116670574,
+        "rotZ": -4.260293E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3694,7 +2620,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3720,12 +2646,12 @@
       "GUID": "389dbe",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.499994,
-        "posZ": 7.0,
-        "rotX": -3.950706E-09,
-        "rotY": 179.999878,
-        "rotZ": 9.998665E-06,
+        "posX": 7.0,
+        "posY": 1.00000012,
+        "posZ": -24.0,
+        "rotX": 1.6313752E-06,
+        "rotY": 89.99726,
+        "rotZ": -1.44677642E-05,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3734,9 +2660,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1819264,
-        "g": 0.290939659,
-        "b": 0.176895022
+        "r": 0.181926161,
+        "g": 0.2909394,
+        "b": 0.176894784
       },
       "Tags": [
         "deed",
@@ -3744,7 +2670,7 @@
         "spaceport"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3776,12 +2702,12 @@
       "GUID": "9fbdea",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.49999416,
-        "posZ": 11.0,
-        "rotX": 1.02301312E-09,
-        "rotY": 180.0009,
-        "rotZ": 1.00512807E-05,
+        "posX": 3.0,
+        "posY": 1.00000024,
+        "posZ": -24.0,
+        "rotX": -7.700017E-08,
+        "rotY": 90.00063,
+        "rotZ": 1.97718649E-07,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -3799,7 +2725,7 @@
         "scoring"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3831,12 +2757,12 @@
       "GUID": "6e1bc8",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.49999416,
-        "posZ": 13.0,
-        "rotX": 1.53370564E-07,
-        "rotY": 180.000732,
-        "rotZ": 1.00742254E-05,
+        "posX": 1.0,
+        "posY": 1.00000024,
+        "posZ": -24.0,
+        "rotX": 2.05676415E-07,
+        "rotY": 90.00063,
+        "rotZ": 1.8910545E-07,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -3854,7 +2780,7 @@
         "scoring"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3886,12 +2812,12 @@
       "GUID": "cf8f57",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.49999416,
-        "posZ": 15.0,
-        "rotX": -4.37387762E-08,
-        "rotY": 180.000885,
-        "rotZ": 9.946039E-06,
+        "posX": -0.99999994,
+        "posY": 1.00000024,
+        "posZ": -24.0,
+        "rotX": -2.135773E-06,
+        "rotY": 90.00063,
+        "rotZ": 1.11810778E-06,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -3909,7 +2835,7 @@
         "scoring"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3941,12 +2867,12 @@
       "GUID": "893ecc",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.49999416,
-        "posZ": 17.0,
-        "rotX": -1.66678138E-08,
-        "rotY": 180.001648,
-        "rotZ": 9.92181049E-06,
+        "posX": -3.0,
+        "posY": 1.00000024,
+        "posZ": -24.0,
+        "rotX": -2.92624271E-08,
+        "rotY": 90.00063,
+        "rotZ": 1.727357E-07,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -3964,7 +2890,7 @@
         "scoring"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -3996,12 +2922,12 @@
       "GUID": "042aed",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.49999416,
-        "posZ": 19.0,
-        "rotX": 4.87883653E-08,
-        "rotY": 180.001343,
-        "rotZ": 9.992147E-06,
+        "posX": -5.0,
+        "posY": 1.00000024,
+        "posZ": -24.0,
+        "rotX": -2.16336844E-06,
+        "rotY": 90.00062,
+        "rotZ": 1.49567279E-06,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -4019,7 +2945,7 @@
         "scoring"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -4051,12 +2977,12 @@
       "GUID": "0d9c8e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.49999416,
-        "posZ": 9.0,
-        "rotX": -1.7408194E-08,
-        "rotY": 180.00061,
-        "rotZ": 1.00906063E-05,
+        "posX": 5.0,
+        "posY": 1.00000024,
+        "posZ": -24.0,
+        "rotX": 1.80961877E-08,
+        "rotY": 90.00062,
+        "rotZ": 7.077569E-08,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -4074,7 +3000,7 @@
         "scoring"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -4098,7 +3024,7 @@
           "Stretch": true
         }
       },
-      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"credits.67ebb5.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"credits.67ebb5.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/credits\")\r\n\nend)\n__bundle_register(\"lua/components/credits\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/string_to_num\")\r\nrequire(\"lua/components/value_tiles/set_tile_value\")\r\n\r\nlocal grp = 1\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal(), grp)\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal(), grp)\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/set_tile_value\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction setTileValue(val, grp)\r\n  self.value = val\r\n  self.value_flags = grp\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/string_to_num\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"credits.67ebb5.lua\")",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"credits.0d9c8e.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"credits.0d9c8e.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/credits\")\r\n\nend)\n__bundle_register(\"lua/components/credits\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/string_to_num\")\r\nrequire(\"lua/components/value_tiles/set_tile_value\")\r\n\r\nlocal grp = 1\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal(), grp)\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal(), grp)\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/set_tile_value\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction setTileValue(val, grp)\r\n  self.value = val\r\n  self.value_flags = grp\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/string_to_num\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"credits.0d9c8e.lua\")",
       "LuaScriptState": "",
       "XmlUI": ""
     },
@@ -4106,15 +3032,15 @@
       "GUID": "072475",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": 29.1604881,
-        "posY": -0.7046962,
-        "posZ": -47.69682,
+        "posX": 12.33,
+        "posY": 2.5,
+        "posZ": -45.5006676,
         "rotX": 0.0,
         "rotY": 0.0,
         "rotZ": 0.0,
-        "scaleX": 28.93,
-        "scaleY": 4.0239687,
-        "scaleZ": 2.44085646
+        "scaleX": 24.0,
+        "scaleY": 3.0,
+        "scaleZ": 3.0
       },
       "Nickname": "",
       "Description": "",
@@ -4147,15 +3073,15 @@
       "GUID": "63dfa5",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": 65.6476,
-        "posY": -0.6745405,
-        "posZ": 0.0323087648,
+        "posX": 37.0,
+        "posY": 2.5,
+        "posZ": -45.5,
         "rotX": 0.0,
-        "rotY": 269.999817,
+        "rotY": 0.0,
         "rotZ": 0.0,
-        "scaleX": 28.3139057,
-        "scaleY": 4.0239687,
-        "scaleZ": 2.62581134
+        "scaleX": 24.0,
+        "scaleY": 3.0,
+        "scaleZ": 3.0
       },
       "Nickname": "",
       "Description": "",
@@ -4188,15 +3114,15 @@
       "GUID": "4c8dd9",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": -65.68599,
-        "posY": -0.8017483,
-        "posZ": 0.0364878848,
+        "posX": -36.99691,
+        "posY": 2.5,
+        "posZ": -45.5,
         "rotX": 0.0,
-        "rotY": 89.99977,
+        "rotY": 0.0,
         "rotZ": 0.0,
-        "scaleX": 29.9865341,
-        "scaleY": 4.0239687,
-        "scaleZ": 2.6807034
+        "scaleX": 24.0,
+        "scaleY": 3.0,
+        "scaleZ": 3.0
       },
       "Nickname": "",
       "Description": "",
@@ -4226,185 +3152,15 @@
       "XmlUI": ""
     },
     {
-      "GUID": "34d565",
-      "Name": "Deck",
-      "Transform": {
-        "posX": -59.0,
-        "posY": -2.730741,
-        "posZ": 2.18311084E-06,
-        "rotX": -4.94781852E-06,
-        "rotY": 270.000031,
-        "rotZ": 1.13083543E-05,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "SidewaysCard": false,
-      "DeckIDs": [
-        500,
-        400
-      ],
-      "CustomDeck": {
-        "5": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        },
-        "4": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ContainedObjects": [
-        {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -59.0,
-            "posY": -2.74768019,
-            "posZ": 2.00000072,
-            "rotX": 7.25163363E-06,
-            "rotY": 270.000031,
-            "rotZ": 1.73577446E-05,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 500,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "5": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "25cd30",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -59.4999962,
-            "posY": -2.71365857,
-            "posZ": 1.50000072,
-            "rotX": 4.392905E-05,
-            "rotY": 270.0,
-            "rotZ": 2.73970618E-05,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 400,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "4": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
-    },
-    {
       "GUID": "434942",
       "Name": "Deck",
       "Transform": {
-        "posX": 29.5,
-        "posY": -2.73074675,
-        "posZ": -40.5,
-        "rotX": 1.3272901E-05,
+        "posX": 12.5,
+        "posY": 1.03055871,
+        "posZ": -39.5,
+        "rotX": 6.719015E-08,
         "rotY": 180.0,
-        "rotZ": -1.41812752E-05,
+        "rotZ": -7.190925E-08,
         "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 3.0
@@ -4418,7 +3174,7 @@
         "b": 0.713235259
       },
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -4569,12 +3325,12 @@
       "GUID": "0def1c",
       "Name": "Deck",
       "Transform": {
-        "posX": 58.0000954,
-        "posY": -2.73073864,
-        "posZ": 0.000105300656,
-        "rotX": -2.31649574E-06,
-        "rotY": 89.9999847,
-        "rotZ": -1.11615036E-05,
+        "posX": 37.5,
+        "posY": 1.03055871,
+        "posZ": -39.5,
+        "rotX": 1.87461691E-08,
+        "rotY": 179.9994,
+        "rotZ": -4.29907E-08,
         "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 3.0
@@ -4588,7 +3344,7 @@
         "b": 0.713235259
       },
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -4739,12 +3495,12 @@
       "GUID": "d136ea",
       "Name": "Deck",
       "Transform": {
-        "posX": -29.5,
-        "posY": -2.73074484,
-        "posZ": -40.5,
-        "rotX": 1.16056135E-05,
-        "rotY": 180.024521,
-        "rotZ": -1.39419387E-06,
+        "posX": -12.5,
+        "posY": 1.03055871,
+        "posZ": -39.5,
+        "rotX": -2.20374581E-08,
+        "rotY": 180.031891,
+        "rotZ": -6.291826E-08,
         "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 3.0
@@ -4758,7 +3514,7 @@
         "b": 0.713235259
       },
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -4906,74 +3662,15 @@
       ]
     },
     {
-      "GUID": "85edc3",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": -2.87109373E-07,
-        "posY": 1.5,
-        "posZ": -6.82412E-14,
-        "rotX": -3.256888E-12,
-        "rotY": 180.0,
-        "rotZ": 1.00179122E-05,
-        "scaleX": 45.75,
-        "scaleY": 45.75,
-        "scaleZ": 45.75
-      },
-      "Nickname": "Custom Mat",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": false,
-      "Autoraise": false,
-      "Sticky": false,
-      "Tooltip": false,
-      "GridProjection": true,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomMesh": {
-        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1327949941516240949/BF5F515961C9107596B5CD33BDE712F793B40063/",
-        "DiffuseURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/board_44x26.jpg",
-        "NormalURL": "",
-        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1327949941516241046/38B7DBDC443FDA8E294366B258B8DCBB969DF1C5/",
-        "Convex": true,
-        "MaterialIndex": 3,
-        "TypeIndex": 4,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "SpecularIntensity": 0.0,
-          "SpecularSharpness": 2.0,
-          "FresnelStrength": 0.0
-        },
-        "CastShadows": false
-      },
-      "LuaScript": "function onChat( message, player )\r\n\tif player.host then\r\n\t\tif message == \"matlock\" then\r\n\t\t\tself.interactable = not self.interactable;\r\n\t\t\t\r\n\t\t\tif self.interactable then\r\n\t\t\t\tprintToColor( \"Mat can now be edited.\", player.color, {r=0, g=1, b=0} );\r\n\t\t\telse\r\n\t\t\t\tprintToColor( \"Mat is now safe from editing.\", player.color, {r=0, g=1, b=0} );\r\n\t\t\tend\r\n\t\tend\r\n\tend\r\nend",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
       "GUID": "f9b7ce",
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5000153,
-        "posY": 1.4500072,
+        "posY": 0.950000167,
         "posZ": 19.5000057,
-        "rotX": -2.87482067E-07,
+        "rotX": 3.17995955E-07,
         "rotY": 179.9854,
-        "rotZ": 1.0170058E-05,
+        "rotZ": 4.929394E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4982,9 +3679,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429989,
-        "g": 0.2309989,
-        "b": 0.08999913
+        "r": 0.442998648,
+        "g": 0.230998635,
+        "b": 0.08999891
       },
       "Tags": [
         "good",
@@ -4992,7 +3689,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5028,11 +3725,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5,
-        "posY": 1.4500072,
+        "posY": 0.950000167,
         "posZ": 16.5,
-        "rotX": -2.093288E-07,
+        "rotX": 2.747903E-07,
         "rotY": 179.988861,
-        "rotZ": 1.02462573E-05,
+        "rotZ": -1.33678327E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5041,9 +3738,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429989,
-        "g": 0.2309989,
-        "b": 0.08999913
+        "r": 0.442998648,
+        "g": 0.230998635,
+        "b": 0.08999891
       },
       "Tags": [
         "good",
@@ -5051,7 +3748,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5087,11 +3784,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5001068,
-        "posY": 1.45000732,
+        "posY": 0.950000167,
         "posZ": 13.5000162,
-        "rotX": 4.72822279E-07,
+        "rotX": 1.78158734E-06,
         "rotY": 179.978348,
-        "rotZ": 9.987899E-06,
+        "rotZ": -2.445937E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5100,9 +3797,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5110,7 +3807,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5146,11 +3843,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5000229,
-        "posY": 1.4500072,
+        "posY": 0.950000167,
         "posZ": 10.499959,
-        "rotX": -1.43433226E-07,
+        "rotX": -9.102774E-07,
         "rotY": 179.984787,
-        "rotZ": 9.947865E-06,
+        "rotZ": 8.175979E-08,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5159,9 +3856,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5169,7 +3866,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5205,11 +3902,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5000153,
-        "posY": 1.4500072,
+        "posY": 0.950000167,
         "posZ": 7.500005,
-        "rotX": 2.9709355E-07,
+        "rotX": 3.38857546E-07,
         "rotY": 179.985458,
-        "rotZ": 1.01988362E-05,
+        "rotZ": -6.102933E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5218,9 +3915,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429989,
-        "g": 0.2309989,
-        "b": 0.08999913
+        "r": 0.442998648,
+        "g": 0.230998635,
+        "b": 0.08999891
       },
       "Tags": [
         "good",
@@ -5228,7 +3925,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5264,11 +3961,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.50002,
-        "posY": 1.4500072,
+        "posY": 0.950000167,
         "posZ": 4.50000334,
-        "rotX": -2.5577657E-07,
+        "rotX": -9.559733E-08,
         "rotY": 179.989792,
-        "rotZ": 1.02074337E-05,
+        "rotZ": -9.994423E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5277,9 +3974,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5287,7 +3984,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5323,11 +4020,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5001373,
-        "posY": 1.45000732,
-        "posZ": 1.50001466,
-        "rotX": 5.1025097E-07,
+        "posY": 0.9500003,
+        "posZ": 1.50001454,
+        "rotX": 1.38534531E-07,
         "rotY": 179.972687,
-        "rotZ": 9.748912E-06,
+        "rotZ": -1.71631461E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5336,9 +4033,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5346,7 +4043,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5382,11 +4079,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5,
-        "posY": 1.45000732,
+        "posY": 0.9500003,
         "posZ": -1.50000131,
-        "rotX": -2.19292716E-07,
+        "rotX": -7.790419E-07,
         "rotY": 179.974319,
-        "rotZ": 1.04113415E-05,
+        "rotZ": -1.26585164E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5395,9 +4092,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5405,7 +4102,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5441,11 +4138,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5000229,
-        "posY": 1.45000732,
+        "posY": 0.950000048,
         "posZ": -4.49999571,
-        "rotX": -9.161637E-08,
+        "rotX": -1.21993889E-06,
         "rotY": 179.977,
-        "rotZ": 9.965639E-06,
+        "rotZ": 3.1850866E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5454,9 +4151,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5464,7 +4161,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5500,11 +4197,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.4999847,
-        "posY": 1.45000732,
+        "posY": 0.9500003,
         "posZ": -7.499995,
-        "rotX": -3.84619376E-08,
+        "rotX": -1.256699E-06,
         "rotY": 180.024734,
-        "rotZ": 9.977981E-06,
+        "rotZ": -1.231976E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5513,9 +4210,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5523,7 +4220,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5559,11 +4256,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.50001,
-        "posY": 1.4500072,
+        "posY": 0.950000167,
         "posZ": -10.4999971,
-        "rotX": -1.16588261E-07,
+        "rotX": 3.214728E-08,
         "rotY": 180.013916,
-        "rotZ": 9.954274E-06,
+        "rotZ": -6.8232697E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5572,9 +4269,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5582,7 +4279,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5618,11 +4315,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.50002,
-        "posY": 1.45000732,
+        "posY": 0.950000167,
         "posZ": -13.4999981,
-        "rotX": 1.41334118E-08,
+        "rotX": 3.69108455E-09,
         "rotY": 180.0117,
-        "rotZ": 1.01018486E-05,
+        "rotZ": 1.04615026E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5631,9 +4328,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5641,7 +4338,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5677,11 +4374,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.5000229,
-        "posY": 1.45000732,
+        "posY": 0.950000167,
         "posZ": -16.4999924,
-        "rotX": 4.742833E-07,
+        "rotX": -1.83983971E-07,
         "rotY": 180.024887,
-        "rotZ": 9.858277E-06,
+        "rotZ": 6.141093E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5690,9 +4387,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5700,7 +4397,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5736,11 +4433,11 @@
       "Name": "Custom_Tile_Stack",
       "Transform": {
         "posX": -40.50002,
-        "posY": 1.45000732,
+        "posY": 0.950000167,
         "posZ": -19.4999924,
-        "rotX": 1.30288853E-07,
+        "rotX": -9.948752E-07,
         "rotY": 180.0028,
-        "rotZ": 1.02791646E-05,
+        "rotZ": 3.78221728E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5749,9 +4446,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442998916,
-        "g": 0.230998933,
-        "b": 0.08999915
+        "r": 0.442998677,
+        "g": 0.230998665,
+        "b": 0.08999894
       },
       "Tags": [
         "good",
@@ -5759,7 +4456,7 @@
         "token"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5794,12 +4491,12 @@
       "GUID": "e78408",
       "Name": "Custom_Assetbundle_Bag",
       "Transform": {
-        "posX": -12.4999981,
-        "posY": 1.77640879,
-        "posZ": 29.5000019,
-        "rotX": 5.08449848E-05,
-        "rotY": 0.002571566,
-        "rotZ": -2.15986383E-05,
+        "posX": -43.5,
+        "posY": 1.00000048,
+        "posZ": 28.5,
+        "rotX": 1.70565454E-06,
+        "rotY": 0.00257278024,
+        "rotZ": 3.793155E-05,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7877,12 +6574,12 @@
       "GUID": "340535",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 35.0,
-        "posY": 1.49999416,
-        "posZ": 21.0,
-        "rotX": -1.14096013E-08,
-        "rotY": 180.001678,
-        "rotZ": 9.948222E-06,
+        "posX": -7.0,
+        "posY": 1.00000024,
+        "posZ": -24.0,
+        "rotX": -3.988892E-08,
+        "rotY": 90.00062,
+        "rotZ": 1.21578779E-07,
         "scaleX": 0.5,
         "scaleY": 1.0,
         "scaleZ": 0.5
@@ -7900,7 +6597,7 @@
         "scoring"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -7932,12 +6629,12 @@
       "GUID": "ff3fa3",
       "Name": "Custom_Assetbundle_Infinite_Bag",
       "Transform": {
-        "posX": 2.50000048,
-        "posY": 2.52640986,
-        "posZ": 29.5,
-        "rotX": 0.0005970202,
-        "rotY": -0.0006069095,
-        "rotZ": -4.40402218E-05,
+        "posX": 3.00000072,
+        "posY": 1.74999976,
+        "posZ": -29.0,
+        "rotX": -5.12700572E-05,
+        "rotY": 315.0,
+        "rotZ": -9.097892E-06,
         "scaleX": 1.25,
         "scaleY": 0.75,
         "scaleZ": 0.25
@@ -8086,12 +6783,12 @@
       "GUID": "5afb9c",
       "Name": "Custom_Assetbundle_Infinite_Bag",
       "Transform": {
-        "posX": -2.49999952,
-        "posY": 2.52644157,
-        "posZ": 29.4999981,
-        "rotX": -0.00013693962,
-        "rotY": -0.004882902,
-        "rotZ": -2.31840313E-05,
+        "posX": 1.96974725E-07,
+        "posY": 1.75,
+        "posZ": -30.0,
+        "rotX": -4.635558E-05,
+        "rotY": -0.0048640985,
+        "rotZ": -1.11941054E-05,
         "scaleX": 1.25,
         "scaleY": 0.75,
         "scaleZ": 0.25
@@ -8134,12 +6831,12 @@
           "GUID": "74d72d",
           "Name": "Custom_Token",
           "Transform": {
-            "posX": -7.5,
-            "posY": 3.3428514,
-            "posZ": 29.5,
-            "rotX": 0.0368382037,
-            "rotY": 119.9842,
-            "rotZ": 179.946243,
+            "posX": 9.45040956E-05,
+            "posY": 2.58447766,
+            "posZ": -30.01605,
+            "rotX": 3.04095173,
+            "rotY": 181.1443,
+            "rotZ": 180.0374,
             "scaleX": 0.5,
             "scaleY": 1.0,
             "scaleZ": 0.5
@@ -8240,12 +6937,12 @@
       "GUID": "15331e",
       "Name": "Custom_Assetbundle_Infinite_Bag",
       "Transform": {
-        "posX": -7.49999952,
-        "posY": 2.526417,
-        "posZ": 29.4999981,
-        "rotX": -0.000190430917,
-        "rotY": -0.0005676994,
-        "rotZ": -4.229006E-05,
+        "posX": -2.99999976,
+        "posY": 1.75,
+        "posZ": -29.0000038,
+        "rotX": -5.30422476E-05,
+        "rotY": 44.99998,
+        "rotZ": -1.61373137E-05,
         "scaleX": 1.25,
         "scaleY": 0.75,
         "scaleZ": 0.25
@@ -8394,12 +7091,12 @@
       "GUID": "15ea2d",
       "Name": "Custom_Assetbundle_Bag",
       "Transform": {
-        "posX": 12.5,
-        "posY": 3.02641439,
-        "posZ": 29.4999981,
-        "rotX": -0.000106026389,
-        "rotY": 0.00559802633,
-        "rotZ": -3.4202742E-06,
+        "posX": 43.0,
+        "posY": 2.25,
+        "posZ": 29.0,
+        "rotX": 2.13428871E-06,
+        "rotY": 0.005598263,
+        "rotZ": -2.28747786E-06,
         "scaleX": 1.25,
         "scaleY": 1.25,
         "scaleZ": 1.25
@@ -11435,12 +10132,12 @@
       "GUID": "f112b6",
       "Name": "Custom_Assetbundle_Infinite_Bag",
       "Transform": {
-        "posX": 7.49999952,
-        "posY": 3.026411,
-        "posZ": 29.5,
-        "rotX": 5.5174487E-06,
-        "rotY": 0.00545567973,
-        "rotZ": 1.70757339E-05,
+        "posX": -1.30068338E-06,
+        "posY": 2.24999952,
+        "posZ": -27.9994049,
+        "rotX": 1.96405272E-05,
+        "rotY": -0.000117786505,
+        "rotZ": 2.01656421E-05,
         "scaleX": 1.25,
         "scaleY": 1.25,
         "scaleZ": 1.25
@@ -11586,103 +10283,15 @@
       ]
     },
     {
-      "GUID": "a06302",
-      "Name": "LayoutZone",
-      "Transform": {
-        "posX": 0.218085289,
-        "posY": 8.776421,
-        "posZ": 35.4683571,
-        "rotX": 0.0,
-        "rotY": 0.333432376,
-        "rotZ": 0.0,
-        "scaleX": 24.0218868,
-        "scaleY": 14.0,
-        "scaleZ": 5.039292
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 0.509803951
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LayoutZone": {
-        "Options": {
-          "Direction": 0,
-          "MeldDirection": 0,
-          "NewObjectFacing": 1,
-          "TriggerForFaceUp": true,
-          "TriggerForFaceDown": true,
-          "TriggerForNonCards": false,
-          "AllowSwapping": true,
-          "MaxObjectsPerNewGroup": 14,
-          "MaxObjectsPerGroup": 0,
-          "MeldSort": 3,
-          "MeldReverseSort": false,
-          "MeldSortExisting": true,
-          "StickyCards": false,
-          "HorizonalSpread": 1.57778692,
-          "VerticalSpread": 0.0,
-          "HorizontalGroupPadding": 1.0,
-          "VerticalGroupPadding": 1.0,
-          "SplitAddedDecks": true,
-          "CombineIntoDecks": false,
-          "CardsPerDeck": 0,
-          "AlternateDirection": false,
-          "Randomize": false,
-          "InstantRefill": false,
-          "ManualOnly": false
-        },
-        "GroupsInZone": [
-          [
-            "2eb919",
-            "4172e1",
-            "d2119d",
-            "b9c843",
-            "770aae",
-            "dabbf8",
-            "dac0e2",
-            "b019ff",
-            "7cb6c1",
-            "9d6127",
-            "06a41f",
-            "d43e9d",
-            "004f0a",
-            "429ca0"
-          ],
-          [],
-          []
-        ]
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
       "GUID": "06a41f",
       "Name": "Card",
       "Transform": {
-        "posX": 5.602285,
-        "posY": 1.8177985,
-        "posZ": 35.4684219,
-        "rotX": -0.000118696633,
-        "rotY": 180.33374,
-        "rotZ": 0.984235,
+        "posX": 21.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": -2.48394834E-08,
+        "rotY": 180.009125,
+        "rotZ": -2.84056334E-09,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11700,7 +10309,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 1,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -11733,12 +10342,12 @@
       "GUID": "429ca0",
       "Name": "Card",
       "Transform": {
-        "posX": 10.3357363,
-        "posY": 1.81786144,
-        "posZ": 35.44087,
-        "rotX": -4.62353019E-05,
-        "rotY": 180.336731,
-        "rotZ": 0.9865633,
+        "posX": 39.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": -7.19124627E-09,
+        "rotY": 180.0333,
+        "rotZ": -6.290078E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11756,7 +10365,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 14,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -11789,12 +10398,12 @@
       "GUID": "9d6127",
       "Name": "Card",
       "Transform": {
-        "posX": 4.02436543,
-        "posY": 1.81779921,
-        "posZ": 35.4776077,
-        "rotX": -1.46859074E-05,
-        "rotY": 180.336487,
-        "rotZ": 0.984221,
+        "posX": 15.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": 3.64937214E-09,
+        "rotY": 180.0138,
+        "rotZ": -1.813507E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11812,7 +10421,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 18,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -11845,12 +10454,12 @@
       "GUID": "004f0a",
       "Name": "Card",
       "Transform": {
-        "posX": 8.75807,
-        "posY": 1.8178308,
-        "posZ": 35.45006,
-        "rotX": -5.28245364E-05,
-        "rotY": 180.33374,
-        "rotZ": 0.985484362,
+        "posX": 33.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": 1.829437E-11,
+        "rotY": 180.007858,
+        "rotZ": -5.35642251E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11868,7 +10477,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 6,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -11901,12 +10510,12 @@
       "GUID": "dabbf8",
       "Name": "Card",
       "Transform": {
-        "posX": -2.28633428,
-        "posY": 1.81779242,
-        "posZ": 35.5143242,
-        "rotX": -0.00011074503,
-        "rotY": 180.333237,
-        "rotZ": 0.9841517,
+        "posX": -9.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": 5.95333871E-09,
+        "rotY": 179.996292,
+        "rotZ": -1.40631711E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11924,7 +10533,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 17,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -11957,12 +10566,12 @@
       "GUID": "7cb6c1",
       "Name": "Card",
       "Transform": {
-        "posX": 2.446657,
-        "posY": 1.81778979,
-        "posZ": 35.4867821,
-        "rotX": -0.000134667367,
-        "rotY": 180.336456,
-        "rotZ": 0.983725667,
+        "posX": 9.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": 5.4158904E-09,
+        "rotY": 179.99202,
+        "rotZ": 1.06904858E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11980,7 +10589,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 24,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12013,12 +10622,12 @@
       "GUID": "d43e9d",
       "Name": "Card",
       "Transform": {
-        "posX": 7.17975044,
-        "posY": 1.81782925,
-        "posZ": 35.45922,
-        "rotX": -8.79057552E-05,
-        "rotY": 180.3327,
-        "rotZ": 0.985075,
+        "posX": 27.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": -5.806727E-09,
+        "rotY": 180.00798,
+        "rotZ": -4.81849973E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12036,7 +10645,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 9,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12069,12 +10678,12 @@
       "GUID": "dac0e2",
       "Name": "Card",
       "Transform": {
-        "posX": -0.708909631,
-        "posY": 1.81779134,
-        "posZ": 35.505146,
-        "rotX": -0.000144939957,
-        "rotY": 180.334824,
-        "rotZ": 0.9839742,
+        "posX": -3.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": -8.938263E-09,
+        "rotY": 179.961487,
+        "rotZ": -1.317246E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12092,7 +10701,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 25,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12125,12 +10734,12 @@
       "GUID": "2eb919",
       "Name": "Card",
       "Transform": {
-        "posX": -10.1755733,
-        "posY": 1.79016221,
-        "posZ": 35.56021,
-        "rotX": 0.003840561,
-        "rotY": 180.3333,
-        "rotZ": -0.0007267094,
+        "posX": -39.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": -1.103968E-08,
+        "rotY": 180.002625,
+        "rotZ": -6.536398E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12148,7 +10757,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 12,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12181,12 +10790,12 @@
       "GUID": "4172e1",
       "Name": "Card",
       "Transform": {
-        "posX": -8.597352,
-        "posY": 1.81735063,
-        "posZ": 35.5511,
-        "rotX": 0.0008016299,
-        "rotY": 180.332138,
-        "rotZ": 0.9675516,
+        "posX": -33.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": 1.40906939E-08,
+        "rotY": 180.017365,
+        "rotZ": -5.93721561E-09,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12204,7 +10813,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 23,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12237,12 +10846,12 @@
       "GUID": "b019ff",
       "Name": "Card",
       "Transform": {
-        "posX": 0.8687786,
-        "posY": 1.81780362,
-        "posZ": 35.49597,
-        "rotX": -0.000157874761,
-        "rotY": 180.333832,
-        "rotZ": 0.984314,
+        "posX": 3.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": -8.055221E-09,
+        "rotY": 179.952484,
+        "rotZ": -7.459029E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12260,7 +10869,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 19,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12293,12 +10902,12 @@
       "GUID": "d2119d",
       "Name": "Card",
       "Transform": {
-        "posX": -7.01915455,
-        "posY": 1.81779242,
-        "posZ": 35.5418549,
-        "rotX": 0.0003558106,
-        "rotY": 180.330841,
-        "rotZ": 0.983857155,
+        "posX": -27.0,
+        "posY": 1.013605,
+        "posZ": 35.0,
+        "rotX": 1.89400833E-08,
+        "rotY": 179.9833,
+        "rotZ": -1.68328469E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12316,7 +10925,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 20,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12349,12 +10958,12 @@
       "GUID": "b9c843",
       "Name": "Card",
       "Transform": {
-        "posX": -5.44184446,
-        "posY": 1.81779516,
-        "posZ": 35.5326462,
-        "rotX": 0.0002641577,
-        "rotY": 180.333969,
-        "rotZ": 0.983962059,
+        "posX": -21.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": 1.1495972E-09,
+        "rotY": 179.987381,
+        "rotZ": 2.39341649E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12372,7 +10981,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 21,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12405,12 +11014,12 @@
       "GUID": "770aae",
       "Name": "Card",
       "Transform": {
-        "posX": -3.86414862,
-        "posY": 1.81779373,
-        "posZ": 35.5235,
-        "rotX": -0.000194937835,
-        "rotY": 180.333481,
-        "rotZ": 0.9840128,
+        "posX": -15.0,
+        "posY": 1.01360488,
+        "posZ": 35.0,
+        "rotX": 1.21334764E-08,
+        "rotY": 179.996277,
+        "rotZ": -1.642897E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -12428,7 +11037,7 @@
         "culture"
       ],
       "LayoutGroupSortIndex": 22,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12461,12 +11070,12 @@
       "GUID": "63b39b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -38.0,
-        "posY": -2.7614255,
-        "posZ": -37.0,
-        "rotX": -8.152704E-06,
-        "rotY": 4.32312959E-07,
-        "rotZ": -1.09787436E-06,
+        "posX": -12.5,
+        "posY": 0.999881744,
+        "posZ": -33.5,
+        "rotX": -1.35182574E-07,
+        "rotY": 1.710582E-07,
+        "rotZ": 3.05864546E-07,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -12476,14 +11085,14 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.09999991,
-        "b": 0.0939999
+        "g": 0.0999994054,
+        "b": 0.09399941
       },
       "Tags": [
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12513,12 +11122,12 @@
       "GUID": "2f8c98",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -55.5,
-        "posY": -2.761427,
-        "posZ": 8.499554,
-        "rotX": 7.22425557E-06,
-        "rotY": 89.99954,
-        "rotZ": -1.13907754E-05,
+        "posX": -36.5,
+        "posY": 0.9998822,
+        "posZ": -33.5,
+        "rotX": 1.9320423E-07,
+        "rotY": -0.0006547851,
+        "rotZ": 8.919582E-08,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -12529,14 +11138,14 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719999
+        "b": 0.171999425
       },
       "Tags": [
         "player",
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12566,12 +11175,12 @@
       "GUID": "3da2d6",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 20.9999981,
-        "posY": -2.761427,
-        "posZ": -37.0,
-        "rotX": -5.730095E-06,
-        "rotY": 0.0158038866,
-        "rotZ": 1.2898372E-06,
+        "posX": 12.5,
+        "posY": 0.999881744,
+        "posZ": -33.5,
+        "rotX": 1.07571407E-09,
+        "rotY": 0.0158036575,
+        "rotZ": -6.17280946E-08,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -12580,15 +11189,15 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191999912,
+        "r": 0.191999435,
         "g": 0.701,
-        "b": 0.1679999
+        "b": 0.167999417
       },
       "Tags": [
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12618,12 +11227,12 @@
       "GUID": "f17c87",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 54.5079536,
-        "posY": -2.761423,
-        "posZ": -8.491734,
-        "rotX": -9.583569E-05,
-        "rotY": 270.000549,
-        "rotZ": 8.98654544E-05,
+        "posX": 37.5,
+        "posY": 0.999882,
+        "posZ": -33.5,
+        "rotX": -1.68221248E-07,
+        "rotY": 0.0007342641,
+        "rotZ": 1.74364047E-07,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -12633,14 +11242,14 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.3919999,
-        "b": 0.112999894
+        "g": 0.3919994,
+        "b": 0.112999387
       },
       "Tags": [
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -12665,6 +11274,382 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": ""
+    },
+    {
+      "GUID": "fdf9e3",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.0,
+        "posY": 0.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.249999523,
+        "g": 0.249999523,
+        "b": 0.249999523
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": true,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_shared.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "7df0c6",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.0,
+        "posY": 0.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.249999911,
+        "g": 0.249999911,
+        "b": 0.249999911
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": true,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_main.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "332a2b",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.0,
+        "posY": 0.0,
+        "posZ": 0.0,
+        "rotX": 359.93,
+        "rotY": 0.0536737554,
+        "rotZ": 359.9385,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_board.obj",
+        "DiffuseURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/board_44x26.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_board_collider.obj",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 4,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "8c8f95",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.0,
+        "posY": 0.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.249999523,
+        "g": 0.249999523,
+        "b": 0.249999523
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": true,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_players.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "2ea145",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -36.5,
+        "posY": 1.03055871,
+        "posZ": -39.5,
+        "rotX": 1.69244743E-08,
+        "rotY": 179.999313,
+        "rotZ": -1.05629915E-07,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        500,
+        400
+      ],
+      "CustomDeck": {
+        "5": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        },
+        "4": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": 3.352749E-08,
+            "rotY": 179.999313,
+            "rotZ": 2.27378845E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 500,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "25cd30",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.0541904,
+            "posZ": -39.5,
+            "rotX": -1.40147911E-08,
+            "rotY": 179.999313,
+            "rotZ": 8.79553264E-10,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 400,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "4": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
     }
   ]
 }
