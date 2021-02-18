@@ -1,0 +1,16 @@
+# OBJ written from C:\Users\Joe\Desktop\Tabletop Simulator\merchant_of_venus\assets\_models\table_board.obj
+mtllib table_board.mtl
+# Units	inches
+
+g table_board
+v -44 1 26
+v -44 1 -26
+v 44 1 26
+v 44 1 -26
+vn 0 1 0
+vt 5.96046e-008 1
+vt 0 2.69501e-008
+vt 1 2.69501e-008
+vt 1 1
+usemtl mat_surface
+f 3/1/1 4/2/1 2/3/1 1/4/1
