@@ -21,9 +21,10 @@ function updatePlayerDisplay()
   local cashValue = calculateCash(containedObjects) .. ' c'
   local totalValue = calculateTotal(containedObjects) .. ' c'
   local playerDisplay = table.find(containedObjects, isPlayerDisplay)
-
-  playerDisplay.UI.setValue('cash', cashValue)
-  playerDisplay.UI.setValue('total', totalValue)
+  if (playerDisplay ~= nil) then
+    playerDisplay.UI.setValue('cash', cashValue)
+    playerDisplay.UI.setValue('total', totalValue)
+  end
 end
 
 function isPlayerDisplay(obj)
