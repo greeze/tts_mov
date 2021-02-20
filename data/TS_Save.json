@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/20/2021 8:34:23 AM",
+  "Date": "2/20/2021 9:44:54 AM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -20,7 +20,7 @@
   "PlayArea": 0.5,
   "Table": "Table_None",
   "Sky": "Sky_Museum",
-  "SkyURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/bg.png",
+  "SkyURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/bg.png",
   "Note": "",
   "Rules": "",
   "Grid": {
@@ -398,7 +398,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -454,7 +454,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -510,7 +510,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -566,7 +566,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -622,7 +622,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -678,7 +678,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -734,7 +734,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -790,7 +790,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -846,7 +846,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -902,7 +902,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -958,7 +958,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -1003,7 +1003,7 @@
         "posZ": -13.5000153,
         "rotX": 9.232053E-06,
         "rotY": 179.970016,
-        "rotZ": -2.82428118E-05,
+        "rotZ": -2.82427991E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1014,7 +1014,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -1070,7 +1070,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1127,7 +1127,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1184,7 +1184,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1241,7 +1241,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1298,7 +1298,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1355,7 +1355,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1412,7 +1412,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1469,7 +1469,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1526,7 +1526,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1583,7 +1583,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1627,7 +1627,7 @@
         "posX": -37.49997,
         "posY": 1.0999999,
         "posZ": 16.5000114,
-        "rotX": 9.704689E-06,
+        "rotX": 9.704692E-06,
         "rotY": 180.021347,
         "rotZ": -2.77825056E-05,
         "scaleX": 0.75,
@@ -1640,7 +1640,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1697,7 +1697,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1754,7 +1754,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1811,7 +1811,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -1867,7 +1867,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "deed",
@@ -1924,7 +1924,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997726
+        "b": 0.171997666
       },
       "Tags": [
         "factory",
@@ -2016,8 +2016,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 16.5,
-        "rotX": -9.970821E-08,
-        "rotY": -0.0003373545,
+        "rotX": -9.9711464E-08,
+        "rotY": -0.000337354868,
         "rotZ": -2.13444309E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2163,8 +2163,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 7.5,
-        "rotX": -1.21619223E-06,
-        "rotY": -0.000333035161,
+        "rotX": -1.21619064E-06,
+        "rotY": -0.000333034783,
         "rotZ": 1.280663E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2261,9 +2261,9 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": 1.5,
-        "rotX": 9.447538E-07,
-        "rotY": -0.00181244954,
-        "rotZ": -2.16534568E-11,
+        "rotX": 9.44748933E-07,
+        "rotY": -0.0018124464,
+        "rotZ": -2.165334E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2310,8 +2310,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -1.5,
-        "rotX": 1.88650063E-07,
-        "rotY": -0.0009260324,
+        "rotX": 1.88637841E-07,
+        "rotY": -0.000926033943,
         "rotZ": -6.403318E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2359,8 +2359,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -4.5,
-        "rotX": 4.38492236E-07,
-        "rotY": 0.000109625784,
+        "rotX": 4.38539757E-07,
+        "rotY": 0.00010962598,
         "rotZ": 2.13471452E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2408,9 +2408,9 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -7.5,
-        "rotX": 8.280644E-07,
-        "rotY": 0.00154261163,
-        "rotZ": 1.65669544E-11,
+        "rotX": 8.2807253E-07,
+        "rotY": 0.00154261314,
+        "rotZ": 1.65670776E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2457,7 +2457,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -10.5,
-        "rotX": 9.444607E-07,
+        "rotX": 9.444668E-07,
         "rotY": -0.000443106022,
         "rotZ": 2.13438E-07,
         "scaleX": 1.125,
@@ -2555,8 +2555,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -16.5,
-        "rotX": 2.25043891E-07,
-        "rotY": 0.00121650926,
+        "rotX": 2.250561E-07,
+        "rotY": 0.00121651089,
         "rotZ": 4.268936E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2604,7 +2604,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -19.5,
-        "rotX": 5.984548E-07,
+        "rotX": 5.98467E-07,
         "rotY": 0.0011667005,
         "rotZ": -4.26876653E-07,
         "scaleX": 1.125,
@@ -2684,7 +2684,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0005.jpg",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0005.jpg",
@@ -2739,7 +2739,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0010.jpg",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0010.jpg",
@@ -2794,7 +2794,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0050.jpg",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0050.jpg",
@@ -2849,7 +2849,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0100.jpg",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0100.jpg",
@@ -2904,7 +2904,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0500.jpg",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0500.jpg",
@@ -2959,7 +2959,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0001.jpg",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_0001.jpg",
@@ -3627,9 +3627,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997575,
-        "g": 0.230997562,
-        "b": 0.0899980441
+        "r": 0.442997515,
+        "g": 0.2309975,
+        "b": 0.089998
       },
       "Tags": [
         "good",
@@ -3686,9 +3686,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997575,
-        "g": 0.230997562,
-        "b": 0.0899980441
+        "r": 0.442997515,
+        "g": 0.2309975,
+        "b": 0.089998
       },
       "Tags": [
         "good",
@@ -3745,9 +3745,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -3793,7 +3793,7 @@
         "posX": -40.5000229,
         "posY": 0.950000167,
         "posZ": 10.499959,
-        "rotX": -9.102843E-07,
+        "rotX": -9.102847E-07,
         "rotY": 179.984787,
         "rotZ": 8.176027E-08,
         "scaleX": 1.25,
@@ -3804,9 +3804,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -3863,9 +3863,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997575,
-        "g": 0.230997562,
-        "b": 0.0899980441
+        "r": 0.442997515,
+        "g": 0.2309975,
+        "b": 0.089998
       },
       "Tags": [
         "good",
@@ -3922,9 +3922,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -3972,7 +3972,7 @@
         "posZ": 1.50001454,
         "rotX": 1.38535071E-07,
         "rotY": 179.972687,
-        "rotZ": -1.71632848E-06,
+        "rotZ": -1.71632928E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3981,9 +3981,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -4029,9 +4029,9 @@
         "posX": -40.5,
         "posY": 0.9500003,
         "posZ": -1.50000131,
-        "rotX": -7.79045763E-07,
+        "rotX": -7.79046E-07,
         "rotY": 179.974319,
-        "rotZ": -1.2658613E-07,
+        "rotZ": -1.26586173E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4040,9 +4040,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -4099,9 +4099,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -4158,9 +4158,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -4208,7 +4208,7 @@
         "posZ": -10.4999971,
         "rotX": 3.214728E-08,
         "rotY": 180.013916,
-        "rotZ": -6.82330835E-07,
+        "rotZ": -6.82331063E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4217,9 +4217,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -4276,9 +4276,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -4335,9 +4335,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -6497,7 +6497,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_1000.jpg",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/money/money_1000.jpg",
@@ -10234,7 +10234,7 @@
         "posX": 39.0,
         "posY": 1.01360488,
         "posZ": 35.0,
-        "rotX": -7.1913E-09,
+        "rotX": -7.19130355E-09,
         "rotY": 180.0333,
         "rotZ": -6.290078E-07,
         "scaleX": 1.625,
@@ -10292,7 +10292,7 @@
         "posZ": 35.0,
         "rotX": 3.64937369E-09,
         "rotY": 180.0138,
-        "rotZ": -1.81351666E-07,
+        "rotZ": -1.81351723E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10684,7 +10684,7 @@
         "posZ": 35.0,
         "rotX": 1.40906939E-08,
         "rotY": 180.017365,
-        "rotZ": -5.937246E-09,
+        "rotZ": -5.93724758E-09,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10794,7 +10794,7 @@
         "posX": -27.0,
         "posY": 1.013605,
         "posZ": 35.0,
-        "rotX": 1.89402041E-08,
+        "rotX": 1.89402112E-08,
         "rotY": 179.9833,
         "rotZ": -1.68328469E-07,
         "scaleX": 1.625,
@@ -10852,7 +10852,7 @@
         "posZ": 35.0,
         "rotX": 1.1495972E-09,
         "rotY": 179.987381,
-        "rotZ": 2.39342857E-08,
+        "rotZ": 2.39342928E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10974,8 +10974,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.099997364,
-        "b": 0.09399735
+        "g": 0.09999726,
+        "b": 0.09399722
       },
       "Tags": [
         "ship"
@@ -11027,7 +11027,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719974
+        "b": 0.171997279
       },
       "Tags": [
         "player",
@@ -11069,7 +11069,7 @@
         "posZ": -45.5,
         "rotX": 1.34564289E-07,
         "rotY": 0.0158036631,
-        "rotZ": 2.16759531E-07,
+        "rotZ": 2.16759645E-07,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -11078,9 +11078,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191997409,
+        "r": 0.19199729,
         "g": 0.701,
-        "b": 0.16799739
+        "b": 0.167997271
       },
       "Tags": [
         "ship"
@@ -11131,8 +11131,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.391997248,
-        "b": 0.112997256
+        "g": 0.391997129,
+        "b": 0.112997137
       },
       "Tags": [
         "ship"
@@ -11182,9 +11182,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249997377,
-        "g": 0.249997377,
-        "b": 0.249997377
+        "r": 0.249997258,
+        "g": 0.249997258,
+        "b": 0.249997258
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11200,7 +11200,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_shared.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/table_shared.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
@@ -11231,9 +11231,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249997765,
-        "g": 0.249997765,
-        "b": 0.249997765
+        "r": 0.249997646,
+        "g": 0.249997646,
+        "b": 0.249997646
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11249,7 +11249,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_main.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/table_main.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
@@ -11298,10 +11298,10 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_board.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/table_board.obj",
         "DiffuseURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/board_44x26.jpg",
         "NormalURL": "",
-        "ColliderURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_board_collider.obj",
+        "ColliderURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/table_board_collider.obj",
         "Convex": true,
         "MaterialIndex": 3,
         "TypeIndex": 4,
@@ -11339,9 +11339,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249997377,
-        "g": 0.249997377,
-        "b": 0.249997377
+        "r": 0.249997258,
+        "g": 0.249997258,
+        "b": 0.249997258
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11357,7 +11357,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/table_players.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/table_players.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
@@ -11558,9 +11558,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429976,
-        "g": 0.230997592,
-        "b": 0.0899980739
+        "r": 0.442997545,
+        "g": 0.230997533,
+        "b": 0.0899980143
       },
       "Tags": [
         "good",
@@ -11640,7 +11640,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/net_worth.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/net_worth.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
@@ -11721,9 +11721,9 @@
       "Description": "",
       "GMNotes": "200",
       "ColorDiffuse": {
-        "r": 0.181925088,
-        "g": 0.290938258,
-        "b": 0.176893711
+        "r": 0.181925029,
+        "g": 0.2909382,
+        "b": 0.176893651
       },
       "Tags": [
         "deed",
@@ -11742,7 +11742,7 @@
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
-      "Hands": false,
+      "Hands": true,
       "CustomImage": {
         "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/deeds/deed_spaceport.png",
         "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/deeds/deed_spaceport.png",
@@ -11845,7 +11845,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/net_worth.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/net_worth.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
@@ -11909,7 +11909,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/net_worth.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/net_worth.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
@@ -11973,7 +11973,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/board/net_worth.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/net_worth.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
