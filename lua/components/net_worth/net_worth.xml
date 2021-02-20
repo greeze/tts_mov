@@ -1,0 +1,30 @@
+<Defaults>
+  <Text color="#FFFFFF" fontStyle="bold" />
+  <Text class="title" fontSize="14" />
+  <Text class="value" fontSize="48" />
+</Defaults>
+
+<TableLayout
+  id="NetWorthLayout"
+  width="2260"
+  height="105"
+  position="0 -20 -60"
+  rotation="-55 0 0"
+>
+  <Row preferredHeight="30">
+    <Cell>
+      <Text class="title">Cash on Hand</Text>
+    </Cell>
+    <Cell>
+      <Text class="title">Total Net Worth</Text>
+    </Cell>
+  </Row>
+  <Row>
+    <Cell>
+      <Text id="cash" class="value">0 c</Text>
+    </Cell>
+    <Cell>
+      <Text id="total" class="value">0 c</Text>
+    </Cell>
+  </Row>
+</TableLayout>

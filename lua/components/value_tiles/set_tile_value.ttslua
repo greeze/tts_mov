@@ -1,6 +1,0 @@
-function setTileValue(val, grp)
-  self.value = val
-  self.value_flags = grp
-  self.setVar("val", val)
-  Global.call("updateTileValue", self)
-end
