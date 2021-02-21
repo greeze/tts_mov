@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/20/2021 11:08:59 AM",
+  "Date": "2/20/2021 5:13:55 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -336,6 +336,248 @@
       "URL": "http://cloud-3.steamusercontent.com/ugc/1289667909928275631/2A3AA4FBB79C00FFEF03C214F96B90892304B311/"
     }
   ],
+  "SnapPoints": [
+    {
+      "Position": {
+        "x": -20.1250038,
+        "y": 1.0,
+        "z": -20.9290714
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": -25.5422,
+        "y": 1.00961256,
+        "z": -14.531229
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": -24.1728687,
+        "y": 1.01182139,
+        "z": -11.5246878
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": -22.3676376,
+        "y": 1.01972544,
+        "z": -3.47933
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": -6.47368,
+        "y": 1.03282869,
+        "z": 21.1675568
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": -3.00383615,
+        "y": 1.0,
+        "z": -20.9213867
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.08669555,
+        "y": 1.0,
+        "z": -18.321331
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 3.45684624,
+        "y": 1.0,
+        "z": -21.0778465
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 11.2395821,
+        "y": 1.0,
+        "z": -20.8602638
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 7.556926,
+        "y": 1.0,
+        "z": -10.6536465
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 23.2123528,
+        "y": 1.0,
+        "z": -20.5651131
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 30.84451,
+        "y": 1.0,
+        "z": -17.6538181
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 25.3891411,
+        "y": 1.0,
+        "z": -13.0538578
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 22.35558,
+        "y": 1.0,
+        "z": -2.509349
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 27.6665154,
+        "y": 1.0,
+        "z": 4.892037
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 4.0922184,
+        "y": 1.0,
+        "z": -2.15563822
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": -1.37462771,
+        "y": 1.0,
+        "z": -1.24758482
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 4.13721275,
+        "y": 1.0,
+        "z": 2.87156177
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.8563089,
+        "y": 1.00783515,
+        "z": 7.15620232
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": -2.3400774,
+        "y": 1.01506984,
+        "z": 10.269886
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 9.274076,
+        "y": 1.006783,
+        "z": 13.6747141
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 20.46307,
+        "y": 1.0,
+        "z": 8.086207
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 23.8559418,
+        "y": 1.0,
+        "z": 12.83866
+      },
+      "Tags": [
+        "encounter"
+      ]
+    },
+    {
+      "Position": {
+        "x": 30.4395924,
+        "y": 1.0,
+        "z": 16.6912231
+      },
+      "Tags": [
+        "encounter"
+      ]
+    }
+  ],
   "ObjectStates": [
     {
       "GUID": "9f9496",
@@ -398,7 +640,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -454,7 +696,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -510,7 +752,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -566,7 +808,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -622,7 +864,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -678,7 +920,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -734,7 +976,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -790,7 +1032,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -846,7 +1088,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -902,7 +1144,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -958,7 +1200,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -1003,7 +1245,7 @@
         "posZ": -13.5000153,
         "rotX": 9.232053E-06,
         "rotY": 179.970016,
-        "rotZ": -2.82427663E-05,
+        "rotZ": -2.82427591E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1014,7 +1256,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -1070,7 +1312,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1127,7 +1369,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1184,7 +1426,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1241,7 +1483,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1298,7 +1540,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1355,7 +1597,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1412,7 +1654,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1469,7 +1711,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1526,7 +1768,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1583,7 +1825,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1627,7 +1869,7 @@
         "posX": -37.49997,
         "posY": 1.0999999,
         "posZ": 16.5000114,
-        "rotX": 9.704701E-06,
+        "rotX": 9.704703E-06,
         "rotY": 180.021347,
         "rotZ": -2.77825056E-05,
         "scaleX": 0.75,
@@ -1640,7 +1882,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1697,7 +1939,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1754,7 +1996,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1811,7 +2053,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -1867,7 +2109,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "deed",
@@ -1924,7 +2166,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997517
+        "b": 0.171997488
       },
       "Tags": [
         "factory",
@@ -2016,8 +2258,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 16.5,
-        "rotX": -9.971655E-08,
-        "rotY": -0.000337355537,
+        "rotX": -9.97188E-08,
+        "rotY": -0.0003373558,
         "rotZ": -2.13444309E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2163,8 +2405,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 7.5,
-        "rotX": -1.21618757E-06,
-        "rotY": -0.000333034142,
+        "rotX": -1.21618632E-06,
+        "rotY": -0.00033303388,
         "rotZ": 1.280663E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2261,9 +2503,9 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": 1.5,
-        "rotX": 9.447408E-07,
-        "rotY": -0.00181244116,
-        "rotZ": -2.165315E-11,
+        "rotX": 9.447375E-07,
+        "rotY": -0.00181243906,
+        "rotZ": -2.16530734E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2310,8 +2552,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -1.5,
-        "rotX": 1.88617491E-07,
-        "rotY": -0.000926036562,
+        "rotX": 1.88609349E-07,
+        "rotY": -0.0009260376,
         "rotZ": -6.403318E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2359,8 +2601,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -4.5,
-        "rotX": 4.38588728E-07,
-        "rotY": 0.0001096263,
+        "rotX": 4.385933E-07,
+        "rotY": 0.000109626431,
         "rotZ": 2.13471452E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2408,9 +2650,9 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -7.5,
-        "rotX": 8.28083955E-07,
-        "rotY": 0.00154261582,
-        "rotZ": 1.6567258E-11,
+        "rotX": 8.28088844E-07,
+        "rotY": 0.00154261687,
+        "rotZ": 1.65673343E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2457,7 +2699,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -10.5,
-        "rotX": 9.44477E-07,
+        "rotX": 9.4448103E-07,
         "rotY": -0.000443106022,
         "rotZ": 2.13438E-07,
         "scaleX": 1.125,
@@ -2555,8 +2797,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -16.5,
-        "rotX": 2.25076462E-07,
-        "rotY": 0.00121651357,
+        "rotX": 2.250846E-07,
+        "rotY": 0.00121651462,
         "rotZ": 4.268936E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2604,7 +2846,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -19.5,
-        "rotX": 5.98487361E-07,
+        "rotX": 5.984955E-07,
         "rotY": 0.0011667005,
         "rotZ": -4.26876653E-07,
         "scaleX": 1.125,
@@ -3297,9 +3539,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997366,
-        "g": 0.230997354,
-        "b": 0.0899978653
+        "r": 0.442997336,
+        "g": 0.230997324,
+        "b": 0.0899978355
       },
       "Tags": [
         "good",
@@ -3356,9 +3598,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997366,
-        "g": 0.230997354,
-        "b": 0.0899978653
+        "r": 0.442997336,
+        "g": 0.230997324,
+        "b": 0.0899978355
       },
       "Tags": [
         "good",
@@ -3415,9 +3657,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3463,7 +3705,7 @@
         "posX": -40.5000229,
         "posY": 0.950000167,
         "posZ": 10.499959,
-        "rotX": -9.10285735E-07,
+        "rotX": -9.10285962E-07,
         "rotY": 179.984787,
         "rotZ": 8.176027E-08,
         "scaleX": 1.25,
@@ -3474,9 +3716,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3533,9 +3775,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997366,
-        "g": 0.230997354,
-        "b": 0.0899978653
+        "r": 0.442997336,
+        "g": 0.230997324,
+        "b": 0.0899978355
       },
       "Tags": [
         "good",
@@ -3592,9 +3834,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3642,7 +3884,7 @@
         "posZ": 1.50001454,
         "rotX": 1.38535071E-07,
         "rotY": 179.972687,
-        "rotZ": -1.71633133E-06,
+        "rotZ": -1.71633178E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3651,9 +3893,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3699,7 +3941,7 @@
         "posX": -40.5,
         "posY": 0.9500003,
         "posZ": -1.50000131,
-        "rotX": -7.79046559E-07,
+        "rotX": -7.790467E-07,
         "rotY": 179.974319,
         "rotZ": -1.26586173E-07,
         "scaleX": 1.25,
@@ -3710,9 +3952,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3769,9 +4011,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3828,9 +4070,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3878,7 +4120,7 @@
         "posZ": -10.4999971,
         "rotX": 3.214728E-08,
         "rotY": 180.013916,
-        "rotZ": -6.82331631E-07,
+        "rotZ": -6.82331745E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3887,9 +4129,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -3946,9 +4188,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -4005,9 +4247,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -5228,62 +5470,6 @@
           "XmlUI": ""
         },
         {
-          "GUID": "4c6c0b",
-          "Name": "Custom_Tile",
-          "Transform": {
-            "posX": -12.5,
-            "posY": 3.899315,
-            "posZ": 29.5,
-            "rotX": 3.76342141E-05,
-            "rotY": 3.58584766E-05,
-            "rotZ": 179.999969,
-            "scaleX": 0.75,
-            "scaleY": 1.0,
-            "scaleZ": 0.75
-          },
-          "Nickname": "Encounter",
-          "Description": "",
-          "GMNotes": "Spaceport",
-          "ColorDiffuse": {
-            "r": 0.0342270657,
-            "g": 0.163781941,
-            "b": 0.3118456
-          },
-          "Tags": [
-            "encounter",
-            "spaceport",
-            "token"
-          ],
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomImage": {
-            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_spaceport.png",
-            "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
-            "ImageScalar": 1.0,
-            "WidthScale": 0.0,
-            "CustomTile": {
-              "Type": 2,
-              "Thickness": 0.1,
-              "Stackable": true,
-              "Stretch": true
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "d3ec82",
           "Name": "Custom_Tile",
           "Transform": {
@@ -6068,6 +6254,62 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": ""
+        },
+        {
+          "GUID": "4c6c0b",
+          "Name": "Custom_Tile",
+          "Transform": {
+            "posX": -43.0,
+            "posY": 3.12290668,
+            "posZ": 28.0,
+            "rotX": -1.15272951E-06,
+            "rotY": 3.585849E-05,
+            "rotZ": 180.000031,
+            "scaleX": 0.75,
+            "scaleY": 1.0,
+            "scaleZ": 0.75
+          },
+          "Nickname": "Encounter",
+          "Description": "",
+          "GMNotes": "Spaceport",
+          "ColorDiffuse": {
+            "r": 0.0342270657,
+            "g": 0.163781911,
+            "b": 0.311845571
+          },
+          "Tags": [
+            "encounter",
+            "spaceport",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_spaceport.png",
+            "ImageSecondaryURL": "https://github.com/greeze/tts_mov/raw/main/assets/encounters/encounter_back.png",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomTile": {
+              "Type": 2,
+              "Thickness": 0.1,
+              "Stackable": true,
+              "Stretch": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
         }
       ],
       "ChildObjects": [
@@ -6290,7 +6532,7 @@
         "posX": 3.43751162E-06,
         "posY": 1.75000072,
         "posZ": 27.0,
-        "rotX": 0.000244285824,
+        "rotX": 0.000244285882,
         "rotY": -0.00484920945,
         "rotZ": -5.94160265E-05,
         "scaleX": 1.25,
@@ -6444,7 +6686,7 @@
         "posX": -3.00000215,
         "posY": 1.74999976,
         "posZ": 28.0,
-        "rotX": -0.000179673312,
+        "rotX": -0.000179673327,
         "rotY": 45.0000839,
         "rotZ": 3.73083967E-05,
         "scaleX": 1.25,
@@ -9849,7 +10091,7 @@
         "posX": 39.0,
         "posY": 1.01360488,
         "posZ": 35.0,
-        "rotX": -7.19131155E-09,
+        "rotX": -7.191313E-09,
         "rotY": 180.0333,
         "rotZ": -6.290078E-07,
         "scaleX": 1.625,
@@ -9907,7 +10149,7 @@
         "posZ": 35.0,
         "rotX": 3.64937369E-09,
         "rotY": 180.0138,
-        "rotZ": -1.81351865E-07,
+        "rotZ": -1.813519E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10299,7 +10541,7 @@
         "posZ": 35.0,
         "rotX": 1.40906939E-08,
         "rotY": 180.017365,
-        "rotZ": -5.937252E-09,
+        "rotZ": -5.937253E-09,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10409,7 +10651,7 @@
         "posX": -27.0,
         "posY": 1.013605,
         "posZ": 35.0,
-        "rotX": 1.89402289E-08,
+        "rotX": 1.89402325E-08,
         "rotY": 179.9833,
         "rotZ": -1.68328469E-07,
         "scaleX": 1.625,
@@ -10467,7 +10709,7 @@
         "posZ": 35.0,
         "rotX": 1.1495972E-09,
         "rotY": 179.987381,
-        "rotZ": 2.393431E-08,
+        "rotZ": 2.39343141E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10574,12 +10816,12 @@
       "GUID": "63b39b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -12.5000019,
-        "posY": 0.9998822,
-        "posZ": -33.50094,
-        "rotX": -7.344331E-06,
-        "rotY": 0.0006559684,
-        "rotZ": 1.21073072E-07,
+        "posX": -12.5,
+        "posY": 0.999882,
+        "posZ": -33.5,
+        "rotX": -5.23274446E-09,
+        "rotY": 0.0006559498,
+        "rotZ": 1.75361336E-07,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -10589,8 +10831,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.09999695,
-        "b": 0.09399692
+        "g": 0.09999687,
+        "b": 0.09399686
       },
       "Tags": [
         "ship"
@@ -10642,7 +10884,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996981
+        "b": 0.171996921
       },
       "Tags": [
         "player",
@@ -10693,9 +10935,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191996992,
+        "r": 0.191996932,
         "g": 0.701,
-        "b": 0.167996973
+        "b": 0.167996913
       },
       "Tags": [
         "ship"
@@ -10746,8 +10988,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.3919968,
-        "b": 0.112996809
+        "g": 0.391996741,
+        "b": 0.11299675
       },
       "Tags": [
         "ship"
@@ -10797,9 +11039,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.24999696,
-        "g": 0.24999696,
-        "b": 0.24999696
+        "r": 0.249996871,
+        "g": 0.249996871,
+        "b": 0.249996871
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10846,9 +11088,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249997318,
-        "g": 0.249997318,
-        "b": 0.249997318
+        "r": 0.249997258,
+        "g": 0.249997258,
+        "b": 0.249997258
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10954,9 +11196,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.24999696,
-        "g": 0.24999696,
-        "b": 0.24999696
+        "r": 0.249996871,
+        "g": 0.249996871,
+        "b": 0.249996871
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11173,9 +11415,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429974,
-        "g": 0.230997384,
-        "b": 0.08999788
+        "r": 0.442997366,
+        "g": 0.230997354,
+        "b": 0.0899978653
       },
       "Tags": [
         "good",
@@ -11693,9 +11935,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11847,9 +12089,9 @@
         "posX": -25.5,
         "posY": 1.075,
         "posZ": 28.5,
-        "rotX": 1.5092732E-07,
+        "rotX": 1.50927391E-07,
         "rotY": 90.0,
-        "rotZ": -1.50927278E-07,
+        "rotZ": -1.50927292E-07,
         "scaleX": 1.0,
         "scaleY": 0.15,
         "scaleZ": 1.75
@@ -11858,9 +12100,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12023,9 +12265,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12188,9 +12430,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12353,9 +12595,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12507,9 +12749,9 @@
         "posX": -13.5,
         "posY": 1.075,
         "posZ": 28.5,
-        "rotX": -1.5092732E-07,
+        "rotX": -1.50927391E-07,
         "rotY": 90.0,
-        "rotZ": -1.50927278E-07,
+        "rotZ": -1.50927292E-07,
         "scaleX": 1.0,
         "scaleY": 0.15,
         "scaleZ": 1.75
@@ -12518,9 +12760,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12683,9 +12925,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12848,9 +13090,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13015,9 +13257,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13180,9 +13422,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13345,9 +13587,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13510,9 +13752,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13664,9 +13906,9 @@
         "posX": 16.5,
         "posY": 1.075,
         "posZ": 28.5,
-        "rotX": 1.50926454E-07,
+        "rotX": 1.5092651E-07,
         "rotY": 270.0006,
-        "rotZ": 1.50928116E-07,
+        "rotZ": 1.50928145E-07,
         "scaleX": 1.0,
         "scaleY": 0.15,
         "scaleZ": 1.75
@@ -13675,9 +13917,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13840,9 +14082,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -14005,9 +14247,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -14170,9 +14412,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606268,
-        "g": 0.3606268,
-        "b": 0.3606268
+        "r": 0.360626727,
+        "g": 0.360626727,
+        "b": 0.360626727
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
