@@ -9,6 +9,7 @@ function onLoad(save_state)
 end
 
 function setupGame()
+  setup.setSnapPointList(Global.getSnapPoints())
   setup.encounters(EncounterBagGUID)
 end
 

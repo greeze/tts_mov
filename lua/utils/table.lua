@@ -31,12 +31,16 @@ function table.reverseLookup(tbl)
 end
 
 function table.indexOf(tbl, val)
-  for k, v in pairs(values) do
+  for k, v in pairs(tbl) do
     if (v == val) then
       return k
     end
   end
   return 0
+end
+
+function table.includes(tbl, val)
+  return table.indexOf(tbl, val) > 0
 end
 
 function table.find(tbl, fn)
