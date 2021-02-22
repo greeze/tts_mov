@@ -5,7 +5,7 @@ require("lua/components/value_tiles/updateTileValue")
 
 function onLoad(save_state)
   disableNonInteractables()
-  setupGame()
+  -- setupGame()
 end
 
 function setupGame()
@@ -22,9 +22,13 @@ function disableGUID(guid)
 end
 
 function onObjectEnterContainer(container, obj)
-  updateTileValue(container)
+  if (obj.type == 'Tile' and obj.hasTag('scoring')) then
+    updateTileValue(container)
+  end
 end
 
 function onObjectLeaveContainer(container, obj)
-  updateTileValue(container)
+  if (obj.type == 'Tile' and obj.hasTag('scoring')) then
+    updateTileValue(container)
+  end
 end

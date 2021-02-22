@@ -15,7 +15,7 @@ TableGUIDs = {
 -- GUIDs to lock so the user can't interact with them (references, no strings)
 -- ============================================================================
 GUIDsToDisable = {
-  EncounterBagGUID,
+  -- EncounterBagGUID,
   TableGUIDs.Board,
   TableGUIDs.MainTable,
   TableGUIDs.PlayerTables,
