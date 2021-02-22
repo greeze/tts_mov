@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/21/2021 9:38:52 AM",
+  "Date": "2/22/2021 8:00:34 AM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -640,7 +640,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -696,7 +696,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -752,7 +752,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -808,7 +808,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -864,7 +864,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -920,7 +920,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -976,7 +976,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -1032,7 +1032,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -1088,7 +1088,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -1144,7 +1144,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -1200,7 +1200,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -1245,7 +1245,7 @@
         "posZ": -13.5000153,
         "rotX": 9.232053E-06,
         "rotY": 179.970016,
-        "rotZ": -2.824272E-05,
+        "rotZ": -2.82427063E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1256,7 +1256,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -1312,7 +1312,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1369,7 +1369,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1426,7 +1426,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1483,7 +1483,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1540,7 +1540,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1597,7 +1597,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1654,7 +1654,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1711,7 +1711,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1768,7 +1768,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1825,7 +1825,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1882,7 +1882,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1939,7 +1939,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -1996,7 +1996,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -2053,7 +2053,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -2109,7 +2109,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "deed",
@@ -2166,7 +2166,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171997309
+        "b": 0.171997249
       },
       "Tags": [
         "factory",
@@ -2258,8 +2258,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 16.5,
-        "rotX": -9.97251064E-08,
-        "rotY": -0.000337356585,
+        "rotX": -9.97281546E-08,
+        "rotY": -0.000337357,
         "rotZ": -2.13444309E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2405,8 +2405,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 7.5,
-        "rotX": -1.21618268E-06,
-        "rotY": -0.0003330331,
+        "rotX": -1.21618086E-06,
+        "rotY": -0.0003330327,
         "rotZ": 1.280663E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2503,9 +2503,9 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": 1.5,
-        "rotX": 9.44749956E-07,
-        "rotY": -0.00181243289,
-        "rotZ": -1.4942601E-11,
+        "rotX": 9.44763E-07,
+        "rotY": -0.00181242975,
+        "rotZ": -1.494278E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2552,8 +2552,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -1.5,
-        "rotX": 1.8858492E-07,
-        "rotY": -0.0009260407,
+        "rotX": 1.88572713E-07,
+        "rotY": -0.000926042267,
         "rotZ": -6.403318E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2601,8 +2601,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -4.5,
-        "rotX": 4.38659043E-07,
-        "rotY": 0.000109626824,
+        "rotX": 4.38687152E-07,
+        "rotY": 0.000109627021,
         "rotZ": 2.13471452E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2650,9 +2650,9 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -7.5,
-        "rotX": 8.28103452E-07,
-        "rotY": 0.00154262,
-        "rotZ": 1.65675616E-11,
+        "rotX": 8.2811E-07,
+        "rotY": 0.00154262164,
+        "rotZ": 1.65676674E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2699,7 +2699,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -10.5,
-        "rotX": 9.44493252E-07,
+        "rotX": 9.44499334E-07,
         "rotY": -0.000443106022,
         "rotZ": 2.13438E-07,
         "scaleX": 1.125,
@@ -2797,8 +2797,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -16.5,
-        "rotX": 2.25109844E-07,
-        "rotY": 0.00121651776,
+        "rotX": 2.25122875E-07,
+        "rotY": 0.00121651939,
         "rotZ": 4.268936E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2846,7 +2846,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -19.5,
-        "rotX": 5.985207E-07,
+        "rotX": 5.98532949E-07,
         "rotY": 0.0011667005,
         "rotZ": -4.26876653E-07,
         "scaleX": 1.125,
@@ -3012,516 +3012,6 @@
       "XmlUI": ""
     },
     {
-      "GUID": "434942",
-      "Name": "Deck",
-      "Transform": {
-        "posX": 12.5,
-        "posY": 1.03055871,
-        "posZ": -39.5,
-        "rotX": 6.719015E-08,
-        "rotY": 180.0,
-        "rotZ": -7.190925E-08,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "SidewaysCard": false,
-      "DeckIDs": [
-        700,
-        600
-      ],
-      "CustomDeck": {
-        "7": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_green.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_green.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        },
-        "6": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_green.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_green.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ContainedObjects": [
-        {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 29.5,
-            "posY": -2.747704,
-            "posZ": -40.5,
-            "rotX": -5.797398E-06,
-            "rotY": 180.0,
-            "rotZ": -1.01623414E-06,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 700,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "7": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_green.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_green.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "25cd30",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 29.5,
-            "posY": -2.71375132,
-            "posZ": -40.5,
-            "rotX": -3.68199585E-06,
-            "rotY": 180.000259,
-            "rotZ": -1.03230389E-06,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 600,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "6": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_green.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_green.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
-    },
-    {
-      "GUID": "0def1c",
-      "Name": "Deck",
-      "Transform": {
-        "posX": 37.5,
-        "posY": 1.03055871,
-        "posZ": -39.5,
-        "rotX": 1.87461691E-08,
-        "rotY": 179.9994,
-        "rotZ": -4.29907E-08,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "SidewaysCard": false,
-      "DeckIDs": [
-        900,
-        800
-      ],
-      "CustomDeck": {
-        "9": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_orange.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_orange.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        },
-        "8": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_orange.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_orange.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ContainedObjects": [
-        {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 59.0000572,
-            "posY": -2.74769831,
-            "posZ": 6.460093E-05,
-            "rotX": -3.053387E-06,
-            "rotY": 90.00005,
-            "rotZ": 2.293942E-06,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 900,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "9": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_orange.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_orange.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "25cd30",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 59.5,
-            "posY": -2.71373153,
-            "posZ": 0.499999344,
-            "rotX": -0.00042063315,
-            "rotY": 90.00005,
-            "rotZ": -0.000162027674,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 800,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "8": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_orange.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_orange.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
-    },
-    {
-      "GUID": "d136ea",
-      "Name": "Deck",
-      "Transform": {
-        "posX": -12.5,
-        "posY": 1.03055871,
-        "posZ": -39.5,
-        "rotX": -2.20374616E-08,
-        "rotY": 180.031891,
-        "rotZ": -6.291826E-08,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "SidewaysCard": false,
-      "DeckIDs": [
-        300,
-        200
-      ],
-      "CustomDeck": {
-        "3": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        },
-        "2": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ContainedObjects": [
-        {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -28.5130367,
-            "posY": -2.74770355,
-            "posZ": -39.5040436,
-            "rotX": 8.579318E-06,
-            "rotY": 180.024521,
-            "rotZ": 3.99253436E-10,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 300,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "3": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "25cd30",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -27.5,
-            "posY": -2.71376324,
-            "posZ": -39.5,
-            "rotX": -0.000262362184,
-            "rotY": 180.024551,
-            "rotZ": 9.27379442E-05,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 200,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "2": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
-    },
-    {
       "GUID": "f9b7ce",
       "Name": "Custom_Tile_Stack",
       "Transform": {
@@ -3539,9 +3029,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997128,
-        "g": 0.230997145,
-        "b": 0.08999769
+        "r": 0.442997068,
+        "g": 0.230997056,
+        "b": 0.08999763
       },
       "Tags": [
         "good",
@@ -3598,9 +3088,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997128,
-        "g": 0.230997145,
-        "b": 0.08999769
+        "r": 0.442997068,
+        "g": 0.230997056,
+        "b": 0.08999763
       },
       "Tags": [
         "good",
@@ -3657,9 +3147,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -3705,7 +3195,7 @@
         "posX": -40.5000229,
         "posY": 0.950000167,
         "posZ": 10.499959,
-        "rotX": -9.10287156E-07,
+        "rotX": -9.102876E-07,
         "rotY": 179.984787,
         "rotZ": 8.176027E-08,
         "scaleX": 1.25,
@@ -3716,9 +3206,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -3775,9 +3265,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997128,
-        "g": 0.230997145,
-        "b": 0.08999769
+        "r": 0.442997068,
+        "g": 0.230997056,
+        "b": 0.08999763
       },
       "Tags": [
         "good",
@@ -3834,9 +3324,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -3884,7 +3374,7 @@
         "posZ": 1.50001454,
         "rotX": 1.38535071E-07,
         "rotY": 179.972687,
-        "rotZ": -1.71633417E-06,
+        "rotZ": -1.716335E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3893,9 +3383,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -3941,7 +3431,7 @@
         "posX": -40.5,
         "posY": 0.9500003,
         "posZ": -1.50000131,
-        "rotX": -7.79047355E-07,
+        "rotX": -7.790476E-07,
         "rotY": 179.974319,
         "rotZ": -1.26586173E-07,
         "scaleX": 1.25,
@@ -3952,9 +3442,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -4011,9 +3501,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -4070,9 +3560,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -4120,7 +3610,7 @@
         "posZ": -10.4999971,
         "rotX": 3.214728E-08,
         "rotY": 180.013916,
-        "rotZ": -6.823324E-07,
+        "rotZ": -6.82332654E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4129,9 +3619,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -4188,9 +3678,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -4247,9 +3737,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -6532,7 +6022,7 @@
         "posX": 3.43751162E-06,
         "posY": 1.75000072,
         "posZ": 27.0,
-        "rotX": 0.000244286231,
+        "rotX": 0.000244286348,
         "rotY": -0.00484920945,
         "rotZ": -5.94160265E-05,
         "scaleX": 1.25,
@@ -10091,7 +9581,7 @@
         "posX": 39.0,
         "posY": 1.01360488,
         "posZ": 35.0,
-        "rotX": -7.19132265E-09,
+        "rotX": -7.19132576E-09,
         "rotY": 180.0333,
         "rotZ": -6.290078E-07,
         "scaleX": 1.625,
@@ -10149,7 +9639,7 @@
         "posZ": 35.0,
         "rotX": 3.64937369E-09,
         "rotY": 180.0138,
-        "rotZ": -1.81352064E-07,
+        "rotZ": -1.81352121E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10541,7 +10031,7 @@
         "posZ": 35.0,
         "rotX": 1.40906939E-08,
         "rotY": 180.017365,
-        "rotZ": -5.93725824E-09,
+        "rotZ": -5.93726E-09,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10709,7 +10199,7 @@
         "posZ": 35.0,
         "rotX": 1.1495972E-09,
         "rotY": 179.987381,
-        "rotZ": 2.39343354E-08,
+        "rotZ": 2.39343425E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10831,8 +10321,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.0999965146,
-        "b": 0.0939965
+        "g": 0.09999641,
+        "b": 0.09399638
       },
       "Tags": [
         "ship"
@@ -10884,7 +10374,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996564
+        "b": 0.171996444
       },
       "Tags": [
         "player",
@@ -10935,9 +10425,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191996574,
+        "r": 0.191996455,
         "g": 0.701,
-        "b": 0.167996556
+        "b": 0.167996436
       },
       "Tags": [
         "ship"
@@ -10988,8 +10478,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.391996384,
-        "b": 0.112996377
+        "g": 0.391996235,
+        "b": 0.112996243
       },
       "Tags": [
         "ship"
@@ -11039,9 +10529,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249996513,
-        "g": 0.249996513,
-        "b": 0.249996513
+        "r": 0.2499964,
+        "g": 0.2499964,
+        "b": 0.2499964
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11088,9 +10578,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249996871,
-        "g": 0.249996871,
-        "b": 0.249996871
+        "r": 0.249996752,
+        "g": 0.249996752,
+        "b": 0.249996752
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11196,9 +10686,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249996513,
-        "g": 0.249996513,
-        "b": 0.249996513
+        "r": 0.2499964,
+        "g": 0.2499964,
+        "b": 0.2499964
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11228,176 +10718,6 @@
       "XmlUI": ""
     },
     {
-      "GUID": "2ea145",
-      "Name": "Deck",
-      "Transform": {
-        "posX": -36.5,
-        "posY": 1.03055871,
-        "posZ": -39.5,
-        "rotX": 1.69244743E-08,
-        "rotY": 179.999313,
-        "rotZ": -1.05629915E-07,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "SidewaysCard": false,
-      "DeckIDs": [
-        500,
-        400
-      ],
-      "CustomDeck": {
-        "5": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        },
-        "4": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ContainedObjects": [
-        {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": 3.352749E-08,
-            "rotY": 179.999313,
-            "rotZ": 2.27378845E-08,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 500,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "5": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "25cd30",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.0541904,
-            "posZ": -39.5,
-            "rotX": -1.40147911E-08,
-            "rotY": 179.999313,
-            "rotZ": 8.79553264E-10,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 400,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "4": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
-    },
-    {
       "GUID": "98a836",
       "Name": "Custom_Tile_Stack",
       "Transform": {
@@ -11415,9 +10735,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442997158,
-        "g": 0.230997175,
-        "b": 0.0899977162
+        "r": 0.4429971,
+        "g": 0.230997086,
+        "b": 0.08999766
       },
       "Tags": [
         "good",
@@ -11935,9 +11255,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12089,9 +11409,9 @@
         "posX": -25.5,
         "posY": 1.075,
         "posZ": 28.5,
-        "rotX": 1.509277E-07,
+        "rotX": 1.50927832E-07,
         "rotY": 90.0,
-        "rotZ": -1.50927491E-07,
+        "rotZ": -1.5092759E-07,
         "scaleX": 1.0,
         "scaleY": 0.15,
         "scaleZ": 1.75
@@ -12100,9 +11420,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12265,9 +11585,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12430,9 +11750,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12595,9 +11915,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12749,9 +12069,9 @@
         "posX": -13.5,
         "posY": 1.075,
         "posZ": 28.5,
-        "rotX": -1.509277E-07,
+        "rotX": -1.50927832E-07,
         "rotY": 90.0,
-        "rotZ": -1.50927491E-07,
+        "rotZ": -1.5092759E-07,
         "scaleX": 1.0,
         "scaleY": 0.15,
         "scaleZ": 1.75
@@ -12760,9 +12080,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12925,9 +12245,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13090,9 +12410,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13257,9 +12577,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13422,9 +12742,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13587,9 +12907,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13752,9 +13072,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13917,9 +13237,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -14082,9 +13402,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -14247,9 +13567,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -14412,9 +13732,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062637,
-        "g": 0.36062637,
-        "b": 0.36062637
+        "r": 0.360626221,
+        "g": 0.360626221,
+        "b": 0.360626221
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -14560,6 +13880,846 @@
           "XmlUI": ""
         }
       ]
+    },
+    {
+      "GUID": "25cd30",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": -36.5,
+        "posY": 1.01360488,
+        "posZ": -39.5,
+        "rotX": 3.81472525E-08,
+        "rotY": 180.001556,
+        "rotZ": -4.49021336E-08,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 1000,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "10": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "6f439d",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -22.50003,
+            "posY": 1.01963282,
+            "posZ": -20.50002,
+            "rotX": 0.0625815839,
+            "rotY": 180.001556,
+            "rotZ": 0.008408048,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Clipper",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1100,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "11": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "3": {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -22.5000324,
+            "posY": 1.0196327,
+            "posZ": -20.500021,
+            "rotX": 0.06254384,
+            "rotY": 180.001556,
+            "rotZ": 0.008433522,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Transport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1200,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "12": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "4": {
+          "GUID": "a22f79",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -22.5000343,
+            "posY": 1.01963282,
+            "posZ": -20.5000248,
+            "rotX": 0.06246713,
+            "rotY": 180.001556,
+            "rotZ": 0.008484349,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Freighter",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "13": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
+    },
+    {
+      "GUID": "ab78e5",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": -12.5,
+        "posY": 1.01360488,
+        "posZ": -39.5,
+        "rotX": -1.26039312E-08,
+        "rotY": 180.001556,
+        "rotZ": -6.46558451E-09,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 1100,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "11": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "6f439d",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -1.87596818E-08,
+            "rotY": 180.001556,
+            "rotZ": -2.27720842E-09,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Clipper",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1400,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "14": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "3": {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -1.5937383E-08,
+            "rotY": 180.001556,
+            "rotZ": -1.45635992E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Transport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1500,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "15": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "4": {
+          "GUID": "a22f79",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -2.75869549E-08,
+            "rotY": 180.001556,
+            "rotZ": -1.04000337E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Freighter",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1600,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "16": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
+    },
+    {
+      "GUID": "b3435d",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 12.5,
+        "posY": 1.01360488,
+        "posZ": -39.5,
+        "rotX": -5.18423668E-08,
+        "rotY": 180.001556,
+        "rotZ": 1.38675382E-08,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 1200,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "12": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_green.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_green.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "6f439d",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -4.74128932E-08,
+            "rotY": 180.001556,
+            "rotZ": 1.745869E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Clipper",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1400,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "14": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_green.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_green.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "3": {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -4.64560834E-08,
+            "rotY": 180.001556,
+            "rotZ": 9.578098E-09,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Transport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1200,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "12": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_green.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_green.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "4": {
+          "GUID": "a22f79",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -5.18423668E-08,
+            "rotY": 180.001556,
+            "rotZ": 1.38675382E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Freighter",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1400,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "14": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_green.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_green.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
+    },
+    {
+      "GUID": "e7d694",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 37.5,
+        "posY": 1.01360488,
+        "posZ": -39.5,
+        "rotX": 6.413342E-08,
+        "rotY": 180.001556,
+        "rotZ": 4.36440821E-08,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 1400,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "14": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_orange.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_orange.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "6f439d",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 37.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": 7.576748E-08,
+            "rotY": 180.001556,
+            "rotZ": -2.93543767E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Clipper",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1400,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "14": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_orange.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_orange.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "3": {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 37.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": 7.21708346E-08,
+            "rotY": 180.001556,
+            "rotZ": -4.571833E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Transport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1500,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "15": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_orange.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_orange.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "4": {
+          "GUID": "a22f79",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 37.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": 6.413342E-08,
+            "rotY": 180.001556,
+            "rotZ": 4.36440821E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Freighter",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 1300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "13": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_orange.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_orange.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
     }
   ]
 }
