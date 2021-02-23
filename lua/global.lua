@@ -5,10 +5,10 @@ require("lua/components/value_tiles/updateTileValue")
 
 function onLoad(save_state)
   disableNonInteractables()
-  -- setupGame()
 end
 
-function setupGame()
+function setupGame(player, setupButtonId)
+  Global.UI.hide(setupButtonId)
   setup.setSnapPointList(Global.getSnapPoints())
   setup.encounters(EncounterBagGUID)
 end

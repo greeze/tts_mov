@@ -28,7 +28,6 @@ function setup.encounters(bagGUID)
     local takeOptions = {
       position = destPosition,
       rotation = destRotation,
-      callback_function = |obj| log(obj),
     }
 
     Wait.time(|| encounterBag.takeObject(takeOptions), waitTime)

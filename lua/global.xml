@@ -1,0 +1,10 @@
+<Button
+  id="setupButton"
+  onClick="setupGame(setupButton)"
+  offsetXY="400 0"
+  rectAlignment="UpperCenter"
+  width="50"
+  height="50"
+>
+  Setup
+</Button>
