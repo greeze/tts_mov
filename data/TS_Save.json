@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/22/2021 11:42:27 AM",
+  "Date": "2/23/2021 6:04:10 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -167,6 +167,34 @@
       {
         "displayed": "display",
         "normalized": "display"
+      },
+      {
+        "displayed": "transactions",
+        "normalized": "transactions"
+      },
+      {
+        "displayed": "ui",
+        "normalized": "ui"
+      },
+      {
+        "displayed": "yellow",
+        "normalized": "yellow"
+      },
+      {
+        "displayed": "red",
+        "normalized": "red"
+      },
+      {
+        "displayed": "green",
+        "normalized": "green"
+      },
+      {
+        "displayed": "orange",
+        "normalized": "orange"
+      },
+      {
+        "displayed": "zone",
+        "normalized": "zone"
       }
     ]
   },
@@ -315,9 +343,9 @@
     }
   },
   "DecalPallet": [],
-  "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Global.-1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Global.-1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/global\")\n\nend)\n__bundle_register(\"lua/global\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\") -- lua tables, not the game table\r\nrequire(\"lua/guids\")\r\nrequire(\"lua/setup\")\r\nrequire(\"lua/components/value_tiles/updateTileValue\")\r\n\r\nfunction onLoad(save_state)\r\n  disableNonInteractables()\r\nend\r\n\r\nfunction setupGame(player, setupButtonId)\r\n  Global.UI.hide(setupButtonId)\r\n  setup.setSnapPointList(Global.getSnapPoints())\r\n  setup.encounters(EncounterBagGUID)\r\nend\r\n\r\nfunction disableNonInteractables()\r\n  table.forEach(GUIDsToDisable, disableGUID)\r\nend\r\n\r\nfunction disableGUID(guid)\r\n  getObjectFromGUID(guid).interactable = false\r\nend\r\n\r\nfunction onObjectEnterContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/updateTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction updateTileValue(object)\r\n  local value = object.getVar(\"val\") or object.value\r\n  local quantity = object.getQuantity()\r\n\r\n  if quantity > -1 then\r\n    value = value * quantity\r\n  end\r\n\r\n  object.value = value\r\nend\r\n\nend)\n__bundle_register(\"lua/setup\", function(require, _LOADED, __bundle_register, __bundle_modules)\nsetup = {}\r\n\r\nlocal snapPointList = {}\r\nlocal encounterSnaps = {}\r\n\r\nfunction setup.setSnapPointList(snapPoints)\r\n  snapPointList = snapPoints\r\n  encounterSnaps = table.filter(snapPointList, isEncounterSnap)\r\nend\r\n\r\nfunction setup.encounters(bagGUID)\r\n  local encounterBag = getObjectFromGUID(bagGUID)\r\n  local waitTime = 0 -- delay between each object being dealt\r\n\r\n  table.forEach(encounterSnaps, function(snap)\r\n    local destPosition = {\r\n      x = snap.position.x,\r\n      y = snap.position.y + 1, -- lift it off the table a bit\r\n      z = snap.position.z,\r\n    }\r\n\r\n    local destRotation = {\r\n      x = snap.rotation.x,\r\n      y = snap.rotation.y,\r\n      z = 180, -- flip, because the \"flip\" option doesn't actually work\r\n    }\r\n\r\n    local takeOptions = {\r\n      position = destPosition,\r\n      rotation = destRotation,\r\n    }\r\n\r\n    Wait.time(|| encounterBag.takeObject(takeOptions), waitTime)\r\n    waitTime = waitTime + 0.1\r\n  end)\r\nend\r\n\r\nfunction isEncounterSnap(snap)\r\n  return table.includes(snap.tags, 'encounter')\r\nend\r\n\nend)\n__bundle_register(\"lua/guids\", function(require, _LOADED, __bundle_register, __bundle_modules)\n-- ============================================================================\r\n-- All GUIDs referenced ANYWHERE in Lua\r\n-- ============================================================================\r\nEncounterBagGUID = 'e78408'\r\n\r\nTableGUIDs = {\r\n  Board = '332a2b',\r\n  MainTable = '7df0c6',\r\n  PlayerTables = '8c8f95',\r\n  SharedTable = 'fdf9e3',\r\n}\r\n\r\n\r\n-- ============================================================================\r\n-- GUIDs to lock so the user can't interact with them (references, no strings)\r\n-- ============================================================================\r\nGUIDsToDisable = {\r\n  -- EncounterBagGUID,\r\n  TableGUIDs.Board,\r\n  TableGUIDs.MainTable,\r\n  TableGUIDs.PlayerTables,\r\n  TableGUIDs.SharedTable,\r\n}\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Global.-1.lua\")",
+  "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Global.-1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Global.-1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/global\")\n\nend)\n__bundle_register(\"lua/global\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\") -- lua tables, not the game table\r\nrequire(\"lua/guids\")\r\nrequire(\"lua/setup\")\r\nrequire(\"lua/components/value_tiles/updateTileValue\")\r\n\r\nfunction onLoad(save_state)\r\n  disableNonInteractables()\r\nend\r\n\r\nfunction setupGame(player, setupButtonId)\r\n  Global.UI.hide(setupButtonId)\r\n  setup.setSnapPointList(Global.getSnapPoints())\r\n  setup.encounters(EncounterBagGUID)\r\nend\r\n\r\nfunction disableNonInteractables()\r\n  table.forEach(GUIDsToDisable, disableGUID)\r\nend\r\n\r\nfunction disableGUID(guid)\r\n  getObjectFromGUID(guid).interactable = false\r\nend\r\n\r\nfunction onObjectEnterContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/updateTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction updateTileValue(object)\r\n  local value = object.getVar(\"val\") or object.value\r\n  local quantity = object.getQuantity()\r\n\r\n  if quantity > -1 then\r\n    value = value * quantity\r\n  end\r\n\r\n  object.value = value\r\nend\r\n\nend)\n__bundle_register(\"lua/setup\", function(require, _LOADED, __bundle_register, __bundle_modules)\nsetup = {}\r\n\r\nlocal snapPointList = {}\r\nlocal encounterSnaps = {}\r\n\r\nfunction setup.setSnapPointList(snapPoints)\r\n  snapPointList = snapPoints\r\n  encounterSnaps = table.filter(snapPointList, isEncounterSnap)\r\nend\r\n\r\nfunction setup.encounters(bagGUID)\r\n  local encounterBag = getObjectFromGUID(bagGUID)\r\n  local waitTime = 0 -- delay between each object being dealt\r\n\r\n  table.forEach(encounterSnaps, function(snap)\r\n    local destPosition = {\r\n      x = snap.position.x,\r\n      y = snap.position.y + 1, -- lift it off the table a bit\r\n      z = snap.position.z,\r\n    }\r\n\r\n    local destRotation = {\r\n      x = snap.rotation.x,\r\n      y = snap.rotation.y,\r\n      z = 180, -- flip, because the \"flip\" option doesn't actually work\r\n    }\r\n\r\n    local takeOptions = {\r\n      position = destPosition,\r\n      rotation = destRotation,\r\n    }\r\n\r\n    Wait.time(|| encounterBag.takeObject(takeOptions), waitTime)\r\n    waitTime = waitTime + 0.1\r\n  end)\r\nend\r\n\r\nfunction isEncounterSnap(snap)\r\n  return table.includes(snap.tags, 'encounter')\r\nend\r\n\nend)\n__bundle_register(\"lua/guids\", function(require, _LOADED, __bundle_register, __bundle_modules)\n-- ============================================================================\r\n-- All GUIDs referenced ANYWHERE in Lua\r\n-- ============================================================================\r\nEncounterBagGUID = 'e78408'\r\n\r\nTableGUIDs = {\r\n  Board = '332a2b',\r\n  MainTable = '7df0c6',\r\n  PlayerTables = '8c8f95',\r\n  SharedTable = 'fdf9e3',\r\n}\r\n\r\n\r\n-- ============================================================================\r\n-- GUIDs to lock so the user can't interact with them (references, no strings)\r\n-- ============================================================================\r\nGUIDsToDisable = {\r\n  EncounterBagGUID,\r\n  TableGUIDs.Board,\r\n  TableGUIDs.MainTable,\r\n  TableGUIDs.PlayerTables,\r\n  TableGUIDs.SharedTable,\r\n}\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Global.-1.lua\")",
   "LuaScriptState": "{\"chimeraExtA\":true,\"chimeraExtB\":true}",
-  "XmlUI": "<!-- include lua/global.xml -->\n<Button\r\n  id=\"setupButton\"\r\n  onClick=\"setupGame(setupButton)\"\r\n  offsetXY=\"400 0\"\r\n  rectAlignment=\"UpperCenter\"\r\n  width=\"50\"\r\n  height=\"50\"\r\n>\r\n  Setup\r\n</Button>\r\n\n<!-- include lua/global.xml -->\r\n",
+  "XmlUI": "<!-- include lua/global.xml -->\n<Button\r\n  id=\"setupButton\"\r\n  onClick=\"setupGame(setupButton)\"\r\n  offsetXY=\"400 0\"\r\n  rectAlignment=\"UpperCenter\"\r\n  width=\"50\"\r\n  height=\"50\"\r\n>\r\n  Setup\r\n</Button>\r\n\n<!-- include lua/global.xml -->",
   "CustomUIAssets": [
     {
       "Name": "ui_x_x",
@@ -760,7 +788,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -816,7 +844,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -872,7 +900,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -928,7 +956,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -984,7 +1012,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1040,7 +1068,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1096,7 +1124,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1152,7 +1180,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1208,7 +1236,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1264,7 +1292,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1320,7 +1348,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1365,7 +1393,7 @@
         "posZ": -13.5000153,
         "rotX": 9.232053E-06,
         "rotY": 179.970016,
-        "rotZ": -2.82426427E-05,
+        "rotZ": -2.82426354E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1376,7 +1404,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -1432,7 +1460,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1466,7 +1494,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 1.14e2f6.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 1.14e2f6.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 1.14e2f6.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "b7c152",
@@ -1488,7 +1517,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1522,7 +1551,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 3.b7c152.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 3.b7c152.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 3.b7c152.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "a8ea37",
@@ -1544,7 +1574,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1578,7 +1608,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 4.a8ea37.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 4.a8ea37.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 4.a8ea37.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "e0477f",
@@ -1600,7 +1631,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1634,7 +1665,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 5.e0477f.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 5.e0477f.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 5.e0477f.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "0030d6",
@@ -1656,7 +1688,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1690,7 +1722,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 6.0030d6.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 6.0030d6.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 6.0030d6.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "149602",
@@ -1712,7 +1745,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1746,7 +1779,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 7.149602.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 7.149602.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 7.149602.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "2a214f",
@@ -1768,7 +1802,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1802,7 +1836,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 8.2a214f.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 8.2a214f.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 8.2a214f.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "d6312e",
@@ -1824,7 +1859,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1858,7 +1893,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 9.d6312e.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 9.d6312e.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 9.d6312e.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "205ecb",
@@ -1880,7 +1916,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1914,7 +1950,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 10.205ecb.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 10.205ecb.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 10.205ecb.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "537dca",
@@ -1936,7 +1973,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -1970,7 +2007,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 11.537dca.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 11.537dca.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 11.537dca.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "92b15b",
@@ -1992,7 +2030,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -2026,7 +2064,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 2.92b15b.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 2.92b15b.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 2.92b15b.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "757b2c",
@@ -2048,7 +2087,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -2082,7 +2121,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 12.757b2c.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 12.757b2c.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 12.757b2c.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "a860f6",
@@ -2104,7 +2144,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -2138,7 +2178,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 13.a860f6.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 13.a860f6.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 13.a860f6.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "266bc7",
@@ -2160,7 +2201,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -2216,7 +2257,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "deed",
@@ -2250,7 +2291,8 @@
         }
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Factory Deed 14.ba617f.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Factory Deed 14.ba617f.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/value_tiles/valueTile\")\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/valueTile\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/stringToNum\")\r\nrequire(\"lua/components/value_tiles/setTileValue\")\r\n\r\nfunction getVal()\r\n  return stringToNum(self.getGMNotes())\r\nend\r\n\r\nfunction onSpawn()\r\n  setTileValue(getVal())\r\nend\r\n\r\nfunction onLoad()\r\n  setTileValue(getVal())\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/setTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nlocal groups = {\r\n  credits = 1\r\n}\r\n\r\nfunction setTileValue(val)\r\n  self.value = val\r\n  if (self.hasTag('credits')) then\r\n    self.value_flags = groups['credits']\r\n  end\r\n  self.setVar(\"val\", val)\r\n  Global.call(\"updateTileValue\", self)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/stringToNum\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction stringToNum(str)\r\n  local numStr, _ = str:gsub('%D+', '')\r\n  local num = tonumber(numStr)\r\n  return num and num or 0\r\nend\r\n\nend)\nreturn __bundle_require(\"Factory Deed 14.ba617f.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "5f434d",
@@ -2272,7 +2314,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996951
+        "b": 0.171996921
       },
       "Tags": [
         "factory",
@@ -2364,8 +2406,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 16.5,
-        "rotX": -9.973874E-08,
-        "rotY": -0.0003373583,
+        "rotX": -9.973976E-08,
+        "rotY": -0.000337358448,
         "rotZ": -2.13444309E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2511,8 +2553,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 7.5,
-        "rotX": -1.21617552E-06,
-        "rotY": -0.0003330314,
+        "rotX": -1.21617506E-06,
+        "rotY": -0.0003330313,
         "rotZ": 1.280663E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2609,9 +2651,9 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": 1.5,
-        "rotX": 9.448069E-07,
-        "rotY": -0.00181241927,
-        "rotZ": -1.49433885E-11,
+        "rotX": 9.448118E-07,
+        "rotY": -0.00181241822,
+        "rotZ": -1.494346E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2658,9 +2700,9 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -1.5,
-        "rotX": 1.88532E-07,
-        "rotY": -0.0009260475,
-        "rotZ": -6.403318E-07,
+        "rotX": 1.88527252E-07,
+        "rotY": -0.000926048029,
+        "rotZ": -6.40335145E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2707,7 +2749,7 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -4.5,
-        "rotX": 4.38808883E-07,
+        "rotX": 4.38825168E-07,
         "rotY": 0.00010962745,
         "rotZ": 2.13471452E-07,
         "scaleX": 1.125,
@@ -2756,9 +2798,9 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -7.5,
-        "rotX": 8.28134432E-07,
-        "rotY": 0.00154262688,
-        "rotZ": 1.6568049E-11,
+        "rotX": 8.281377E-07,
+        "rotY": 0.00154262735,
+        "rotZ": 1.65680976E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2805,7 +2847,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -10.5,
-        "rotX": 9.44519741E-07,
+        "rotX": 9.4452173E-07,
         "rotY": -0.000443106022,
         "rotZ": 2.13438E-07,
         "scaleX": 1.125,
@@ -2903,8 +2945,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -16.5,
-        "rotX": 2.25165209E-07,
-        "rotY": 0.00121652463,
+        "rotX": 2.25169273E-07,
+        "rotY": 0.0012165251,
         "rotZ": 4.268936E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2952,7 +2994,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -19.5,
-        "rotX": 5.985737E-07,
+        "rotX": 5.98577742E-07,
         "rotY": 0.0011667005,
         "rotZ": -4.26876625E-07,
         "scaleX": 1.125,
@@ -3135,9 +3177,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299677,
-        "g": 0.230996758,
-        "b": 0.08999739
+        "r": 0.44299674,
+        "g": 0.230996728,
+        "b": 0.08999734
       },
       "Tags": [
         "good",
@@ -3194,9 +3236,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299677,
-        "g": 0.230996758,
-        "b": 0.08999739
+        "r": 0.44299674,
+        "g": 0.230996728,
+        "b": 0.08999734
       },
       "Tags": [
         "good",
@@ -3253,9 +3295,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3301,7 +3343,7 @@
         "posX": -40.5000229,
         "posY": 0.950000167,
         "posZ": 10.499959,
-        "rotX": -9.102896E-07,
+        "rotX": -9.102898E-07,
         "rotY": 179.984787,
         "rotZ": 8.176027E-08,
         "scaleX": 1.25,
@@ -3312,9 +3354,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3371,9 +3413,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299677,
-        "g": 0.230996758,
-        "b": 0.08999739
+        "r": 0.44299674,
+        "g": 0.230996728,
+        "b": 0.08999734
       },
       "Tags": [
         "good",
@@ -3430,9 +3472,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3480,7 +3522,7 @@
         "posZ": 1.50001454,
         "rotX": 1.38535071E-07,
         "rotY": 179.972687,
-        "rotZ": -1.716339E-06,
+        "rotZ": -1.71633951E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3489,9 +3531,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3537,7 +3579,7 @@
         "posX": -40.5,
         "posY": 0.9500003,
         "posZ": -1.50000131,
-        "rotX": -7.790487E-07,
+        "rotX": -7.79048833E-07,
         "rotY": 179.974319,
         "rotZ": -1.26586173E-07,
         "scaleX": 1.25,
@@ -3548,9 +3590,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3607,9 +3649,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3666,9 +3708,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3716,7 +3758,7 @@
         "posZ": -10.4999971,
         "rotX": 3.214728E-08,
         "rotY": 180.013916,
-        "rotZ": -6.823338E-07,
+        "rotZ": -6.823339E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3725,9 +3767,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3784,9 +3826,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -3843,9 +3885,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -6128,7 +6170,7 @@
         "posX": 3.43751162E-06,
         "posY": 1.75000072,
         "posZ": 27.0,
-        "rotX": 0.00024428693,
+        "rotX": 0.000244287,
         "rotY": -0.00484920945,
         "rotZ": -5.94160265E-05,
         "scaleX": 1.25,
@@ -9687,7 +9729,7 @@
         "posX": 39.0,
         "posY": 1.01360488,
         "posZ": 35.0,
-        "rotX": -7.19134174E-09,
+        "rotX": -7.191343E-09,
         "rotY": 180.0333,
         "rotZ": -6.290078E-07,
         "scaleX": 1.625,
@@ -9745,7 +9787,7 @@
         "posZ": 35.0,
         "rotX": 3.64937369E-09,
         "rotY": 180.0138,
-        "rotZ": -1.813524E-07,
+        "rotZ": -1.81352434E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10137,7 +10179,7 @@
         "posZ": 35.0,
         "rotX": 1.40906939E-08,
         "rotY": 180.017365,
-        "rotZ": -5.937269E-09,
+        "rotZ": -5.93727E-09,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10305,7 +10347,7 @@
         "posZ": 35.0,
         "rotX": 1.1495972E-09,
         "rotY": 179.987381,
-        "rotZ": 2.3934378E-08,
+        "rotZ": 2.39343816E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10427,10 +10469,12 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.0999958143,
-        "b": 0.09399577
+        "g": 0.09999574,
+        "b": 0.09399573
       },
       "Tags": [
+        "player",
+        "red",
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
@@ -10480,11 +10524,12 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995848
+        "b": 0.171995789
       },
       "Tags": [
         "player",
-        "ship"
+        "ship",
+        "yellow"
       ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10531,11 +10576,13 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191995859,
+        "r": 0.1919958,
         "g": 0.701,
-        "b": 0.16799584
+        "b": 0.167995781
       },
       "Tags": [
+        "green",
+        "player",
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
@@ -10584,10 +10631,12 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.3919956,
-        "b": 0.112995617
+        "g": 0.391995549,
+        "b": 0.112995557
       },
       "Tags": [
+        "orange",
+        "player",
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
@@ -10635,9 +10684,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249995738,
-        "g": 0.249995738,
-        "b": 0.249995738
+        "r": 0.249995679,
+        "g": 0.249995679,
+        "b": 0.249995679
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10684,9 +10733,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249996126,
-        "g": 0.249996126,
-        "b": 0.249996126
+        "r": 0.249996066,
+        "g": 0.249996066,
+        "b": 0.249996066
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10792,9 +10841,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249995738,
-        "g": 0.249995738,
-        "b": 0.249995738
+        "r": 0.249995679,
+        "g": 0.249995679,
+        "b": 0.249995679
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10841,9 +10890,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429968,
-        "g": 0.230996788,
-        "b": 0.0899974
+        "r": 0.44299677,
+        "g": 0.230996758,
+        "b": 0.08999739
       },
       "Tags": [
         "good",
@@ -10907,7 +10956,8 @@
       },
       "Tags": [
         "display",
-        "player"
+        "player",
+        "red"
       ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10969,6 +11019,11 @@
         "b": 1.0,
         "a": 0.509803951
       },
+      "Tags": [
+        "player",
+        "red",
+        "zone"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
@@ -10983,7 +11038,8 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.9014c8.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.9014c8.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.9014c8.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "308967",
@@ -11055,7 +11111,8 @@
       },
       "Tags": [
         "display",
-        "player"
+        "player",
+        "yellow"
       ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11119,6 +11176,7 @@
       },
       "Tags": [
         "display",
+        "green",
         "player"
       ],
       "LayoutGroupSortIndex": 0,
@@ -11183,6 +11241,7 @@
       },
       "Tags": [
         "display",
+        "orange",
         "player"
       ],
       "LayoutGroupSortIndex": 0,
@@ -11245,6 +11304,11 @@
         "b": 1.0,
         "a": 0.509803951
       },
+      "Tags": [
+        "player",
+        "yellow",
+        "zone"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
@@ -11259,7 +11323,8 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.909dc6.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.909dc6.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.909dc6.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "b78bda",
@@ -11284,6 +11349,11 @@
         "b": 1.0,
         "a": 0.509803951
       },
+      "Tags": [
+        "green",
+        "player",
+        "zone"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
@@ -11298,7 +11368,8 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.b78bda.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.b78bda.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.b78bda.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "611f3a",
@@ -11323,6 +11394,11 @@
         "b": 1.0,
         "a": 0.509803951
       },
+      "Tags": [
+        "orange",
+        "player",
+        "zone"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
@@ -11337,7 +11413,8 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.611f3a.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.611f3a.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone, enter_object)\r\n  if(zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.611f3a.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "3993bb",
@@ -11357,9 +11434,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11511,9 +11588,9 @@
         "posX": -25.5,
         "posY": 1.075,
         "posZ": 28.5,
-        "rotX": 1.50928273E-07,
+        "rotX": 1.50928315E-07,
         "rotY": 90.0,
-        "rotZ": -1.50927988E-07,
+        "rotZ": -1.50928017E-07,
         "scaleX": 1.0,
         "scaleY": 0.15,
         "scaleZ": 1.75
@@ -11522,9 +11599,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11687,9 +11764,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11852,9 +11929,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12017,9 +12094,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12171,9 +12248,9 @@
         "posX": -13.5,
         "posY": 1.075,
         "posZ": 28.5,
-        "rotX": -1.50928273E-07,
+        "rotX": -1.50928315E-07,
         "rotY": 90.0,
-        "rotZ": -1.50927988E-07,
+        "rotZ": -1.50928017E-07,
         "scaleX": 1.0,
         "scaleY": 0.15,
         "scaleZ": 1.75
@@ -12182,9 +12259,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12347,9 +12424,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12512,9 +12589,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12679,9 +12756,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12844,9 +12921,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13009,9 +13086,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13174,9 +13251,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13339,9 +13416,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13504,9 +13581,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13669,9 +13746,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13834,9 +13911,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606256,
-        "g": 0.3606256,
-        "b": 0.3606256
+        "r": 0.360625535,
+        "g": 0.360625535,
+        "b": 0.360625535
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -14005,6 +14082,11 @@
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "card",
+        "player",
+        "yellow"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
@@ -14215,6 +14297,11 @@
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "card",
+        "player",
+        "red"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
@@ -14425,6 +14512,11 @@
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "card",
+        "green",
+        "player"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
@@ -14635,6 +14727,11 @@
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "card",
+        "orange",
+        "player"
+      ],
       "LayoutGroupSortIndex": 0,
       "Locked": true,
       "Grid": true,
