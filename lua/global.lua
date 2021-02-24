@@ -10,6 +10,7 @@ end
 function setupGame(player, setupButtonId)
   Global.UI.hide(setupButtonId)
   setup.setSnapPointList(Global.getSnapPoints())
+  setup.cultureCards(CultureDeckGUID)
   setup.encounters(EncounterBagGUID)
 end
 
