@@ -13,55 +13,31 @@ end
 function setup.cultureCards(deckGUID)
   local cultureDeck = getObjectFromGUID(deckGUID)
   cultureDeck.shuffle()
-  local waitTime = 0
-
-  table.forEach(cultureCardSnaps, function(snap)
-    local destPosition = {
-      x = snap.position.x,
-      y = snap.position.y + 1, -- lift it off the table a bit
-      z = snap.position.z,
-    }
-
-    local destRotation = {
-      x = snap.rotation.x,
-      y = snap.rotation.y,
-      z = 180, -- flip, because the "flip" option doesn't actually work
-    }
-
-    local takeOptions = {
-      position = destPosition,
-      rotation = destRotation,
-    }
-
-    Wait.time(|| cultureDeck.takeObject(takeOptions), waitTime)
-    waitTime = waitTime + 0.1
-  end)
+  dealFromContainerToSnaps(cultureDeck, cultureCardSnaps, true)
 end
 
 function setup.encounters(bagGUID)
   local encounterBag = getObjectFromGUID(bagGUID)
-  local waitTime = 0 -- delay between each object being dealt
+  dealFromContainerToSnaps(encounterBag, encounterSnaps, true)
+  encounterBag.destruct()
+end
 
-  table.forEach(encounterSnaps, function(snap)
-    local destPosition = {
-      x = snap.position.x,
-      y = snap.position.y + 1, -- lift it off the table a bit
-      z = snap.position.z,
-    }
+function dealFromContainerToSnaps(container, snaps, flip)
+  table.forEach(snaps, function(snap)
+    local destPosition = snap.position
+    destPosition.y = snap.position.y + 1 -- lift it off the table a bit
 
-    local destRotation = {
-      x = snap.rotation.x,
-      y = snap.rotation.y,
-      z = 180, -- flip, because the "flip" option doesn't actually work
-    }
+    local destRotation = snap.rotation
+    if (flip) then
+      destRotation.z = 180 -- the "flip" opt of takeObject doesn't work
+    end
 
     local takeOptions = {
       position = destPosition,
       rotation = destRotation,
     }
 
-    Wait.time(|| encounterBag.takeObject(takeOptions), waitTime)
-    waitTime = waitTime + 0.1
+    container.takeObject(takeOptions)
   end)
 end
 
