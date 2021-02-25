@@ -10,10 +10,10 @@ function setup.setSnapPointList(snapPoints)
   encounterSnaps = table.filter(snapPointList, isEncounterSnap)
 end
 
-function setup.cultureCards(deckGUID)
-  local cultureDeck = getObjectFromGUID(deckGUID)
-  cultureDeck.shuffle()
-  dealFromContainerToSnaps(cultureDeck, cultureCardSnaps, true)
+function setup.cultureCards(bagGUID)
+  local cultureCardBag = getObjectFromGUID(bagGUID)
+  dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)
+  cultureCardBag.destruct()
 end
 
 function setup.encounters(bagGUID)
@@ -24,6 +24,10 @@ end
 
 function dealFromContainerToSnaps(container, snaps, flip)
   table.forEach(snaps, function(snap)
+    if (#container.getObjects() <= 0) then
+      return
+    end
+
     local destPosition = snap.position
     destPosition.y = snap.position.y + 1 -- lift it off the table a bit
 

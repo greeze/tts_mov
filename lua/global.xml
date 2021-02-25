@@ -5,6 +5,7 @@
   rectAlignment="UpperCenter"
   width="50"
   height="50"
+  fontStyle="bold"
 >
   Setup
 </Button>

@@ -1,7 +1,9 @@
-require("lua/utils/table") -- lua tables, not the game table
+require("lua/utils/table")
 require("lua/guids")
 require("lua/setup")
 require("lua/components/value_tiles/updateTileValue")
+
+ALLOWED_PLAYER_COLORS = { "Yellow", "Red", "Green", "Orange" }
 
 function onLoad(save_state)
   disableNonInteractables()
@@ -10,7 +12,7 @@ end
 function setupGame(player, setupButtonId)
   Global.UI.hide(setupButtonId)
   setup.setSnapPointList(Global.getSnapPoints())
-  setup.cultureCards(CultureDeckGUID)
+  setup.cultureCards(CultureCardBagGUID)
   setup.encounters(EncounterBagGUID)
 end
 

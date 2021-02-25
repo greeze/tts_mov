@@ -4,14 +4,14 @@ function onLoad(save_state)
   updatePlayerDisplay()
 end
 
-function onObjectEnterScriptingZone(zone, enter_object)
-  if(zone == self) then
+function onObjectEnterScriptingZone(zone)
+  if (zone == self) then
     updatePlayerDisplay()
   end
 end
 
-function onObjectLeaveScriptingZone(zone, enter_object)
-  if(zone == self) then
+function onObjectLeaveScriptingZone(zone)
+  if (zone == self) then
     updatePlayerDisplay()
   end
 end

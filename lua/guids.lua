@@ -1,7 +1,8 @@
 -- ============================================================================
 -- All GUIDs referenced ANYWHERE in Lua
 -- ============================================================================
-CultureDeckGUID = '0a8f09'
+CulturePoolZoneGUID = '4cf1e3'
+CultureCardBagGUID = '711a6c'
 EncounterBagGUID = 'e78408'
 
 TableGUIDs = {
@@ -16,7 +17,6 @@ TableGUIDs = {
 -- GUIDs to lock so the user can't interact with them (references, no strings)
 -- ============================================================================
 GUIDsToDisable = {
-  CultureDeckGUID,
   EncounterBagGUID,
   TableGUIDs.Board,
   TableGUIDs.MainTable,
