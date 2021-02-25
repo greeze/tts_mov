@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "2/24/2021 3:45:35 PM",
+  "Date": "2/25/2021 3:34:52 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -1022,7 +1022,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1078,7 +1078,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1134,7 +1134,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1190,7 +1190,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1246,7 +1246,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1302,7 +1302,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1358,7 +1358,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1414,7 +1414,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1470,7 +1470,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1526,7 +1526,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1582,7 +1582,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1627,7 +1627,7 @@
         "posZ": -13.5000153,
         "rotX": 9.232053E-06,
         "rotY": 179.970016,
-        "rotZ": -2.82425317E-05,
+        "rotZ": -2.82425244E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -1638,7 +1638,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -1694,7 +1694,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -1750,7 +1750,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -1806,7 +1806,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -1862,7 +1862,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -1918,7 +1918,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -1974,7 +1974,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2030,7 +2030,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2086,7 +2086,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2142,7 +2142,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2198,7 +2198,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2254,7 +2254,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2310,7 +2310,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2366,7 +2366,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2422,7 +2422,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -2478,7 +2478,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "deed",
@@ -2534,7 +2534,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171996444
+        "b": 0.171996415
       },
       "Tags": [
         "factory",
@@ -2626,8 +2626,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 16.5,
-        "rotX": -9.975686E-08,
-        "rotY": -0.000337360543,
+        "rotX": -9.975788E-08,
+        "rotY": -0.0003373607,
         "rotZ": -2.13444309E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2773,8 +2773,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": 7.5,
-        "rotX": -1.2161662E-06,
-        "rotY": -0.000333029282,
+        "rotX": -1.21616551E-06,
+        "rotY": -0.000333029166,
         "rotZ": 1.280663E-06,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2871,9 +2871,9 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": 1.5,
-        "rotX": 9.44881833E-07,
-        "rotY": -0.00181240158,
-        "rotZ": -1.49444276E-11,
+        "rotX": 9.448867E-07,
+        "rotY": -0.00181240053,
+        "rotZ": -1.4944497E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -2920,8 +2920,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -1.5,
-        "rotX": 1.88448269E-07,
-        "rotY": -0.000926056353,
+        "rotX": 1.884434E-07,
+        "rotY": -0.0009260569,
         "rotZ": -6.40335145E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -2969,7 +2969,7 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -4.5,
-        "rotX": 4.390857E-07,
+        "rotX": 4.39102E-07,
         "rotY": 0.00010962745,
         "rotZ": 2.1347148E-07,
         "scaleX": 1.125,
@@ -3018,9 +3018,9 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -7.5,
-        "rotX": 8.28175132E-07,
-        "rotY": 0.00154263584,
-        "rotZ": 1.65686874E-11,
+        "rotX": 8.281784E-07,
+        "rotY": 0.00154263631,
+        "rotZ": 1.6568736E-11,
         "scaleX": 1.125,
         "scaleY": 1.125,
         "scaleZ": 1.125
@@ -3067,7 +3067,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -10.5,
-        "rotX": 9.445543E-07,
+        "rotX": 9.44556348E-07,
         "rotY": -0.000443106022,
         "rotZ": 2.13438E-07,
         "scaleX": 1.125,
@@ -3165,8 +3165,8 @@
         "posX": -34.4999962,
         "posY": 1.187926,
         "posZ": -16.5,
-        "rotX": 2.2523686E-07,
-        "rotY": 0.00121653359,
+        "rotX": 2.25240925E-07,
+        "rotY": 0.00121653406,
         "rotZ": 4.268936E-07,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -3214,7 +3214,7 @@
         "posX": -34.4999962,
         "posY": 1.18792593,
         "posZ": -19.5,
-        "rotX": 5.986429E-07,
+        "rotX": 5.98647E-07,
         "rotY": 0.0011667005,
         "rotZ": -4.26876625E-07,
         "scaleX": 1.125,
@@ -3397,9 +3397,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996234,
-        "g": 0.230996221,
-        "b": 0.08999694
+        "r": 0.4429962,
+        "g": 0.230996192,
+        "b": 0.08999691
       },
       "Tags": [
         "good",
@@ -3456,9 +3456,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996234,
-        "g": 0.230996221,
-        "b": 0.08999694
+        "r": 0.4429962,
+        "g": 0.230996192,
+        "b": 0.08999691
       },
       "Tags": [
         "good",
@@ -3515,9 +3515,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -3563,7 +3563,7 @@
         "posX": -40.5000229,
         "posY": 0.950000167,
         "posZ": 10.499959,
-        "rotX": -9.10293068E-07,
+        "rotX": -9.102933E-07,
         "rotY": 179.984787,
         "rotZ": 8.176027E-08,
         "scaleX": 1.25,
@@ -3574,9 +3574,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -3633,9 +3633,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996234,
-        "g": 0.230996221,
-        "b": 0.08999694
+        "r": 0.4429962,
+        "g": 0.230996192,
+        "b": 0.08999691
       },
       "Tags": [
         "good",
@@ -3692,9 +3692,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -3742,7 +3742,7 @@
         "posZ": 1.50001454,
         "rotX": 1.38535071E-07,
         "rotY": 179.972687,
-        "rotZ": -1.716346E-06,
+        "rotZ": -1.71634645E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3751,9 +3751,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -3799,7 +3799,7 @@
         "posX": -40.5,
         "posY": 0.9500003,
         "posZ": -1.50000131,
-        "rotX": -7.79050652E-07,
+        "rotX": -7.79050765E-07,
         "rotY": 179.974319,
         "rotZ": -1.26586173E-07,
         "scaleX": 1.25,
@@ -3810,9 +3810,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -3869,9 +3869,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -3928,9 +3928,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -3978,7 +3978,7 @@
         "posZ": -10.4999971,
         "rotX": 3.214728E-08,
         "rotY": 180.013916,
-        "rotZ": -6.823357E-07,
+        "rotZ": -6.82335838E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3987,9 +3987,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -4046,9 +4046,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -4105,9 +4105,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -9905,8 +9905,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.09999477,
-        "b": 0.09399476
+        "g": 0.09999471,
+        "b": 0.0939946845
       },
       "Tags": [
         "player",
@@ -9960,7 +9960,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994835
+        "b": 0.171994776
       },
       "Tags": [
         "player",
@@ -10012,9 +10012,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191994846,
+        "r": 0.191994786,
         "g": 0.701,
-        "b": 0.167994827
+        "b": 0.167994767
       },
       "Tags": [
         "green",
@@ -10067,8 +10067,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.391994536,
-        "b": 0.112994559
+        "g": 0.391994476,
+        "b": 0.112994485
       },
       "Tags": [
         "orange",
@@ -10120,9 +10120,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.2499947,
-        "g": 0.2499947,
-        "b": 0.2499947
+        "r": 0.2499946,
+        "g": 0.2499946,
+        "b": 0.2499946
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10169,9 +10169,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249995053,
-        "g": 0.249995053,
-        "b": 0.249995053
+        "r": 0.249995,
+        "g": 0.249995,
+        "b": 0.249995
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10277,9 +10277,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.2499947,
-        "g": 0.2499947,
-        "b": 0.2499947
+        "r": 0.2499946,
+        "g": 0.2499946,
+        "b": 0.2499946
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10326,9 +10326,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442996264,
-        "g": 0.230996251,
-        "b": 0.08999697
+        "r": 0.442996234,
+        "g": 0.230996221,
+        "b": 0.08999694
       },
       "Tags": [
         "good",
@@ -10458,6 +10458,7 @@
       "Tags": [
         "player",
         "red",
+        "scoring",
         "zone"
       ],
       "LayoutGroupSortIndex": 0,
@@ -10473,7 +10474,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.9014c8.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.9014c8.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.9014c8.lua\")",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.9014c8.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.9014c8.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone and zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.9014c8.lua\")",
       "LuaScriptState": ""
     },
     {
@@ -10741,6 +10742,7 @@
       },
       "Tags": [
         "player",
+        "scoring",
         "yellow",
         "zone"
       ],
@@ -10757,7 +10759,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.909dc6.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.909dc6.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.909dc6.lua\")",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.909dc6.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.909dc6.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone and zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.909dc6.lua\")",
       "LuaScriptState": ""
     },
     {
@@ -10786,6 +10788,7 @@
       "Tags": [
         "green",
         "player",
+        "scoring",
         "zone"
       ],
       "LayoutGroupSortIndex": 0,
@@ -10801,7 +10804,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.b78bda.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.b78bda.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.b78bda.lua\")",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.b78bda.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.b78bda.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone and zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.b78bda.lua\")",
       "LuaScriptState": ""
     },
     {
@@ -10830,6 +10833,7 @@
       "Tags": [
         "orange",
         "player",
+        "scoring",
         "zone"
       ],
       "LayoutGroupSortIndex": 0,
@@ -10845,7 +10849,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.611f3a.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.611f3a.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.611f3a.lua\")",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Player Zone.611f3a.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Player Zone.611f3a.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/net_worth/net_worth_zone\")\r\n\nend)\n__bundle_register(\"lua/components/net_worth/net_worth_zone\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction onLoad(save_state)\r\n  updatePlayerDisplay()\r\nend\r\n\r\nfunction onObjectEnterScriptingZone(zone)\r\n  if (zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveScriptingZone(zone)\r\n  if (zone and zone == self) then\r\n    updatePlayerDisplay()\r\n  end\r\nend\r\n\r\nfunction updatePlayerDisplay()\r\n  local containedObjects = self.getObjects()\r\n  local cashValue = calculateCash(containedObjects) .. ' c'\r\n  local totalValue = calculateTotal(containedObjects) .. ' c'\r\n  local playerDisplay = table.find(containedObjects, isPlayerDisplay)\r\n  if (playerDisplay ~= nil) then\r\n    playerDisplay.UI.setValue('cash', cashValue)\r\n    playerDisplay.UI.setValue('total', totalValue)\r\n    playerDisplay.setName('Cash: ' .. cashValue)\r\n    playerDisplay.setDescription('Net Worth: ' .. totalValue)\r\n  end\r\nend\r\n\r\nfunction calculateCash(containedObjects)\r\n  local cashItems = table.filter(containedObjects, isCash)\r\n  local cashValue = sumValues(cashItems)\r\n  return cashValue or 0\r\nend\r\n\r\nfunction calculateTotal(containedObjects)\r\n  local scoringItems = table.filter(containedObjects, isScoringItem)\r\n  local totalValue = sumValues(scoringItems)\r\n  return totalValue or 0\r\nend\r\n\r\nfunction sumValues(scoringItems)\r\n  local values = table.map(\r\n    scoringItems,\r\n    function(scoringItem)\r\n      return scoringItem.value or 0\r\n    end\r\n  )\r\n  return table.sum(values)\r\nend\r\n\r\nfunction isPlayerDisplay(obj)\r\n  return obj.hasTag('player') and obj.hasTag('display')\r\nend\r\n\r\nfunction isCash(obj)\r\n  return obj.hasTag('credits')\r\nend\r\n\r\nfunction isScoringItem(obj)\r\n  return obj.hasTag('scoring')\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    fn(v)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn)\r\n  local acc\r\n  for k, v in pairs(tbl) do\r\n      if 1 == k then\r\n          acc = v\r\n      else\r\n          acc = fn(acc, v)\r\n      end\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b)\r\nend\r\n\nend)\nreturn __bundle_require(\"Player Zone.611f3a.lua\")",
       "LuaScriptState": ""
     },
     {
@@ -10866,9 +10870,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11031,9 +11035,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11196,9 +11200,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11361,9 +11365,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11526,9 +11530,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11691,9 +11695,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11856,9 +11860,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12021,9 +12025,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12188,9 +12192,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12353,9 +12357,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12518,9 +12522,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12683,9 +12687,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -12848,9 +12852,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13013,9 +13017,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13178,9 +13182,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -13343,9 +13347,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360624522,
-        "g": 0.360624522,
-        "b": 0.360624522
+        "r": 0.360624462,
+        "g": 0.360624462,
+        "b": 0.360624462
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -15033,9 +15037,9 @@
         "posX": -22.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": 3.794361E-09,
+        "rotX": 3.32824857E-09,
         "rotY": 180.005875,
-        "rotZ": -2.654896E-07,
+        "rotZ": -3.18797873E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15089,9 +15093,9 @@
         "posX": -18.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": -2.195637E-08,
+        "rotX": 1.41065515E-09,
         "rotY": 180.006119,
-        "rotZ": -3.30149021E-07,
+        "rotZ": 5.39800951E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15145,9 +15149,9 @@
         "posX": -14.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": -5.977416E-08,
+        "rotX": 4.949124E-07,
         "rotY": 179.972351,
-        "rotZ": -2.50298427E-07,
+        "rotZ": -2.08877708E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15201,9 +15205,9 @@
         "posX": -10.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": -2.36053843E-08,
+        "rotX": -1.53624491E-08,
         "rotY": 179.974014,
-        "rotZ": -8.880039E-08,
+        "rotZ": -1.04663421E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15257,9 +15261,9 @@
         "posX": -6.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": 4.77099746E-08,
+        "rotX": 2.91310727E-08,
         "rotY": 180.012436,
-        "rotZ": -1.200824E-07,
+        "rotZ": -7.687392E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15313,9 +15317,9 @@
         "posX": -2.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": 6.892528E-08,
+        "rotX": 7.28771639E-08,
         "rotY": 180.012573,
-        "rotZ": -1.42432512E-07,
+        "rotZ": -1.29754341E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15369,9 +15373,9 @@
         "posX": 2.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": 3.42375053E-08,
+        "rotX": 4.61926568E-08,
         "rotY": 180.018417,
-        "rotZ": -1.21560184E-08,
+        "rotZ": -2.79536732E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15425,9 +15429,9 @@
         "posX": 6.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": -4.44205845E-08,
+        "rotX": -2.64273172E-08,
         "rotY": 180.020523,
-        "rotZ": 5.084357E-08,
+        "rotZ": 3.50179157E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15481,9 +15485,9 @@
         "posX": 10.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": 5.77376724E-09,
+        "rotX": -1.97038674E-09,
         "rotY": 180.011337,
-        "rotZ": 1.56018572E-07,
+        "rotZ": 6.000058E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15537,9 +15541,9 @@
         "posX": 14.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": 1.09016236E-08,
+        "rotX": 3.06585157E-08,
         "rotY": 180.009735,
-        "rotZ": -1.07981769E-07,
+        "rotZ": -1.29016485E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15593,9 +15597,9 @@
         "posX": 18.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": -1.6147057E-08,
+        "rotX": 2.723135E-08,
         "rotY": 180.011566,
-        "rotZ": -1.578644E-07,
+        "rotZ": -5.40244436E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15649,9 +15653,9 @@
         "posX": 22.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": 1.353823E-07,
+        "rotX": 1.90158573E-07,
         "rotY": 180.001038,
-        "rotZ": -1.60360969E-07,
+        "rotZ": -1.589107E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15705,9 +15709,9 @@
         "posX": 26.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": -2.95082447E-08,
+        "rotX": -4.957862E-09,
         "rotY": 180.001953,
-        "rotZ": -2.50510657E-09,
+        "rotZ": 2.28628529E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15761,9 +15765,9 @@
         "posX": -26.0,
         "posY": 1.01360488,
         "posZ": 34.0,
-        "rotX": -3.87058741E-08,
+        "rotX": 1.8504106E-09,
         "rotY": 179.999969,
-        "rotZ": -1.51880556E-07,
+        "rotZ": -1.40284754E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -15817,9 +15821,9 @@
         "posX": -38.5,
         "posY": 1.25,
         "posZ": 28.5,
-        "rotX": -1.03479323E-08,
-        "rotY": 3.234269E-08,
-        "rotZ": -5.037945E-09,
+        "rotX": -5.63516771E-08,
+        "rotY": 3.238974E-08,
+        "rotZ": 2.991308E-08,
         "scaleX": 5.0,
         "scaleY": 0.5,
         "scaleZ": 3.25
