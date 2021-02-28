@@ -1,3 +1,5 @@
+require("lua/utils/table")
+
 setup = {}
 
 local snapPointList = {}
@@ -10,19 +12,32 @@ function setup.setSnapPointList(snapPoints)
   encounterSnaps = table.filter(snapPointList, isEncounterSnap)
 end
 
-function setup.cultureCards(bagGUID)
-  local cultureCardBag = getObjectFromGUID(bagGUID)
-  dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)
-  cultureCardBag.destruct()
+function setup.eventTokens(eventTokens, bagGUID)
+  local eventTokenBag = getObjectFromGUID(bagGUID)
+  table.forEach(eventTokens, function(obj)
+    eventTokenBag.putObject(obj)
+  end)
 end
 
-function setup.encounters(bagGUID)
+function setup.cultureCards(cultureCards, bagGUID)
+  local cultureCardBag = getObjectFromGUID(bagGUID)
+  table.forEach(cultureCards, function(obj)
+    cultureCardBag.putObject(obj)
+  end)
+  dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)
+end
+
+function setup.encounters(encounterTokens, bagGUID)
   local encounterBag = getObjectFromGUID(bagGUID)
+  table.forEach(encounterTokens, function(obj)
+    encounterBag.putObject(obj)
+  end)
   dealFromContainerToSnaps(encounterBag, encounterSnaps, true)
-  encounterBag.destruct()
 end
 
 function dealFromContainerToSnaps(container, snaps, flip)
+  local totalWaitTime = 0
+  local delayBetween = 0.1
   table.forEach(snaps, function(snap)
     if (#container.getObjects() <= 0) then
       return
@@ -41,7 +56,8 @@ function dealFromContainerToSnaps(container, snaps, flip)
       rotation = destRotation,
     }
 
-    container.takeObject(takeOptions)
+    Wait.time(|| container.takeObject(takeOptions), totalWaitTime)
+    totalWaitTime = totalWaitTime + delayBetween
   end)
 end
 

@@ -11,9 +11,27 @@ end
 
 function setupGame(player, setupButtonId)
   Global.UI.hide(setupButtonId)
+  local allObjects = getObjects()
+  local eventTokens = table.filter(allObjects, isEventToken)
+  local cultureCards = table.filter(allObjects, isCultureCard)
+  local encounterTokens = table.filter(allObjects, isEncounterToken)
+
   setup.setSnapPointList(Global.getSnapPoints())
-  setup.cultureCards(CultureCardBagGUID)
-  setup.encounters(EncounterBagGUID)
+  setup.eventTokens(eventTokens, EventTokenBagGUID)
+  setup.cultureCards(cultureCards, CultureCardBagGUID)
+  setup.encounters(encounterTokens, EncounterBagGUID)
+end
+
+function isEventToken(obj)
+  return obj.hasTag('event') and obj.hasTag('token')
+end
+
+function isCultureCard(obj)
+  return obj.hasTag('culture') and obj.hasTag('card')
+end
+
+function isEncounterToken(obj)
+  return obj.hasTag('encounter') and obj.hasTag('token')
 end
 
 function disableNonInteractables()

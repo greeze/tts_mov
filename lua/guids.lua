@@ -4,6 +4,7 @@
 CulturePoolZoneGUID = '4cf1e3'
 CultureCardBagGUID = '711a6c'
 EncounterBagGUID = 'e78408'
+EventTokenBagGUID = '15ea2d'
 
 TableGUIDs = {
   Board = '332a2b',
@@ -12,11 +13,11 @@ TableGUIDs = {
   SharedTable = 'fdf9e3',
 }
 
-
 -- ============================================================================
 -- GUIDs to lock so the user can't interact with them (references, no strings)
 -- ============================================================================
 GUIDsToDisable = {
+  -- CultureCardBagGUID,
   -- EncounterBagGUID,
   TableGUIDs.Board,
   TableGUIDs.MainTable,
