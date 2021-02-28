@@ -11,7 +11,7 @@ function onObjectEnterScriptingZone(zone)
 end
 
 function onObjectLeaveScriptingZone(zone)
-  if (zone and zone == self) then
+  if (zone ~= nil and zone == self) then
     updatePlayerDisplay()
   end
 end

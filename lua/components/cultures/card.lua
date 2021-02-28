@@ -1,6 +1,6 @@
 require("lua/utils/table")
 
-local lastEnteredSystemZone = nil
+local systemZone = nil
 local systemLocked = false
 
 function discover(player)
@@ -11,7 +11,12 @@ function discover(player)
   self.UI.hide('discoverButton')
   self.deal(1, player.color)
 
-  -- Deal culture tokens to lastEnteredSystemZone
+  dealCultureTokensToSystem()
+end
+
+function dealCultureTokensToSystem()
+  if (systemZone == nil) then return end
+  local zoneObjects = systemZone.getObjects()
 end
 
 -- ============================================================================
@@ -29,7 +34,7 @@ end
 -- ============================================================================
 -- As the card moves through scripting zones, check to see whether any
 -- of the zones are "system" zones. If they are, register them as the
--- lastEnteredSystemZone. When lockSystemWhenResting, start waiting until
+-- systemZone. When lockSystemWhenResting(), start waiting until
 -- all movement has stopped. When it has, lock the current system zone
 -- and assume that this card has found its culture's home.
 -- ============================================================================
@@ -42,7 +47,7 @@ end
 function registerSystem(zone)
   if (systemLocked or not zone.hasTag('system')) then return end
 
-  lastEnteredSystemZone = zone.getGUID()
+  systemZone = zone
 end
 
 function lockSystem()
