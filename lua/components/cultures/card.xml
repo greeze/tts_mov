@@ -1,0 +1,21 @@
+  <!-- colors: normal, highlighted, pressed, disabled -->
+  <Defaults>
+    <Button
+      fontSize="24"
+      textColor="#FFFFFF"
+      colors="#333333|#999999|#666666|rgba(0.78,0.78,0.78,0.5)"
+      fontStyle="bold"
+    />
+  </Defaults>
+
+  <Button
+    id="discoverButton"
+    onClick="discover"
+    width="375"
+    height="48"
+    position="0 0 -100"
+    rotation="0 0 180"
+    scale="0.5 0.5"
+  >
+    Discover This Culture
+  </Button>
