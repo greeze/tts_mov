@@ -8441,7 +8441,7 @@
       "MaterialIndex": -1,
       "MeshIndex": -1,
       "CustomMesh": {
-        "MeshURL": "file:///C:\\Users\\Joe\\Desktop\\Tabletop Simulator\\merchant_of_venus\\assets\\_models\\cylinder_beveled.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
@@ -9809,7 +9809,7 @@
       "MaterialIndex": -1,
       "MeshIndex": -1,
       "CustomMesh": {
-        "MeshURL": "file:///C:\\Users\\Joe\\Desktop\\Tabletop Simulator\\merchant_of_venus\\assets\\_models\\cylinder_beveled.obj",
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
         "DiffuseURL": "",
         "NormalURL": "",
         "ColliderURL": "",
