@@ -14,6 +14,7 @@ function setupGame(player, setupButtonId)
   local encounterTokens = getEncounterTokens(allObjects)
 
   setup.init()
+  setup.money()
   setup.eventTokens(eventTokens, EventTokenBagGUID)
   setup.cultureCards(cultureCards, CultureCardBagGUID)
   setup.encounters(encounterTokens, EncounterBagGUID)
@@ -47,6 +48,14 @@ function setup.init()
   snapPointList = Global.getSnapPoints()
   cultureCardSnaps = table.filter(snapPointList, isCultureCardSnap)
   encounterSnaps = table.filter(snapPointList, isEncounterSnap)
+end
+
+function setup.money()
+  local seatedPlayers = getSeatedPlayers()
+  local amount = #seatedPlayers * 20
+  table.forEach(seatedPlayers, function(playerColor)
+    money.payPlayer(amount, Player[playerColor])
+  end)
 end
 
 function setup.eventTokens(eventTokens, bagGUID)
