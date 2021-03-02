@@ -1,9 +1,7 @@
 require("lua/utils/table")
-require("lua/guids")
-require("lua/setup")
+require("lua/global/constants")
+require("lua/global/setup")
 require("lua/components/value_tiles/updateTileValue")
-
-ALLOWED_PLAYER_COLORS = { "Yellow", "Red", "Green", "Orange" }
 
 function onLoad(save_state)
   disableNonInteractables()
