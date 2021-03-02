@@ -1,14 +1,24 @@
 require("lua/utils/stringToNum")
-require("lua/components/value_tiles/setTileValue")
+require("lua/utils/table")
 
-function getVal()
-  return stringToNum(self.getGMNotes())
+local groups = {
+  credits = 1
+}
+
+function onLoad()
+  setTileValue()
 end
 
 function onSpawn()
-  setTileValue(getVal())
+  setTileValue()
 end
 
-function onLoad()
-  setTileValue(getVal())
+function setTileValue(val)
+  local val = stringToNum(self.getGMNotes())
+  self.value = val
+  if (self.hasTag('credits')) then
+    self.value_flags = groups['credits']
+  end
+  self.setVar('val', val)
+  Global.call('updateTileValue', self)
 end

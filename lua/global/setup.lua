@@ -6,8 +6,45 @@ local snapPointList = {}
 local encounterSnaps = {}
 local cultureCardSnaps = {}
 
-function setup.setSnapPointList(snapPoints)
-  snapPointList = snapPoints
+function setupGame(player, setupButtonId)
+  Global.UI.hide(setupButtonId)
+  local allObjects = getObjects()
+  local eventTokens = getEventTokens(allObjects)
+  local cultureCards = getCultureCards(allObjects)
+  local encounterTokens = getEncounterTokens(allObjects)
+
+  setup.init()
+  setup.eventTokens(eventTokens, EventTokenBagGUID)
+  setup.cultureCards(cultureCards, CultureCardBagGUID)
+  setup.encounters(encounterTokens, EncounterBagGUID)
+end
+
+function getEventTokens(allObjects)
+  function isEventToken(obj)
+    return obj.hasTag('event') and obj.hasTag('token')
+  end
+
+  return table.filter(allObjects, isEventToken)
+end
+
+function getCultureCards(allObjects)
+  function isCultureCard(obj)
+    return obj.hasTag('culture') and obj.hasTag('card')
+  end
+
+  return table.filter(allObjects, isCultureCard)
+end
+
+function getEncounterTokens(allObjects)
+  function isEncounterToken(obj)
+    return obj.hasTag('encounter') and obj.hasTag('token')
+  end
+
+  return table.filter(allObjects, isEncounterToken)
+end
+
+function setup.init()
+  snapPointList = Global.getSnapPoints()
   cultureCardSnaps = table.filter(snapPointList, isCultureCardSnap)
   encounterSnaps = table.filter(snapPointList, isEncounterSnap)
 end
