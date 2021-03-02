@@ -1,7 +1,6 @@
 -- ============================================================================
 -- All GUIDs referenced ANYWHERE in Lua
 -- ============================================================================
-CulturePoolZoneGUID = '4cf1e3'
 CultureCardBagGUID = '711a6c'
 EncounterBagGUID = 'e78408'
 EventTokenBagGUID = '15ea2d'
