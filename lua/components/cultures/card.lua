@@ -6,17 +6,19 @@ function discover(player)
   if (not playerIsAllowed) then return end
 
   local systemZone = getSystem()
+  local systemTag = getSystemTag(systemZone)
 
   self.UI.hide('discoverButton')
   self.deal(1, player.color)
-  dealCultureTokensToSystem(systemZone)
+  dealCultureTokensToSystem(systemTag)
 end
 
 function getCultureTag()
   return table.find(Global.getVar('CULTURE_TAGS'), |cultureTag| self.hasTag(cultureTag))
 end
 
-function getSystemTag()
+function getSystemTag(system)
+  return table.find(Global.getVar('SYSTEM_TAGS'), |systemTag| system.hasTag(systemTag))
 end
 
 function getSystem()
@@ -29,11 +31,10 @@ function getSystem()
   return systemZone
 end
 
-function dealCultureTokensToSystem(systemZone)
-  if (systemZone == nil) then return end
+function dealCultureTokensToSystem(systemTag)
+  if (systemTag == nil) then return end
   local cultureTokens = getCultureTokens()
-  -- TODO: ZONE.getSnapPoints() doesn't fucking work, so.... whatnow?
-  local systemSnaps = systemZone.getSnapPoints()
+  local systemSnaps = table.filter(Global.getSnapPoints(), |snap| snapHasTag(snap, systemTag))
   local cultureSnaps = table.filter(systemSnaps, |snap| snapHasTag(snap, 'culture'))
 
   local cultureDetailsToken = table.find(cultureTokens, |obj| obj.hasTag('details'))
@@ -69,7 +70,13 @@ function snapHasTag(snap, tag)
 end
 
 function dealTokenToSnap(token, snap)
-  -- log(snap)
+  token.setLock(false)
+  local destPosition = {
+    x = snap.position.x,
+    y = snap.position.y + 1,
+    z = snap.position.z,
+  }
+  token.setPositionSmooth(destPosition, false, true)
 end
 
 function getCultureTokens()
