@@ -63,8 +63,8 @@ function table.filter(tbl, fn) -- retrun new array with elements of tbl satisfyi
 end
 
 function table.forEach(tbl, fn)
-  for _, v in pairs(tbl) do
-    fn(v)
+  for k, v in pairs(tbl) do
+    fn(v, k)
   end
 end
 
@@ -77,18 +77,14 @@ function table.map(tbl, fn)
   return out
 end
 
-function table.reduce(tbl, fn)
-  local acc
+function table.reduce(tbl, fn, init)
+  local acc = init
   for k, v in pairs(tbl) do
-      if 1 == k then
-          acc = v
-      else
-          acc = fn(acc, v)
-      end
+    acc = fn(acc, v, k, tbl)
   end
   return acc
 end
 
 function table.sum(tbl)
-  return table.reduce(tbl, |a, b| a + b)
+  return table.reduce(tbl, |a, b| a + b, 0)
 end

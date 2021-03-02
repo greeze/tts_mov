@@ -6,19 +6,15 @@ function discover(player)
   if (not playerIsAllowed) then return end
 
   local systemZone = getSystem()
+  if (systemZone == nil) then return end
+
+  local cultureTag = getCultureTag()
   local systemTag = getSystemTag(systemZone)
 
   self.UI.hide('discoverButton')
   self.deal(1, player.color)
-  dealCultureTokensToSystem(systemTag)
-end
 
-function getCultureTag()
-  return table.find(Global.getVar('CULTURE_TAGS'), |cultureTag| self.hasTag(cultureTag))
-end
-
-function getSystemTag(system)
-  return table.find(Global.getVar('SYSTEM_TAGS'), |systemTag| system.hasTag(systemTag))
+  dealCultureTokensToSystem(cultureTag, systemTag)
 end
 
 function getSystem()
@@ -31,9 +27,18 @@ function getSystem()
   return systemZone
 end
 
-function dealCultureTokensToSystem(systemTag)
+function getCultureTag()
+  return table.find(Global.getVar('CULTURE_TAGS'), |cultureTag| self.hasTag(cultureTag))
+end
+
+function getSystemTag(system)
+  return table.find(Global.getVar('SYSTEM_TAGS'), |systemTag| system.hasTag(systemTag))
+end
+
+function dealCultureTokensToSystem(cultureTag, systemTag)
   if (systemTag == nil) then return end
-  local cultureTokens = getCultureTokens()
+
+  local cultureTokens = getObjectsWithAllTags({ cultureTag, 'token' })
   local systemSnaps = table.filter(Global.getSnapPoints(), |snap| snapHasTag(snap, systemTag))
   local cultureSnaps = table.filter(systemSnaps, |snap| snapHasTag(snap, 'culture'))
 
@@ -55,6 +60,16 @@ function dealCultureTokensToSystem(systemTag)
   dealTokenToSnap(factoryDeedToken, factoryDeedSnap)
 end
 
+function dealTokenToSnap(token, snap)
+  token.setLock(false)
+  local destPosition = {
+    x = snap.position.x,
+    y = snap.position.y + 1,
+    z = snap.position.z,
+  }
+  token.setPositionSmooth(destPosition, false, true)
+end
+
 function snapHasAllTags(snap, tags)
   local hasAllTags = true
   table.forEach(tags, function(tag)
@@ -67,21 +82,4 @@ end
 
 function snapHasTag(snap, tag)
   return table.includes(snap.tags, tag)
-end
-
-function dealTokenToSnap(token, snap)
-  token.setLock(false)
-  local destPosition = {
-    x = snap.position.x,
-    y = snap.position.y + 1,
-    z = snap.position.z,
-  }
-  token.setPositionSmooth(destPosition, false, true)
-end
-
-function getCultureTokens()
-  local cultureTag = getCultureTag()
-  local culturePoolZoneGUID = Global.getVar('CulturePoolZoneGUID')
-  local culturePoolZone = getObjectFromGUID(culturePoolZoneGUID)
-  return table.filter(culturePoolZone.getObjects(), |obj| obj.hasTag(cultureTag) and obj.hasTag('token'))
 end
