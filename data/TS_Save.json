@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "3/2/2021 3:50:39 PM",
+  "Date": "3/2/2021 3:54:35 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -15080,221 +15080,6 @@
       }
     },
     {
-      "GUID": "25cd30",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -36.5,
-        "posY": 1.01360488,
-        "posZ": -39.5,
-        "rotX": -5.2477322E-08,
-        "rotY": 180.009491,
-        "rotZ": -2.14331912E-08,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "Scout",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "Tags": [
-        "card",
-        "player",
-        "yellow"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 1000,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "10": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "States": {
-        "2": {
-          "GUID": "6f439d",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -5.2477322E-08,
-            "rotY": 180.009491,
-            "rotZ": -2.1433161E-08,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Clipper",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1500,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "15": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        "3": {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -5.2477322E-08,
-            "rotY": 180.009491,
-            "rotZ": -2.14331646E-08,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Transport",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1600,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "16": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        "4": {
-          "GUID": "a22f79",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -5.2477322E-08,
-            "rotY": 180.009491,
-            "rotZ": -2.14331681E-08,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Freighter",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1300,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "13": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      }
-    },
-    {
       "GUID": "2c5e14",
       "Name": "Custom_Tile",
       "Transform": {
@@ -17262,6 +17047,581 @@
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Hazard - Red 20.1d5475.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Hazard - Red 20.1d5475.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/encounters/encounter\")\r\n\nend)\n__bundle_register(\"lua/components/encounters/encounter\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onCollisionEnter()\r\n  toggleTooltip()\r\nend\r\n\r\nfunction onCollisionExit()\r\n  toggleTooltip()\r\nend\r\n\r\nfunction toggleTooltip()\r\n  if (self.is_face_down) then\r\n    self.setName('Encounter')\r\n  else\r\n    self.setName(self.getGMNotes() or 'Encounter')\r\n  end\r\nend\r\n\nend)\nreturn __bundle_require(\"Hazard - Red 20.1d5475.lua\")",
       "LuaScriptState": "",
       "XmlUI": ""
+    },
+    {
+      "GUID": "25cd30",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": -36.5,
+        "posY": 1.01360488,
+        "posZ": -39.5,
+        "rotX": -5.2477322E-08,
+        "rotY": 180.009491,
+        "rotZ": -2.14331912E-08,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "card",
+        "player",
+        "yellow"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 1000,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "10": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "3": {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -5.2477322E-08,
+            "rotY": 180.009491,
+            "rotZ": -2.14331912E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Transport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 1600,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "16": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "4": {
+          "GUID": "a22f79",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -5.2477322E-08,
+            "rotY": 180.009491,
+            "rotZ": -2.14331912E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Freighter",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 1300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "13": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "2": {
+          "GUID": "6f439d",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -5.2477322E-08,
+            "rotY": 180.009491,
+            "rotZ": -2.14331912E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Clipper",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 1500,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "15": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
+    },
+    {
+      "GUID": "beed72",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": -1.5,
+        "posY": 1.3302,
+        "posZ": -29.5,
+        "rotX": 270.0,
+        "rotY": 2.36959931E-05,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": 1,
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 2,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 3,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": 4,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": 5,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": 6,
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "425839",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": -0.49999997,
+        "posY": 1.33019972,
+        "posZ": -29.5,
+        "rotX": 270.0,
+        "rotY": 3.02167227E-05,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": 1,
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 2,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 3,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": 4,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": 5,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": 6,
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "21e609",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 0.49999997,
+        "posY": 1.33019972,
+        "posZ": -29.5,
+        "rotX": 270.0,
+        "rotY": 2.495327E-05,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": 1,
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 2,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 3,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": 4,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": 5,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": 6,
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "8d31fc",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 1.5,
+        "posY": 1.33019972,
+        "posZ": -29.5,
+        "rotX": 270.0,
+        "rotY": 2.38310658E-05,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": 1,
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 2,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 3,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": 4,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": 5,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": 6,
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
     }
   ]
 }
