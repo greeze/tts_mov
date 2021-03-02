@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "3/2/2021 3:38:34 PM",
+  "Date": "3/2/2021 3:50:39 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -505,7 +505,7 @@
       "Size": 5.0
     }
   ],
-  "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Global.-1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Global.-1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/global/global\")\n\nend)\n__bundle_register(\"lua/global/global\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\nrequire(\"lua/global/constants\")\r\nrequire(\"lua/global/setup\")\r\nrequire(\"lua/global/money\")\r\nrequire(\"lua/components/value_tiles/updateTileValue\")\r\n\r\nfunction onLoad(save_state)\r\n  disableNonInteractables()\r\n  money.init()\r\nend\r\n\r\nfunction disableNonInteractables()\r\n  table.forEach(GUIDsToDisable, function(guid)\r\n    getObjectFromGUID(guid).interactable = false\r\n  end)\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/updateTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\n-- ============================================================================\r\n-- This gets imported into Global because it's too expensive to put on every\r\n-- valueTile.\r\n-- ============================================================================\r\nfunction updateTileValue(obj)\r\n  local value = obj.getVar('val') or obj.value\r\n  local quantity = obj.getQuantity()\r\n\r\n  if quantity > -1 then\r\n    value = value * quantity\r\n  end\r\n\r\n  obj.value = value\r\nend\r\n\r\nfunction onObjectEnterContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\nend)\n__bundle_register(\"lua/global/money\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nmoney = {}\r\n\r\nlocal initialized = false\r\nfunction money.init()\r\n  if (initialized) then return end\r\n  money.lookupTable = Global.getVar('MONEY_LOOKUP')\r\n  money.denominations = { table.unpack(Global.getVar('MONEY_VALUES')) } --copy the table because sorting is destructive\r\n  table.sort(money.denominations, |a, b| b < a) -- sort descending\r\n  initialized = true\r\nend\r\n\r\nfunction calculateAmounts(amount, denominations)\r\n  if (denominations == nil) then\r\n    denominations = money.denominations\r\n  end\r\n\r\n  return table.reduce(denominations, function(acc, denomination)\r\n    acc[denomination] = 0\r\n    while (denomination <= amount) do\r\n      amount = amount - denomination\r\n      acc[denomination] = acc[denomination] + 1\r\n    end\r\n    return acc\r\n  end, {})\r\nend\r\n\r\nfunction dealToPlayer(amounts, player)\r\n  local allowedColors = Global.getVar(\"ALLOWED_PLAYER_COLORS\")\r\n  local playerIsAllowed = table.includes(allowedColors, player.color)\r\n  if (not playerIsAllowed) then return end\r\n\r\n  for k, v in pairs(amounts) do\r\n    if (v > 0) then\r\n      local moneyTag = money.lookupTable[k]\r\n      local moneyBag = getObjectsWithAllTags({ 'bag', 'credits', moneyTag })[1]\r\n      moneyBag.deal(v, player.color)\r\n    end\r\n  end\r\nend\r\n\r\nfunction money.payPlayer(amount, player, denominations)\r\n  local amountsToDeal = calculateAmounts(amount, denominations)\r\n  dealToPlayer(amountsToDeal, player)\r\nend\r\n\r\nfunction money.breakBill(amount, player)\r\n  -- disallow the bill being broken from the denominations\r\n  local denominations = table.filter(money.denominations, |denomination| denomination ~= amount)\r\n  local amountsToDeal = calculateAmounts(amount, player, denominations)\r\n  return amountsToDeal\r\nend\r\n\r\nfunction money.combineBills(amounts, player)\r\n  local amount = table.sum(amounts)\r\n  local amountsToDeal = calculateAmounts(amount, player)\r\n  return amountsToDeal\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for k, v in pairs(tbl) do\r\n    fn(v, k)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn, init)\r\n  local acc = init\r\n  for k, v in pairs(tbl) do\r\n    acc = fn(acc, v, k, tbl)\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b, 0)\r\nend\r\n\nend)\n__bundle_register(\"lua/global/setup\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nsetup = {}\r\n\r\nlocal snapPointList = {}\r\nlocal encounterSnaps = {}\r\nlocal cultureCardSnaps = {}\r\n\r\nfunction setupGame(player, setupButtonId)\r\n  Global.UI.hide(setupButtonId)\r\n  local allObjects = getObjects()\r\n  local eventTokens = getEventTokens(allObjects)\r\n  local cultureCards = getCultureCards(allObjects)\r\n  local encounterTokens = getEncounterTokens(allObjects)\r\n\r\n  setup.init()\r\n  setup.money()\r\n  setup.eventTokens(eventTokens, EventTokenBagGUID)\r\n  setup.cultureCards(cultureCards, CultureCardBagGUID)\r\n  setup.encounters(encounterTokens, EncounterBagGUID)\r\nend\r\n\r\nfunction getEventTokens(allObjects)\r\n  function isEventToken(obj)\r\n    return obj.hasTag('event') and obj.hasTag('token')\r\n  end\r\n\r\n  return table.filter(allObjects, isEventToken)\r\nend\r\n\r\nfunction getCultureCards(allObjects)\r\n  function isCultureCard(obj)\r\n    return obj.hasTag('culture') and obj.hasTag('card')\r\n  end\r\n\r\n  return table.filter(allObjects, isCultureCard)\r\nend\r\n\r\nfunction getEncounterTokens(allObjects)\r\n  function isEncounterToken(obj)\r\n    return obj.hasTag('encounter') and obj.hasTag('token')\r\n  end\r\n\r\n  return table.filter(allObjects, isEncounterToken)\r\nend\r\n\r\nfunction setup.init()\r\n  snapPointList = Global.getSnapPoints()\r\n  cultureCardSnaps = table.filter(snapPointList, isCultureCardSnap)\r\n  encounterSnaps = table.filter(snapPointList, isEncounterSnap)\r\nend\r\n\r\nfunction setup.money()\r\n  local seatedPlayers = getSeatedPlayers()\r\n  local amount = #seatedPlayers * 20\r\n  table.forEach(seatedPlayers, function(playerColor)\r\n    money.payPlayer(amount, Player[playerColor])\r\n  end)\r\nend\r\n\r\nfunction setup.eventTokens(eventTokens, bagGUID)\r\n  local eventTokenBag = getObjectFromGUID(bagGUID)\r\n  table.forEach(eventTokens, function(obj)\r\n    eventTokenBag.putObject(obj)\r\n  end)\r\nend\r\n\r\nfunction setup.cultureCards(cultureCards, bagGUID)\r\n  local cultureCardBag = getObjectFromGUID(bagGUID)\r\n  table.forEach(cultureCards, function(obj)\r\n    cultureCardBag.putObject(obj)\r\n  end)\r\n  dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)\r\nend\r\n\r\nfunction setup.encounters(encounterTokens, bagGUID)\r\n  local encounterBag = getObjectFromGUID(bagGUID)\r\n  table.forEach(encounterTokens, function(obj)\r\n    encounterBag.putObject(obj)\r\n  end)\r\n  dealFromContainerToSnaps(encounterBag, encounterSnaps, true)\r\nend\r\n\r\nfunction dealFromContainerToSnaps(container, snaps, flip)\r\n  local totalWaitTime = 0\r\n  local delayBetween = 0.1\r\n  table.forEach(snaps, function(snap)\r\n    if (#container.getObjects() <= 0) then\r\n      return\r\n    end\r\n\r\n    local destPosition = snap.position\r\n    destPosition.y = snap.position.y + 1 -- lift it off the table a bit\r\n\r\n    local destRotation = snap.rotation\r\n    if (flip) then\r\n      destRotation.z = 180 -- the \"flip\" opt of takeObject doesn't work\r\n    end\r\n\r\n    local takeOptions = {\r\n      position = destPosition,\r\n      rotation = destRotation,\r\n    }\r\n\r\n    Wait.time(|| container.takeObject(takeOptions), totalWaitTime)\r\n    totalWaitTime = totalWaitTime + delayBetween\r\n  end)\r\nend\r\n\r\nfunction isCultureCardSnap(snap)\r\n  return table.includes(snap.tags, 'culture') and table.includes(snap.tags, 'card')\r\nend\r\n\r\nfunction isEncounterSnap(snap)\r\n  return table.includes(snap.tags, 'encounter')\r\nend\r\n\nend)\n__bundle_register(\"lua/global/constants\", function(require, _LOADED, __bundle_register, __bundle_modules)\n-- ============================================================================\r\n-- All GUIDs referenced ANYWHERE in Lua\r\n-- ============================================================================\r\nCultureCardBagGUID = '711a6c'\r\nEncounterBagGUID = 'e78408'\r\nEventTokenBagGUID = '15ea2d'\r\n\r\nTableGUIDs = {\r\n  Board = '332a2b',\r\n  MainTable = '7df0c6',\r\n  PlayerTables = '8c8f95',\r\n  SharedTable = 'fdf9e3',\r\n}\r\n\r\n-- ============================================================================\r\n-- Constants\r\n-- ============================================================================\r\nALLOWED_PLAYER_COLORS = { 'Yellow', 'Red', 'Green', 'Orange' }\r\nCULTURE_TAGS = { 'c00', 'c01', 'c02', 'c03', 'c04', 'c05', 'c06', 'c07', 'c08', 'c09', 'c10', 'c11', 'c12', 'c13', 'c14' }\r\nSYSTEM_TAGS = { 's00', 's01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09', 's10', 's11', 's12', 's13', 's14' }\r\nMONEY_TAGS = { 'm0001', 'm0005', 'm0010', 'm0050', 'm0100', 'm0500', 'm1000' }\r\nMONEY_VALUES = { 1, 5, 10, 50, 100, 500, 1000 }\r\nMONEY_LOOKUP = {\r\n  m0001 = 1, m0005 = 5, m0010 = 10, m0050 = 50, m0100 = 100, m0500 = 500, m1000 = 1000,\r\n  [1] = 'm0001', [5] = 'm0005', [10] = 'm0010', [50] = 'm0050', [100] = 'm0100', [500] = 'm0500', [1000] = 'm1000'\r\n}\r\n-- ============================================================================\r\n-- GUIDs to lock so the user can't interact with them (references, no strings)\r\n-- ============================================================================\r\nGUIDsToDisable = {\r\n  -- CultureCardBagGUID,\r\n  -- EncounterBagGUID,\r\n  TableGUIDs.Board,\r\n  TableGUIDs.MainTable,\r\n  TableGUIDs.PlayerTables,\r\n  TableGUIDs.SharedTable,\r\n}\r\n\nend)\nreturn __bundle_require(\"Global.-1.lua\")",
+  "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Global.-1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Global.-1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/global/global\")\n\nend)\n__bundle_register(\"lua/global/global\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\nrequire(\"lua/global/constants\")\r\nrequire(\"lua/global/setup\")\r\nrequire(\"lua/global/money\")\r\nrequire(\"lua/components/value_tiles/updateTileValue\")\r\n\r\nfunction onLoad(save_state)\r\n  disableNonInteractables()\r\n  money.init()\r\nend\r\n\r\nfunction disableNonInteractables()\r\n  table.forEach(GUIDsToDisable, function(guid)\r\n    getObjectFromGUID(guid).interactable = false\r\n  end)\r\nend\r\n\nend)\n__bundle_register(\"lua/components/value_tiles/updateTileValue\", function(require, _LOADED, __bundle_register, __bundle_modules)\n-- ============================================================================\r\n-- This gets imported into Global because it's too expensive to put on every\r\n-- valueTile.\r\n-- ============================================================================\r\nfunction updateTileValue(obj)\r\n  local value = obj.getVar('val') or obj.value\r\n  local quantity = obj.getQuantity()\r\n\r\n  if quantity > -1 then\r\n    value = value * quantity\r\n  end\r\n\r\n  obj.value = value\r\nend\r\n\r\nfunction onObjectEnterContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\r\nfunction onObjectLeaveContainer(container, obj)\r\n  if (obj.type == 'Tile' and obj.hasTag('scoring')) then\r\n    updateTileValue(container)\r\n  end\r\nend\r\n\nend)\n__bundle_register(\"lua/global/money\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nmoney = {}\r\n\r\nlocal initialized = false\r\nfunction money.init()\r\n  if (initialized) then return end\r\n  money.lookupTable = Global.getVar('MONEY_LOOKUP')\r\n  money.denominations = { table.unpack(Global.getVar('MONEY_VALUES')) } --copy the table because sorting is destructive\r\n  table.sort(money.denominations, |a, b| b < a) -- sort descending\r\n  initialized = true\r\nend\r\n\r\nfunction calculateAmounts(amount, denominations)\r\n  if (denominations == nil) then\r\n    denominations = money.denominations\r\n  end\r\n\r\n  return table.reduce(denominations, function(acc, denomination)\r\n    acc[denomination] = 0\r\n    while (denomination <= amount) do\r\n      amount = amount - denomination\r\n      acc[denomination] = acc[denomination] + 1\r\n    end\r\n    return acc\r\n  end, {})\r\nend\r\n\r\nfunction dealToPlayer(amounts, player)\r\n  local allowedColors = Global.getVar(\"ALLOWED_PLAYER_COLORS\")\r\n  local playerIsAllowed = table.includes(allowedColors, player.color)\r\n  if (not playerIsAllowed) then return end\r\n\r\n  for k, v in pairs(amounts) do\r\n    if (v > 0) then\r\n      local moneyTag = money.lookupTable[k]\r\n      local moneyBag = getObjectsWithAllTags({ 'bag', 'credits', moneyTag })[1]\r\n      moneyBag.deal(v, player.color)\r\n    end\r\n  end\r\nend\r\n\r\nfunction money.payPlayer(amount, player, denominations)\r\n  local amountsToDeal = calculateAmounts(amount, denominations)\r\n  dealToPlayer(amountsToDeal, player)\r\nend\r\n\r\nfunction money.breakBill(amount, player)\r\n  -- disallow the bill being broken from the denominations\r\n  local denominations = table.filter(money.denominations, |denomination| denomination ~= amount)\r\n  local amountsToDeal = calculateAmounts(amount, player, denominations)\r\n  return amountsToDeal\r\nend\r\n\r\nfunction money.combineBills(amounts, player)\r\n  local amount = table.sum(amounts)\r\n  local amountsToDeal = calculateAmounts(amount, player)\r\n  return amountsToDeal\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction table.set(tbl) -- set of list\r\n  local u = { }\r\n  for _, v in ipairs(t)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(values) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\nfunction table.filter(tbl, fn) -- retrun new array with elements of tbl satisfying fn(v)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.forEach(tbl, fn)\r\n  for k, v in pairs(tbl) do\r\n    fn(v, k)\r\n  end\r\nend\r\n\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n      out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\nfunction table.reduce(tbl, fn, init)\r\n  local acc = init\r\n  for k, v in pairs(tbl) do\r\n    acc = fn(acc, v, k, tbl)\r\n  end\r\n  return acc\r\nend\r\n\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, |a, b| a + b, 0)\r\nend\r\n\nend)\n__bundle_register(\"lua/global/setup\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nsetup = {}\r\n\r\nlocal snapPointList = {}\r\nlocal encounterSnaps = {}\r\nlocal cultureCardSnaps = {}\r\n\r\nfunction setupGame(player, setupButtonId)\r\n  Global.UI.hide(setupButtonId)\r\n  local allObjects = getObjects()\r\n  local eventTokens = getEventTokens(allObjects)\r\n  local cultureCards = getCultureCards(allObjects)\r\n  local encounterTokens = getEncounterTokens(allObjects)\r\n\r\n  setup.init()\r\n  setup.money()\r\n  setup.eventTokens(eventTokens, EventTokenBagGUID)\r\n  setup.cultureCards(cultureCards, CultureCardBagGUID)\r\n  setup.encounters(encounterTokens, EncounterBagGUID)\r\nend\r\n\r\nfunction getEventTokens(allObjects)\r\n  function isEventToken(obj)\r\n    return obj.hasTag('event') and obj.hasTag('token')\r\n  end\r\n\r\n  return table.filter(allObjects, isEventToken)\r\nend\r\n\r\nfunction getCultureCards(allObjects)\r\n  function isCultureCard(obj)\r\n    return obj.hasTag('culture') and obj.hasTag('card')\r\n  end\r\n\r\n  return table.filter(allObjects, isCultureCard)\r\nend\r\n\r\nfunction getEncounterTokens(allObjects)\r\n  function isEncounterToken(obj)\r\n    return obj.hasTag('encounter') and obj.hasTag('token')\r\n  end\r\n\r\n  return table.filter(allObjects, isEncounterToken)\r\nend\r\n\r\nfunction setup.init()\r\n  snapPointList = Global.getSnapPoints()\r\n  cultureCardSnaps = table.filter(snapPointList, isCultureCardSnap)\r\n  encounterSnaps = table.filter(snapPointList, isEncounterSnap)\r\nend\r\n\r\nfunction setup.money()\r\n  local seatedPlayers = getSeatedPlayers()\r\n  local amount = #seatedPlayers * 20\r\n  table.forEach(seatedPlayers, function(playerColor)\r\n    money.payPlayer(amount, Player[playerColor])\r\n  end)\r\nend\r\n\r\nfunction setup.eventTokens(eventTokens, bagGUID)\r\n  local eventTokenBag = getObjectFromGUID(bagGUID)\r\n  table.forEach(eventTokens, function(obj)\r\n    eventTokenBag.putObject(obj)\r\n  end)\r\nend\r\n\r\nfunction setup.cultureCards(cultureCards, bagGUID)\r\n  local cultureCardBag = getObjectFromGUID(bagGUID)\r\n  table.forEach(cultureCards, function(obj)\r\n    cultureCardBag.putObject(obj)\r\n  end)\r\n  dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)\r\nend\r\n\r\nfunction setup.encounters(encounterTokens, bagGUID)\r\n  local encounterBag = getObjectFromGUID(bagGUID)\r\n  table.forEach(encounterTokens, function(obj)\r\n    encounterBag.putObject(obj)\r\n  end)\r\n  dealFromContainerToSnaps(encounterBag, encounterSnaps, true)\r\nend\r\n\r\nfunction dealFromContainerToSnaps(container, snaps, flip)\r\n  local totalWaitTime = 0\r\n  local delayBetween = 0.1\r\n  table.forEach(snaps, function(snap)\r\n    if (#container.getObjects() <= 0) then\r\n      return\r\n    end\r\n\r\n    local destPosition = snap.position\r\n    destPosition.y = snap.position.y + 1 -- lift it off the table a bit\r\n\r\n    local destRotation = snap.rotation\r\n    if (flip) then\r\n      destRotation.z = 180 -- the \"flip\" opt of takeObject doesn't work\r\n    end\r\n\r\n    local takeOptions = {\r\n      position = destPosition,\r\n      rotation = destRotation,\r\n    }\r\n\r\n    Wait.time(|| container.takeObject(takeOptions), totalWaitTime)\r\n    totalWaitTime = totalWaitTime + delayBetween\r\n  end)\r\nend\r\n\r\nfunction isCultureCardSnap(snap)\r\n  return table.includes(snap.tags, 'culture') and table.includes(snap.tags, 'card')\r\nend\r\n\r\nfunction isEncounterSnap(snap)\r\n  return table.includes(snap.tags, 'encounter')\r\nend\r\n\nend)\n__bundle_register(\"lua/global/constants\", function(require, _LOADED, __bundle_register, __bundle_modules)\n-- ============================================================================\r\n-- All GUIDs referenced ANYWHERE in Lua\r\n-- ============================================================================\r\nCultureCardBagGUID = '711a6c'\r\nEncounterBagGUID = 'e78408'\r\nEventTokenBagGUID = '15ea2d'\r\n\r\nTableGUIDs = {\r\n  Board = '332a2b',\r\n  MainTable = '7df0c6',\r\n  PlayerTables = '8c8f95',\r\n  SharedTable = 'fdf9e3',\r\n}\r\n\r\n-- ============================================================================\r\n-- Constants\r\n-- ============================================================================\r\nWORKSHOP_ID = '2413086259'\r\nALLOWED_PLAYER_COLORS = { 'Yellow', 'Red', 'Green', 'Orange' }\r\nCULTURE_TAGS = { 'c00', 'c01', 'c02', 'c03', 'c04', 'c05', 'c06', 'c07', 'c08', 'c09', 'c10', 'c11', 'c12', 'c13', 'c14' }\r\nSYSTEM_TAGS = { 's00', 's01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09', 's10', 's11', 's12', 's13', 's14' }\r\nMONEY_TAGS = { 'm0001', 'm0005', 'm0010', 'm0050', 'm0100', 'm0500', 'm1000' }\r\nMONEY_VALUES = { 1, 5, 10, 50, 100, 500, 1000 }\r\nMONEY_LOOKUP = {\r\n  m0001 = 1, m0005 = 5, m0010 = 10, m0050 = 50, m0100 = 100, m0500 = 500, m1000 = 1000,\r\n  [1] = 'm0001', [5] = 'm0005', [10] = 'm0010', [50] = 'm0050', [100] = 'm0100', [500] = 'm0500', [1000] = 'm1000'\r\n}\r\n-- ============================================================================\r\n-- GUIDs to lock so the user can't interact with them (references, no strings)\r\n-- ============================================================================\r\nGUIDsToDisable = {\r\n  -- CultureCardBagGUID,\r\n  -- EncounterBagGUID,\r\n  TableGUIDs.Board,\r\n  TableGUIDs.MainTable,\r\n  TableGUIDs.PlayerTables,\r\n  TableGUIDs.SharedTable,\r\n}\r\n\nend)\nreturn __bundle_require(\"Global.-1.lua\")",
   "LuaScriptState": "{\"chimeraExtA\":true,\"chimeraExtB\":true}",
   "XmlUI": "<!-- include lua/global/global.xml -->\n<Button\r\n  id=\"setupButton\"\r\n  onClick=\"setupGame(setupButton)\"\r\n  offsetXY=\"400 0\"\r\n  rectAlignment=\"UpperCenter\"\r\n  width=\"50\"\r\n  height=\"50\"\r\n  fontStyle=\"bold\"\r\n>\r\n  Setup\r\n</Button>\r\n\n<!-- include lua/global/global.xml -->",
   "CustomUIAssets": [
@@ -2171,7 +2171,7 @@
         "posZ": 19.4997673,
         "rotX": 0.07011701,
         "rotY": 179.989655,
-        "rotZ": 0.0615255125,
+        "rotZ": 0.0615254976,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2182,7 +2182,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c01",
@@ -2228,7 +2228,7 @@
         "posZ": 16.49975,
         "rotX": 0.07008135,
         "rotY": 180.02298,
-        "rotZ": 0.0615672842,
+        "rotZ": 0.061567273,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2239,7 +2239,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c02",
@@ -2296,7 +2296,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c03",
@@ -2340,9 +2340,9 @@
         "posX": -37.4998779,
         "posY": 1.05304182,
         "posZ": 10.4997606,
-        "rotX": 0.070106715,
+        "rotX": 0.0701067448,
         "rotY": 179.999741,
-        "rotZ": 0.06153817,
+        "rotZ": 0.0615381561,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2353,7 +2353,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c04",
@@ -2397,9 +2397,9 @@
         "posX": -37.4998322,
         "posY": 1.04937267,
         "posZ": 7.4997797,
-        "rotX": 0.0701064542,
+        "rotX": 0.07010647,
         "rotY": 180.000229,
-        "rotZ": 0.06153876,
+        "rotZ": 0.0615387447,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2410,7 +2410,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c05",
@@ -2454,9 +2454,9 @@
         "posX": -37.4998779,
         "posY": 1.04570389,
         "posZ": 4.49975729,
-        "rotX": 0.0701049939,
+        "rotX": 0.07010501,
         "rotY": 180.000839,
-        "rotZ": 0.0615394376,
+        "rotZ": 0.0615394264,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2467,7 +2467,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c06",
@@ -2511,7 +2511,7 @@
         "posX": -37.499855,
         "posY": 1.04203522,
         "posZ": 1.49975133,
-        "rotX": 0.07010553,
+        "rotX": 0.0701055452,
         "rotY": 179.999786,
         "rotZ": 0.061538063,
         "scaleX": 1.25,
@@ -2524,7 +2524,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c07",
@@ -2568,9 +2568,9 @@
         "posX": -37.4998741,
         "posY": 1.03836632,
         "posZ": -1.500256,
-        "rotX": 0.0701115057,
+        "rotX": 0.07011152,
         "rotY": 179.995316,
-        "rotZ": 0.0615329221,
+        "rotZ": 0.0615329072,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2581,7 +2581,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c08",
@@ -2625,7 +2625,7 @@
         "posX": -37.49979,
         "posY": 1.03469741,
         "posZ": -4.5002594,
-        "rotX": 0.07011882,
+        "rotX": 0.07011884,
         "rotY": 179.987839,
         "rotZ": 0.0615231432,
         "scaleX": 1.25,
@@ -2638,7 +2638,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c09",
@@ -2682,7 +2682,7 @@
         "posX": -37.49979,
         "posY": 1.03102839,
         "posZ": -7.500257,
-        "rotX": 0.07011055,
+        "rotX": 0.07011057,
         "rotY": 179.995071,
         "rotZ": 0.0615329221,
         "scaleX": 1.25,
@@ -2695,7 +2695,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c10",
@@ -2752,7 +2752,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c11",
@@ -2798,7 +2798,7 @@
         "posZ": -13.5002813,
         "rotX": 0.07013798,
         "rotY": 179.969955,
-        "rotZ": 0.0615016855,
+        "rotZ": 0.0615017,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2809,7 +2809,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c12",
@@ -2853,7 +2853,7 @@
         "posX": -37.4997864,
         "posY": 1.164042,
         "posZ": 19.4997139,
-        "rotX": 0.0702582151,
+        "rotX": 0.0702582449,
         "rotY": 180.000534,
         "rotZ": 0.06190414,
         "scaleX": 0.75,
@@ -2866,7 +2866,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c01",
@@ -2913,7 +2913,7 @@
         "posZ": 13.5008554,
         "rotX": 0.07026728,
         "rotY": 179.992584,
-        "rotZ": 0.0618930757,
+        "rotZ": 0.06189306,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -2924,7 +2924,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c03",
@@ -2982,7 +2982,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c04",
@@ -3029,7 +3029,7 @@
         "posZ": 7.50018072,
         "rotX": 0.0701543242,
         "rotY": 180.001587,
-        "rotZ": 0.0619297,
+        "rotZ": 0.0619296879,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3040,7 +3040,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c05",
@@ -3085,9 +3085,9 @@
         "posX": -37.500473,
         "posY": 1.14569867,
         "posZ": 4.50016737,
-        "rotX": 0.07025521,
+        "rotX": 0.07025523,
         "rotY": 180.0021,
-        "rotZ": 0.061905127,
+        "rotZ": 0.0619051121,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3098,7 +3098,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c06",
@@ -3143,7 +3143,7 @@
         "posX": -37.5003052,
         "posY": 1.14202976,
         "posZ": 1.50015843,
-        "rotX": 0.07025526,
+        "rotX": 0.07025527,
         "rotY": 180.002731,
         "rotZ": 0.0619093627,
         "scaleX": 0.75,
@@ -3156,7 +3156,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c07",
@@ -3201,9 +3201,9 @@
         "posX": -37.4998856,
         "posY": 1.13835979,
         "posZ": -1.5003159,
-        "rotX": 0.07025256,
+        "rotX": 0.070252575,
         "rotY": 180.005478,
-        "rotZ": 0.0619099624,
+        "rotZ": 0.0619099475,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3214,7 +3214,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c08",
@@ -3261,7 +3261,7 @@
         "posZ": -4.500304,
         "rotX": 0.070157,
         "rotY": 179.99826,
-        "rotZ": 0.06192505,
+        "rotZ": 0.06192504,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3272,7 +3272,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c09",
@@ -3319,7 +3319,7 @@
         "posZ": -7.50038767,
         "rotX": 0.0701536238,
         "rotY": 179.999908,
-        "rotZ": 0.0619278848,
+        "rotZ": 0.0619278736,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3330,7 +3330,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c10",
@@ -3388,7 +3388,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c11",
@@ -3433,7 +3433,7 @@
         "posX": -37.49993,
         "posY": 1.1603713,
         "posZ": 16.4983,
-        "rotX": 0.07013942,
+        "rotX": 0.07013944,
         "rotY": 180.016159,
         "rotZ": 0.06194805,
         "scaleX": 0.75,
@@ -3446,7 +3446,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c02",
@@ -3491,7 +3491,7 @@
         "posX": -37.4997978,
         "posY": 1.12368369,
         "posZ": -13.5004206,
-        "rotX": 0.07015452,
+        "rotX": 0.07015455,
         "rotY": 179.999512,
         "rotZ": 0.0619275235,
         "scaleX": 0.75,
@@ -3504,7 +3504,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c12",
@@ -3551,7 +3551,7 @@
         "posZ": -16.5004,
         "rotX": 0.06987944,
         "rotY": 180.001022,
-        "rotZ": 0.0615681522,
+        "rotZ": 0.06156814,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3562,7 +3562,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c13",
@@ -3609,7 +3609,7 @@
         "posZ": -16.50028,
         "rotX": 0.0700902045,
         "rotY": 180.021759,
-        "rotZ": 0.06159943,
+        "rotZ": 0.0615994148,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3620,7 +3620,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c13",
@@ -3664,7 +3664,7 @@
         "posX": -37.49979,
         "posY": 1.11634517,
         "posZ": -19.5004177,
-        "rotX": 0.06995542,
+        "rotX": 0.06995544,
         "rotY": 180.000961,
         "rotZ": 0.0618748963,
         "scaleX": 0.75,
@@ -3677,7 +3677,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c14",
@@ -3722,7 +3722,7 @@
         "posX": -37.49971,
         "posY": 1.01635242,
         "posZ": -19.500288,
-        "rotX": 0.0701091662,
+        "rotX": 0.070109196,
         "rotY": 179.999878,
         "rotZ": 0.0615471825,
         "scaleX": 1.25,
@@ -3735,7 +3735,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171995759
+        "b": 0.171995729
       },
       "Tags": [
         "c14",
@@ -3777,10 +3777,10 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.49989,
-        "posY": 1.24874592,
+        "posY": 1.24874473,
         "posZ": 19.49977,
         "rotX": 359.929932,
-        "rotY": -0.000967908069,
+        "rotY": -0.0009679077,
         "rotZ": 359.9385,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -3879,10 +3879,10 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.4998779,
-        "posY": 1.24140847,
+        "posY": 1.24140716,
         "posZ": 13.4997759,
         "rotX": 359.929932,
-        "rotY": -0.001040183,
+        "rotY": -0.00104018289,
         "rotZ": 359.9385,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -3933,7 +3933,7 @@
         "posY": 1.23775363,
         "posZ": 10.4997692,
         "rotX": 359.929932,
-        "rotY": -0.0012521618,
+        "rotY": -0.00125216169,
         "rotZ": 359.938538,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -3984,7 +3984,7 @@
         "posY": 1.23408461,
         "posZ": 7.499751,
         "rotX": 359.929932,
-        "rotY": 0.00100091135,
+        "rotY": 0.00100091053,
         "rotZ": 359.938538,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4032,10 +4032,10 @@
       "Name": "Figurine_Custom",
       "Transform": {
         "posX": -34.4998741,
-        "posY": 1.230418,
+        "posY": 1.23041844,
         "posZ": 4.499758,
         "rotX": 359.929932,
-        "rotY": -0.0005596824,
+        "rotY": -0.0005596828,
         "rotZ": 359.9385,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4086,7 +4086,7 @@
         "posY": 1.22674692,
         "posZ": 1.49974811,
         "rotX": 359.929932,
-        "rotY": -0.00182715838,
+        "rotY": -0.00182715862,
         "rotZ": 359.938538,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4188,7 +4188,7 @@
         "posY": 1.21940911,
         "posZ": -4.50026274,
         "rotX": 359.929932,
-        "rotY": 0.001620063,
+        "rotY": 0.00162006251,
         "rotZ": 359.938538,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4290,7 +4290,7 @@
         "posY": 1.21207142,
         "posZ": -10.5002689,
         "rotX": 359.929932,
-        "rotY": 0.002456053,
+        "rotY": 0.00245605339,
         "rotZ": 359.938538,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4392,7 +4392,7 @@
         "posY": 1.20473361,
         "posZ": -16.5002728,
         "rotX": 359.929932,
-        "rotY": 0.00195329823,
+        "rotY": 0.00195329753,
         "rotZ": 359.9385,
         "scaleX": 1.125,
         "scaleY": 1.125,
@@ -4616,7 +4616,7 @@
         "posX": -40.500164,
         "posY": 1.01726711,
         "posZ": 19.5001144,
-        "rotX": 0.0701029748,
+        "rotX": 0.07010299,
         "rotY": 179.985565,
         "rotZ": 0.0614065081,
         "scaleX": 1.25,
@@ -4627,9 +4627,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429955,
-        "g": 0.2309955,
-        "b": 0.08999636
+        "r": 0.442995459,
+        "g": 0.230995476,
+        "b": 0.08999633
       },
       "Tags": [
         "c01",
@@ -4676,7 +4676,7 @@
         "posX": -40.5001144,
         "posY": 1.0135982,
         "posZ": 16.5001011,
-        "rotX": 0.0701044947,
+        "rotX": 0.07010451,
         "rotY": 179.988876,
         "rotZ": 0.06140962,
         "scaleX": 1.25,
@@ -4687,9 +4687,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429955,
-        "g": 0.2309955,
-        "b": 0.08999636
+        "r": 0.442995459,
+        "g": 0.230995476,
+        "b": 0.08999633
       },
       "Tags": [
         "c02",
@@ -4736,9 +4736,9 @@
         "posX": -40.5002556,
         "posY": 1.00992954,
         "posZ": 13.50011,
-        "rotX": 0.07011576,
+        "rotX": 0.07011579,
         "rotY": 179.978027,
-        "rotZ": 0.0613969564,
+        "rotZ": 0.0613969453,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4747,9 +4747,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c03",
@@ -4796,7 +4796,7 @@
         "posX": -40.5001373,
         "posY": 1.00626051,
         "posZ": 10.5000448,
-        "rotX": 0.07011292,
+        "rotX": 0.0701129362,
         "rotY": 179.984772,
         "rotZ": 0.061406035,
         "scaleX": 1.25,
@@ -4807,9 +4807,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c04",
@@ -4856,7 +4856,7 @@
         "posX": -40.5001678,
         "posY": 1.00259161,
         "posZ": 7.50008535,
-        "rotX": 0.07010985,
+        "rotX": 0.07010987,
         "rotY": 179.985641,
         "rotZ": 0.0614059828,
         "scaleX": 1.25,
@@ -4867,9 +4867,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429955,
-        "g": 0.2309955,
-        "b": 0.08999636
+        "r": 0.442995459,
+        "g": 0.230995476,
+        "b": 0.08999633
       },
       "Tags": [
         "c05",
@@ -4916,7 +4916,7 @@
         "posX": -40.5001335,
         "posY": 0.998922765,
         "posZ": 4.500071,
-        "rotX": 0.0701004,
+        "rotX": 0.07010041,
         "rotY": 179.989563,
         "rotZ": 0.0614089258,
         "scaleX": 1.25,
@@ -4927,9 +4927,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c06",
@@ -4976,9 +4976,9 @@
         "posX": -40.5002556,
         "posY": 0.995254159,
         "posZ": 1.50008333,
-        "rotX": 0.0701248646,
+        "rotX": 0.0701248944,
         "rotY": 179.973373,
-        "rotZ": 0.0613943562,
+        "rotZ": 0.061394345,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4987,9 +4987,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c07",
@@ -5036,9 +5036,9 @@
         "posX": -40.50011,
         "posY": 0.9915848,
         "posZ": -1.49993038,
-        "rotX": 0.0701197,
+        "rotX": 0.07011973,
         "rotY": 179.973373,
-        "rotZ": 0.0613866448,
+        "rotZ": 0.0613866337,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5047,9 +5047,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c08",
@@ -5096,9 +5096,9 @@
         "posX": -40.50016,
         "posY": 0.987916231,
         "posZ": -4.499929,
-        "rotX": 0.07011771,
+        "rotX": 0.0701177344,
         "rotY": 179.976013,
-        "rotZ": 0.0613939427,
+        "rotZ": 0.06139393,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5107,9 +5107,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c09",
@@ -5156,9 +5156,9 @@
         "posX": -40.5001068,
         "posY": 0.984246969,
         "posZ": -7.499949,
-        "rotX": 0.07006044,
+        "rotX": 0.07006047,
         "rotY": 180.024811,
-        "rotZ": 0.06145284,
+        "rotZ": 0.06145283,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5167,9 +5167,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c10",
@@ -5216,7 +5216,7 @@
         "posX": -40.50016,
         "posY": 0.9805781,
         "posZ": -10.4999485,
-        "rotX": 0.07007555,
+        "rotX": 0.0700755641,
         "rotY": 180.0128,
         "rotZ": 0.0614361167,
         "scaleX": 1.25,
@@ -5227,9 +5227,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c11",
@@ -5276,7 +5276,7 @@
         "posX": -40.5001144,
         "posY": 0.9769095,
         "posZ": -13.4999628,
-        "rotX": 0.0700819045,
+        "rotX": 0.07008192,
         "rotY": 180.011566,
         "rotZ": 0.0614385381,
         "scaleX": 1.25,
@@ -5287,9 +5287,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c12",
@@ -5338,7 +5338,7 @@
         "posZ": -16.4999561,
         "rotX": 0.07006467,
         "rotY": 180.025818,
-        "rotZ": 0.0614554025,
+        "rotZ": 0.0614553876,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -5347,9 +5347,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c13",
@@ -6250,8 +6250,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.0999933854,
-        "b": 0.09399337
+        "g": 0.0999933258,
+        "b": 0.0939933
       },
       "Tags": [
         "player",
@@ -6305,7 +6305,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993464
+        "b": 0.1719934
       },
       "Tags": [
         "player",
@@ -6357,9 +6357,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191993475,
+        "r": 0.191993415,
         "g": 0.701,
-        "b": 0.167993456
+        "b": 0.1679934
       },
       "Tags": [
         "green",
@@ -6412,8 +6412,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.3919931,
-        "b": 0.1129931
+        "g": 0.391993046,
+        "b": 0.112993039
       },
       "Tags": [
         "orange",
@@ -6465,9 +6465,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249993235,
-        "g": 0.249993235,
-        "b": 0.249993235
+        "r": 0.249993175,
+        "g": 0.249993175,
+        "b": 0.249993175
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -6514,9 +6514,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249993622,
-        "g": 0.249993622,
-        "b": 0.249993622
+        "r": 0.249993563,
+        "g": 0.249993563,
+        "b": 0.249993563
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -6622,9 +6622,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249993235,
-        "g": 0.249993235,
-        "b": 0.249993235
+        "r": 0.249993175,
+        "g": 0.249993175,
+        "b": 0.249993175
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -6660,7 +6660,7 @@
         "posX": -40.5000954,
         "posY": 0.969571352,
         "posZ": -19.5000477,
-        "rotX": 0.07008311,
+        "rotX": 0.07008313,
         "rotY": 180.00325,
         "rotZ": 0.0614255928,
         "scaleX": 1.25,
@@ -6671,9 +6671,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995518,
-        "g": 0.230995536,
-        "b": 0.0899963751
+        "r": 0.4429955,
+        "g": 0.2309955,
+        "b": 0.08999636
       },
       "Tags": [
         "c14",
@@ -7220,9 +7220,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -7391,9 +7391,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -7561,9 +7561,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -7732,9 +7732,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -7903,9 +7903,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -8074,9 +8074,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -8245,9 +8245,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -8416,9 +8416,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -8588,9 +8588,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -8759,9 +8759,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -8929,9 +8929,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -9100,9 +9100,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -9271,9 +9271,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -9442,9 +9442,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -9613,9 +9613,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -9784,9 +9784,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.3606231,
-        "g": 0.3606231,
-        "b": 0.3606231
+        "r": 0.360623032,
+        "g": 0.360623032,
+        "b": 0.360623032
       },
       "Tags": [
         "bag",
@@ -10705,7 +10705,7 @@
         "posZ": 42.5,
         "rotX": -4.47975435E-09,
         "rotY": 179.972351,
-        "rotZ": -2.365068E-08,
+        "rotZ": -2.36506832E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10762,7 +10762,7 @@
         "posZ": 42.5,
         "rotX": 2.78707013E-08,
         "rotY": 179.974014,
-        "rotZ": 7.773826E-08,
+        "rotZ": 7.773827E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10817,7 +10817,7 @@
         "posX": 35.5,
         "posY": 1.01360488,
         "posZ": 42.5,
-        "rotX": -6.221531E-09,
+        "rotX": -6.22153173E-09,
         "rotY": 180.012436,
         "rotZ": 1.28305091E-08,
         "scaleX": 1.625,
@@ -10990,7 +10990,7 @@
         "posZ": 36.5,
         "rotX": 1.92208844E-08,
         "rotY": 180.020523,
-        "rotZ": -1.909045E-07,
+        "rotZ": -1.9090453E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11045,7 +11045,7 @@
         "posX": 23.5,
         "posY": 1.01360488,
         "posZ": 36.5,
-        "rotX": 4.53248781E-08,
+        "rotX": 4.53248852E-08,
         "rotY": 180.011337,
         "rotZ": 4.64047751E-08,
         "scaleX": 1.625,
@@ -11576,7 +11576,7 @@
         "posX": -42.0343132,
         "posY": 1.00000024,
         "posZ": 36.58233,
-        "rotX": 4.59314826E-08,
+        "rotX": 4.593149E-08,
         "rotY": 180.005875,
         "rotZ": -4.1939284E-08,
         "scaleX": 1.25,
@@ -11692,7 +11692,7 @@
         "posX": -42.0343132,
         "posY": 1.00000024,
         "posZ": 39.28233,
-        "rotX": 1.06112516E-07,
+        "rotX": 1.0611253E-07,
         "rotY": 180.009827,
         "rotZ": 1.47305368E-08,
         "scaleX": 1.25,
@@ -12038,7 +12038,7 @@
         "posZ": 39.28233,
         "rotX": -1.22100232E-07,
         "rotY": 180.0043,
-        "rotZ": -2.64009934E-08,
+        "rotZ": -2.64009969E-08,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -12551,9 +12551,9 @@
         "posX": -28.5342922,
         "posY": 1.00000012,
         "posZ": 44.6823463,
-        "rotX": -4.2277275E-08,
+        "rotX": -4.22772821E-08,
         "rotY": 179.9762,
-        "rotZ": -1.06076733E-07,
+        "rotZ": -1.06076747E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -13470,7 +13470,7 @@
         "posZ": 44.6823349,
         "rotX": 1.53672374E-07,
         "rotY": 180.009216,
-        "rotZ": -2.95143053E-07,
+        "rotZ": -2.951431E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -15313,8 +15313,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637811,
-        "b": 0.311844736
+        "g": 0.163781077,
+        "b": 0.3118447
       },
       "Tags": [
         "encounter",
@@ -15369,8 +15369,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781136,
-        "b": 0.311844766
+        "g": 0.1637811,
+        "b": 0.311844736
       },
       "Tags": [
         "encounter",
@@ -15425,8 +15425,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781136,
-        "b": 0.311844766
+        "g": 0.1637811,
+        "b": 0.311844736
       },
       "Tags": [
         "encounter",
@@ -15481,8 +15481,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
@@ -15537,8 +15537,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637811,
-        "b": 0.311844736
+        "g": 0.163781077,
+        "b": 0.3118447
       },
       "Tags": [
         "encounter",
@@ -15593,8 +15593,8 @@
       "GMNotes": "Hazard - Yellow 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
@@ -15649,8 +15649,8 @@
       "GMNotes": "Relic - Spy Eye",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -15706,8 +15706,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
@@ -15762,8 +15762,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
@@ -15818,8 +15818,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781136,
-        "b": 0.311844766
+        "g": 0.1637811,
+        "b": 0.311844736
       },
       "Tags": [
         "encounter",
@@ -15874,8 +15874,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
@@ -15930,8 +15930,8 @@
       "GMNotes": "Relic - Air Foil",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -15987,8 +15987,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781136,
-        "b": 0.311844766
+        "g": 0.1637811,
+        "b": 0.311844736
       },
       "Tags": [
         "encounter",
@@ -16043,8 +16043,8 @@
       "GMNotes": "Hazard - Blue 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16099,8 +16099,8 @@
       "GMNotes": "Hazard - Yellow 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
@@ -16155,8 +16155,8 @@
       "GMNotes": "Telegate 4",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16211,8 +16211,8 @@
       "GMNotes": "Telegate 3",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781226,
-        "b": 0.311844856
+        "g": 0.1637812,
+        "b": 0.311844826
       },
       "Tags": [
         "encounter",
@@ -16267,8 +16267,8 @@
       "GMNotes": "Hazard - Red 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16323,8 +16323,8 @@
       "GMNotes": "Hazard - Yellow 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781136,
-        "b": 0.311844766
+        "g": 0.1637811,
+        "b": 0.311844736
       },
       "Tags": [
         "encounter",
@@ -16379,8 +16379,8 @@
       "GMNotes": "Relic - Gate Lock",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16436,8 +16436,8 @@
       "GMNotes": "Relic - Yellow Drive",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16493,8 +16493,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637811,
-        "b": 0.311844736
+        "g": 0.163781077,
+        "b": 0.3118447
       },
       "Tags": [
         "encounter",
@@ -16549,8 +16549,8 @@
       "GMNotes": "Relic - Mulligan Gear",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16606,8 +16606,8 @@
       "GMNotes": "Hazard - Yellow 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
@@ -16662,8 +16662,8 @@
       "GMNotes": "Relic - Shield",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16719,8 +16719,8 @@
       "GMNotes": "Telegate 5",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16775,8 +16775,8 @@
       "GMNotes": "Telegate 6",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16831,8 +16831,8 @@
       "GMNotes": "Relic - Auto Pilot",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781226,
-        "b": 0.311844856
+        "g": 0.1637812,
+        "b": 0.311844826
       },
       "Tags": [
         "encounter",
@@ -16888,8 +16888,8 @@
       "GMNotes": "Hazard - Red 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -16944,8 +16944,8 @@
       "GMNotes": "Telegate 2",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781226,
-        "b": 0.311844856
+        "g": 0.1637812,
+        "b": 0.311844826
       },
       "Tags": [
         "encounter",
@@ -17000,8 +17000,8 @@
       "GMNotes": "Relic - Switch Switch",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -17057,8 +17057,8 @@
       "GMNotes": "Relic - Jump Start",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781255,
-        "b": 0.3118449
+        "g": 0.163781226,
+        "b": 0.311844856
       },
       "Tags": [
         "encounter",
@@ -17114,8 +17114,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637811,
-        "b": 0.311844736
+        "g": 0.163781077,
+        "b": 0.3118447
       },
       "Tags": [
         "encounter",
@@ -17170,8 +17170,8 @@
       "GMNotes": "Telegate 1",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781226,
-        "b": 0.311844856
+        "g": 0.1637812,
+        "b": 0.311844826
       },
       "Tags": [
         "encounter",
@@ -17226,8 +17226,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163781166,
-        "b": 0.3118448
+        "g": 0.163781136,
+        "b": 0.311844766
       },
       "Tags": [
         "encounter",
