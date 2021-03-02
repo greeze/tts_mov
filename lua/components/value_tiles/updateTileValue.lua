@@ -1,12 +1,16 @@
-function updateTileValue(object)
-  local value = object.getVar('val') or object.value
-  local quantity = object.getQuantity()
+-- ============================================================================
+-- This gets imported into Global because it's too expensive to put on every
+-- valueTile.
+-- ============================================================================
+function updateTileValue(obj)
+  local value = obj.getVar('val') or obj.value
+  local quantity = obj.getQuantity()
 
   if quantity > -1 then
     value = value * quantity
   end
 
-  object.value = value
+  obj.value = value
 end
 
 function onObjectEnterContainer(container, obj)
