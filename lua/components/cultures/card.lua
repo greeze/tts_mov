@@ -67,7 +67,7 @@ function dealTokenToSnap(token, snap)
     y = snap.position.y + 1,
     z = snap.position.z,
   }
-  token.setPositionSmooth(destPosition, false, true)
+  token.setPositionSmooth(destPosition, false)
 end
 
 function snapHasAllTags(snap, tags)

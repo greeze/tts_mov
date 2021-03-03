@@ -29,8 +29,6 @@ MONEY_LOOKUP = {
 -- GUIDs to lock so the user can't interact with them (references, no strings)
 -- ============================================================================
 GUIDsToDisable = {
-  -- CultureCardBagGUID,
-  -- EncounterBagGUID,
   TableGUIDs.Board,
   TableGUIDs.MainTable,
   TableGUIDs.PlayerTables,

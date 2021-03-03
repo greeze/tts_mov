@@ -61,6 +61,7 @@ end
 function setup.eventTokens(eventTokens, bagGUID)
   local eventTokenBag = getObjectFromGUID(bagGUID)
   table.forEach(eventTokens, function(obj)
+    obj.setLock(false)
     eventTokenBag.putObject(obj)
   end)
 end
@@ -68,6 +69,7 @@ end
 function setup.cultureCards(cultureCards, bagGUID)
   local cultureCardBag = getObjectFromGUID(bagGUID)
   table.forEach(cultureCards, function(obj)
+    obj.setLock(false)
     cultureCardBag.putObject(obj)
   end)
   dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)
@@ -76,6 +78,7 @@ end
 function setup.encounters(encounterTokens, bagGUID)
   local encounterBag = getObjectFromGUID(bagGUID)
   table.forEach(encounterTokens, function(obj)
+    obj.setLock(false)
     encounterBag.putObject(obj)
   end)
   dealFromContainerToSnaps(encounterBag, encounterSnaps, true)
