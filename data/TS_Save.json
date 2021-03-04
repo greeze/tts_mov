@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "3/3/2021 6:50:01 PM",
+  "Date": "3/3/2021 9:18:25 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -2186,7 +2186,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c01",
@@ -2243,7 +2243,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c02",
@@ -2300,7 +2300,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c03",
@@ -2344,7 +2344,7 @@
         "posX": -37.5002251,
         "posY": 1.65273559,
         "posZ": 10.5000963,
-        "rotX": 0.0806586,
+        "rotX": 0.0806586742,
         "rotY": 180.0002,
         "rotZ": 0.069035545,
         "scaleX": 1.25,
@@ -2357,7 +2357,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c04",
@@ -2414,7 +2414,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c05",
@@ -2458,7 +2458,7 @@
         "posX": -37.5002136,
         "posY": 1.54537868,
         "posZ": 4.500098,
-        "rotX": 0.08133764,
+        "rotX": 0.08133771,
         "rotY": 180.001251,
         "rotZ": 0.069593735,
         "scaleX": 1.25,
@@ -2471,7 +2471,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c06",
@@ -2528,7 +2528,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c07",
@@ -2572,7 +2572,7 @@
         "posX": -37.50023,
         "posY": 1.63806093,
         "posZ": -1.49990177,
-        "rotX": 0.0807365,
+        "rotX": 0.0807365552,
         "rotY": 179.995758,
         "rotZ": 0.0690371841,
         "scaleX": 1.25,
@@ -2585,7 +2585,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c08",
@@ -2629,7 +2629,7 @@
         "posX": -37.5002136,
         "posY": 1.6343137,
         "posZ": -4.49991941,
-        "rotX": 0.08121988,
+        "rotX": 0.08121996,
         "rotY": 179.988312,
         "rotZ": 0.069601506,
         "scaleX": 1.25,
@@ -2642,7 +2642,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c09",
@@ -2686,7 +2686,7 @@
         "posX": -37.5002022,
         "posY": 1.43068326,
         "posZ": -7.499912,
-        "rotX": 0.08186137,
+        "rotX": 0.0818614438,
         "rotY": 179.995575,
         "rotZ": 0.07007537,
         "scaleX": 1.25,
@@ -2699,7 +2699,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c10",
@@ -2745,7 +2745,7 @@
         "posZ": -10.4999151,
         "rotX": 0.08191627,
         "rotY": 180.000443,
-        "rotZ": 0.06943135,
+        "rotZ": 0.0694314241,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -2756,7 +2756,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c11",
@@ -2813,7 +2813,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c12",
@@ -2870,7 +2870,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c01",
@@ -2928,7 +2928,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c03",
@@ -2986,7 +2986,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c04",
@@ -3031,9 +3031,9 @@
         "posX": -37.5002022,
         "posY": 1.74897289,
         "posZ": 7.50006151,
-        "rotX": 0.08069178,
+        "rotX": 0.08069179,
         "rotY": 180.002136,
-        "rotZ": 0.0734457746,
+        "rotZ": 0.07344563,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3044,7 +3044,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c05",
@@ -3089,9 +3089,9 @@
         "posX": -37.5001945,
         "posY": 1.645197,
         "posZ": 4.500071,
-        "rotX": 0.08563362,
+        "rotX": 0.0856336951,
         "rotY": 180.00267,
-        "rotZ": 0.07626719,
+        "rotZ": 0.0762672648,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3102,7 +3102,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c06",
@@ -3160,7 +3160,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c07",
@@ -3205,9 +3205,9 @@
         "posX": -37.500206,
         "posY": 1.737885,
         "posZ": -1.49992824,
-        "rotX": 0.08489741,
+        "rotX": 0.08489755,
         "rotY": 180.006042,
-        "rotZ": 0.07548604,
+        "rotZ": 0.0754861161,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3218,7 +3218,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c08",
@@ -3276,7 +3276,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c09",
@@ -3321,9 +3321,9 @@
         "posX": -37.5001831,
         "posY": 1.53049362,
         "posZ": -7.4999404,
-        "rotX": 0.08419391,
+        "rotX": 0.0841939449,
         "rotY": 180.000427,
-        "rotZ": 0.0773161054,
+        "rotZ": 0.07731618,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3334,7 +3334,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c10",
@@ -3392,7 +3392,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c11",
@@ -3437,7 +3437,7 @@
         "posX": -37.5002327,
         "posY": 1.76000857,
         "posZ": 16.5000076,
-        "rotX": 0.07400765,
+        "rotX": 0.0740076452,
         "rotY": 180.0163,
         "rotZ": 0.0790835544,
         "scaleX": 0.75,
@@ -3450,7 +3450,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c02",
@@ -3495,7 +3495,7 @@
         "posX": -37.5002327,
         "posY": 1.72331977,
         "posZ": -13.5000019,
-        "rotX": 0.07604699,
+        "rotX": 0.076047,
         "rotY": 179.999741,
         "rotZ": 0.07870248,
         "scaleX": 0.75,
@@ -3508,7 +3508,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c12",
@@ -3566,7 +3566,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c13",
@@ -3611,7 +3611,7 @@
         "posX": -37.5001869,
         "posY": 1.51969421,
         "posZ": -16.4999084,
-        "rotX": 0.08116544,
+        "rotX": 0.0811655149,
         "rotY": 180.022125,
         "rotZ": 0.06928158,
         "scaleX": 1.25,
@@ -3624,7 +3624,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c13",
@@ -3670,7 +3670,7 @@
         "posZ": -19.499939,
         "rotX": 0.08293618,
         "rotY": 180.0014,
-        "rotZ": 0.07686073,
+        "rotZ": 0.07686081,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -3681,7 +3681,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c14",
@@ -3739,7 +3739,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.1719954
+        "b": 0.171995252
       },
       "Tags": [
         "c14",
@@ -3906,7 +3906,7 @@
         "posX": -37.50026,
         "posY": 1.0139997,
         "posZ": 19.5001221,
-        "rotX": 0.07084029,
+        "rotX": 0.07084043,
         "rotY": 179.986053,
         "rotZ": 0.06459753,
         "scaleX": 1.25,
@@ -3917,9 +3917,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995131,
-        "g": 0.230995119,
-        "b": 0.08999605
+        "r": 0.442994952,
+        "g": 0.23099497,
+        "b": 0.08999591
       },
       "Tags": [
         "c01",
@@ -3966,9 +3966,9 @@
         "posX": -37.50031,
         "posY": 1.0103426,
         "posZ": 16.5000324,
-        "rotX": 0.07071477,
+        "rotX": 0.07071481,
         "rotY": 179.988922,
-        "rotZ": 0.06395092,
+        "rotZ": 0.0639509261,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -3977,9 +3977,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995131,
-        "g": 0.230995119,
-        "b": 0.08999605
+        "r": 0.442994952,
+        "g": 0.23099497,
+        "b": 0.08999591
       },
       "Tags": [
         "c02",
@@ -4028,7 +4028,7 @@
         "posZ": 13.500041,
         "rotX": 0.0707172155,
         "rotY": 179.978363,
-        "rotZ": 0.06395762,
+        "rotZ": 0.06395769,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4037,9 +4037,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c03",
@@ -4086,7 +4086,7 @@
         "posX": -37.5002747,
         "posY": 1.00299752,
         "posZ": 10.500123,
-        "rotX": 0.07081953,
+        "rotX": 0.07081966,
         "rotY": 179.985062,
         "rotZ": 0.064380914,
         "scaleX": 1.25,
@@ -4097,9 +4097,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c04",
@@ -4157,9 +4157,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995131,
-        "g": 0.230995119,
-        "b": 0.08999605
+        "r": 0.442994952,
+        "g": 0.23099497,
+        "b": 0.08999591
       },
       "Tags": [
         "c05",
@@ -4206,9 +4206,9 @@
         "posX": -37.5002632,
         "posY": 0.995655239,
         "posZ": 4.500123,
-        "rotX": 0.0708460659,
+        "rotX": 0.0708461,
         "rotY": 179.989914,
-        "rotZ": 0.0646087751,
+        "rotZ": 0.0646086857,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4217,9 +4217,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c06",
@@ -4277,9 +4277,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c07",
@@ -4337,9 +4337,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c08",
@@ -4397,9 +4397,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c09",
@@ -4457,9 +4457,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c10",
@@ -4506,7 +4506,7 @@
         "posX": -37.5002327,
         "posY": 0.977309167,
         "posZ": -10.4998913,
-        "rotX": 0.07083835,
+        "rotX": 0.07083849,
         "rotY": 180.013,
         "rotZ": 0.06473081,
         "scaleX": 1.25,
@@ -4517,9 +4517,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c11",
@@ -4566,9 +4566,9 @@
         "posX": -37.5003128,
         "posY": 0.9736538,
         "posZ": -13.4999733,
-        "rotX": 0.0706830248,
+        "rotX": 0.07068313,
         "rotY": 180.011627,
-        "rotZ": 0.0640069,
+        "rotZ": 0.06400694,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -4577,9 +4577,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c12",
@@ -4637,9 +4637,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c13",
@@ -5525,12 +5525,12 @@
       "GUID": "63b39b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -12.5,
-        "posY": 0.999882,
-        "posZ": -33.5,
-        "rotX": -5.23274446E-09,
-        "rotY": 0.0006559498,
-        "rotZ": 1.75361336E-07,
+        "posX": -12.5031872,
+        "posY": 0.9990792,
+        "posZ": -33.5046234,
+        "rotX": 359.8696,
+        "rotY": 0.000558205356,
+        "rotZ": 0.08971884,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -5539,9 +5539,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.856,
-        "g": 0.09999267,
-        "b": 0.09399264
+        "r": 0.6916378,
+        "g": 0.05837477,
+        "b": 0.0518124476
       },
       "Tags": [
         "miniature",
@@ -5550,7 +5550,7 @@
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5580,12 +5580,12 @@
       "GUID": "2f8c98",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -36.5,
-        "posY": 0.999881864,
-        "posZ": -33.5,
-        "rotX": -1.74217938E-08,
-        "rotY": -0.000654775533,
-        "rotZ": 5.25876445E-08,
+        "posX": -36.5031853,
+        "posY": 0.999079,
+        "posZ": -33.5046272,
+        "rotX": 359.8696,
+        "rotY": -0.0009728012,
+        "rotZ": 0.08972161,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -5596,7 +5596,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171992749
+        "b": 0.171992451
       },
       "Tags": [
         "miniature",
@@ -5605,7 +5605,7 @@
         "yellow"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5635,12 +5635,12 @@
       "GUID": "3da2d6",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 12.4999981,
-        "posY": 0.999882,
-        "posZ": -33.500946,
-        "rotX": -3.492288E-05,
-        "rotY": 0.0007544458,
-        "rotZ": -4.654313E-06,
+        "posX": 12.49681,
+        "posY": 0.999079347,
+        "posZ": -33.5055733,
+        "rotX": 359.8696,
+        "rotY": 0.0007049384,
+        "rotZ": 0.08972615,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -5649,9 +5649,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.19199276,
+        "r": 0.191992462,
         "g": 0.701,
-        "b": 0.167992741
+        "b": 0.167992443
       },
       "Tags": [
         "green",
@@ -5660,7 +5660,7 @@
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5690,12 +5690,12 @@
       "GUID": "f17c87",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 37.5,
-        "posY": 0.999882,
-        "posZ": -33.50094,
-        "rotX": -5.698915E-06,
-        "rotY": 0.0006751037,
-        "rotZ": -2.00592936E-07,
+        "posX": 37.4968147,
+        "posY": 0.999079347,
+        "posZ": -33.5055656,
+        "rotX": 359.8696,
+        "rotY": 0.0003872745,
+        "rotZ": 0.0897213,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -5705,8 +5705,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.391992331,
-        "b": 0.112992354
+        "g": 0.391992033,
+        "b": 0.112992041
       },
       "Tags": [
         "miniature",
@@ -5715,7 +5715,7 @@
         "ship"
       ],
       "LayoutGroupSortIndex": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -5759,9 +5759,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.24999249,
-        "g": 0.24999249,
-        "b": 0.24999249
+        "r": 0.249992162,
+        "g": 0.249992162,
+        "b": 0.249992162
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -5808,9 +5808,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249992847,
-        "g": 0.249992847,
-        "b": 0.249992847
+        "r": 0.249992549,
+        "g": 0.249992549,
+        "b": 0.249992549
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -5916,9 +5916,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.24999249,
-        "g": 0.24999249,
-        "b": 0.24999249
+        "r": 0.249992162,
+        "g": 0.249992162,
+        "b": 0.249992162
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -5954,7 +5954,7 @@
         "posX": -37.50024,
         "posY": 0.9663004,
         "posZ": -19.4998913,
-        "rotX": 0.0708531737,
+        "rotX": 0.07085325,
         "rotY": 180.003525,
         "rotZ": 0.06478626,
         "scaleX": 1.25,
@@ -5965,9 +5965,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442995161,
-        "g": 0.230995148,
-        "b": 0.08999608
+        "r": 0.442994982,
+        "g": 0.230995,
+        "b": 0.08999594
       },
       "Tags": [
         "c14",
@@ -6070,7 +6070,7 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"14\" />\r\n  <Text class=\"value\" fontSize=\"48\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
+      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"18\" />\r\n  <Text class=\"value\" fontSize=\"60\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
     },
     {
       "GUID": "9014c8",
@@ -6226,7 +6226,7 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"14\" />\r\n  <Text class=\"value\" fontSize=\"48\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
+      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"18\" />\r\n  <Text class=\"value\" fontSize=\"60\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
     },
     {
       "GUID": "3b8ada",
@@ -6291,7 +6291,7 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"14\" />\r\n  <Text class=\"value\" fontSize=\"48\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
+      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"18\" />\r\n  <Text class=\"value\" fontSize=\"60\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
     },
     {
       "GUID": "1bb59f",
@@ -6356,7 +6356,7 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"14\" />\r\n  <Text class=\"value\" fontSize=\"48\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
+      "XmlUI": "<!-- include lua/components/net_worth/net_worth.xml -->\n<Defaults>\r\n  <Text color=\"#FFFFFF\" fontStyle=\"bold\" />\r\n  <Text class=\"title\" fontSize=\"18\" />\r\n  <Text class=\"value\" fontSize=\"60\" />\r\n</Defaults>\r\n\r\n<TableLayout\r\n  id=\"NetWorthLayout\"\r\n  width=\"2260\"\r\n  height=\"105\"\r\n  position=\"0 -20 -60\"\r\n  rotation=\"-55 0 0\"\r\n>\r\n  <Row preferredHeight=\"30\">\r\n    <Cell>\r\n      <Text class=\"title\">Cash on Hand</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text class=\"title\">Total Net Worth</Text>\r\n    </Cell>\r\n  </Row>\r\n  <Row>\r\n    <Cell>\r\n      <Text id=\"cash\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n    <Cell>\r\n      <Text id=\"total\" class=\"value\">0 c</Text>\r\n    </Cell>\r\n  </Row>\r\n</TableLayout>\r\n\n<!-- include lua/components/net_worth/net_worth.xml -->"
     },
     {
       "GUID": "909dc6",
@@ -6514,9 +6514,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -6685,9 +6685,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -6855,9 +6855,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -7026,9 +7026,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -7197,9 +7197,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -7368,9 +7368,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -7539,9 +7539,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -7710,9 +7710,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -7882,9 +7882,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -8053,9 +8053,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -8223,9 +8223,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -8394,9 +8394,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -8565,9 +8565,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -8736,9 +8736,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -8907,9 +8907,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -9078,9 +9078,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360622346,
-        "g": 0.360622346,
-        "b": 0.360622346
+        "r": 0.360622019,
+        "g": 0.360622019,
+        "b": 0.360622019
       },
       "Tags": [
         "bag",
@@ -9999,7 +9999,7 @@
         "posZ": 42.5,
         "rotX": -4.47975435E-09,
         "rotY": 179.972351,
-        "rotZ": -2.36507223E-08,
+        "rotZ": -2.365074E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10056,7 +10056,7 @@
         "posZ": 42.5,
         "rotX": 2.78707013E-08,
         "rotY": 179.974014,
-        "rotZ": 7.773843E-08,
+        "rotZ": 7.77385E-08,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10111,7 +10111,7 @@
         "posX": 35.5,
         "posY": 1.01360488,
         "posZ": 42.5,
-        "rotX": -6.2215415E-09,
+        "rotX": -6.221546E-09,
         "rotY": 180.012436,
         "rotZ": 1.28305091E-08,
         "scaleX": 1.625,
@@ -10284,7 +10284,7 @@
         "posZ": 36.5,
         "rotX": 1.92208844E-08,
         "rotY": 180.020523,
-        "rotZ": -1.90904842E-07,
+        "rotZ": -1.90904984E-07,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10339,7 +10339,7 @@
         "posX": 23.5,
         "posY": 1.01360488,
         "posZ": 36.5,
-        "rotX": 4.53249633E-08,
+        "rotX": 4.5325E-08,
         "rotY": 180.011337,
         "rotZ": 4.64047751E-08,
         "scaleX": 1.625,
@@ -10870,7 +10870,7 @@
         "posX": -42.0343132,
         "posY": 1.00000024,
         "posZ": 36.58233,
-        "rotX": 4.59315679E-08,
+        "rotX": 4.59316034E-08,
         "rotY": 180.005875,
         "rotZ": -4.1939284E-08,
         "scaleX": 1.25,
@@ -10986,7 +10986,7 @@
         "posX": -42.0343132,
         "posY": 1.00000024,
         "posZ": 39.28233,
-        "rotX": 1.06112687E-07,
+        "rotX": 1.06112758E-07,
         "rotY": 180.009827,
         "rotZ": 1.47305368E-08,
         "scaleX": 1.25,
@@ -11332,7 +11332,7 @@
         "posZ": 39.28233,
         "rotX": -1.22100232E-07,
         "rotY": 180.0043,
-        "rotZ": -2.6401036E-08,
+        "rotZ": -2.64010538E-08,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -11845,9 +11845,9 @@
         "posX": -28.5342922,
         "posY": 1.00000012,
         "posZ": 44.6823463,
-        "rotX": -4.227736E-08,
+        "rotX": -4.22773958E-08,
         "rotY": 179.9762,
-        "rotZ": -1.06076904E-07,
+        "rotZ": -1.06076975E-07,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -14392,8 +14392,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780749,
-        "b": 0.311844349
+        "g": 0.1637806,
+        "b": 0.3118442
       },
       "Tags": [
         "encounter",
@@ -14448,8 +14448,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780779,
-        "b": 0.311844379
+        "g": 0.16378063,
+        "b": 0.31184423
       },
       "Tags": [
         "encounter",
@@ -14504,8 +14504,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780779,
-        "b": 0.311844379
+        "g": 0.16378063,
+        "b": 0.31184423
       },
       "Tags": [
         "encounter",
@@ -14560,8 +14560,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -14616,8 +14616,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780749,
-        "b": 0.311844349
+        "g": 0.1637806,
+        "b": 0.3118442
       },
       "Tags": [
         "encounter",
@@ -14672,8 +14672,8 @@
       "GMNotes": "Hazard - Yellow 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -14728,8 +14728,8 @@
       "GMNotes": "Relic - Spy Eye",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -14785,8 +14785,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -14841,8 +14841,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -14897,8 +14897,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780779,
-        "b": 0.311844379
+        "g": 0.16378063,
+        "b": 0.31184423
       },
       "Tags": [
         "encounter",
@@ -14953,8 +14953,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -15009,8 +15009,8 @@
       "GMNotes": "Relic - Air Foil",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15066,8 +15066,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780779,
-        "b": 0.311844379
+        "g": 0.16378063,
+        "b": 0.31184423
       },
       "Tags": [
         "encounter",
@@ -15122,8 +15122,8 @@
       "GMNotes": "Hazard - Blue 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15178,8 +15178,8 @@
       "GMNotes": "Hazard - Yellow 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -15234,8 +15234,8 @@
       "GMNotes": "Telegate 4",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15290,8 +15290,8 @@
       "GMNotes": "Telegate 3",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780868,
-        "b": 0.311844468
+        "g": 0.163780719,
+        "b": 0.311844319
       },
       "Tags": [
         "encounter",
@@ -15346,8 +15346,8 @@
       "GMNotes": "Hazard - Red 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15402,8 +15402,8 @@
       "GMNotes": "Hazard - Yellow 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780779,
-        "b": 0.311844379
+        "g": 0.16378063,
+        "b": 0.31184423
       },
       "Tags": [
         "encounter",
@@ -15458,8 +15458,8 @@
       "GMNotes": "Relic - Gate Lock",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15515,8 +15515,8 @@
       "GMNotes": "Relic - Yellow Drive",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15572,8 +15572,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780749,
-        "b": 0.311844349
+        "g": 0.1637806,
+        "b": 0.3118442
       },
       "Tags": [
         "encounter",
@@ -15628,8 +15628,8 @@
       "GMNotes": "Relic - Mulligan Gear",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15685,8 +15685,8 @@
       "GMNotes": "Hazard - Yellow 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -15741,8 +15741,8 @@
       "GMNotes": "Relic - Shield",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15798,8 +15798,8 @@
       "GMNotes": "Telegate 5",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15854,8 +15854,8 @@
       "GMNotes": "Telegate 6",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -15910,8 +15910,8 @@
       "GMNotes": "Relic - Auto Pilot",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780868,
-        "b": 0.311844468
+        "g": 0.163780719,
+        "b": 0.311844319
       },
       "Tags": [
         "encounter",
@@ -15967,8 +15967,8 @@
       "GMNotes": "Hazard - Red 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -16023,8 +16023,8 @@
       "GMNotes": "Telegate 2",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780868,
-        "b": 0.311844468
+        "g": 0.163780719,
+        "b": 0.311844319
       },
       "Tags": [
         "encounter",
@@ -16079,8 +16079,8 @@
       "GMNotes": "Relic - Switch Switch",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -16136,8 +16136,8 @@
       "GMNotes": "Relic - Jump Start",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637809,
-        "b": 0.3118445
+        "g": 0.163780749,
+        "b": 0.311844349
       },
       "Tags": [
         "encounter",
@@ -16193,8 +16193,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780749,
-        "b": 0.311844349
+        "g": 0.1637806,
+        "b": 0.3118442
       },
       "Tags": [
         "encounter",
@@ -16249,8 +16249,8 @@
       "GMNotes": "Telegate 1",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780868,
-        "b": 0.311844468
+        "g": 0.163780719,
+        "b": 0.311844319
       },
       "Tags": [
         "encounter",
@@ -16305,8 +16305,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163780808,
-        "b": 0.3118444
+        "g": 0.163780659,
+        "b": 0.31184426
       },
       "Tags": [
         "encounter",
@@ -16562,10 +16562,10 @@
       "Name": "Die_6",
       "Transform": {
         "posX": -1.49999988,
-        "posY": 1.33019972,
+        "posY": 1.33019984,
         "posZ": -29.5,
         "rotX": 270.0,
-        "rotY": 0.0003320253,
+        "rotY": 0.000477019727,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -16652,10 +16652,10 @@
       "Name": "Die_6",
       "Transform": {
         "posX": -0.4999999,
-        "posY": 1.33019972,
+        "posY": 1.33019984,
         "posZ": -29.5,
         "rotX": 270.0,
-        "rotY": 0.0003208671,
+        "rotY": 0.000461182324,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -16741,11 +16741,11 @@
       "GUID": "21e609",
       "Name": "Die_6",
       "Transform": {
-        "posX": 0.5000002,
-        "posY": 1.33019972,
+        "posX": 0.500000238,
+        "posY": 1.33019984,
         "posZ": -29.5,
         "rotX": 270.0,
-        "rotY": 0.0003286391,
+        "rotY": 0.000470304745,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -16835,7 +16835,7 @@
         "posY": 1.33019984,
         "posZ": -29.5,
         "rotX": 270.0,
-        "rotY": 0.0003299912,
+        "rotY": 0.000473357475,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -16924,7 +16924,7 @@
         "posX": -33.4999962,
         "posY": 1.10242462,
         "posZ": 13.4999895,
-        "rotX": 0.07009764,
+        "rotX": 0.07009778,
         "rotY": 179.98111,
         "rotZ": 0.0614105128,
         "scaleX": 0.75,
@@ -16981,9 +16981,9 @@
         "posX": -33.4999962,
         "posY": 1.10609353,
         "posZ": 16.4999924,
-        "rotX": 0.07008634,
+        "rotX": 0.07008641,
         "rotY": 179.999817,
-        "rotZ": 0.0614247061,
+        "rotZ": 0.06142464,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -17095,9 +17095,9 @@
         "posX": -33.4999962,
         "posY": 1.09875584,
         "posZ": 10.4999886,
-        "rotX": 0.07008107,
+        "rotX": 0.0700811446,
         "rotY": 179.999924,
-        "rotZ": 0.06142614,
+        "rotZ": 0.0614260733,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -17152,7 +17152,7 @@
         "posX": -33.4999962,
         "posY": 1.09508681,
         "posZ": 7.499988,
-        "rotX": 0.07006922,
+        "rotX": 0.0700693,
         "rotY": 180.0,
         "rotZ": 0.0614101179,
         "scaleX": 0.75,
@@ -17266,9 +17266,9 @@
         "posX": -33.4999962,
         "posY": 1.087749,
         "posZ": 1.49998546,
-        "rotX": 0.07006455,
+        "rotX": 0.07006463,
         "rotY": 179.999741,
-        "rotZ": 0.0614103377,
+        "rotZ": 0.06141027,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -17325,7 +17325,7 @@
         "posZ": -1.50001359,
         "rotX": 0.0700881,
         "rotY": 179.999741,
-        "rotZ": 0.06141144,
+        "rotZ": 0.0614113733,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -17380,7 +17380,7 @@
         "posX": -33.4999962,
         "posY": 1.08041143,
         "posZ": -4.50001431,
-        "rotX": 0.07008222,
+        "rotX": 0.07008229,
         "rotY": 180.000122,
         "rotZ": 0.0614269078,
         "scaleX": 0.75,
@@ -17437,7 +17437,7 @@
         "posX": -33.4999924,
         "posY": 1.07674253,
         "posZ": -7.50001574,
-        "rotX": 0.07007472,
+        "rotX": 0.0700748,
         "rotY": 179.999878,
         "rotZ": 0.0614124127,
         "scaleX": 0.75,
@@ -17494,7 +17494,7 @@
         "posX": -33.4999962,
         "posY": 1.07307351,
         "posZ": -10.5000172,
-        "rotX": 0.0700698,
+        "rotX": 0.07006987,
         "rotY": 180.004929,
         "rotZ": 0.0614271462,
         "scaleX": 0.75,
@@ -17551,7 +17551,7 @@
         "posX": -33.4999962,
         "posY": 1.0694046,
         "posZ": -13.5000162,
-        "rotX": 0.07007408,
+        "rotX": 0.0700741559,
         "rotY": 179.999832,
         "rotZ": 0.061431244,
         "scaleX": 0.75,
@@ -17608,7 +17608,7 @@
         "posX": -33.4999962,
         "posY": 1.0657357,
         "posZ": -16.50002,
-        "rotX": 0.07005757,
+        "rotX": 0.0700576454,
         "rotY": 180.000168,
         "rotZ": 0.0614387058,
         "scaleX": 0.75,
@@ -17665,7 +17665,7 @@
         "posX": -33.4999924,
         "posY": 1.06206691,
         "posZ": -19.5000172,
-        "rotX": 0.07004086,
+        "rotX": 0.0700409338,
         "rotY": 180.000046,
         "rotZ": 0.0614094846,
         "scaleX": 0.75,
@@ -17714,6 +17714,1508 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": ""
+    },
+    {
+      "GUID": "b5a396",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": -46.9999657,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": 3.29887E-07,
+        "rotY": 4.9499733E-05,
+        "rotZ": -3.84682828E-08,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Yellow Factories",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "factory",
+        "player",
+        "yellow"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "445365",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -47.0,
+            "posY": 2.61009145,
+            "posZ": -33.0,
+            "rotX": 1.59898082E-05,
+            "rotY": 270.0,
+            "rotZ": -0.00338153937,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Yellow Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "player",
+            "token",
+            "yellow"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_yellow.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "ee5c39",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -9.921749E-07,
+            "posY": 6.166672,
+            "posZ": -1.80630366E-07,
+            "rotX": 9.2207556E-05,
+            "rotY": 269.999939,
+            "rotZ": 90.0000153,
+            "scaleX": 2.533333,
+            "scaleY": 0.6666667,
+            "scaleZ": 0.25
+          },
+          "Nickname": "Yellow Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "player",
+            "token",
+            "yellow"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_yellow.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "cb80a1",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": -27.0,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": -6.051719E-08,
+        "rotY": 2.90178956E-08,
+        "rotZ": -2.193476E-07,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Yellow Merchant Spaceports",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "player",
+        "spaceport",
+        "yellow"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "d4a675",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -27.0,
+            "posY": 1.20475745,
+            "posZ": -33.0,
+            "rotX": -1.4927266E-06,
+            "rotY": 89.99965,
+            "rotZ": 5.3554345E-06,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Yellow Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "player",
+            "spaceport",
+            "token",
+            "yellow"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_yellow.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "eccf3c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -2.90181723E-09,
+            "posY": 6.171609,
+            "posZ": -1.29546129E-09,
+            "rotX": 0.0,
+            "rotY": 89.999855,
+            "rotZ": 270.0,
+            "scaleX": 2.49999976,
+            "scaleY": 0.6666667,
+            "scaleZ": 0.25
+          },
+          "Nickname": "Yellow Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "player",
+            "spaceport",
+            "token",
+            "yellow"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_yellow.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "5934e5",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": -42.99997,
+        "posY": 1.09052479,
+        "posZ": -25.0000725,
+        "rotX": 359.9299,
+        "rotY": -0.000133211666,
+        "rotZ": 359.938568,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "26737d",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -43.0,
+            "posY": 1.25936341,
+            "posZ": -25.0,
+            "rotX": 0.0133042941,
+            "rotY": 0.00017548984,
+            "rotZ": 0.00488513336,
+            "scaleX": 1.5,
+            "scaleY": 0.15,
+            "scaleZ": 1.5
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.3607843,
+            "g": 0.3607843,
+            "b": 0.3607843
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+            "DiffuseURL": "",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 2,
+            "TypeIndex": 7,
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "1a1669",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": -2.0,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": 1.8711961E-07,
+        "rotY": 2.08098336E-05,
+        "rotZ": 2.58259973E-07,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Red Merchant Spaceports",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "player",
+        "red",
+        "spaceport"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "16d5be",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -17.5,
+            "posY": 1.20605326,
+            "posZ": -28.5,
+            "rotX": -4.329405E-06,
+            "rotY": 89.99991,
+            "rotZ": 1.85621491E-06,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Red Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "player",
+            "red",
+            "spaceport",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_red.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "c4f885",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -4.7041387E-05,
+            "posY": 6.16666555,
+            "posZ": 4.452398E-05,
+            "rotX": 0.0,
+            "rotY": 89.99998,
+            "rotZ": 270.0,
+            "scaleX": 2.533333,
+            "scaleY": 0.6666667,
+            "scaleZ": 0.25
+          },
+          "Nickname": "Red Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "player",
+            "red",
+            "spaceport",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_red.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "26737d",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": -22.0,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": 5.916751E-08,
+        "rotY": -0.0008397739,
+        "rotZ": 2.10967372E-07,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Red Factories",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "factory",
+        "player",
+        "red"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "50b7be",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -14.0,
+            "posY": 1.20605206,
+            "posZ": -27.0,
+            "rotX": 3.33468847E-06,
+            "rotY": 270.0008,
+            "rotZ": 2.96957325E-07,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Red Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "player",
+            "red",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_red.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "91b6a4",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": 9.540017E-06,
+            "posY": 6.16666555,
+            "posZ": -0.000209776452,
+            "rotX": -5.122642E-06,
+            "rotY": 270.000854,
+            "rotZ": 90.0,
+            "scaleX": 2.53333378,
+            "scaleY": 0.666666746,
+            "scaleZ": 0.25000003
+          },
+          "Nickname": "Red Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "player",
+            "red",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_red.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "98b689",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": 23.0,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": -7.871761E-08,
+        "rotY": 3.32424088E-06,
+        "rotZ": 2.5119553E-07,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Green Merchant Spaceports",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "green",
+        "player",
+        "spaceport"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "bc2d3f",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": 8.0,
+            "posY": 1.2060349,
+            "posZ": -28.0,
+            "rotX": 4.70953546E-06,
+            "rotY": 90.00017,
+            "rotZ": -7.136589E-06,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Green Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "green",
+            "player",
+            "spaceport",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_green.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "14fc4c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -4.70511E-05,
+            "posY": 6.16666555,
+            "posZ": 4.452337E-05,
+            "rotX": -3.41509462E-06,
+            "rotY": 89.99951,
+            "rotZ": 270.0,
+            "scaleX": 2.533333,
+            "scaleY": 0.6666667,
+            "scaleZ": 0.25
+          },
+          "Nickname": "Green Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "green",
+            "player",
+            "spaceport",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_green.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "e0811e",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": 2.0,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": -1.12390715E-07,
+        "rotY": -1.62425511E-06,
+        "rotZ": 1.49963341E-07,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Green Factories",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "factory",
+        "green",
+        "player"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "50ad2d",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": 13.5,
+            "posY": 1.20605278,
+            "posZ": -27.5,
+            "rotX": -5.86443139E-06,
+            "rotY": 270.000549,
+            "rotZ": 8.44000965E-07,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Green Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "green",
+            "player",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_green.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "e728c1",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -4.703237E-05,
+            "posY": 6.16666555,
+            "posZ": 4.44950056E-05,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 90.0,
+            "scaleX": 2.533333,
+            "scaleY": 0.6666667,
+            "scaleZ": 0.25
+          },
+          "Nickname": "Green Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "green",
+            "player",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_green.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "30e2dd",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": 47.0,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": -3.35754748E-08,
+        "rotY": -2.26991524E-05,
+        "rotZ": 4.828231E-07,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Orange Merchant Spaceports",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "orange",
+        "player",
+        "spaceport"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "2a97fd",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": 32.5,
+            "posY": 1.206064,
+            "posZ": -28.5,
+            "rotX": 8.409644E-06,
+            "rotY": 89.99885,
+            "rotZ": -4.49347226E-06,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Orange Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "orange",
+            "player",
+            "spaceport",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_orange.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "16411c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -4.57950337E-05,
+            "posY": 6.166665,
+            "posZ": 4.445875E-05,
+            "rotX": 8.537737E-06,
+            "rotY": 90.00003,
+            "rotZ": 270.0,
+            "scaleX": 2.53333378,
+            "scaleY": 0.666666865,
+            "scaleZ": 0.2500001
+          },
+          "Nickname": "Orange Merchant Spaceport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "orange",
+            "player",
+            "spaceport",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_merchant_spaceport_orange.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "e78406",
+      "Name": "Custom_Model_Infinite_Bag",
+      "Transform": {
+        "posX": 27.0,
+        "posY": 1.075,
+        "posZ": -33.0,
+        "rotX": -2.91711579E-08,
+        "rotY": 6.461684E-05,
+        "rotZ": 2.555999E-07,
+        "scaleX": 1.5,
+        "scaleY": 0.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Orange Factories",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.360784233,
+        "g": 0.360784233,
+        "b": 0.360784233
+      },
+      "Tags": [
+        "bag",
+        "factory",
+        "orange",
+        "player"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cylinder_beveled.obj",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 7,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "040934",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": 37.5,
+            "posY": 1.204616,
+            "posZ": -28.5,
+            "rotX": -1.32876232E-06,
+            "rotY": 270.00058,
+            "rotZ": 3.00398E-06,
+            "scaleX": 0.375,
+            "scaleY": 1.0,
+            "scaleZ": 0.375
+          },
+          "Nickname": "Orange Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "orange",
+            "player",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_orange.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ],
+      "ChildObjects": [
+        {
+          "GUID": "e9b12b",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -4.581156E-05,
+            "posY": 6.16666555,
+            "posZ": 4.45111618E-05,
+            "rotX": 1.70754731E-06,
+            "rotY": 269.999939,
+            "rotZ": 90.0,
+            "scaleX": 2.49999976,
+            "scaleY": 0.6666667,
+            "scaleZ": 0.25
+          },
+          "Nickname": "Orange Factory",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Tags": [
+            "factory",
+            "orange",
+            "player",
+            "token"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_chit_factory_orange.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 15.0,
+              "StandUp": false,
+              "Stackable": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
     }
   ]
 }
