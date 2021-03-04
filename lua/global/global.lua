@@ -1,16 +1,32 @@
 require("lua/utils/table")
-require("lua/global/constants")
-require("lua/global/setup")
-require("lua/global/money")
-require("lua/components/value_tiles/updateTileValue")
+local constants = require("lua/global/constants")
+local setup = require("lua/global/setup")
+local money = require("lua/global/money")
+local valueTileUpdater = require("lua/components/value_tiles/valueTileUpdater")
 
 function onLoad(save_state)
   disableNonInteractables()
   money.init()
 end
 
+function setupGame(player, setupButtonId)
+  setup.setupGame(player, setupButtonId)
+end
+
 function disableNonInteractables()
-  table.forEach(GUIDsToDisable, function(guid)
+  table.forEach(constants.GUIDS_TO_DISABLE, function(guid)
     getObjectFromGUID(guid).interactable = false
   end)
+end
+
+function updateTileValue(obj)
+  valueTileUpdater.updateTileValue(obj)
+end
+
+function onObjectEnterContainer(container, obj)
+  valueTileUpdater.onObjectEnterContainer(container, obj)
+end
+
+function onObjectLeaveContainer(container, obj)
+  valueTileUpdater.onObjectLeaveContainer(container, obj)
 end

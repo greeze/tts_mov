@@ -1,22 +1,24 @@
 require("lua/utils/table")
+local constants = require("lua/global/constants")
 
-money = {}
+local lookupTable
+local denominations
 
 local initialized = false
-function money.init()
+local function init()
   if (initialized) then return end
-  money.lookupTable = Global.getVar('MONEY_LOOKUP')
-  money.denominations = { table.unpack(Global.getVar('MONEY_VALUES')) } --copy the table because sorting is destructive
-  table.sort(money.denominations, |a, b| b < a) -- sort descending
+  lookupTable = constants.MONEY_LOOKUP
+  denominations = { table.unpack(constants.MONEY_VALUES) } --copy the table because sorting is destructive
+  table.sort(denominations, |a, b| b < a) -- sort descending
   initialized = true
 end
 
-function calculateAmounts(amount, denominations)
-  if (denominations == nil) then
-    denominations = money.denominations
+local function calculateAmounts(amount, allowedDenominations)
+  if (allowedDenominations == nil) then
+    allowedDenominations = denominations
   end
 
-  return table.reduce(denominations, function(acc, denomination)
+  return table.reduce(allowedDenominations, function(acc, denomination)
     acc[denomination] = 0
     while (denomination <= amount) do
       amount = amount - denomination
@@ -26,34 +28,41 @@ function calculateAmounts(amount, denominations)
   end, {})
 end
 
-function dealToPlayer(amounts, player)
-  local allowedColors = Global.getVar("ALLOWED_PLAYER_COLORS")
+local function dealToPlayer(amounts, player)
+  local allowedColors = constants.ALLOWED_PLAYER_COLORS
   local playerIsAllowed = table.includes(allowedColors, player.color)
   if (not playerIsAllowed) then return end
 
   for k, v in pairs(amounts) do
     if (v > 0) then
-      local moneyTag = money.lookupTable[k]
+      local moneyTag = lookupTable[k]
       local moneyBag = getObjectsWithAllTags({ 'bag', 'credits', moneyTag })[1]
       moneyBag.deal(v, player.color)
     end
   end
 end
 
-function money.payPlayer(amount, player, denominations)
-  local amountsToDeal = calculateAmounts(amount, denominations)
+local function payPlayer(amount, player, allowedDenominations)
+  local amountsToDeal = calculateAmounts(amount, allowedDenominations)
   dealToPlayer(amountsToDeal, player)
 end
 
-function money.breakBill(amount, player)
+local function breakBill(amount, player)
   -- disallow the bill being broken from the denominations
-  local denominations = table.filter(money.denominations, |denomination| denomination ~= amount)
-  local amountsToDeal = calculateAmounts(amount, player, denominations)
+  local allowedDenominations = table.filter(denominations, |denomination| denomination ~= amount)
+  local amountsToDeal = calculateAmounts(amount, player, allowedDenominations)
   return amountsToDeal
 end
 
-function money.combineBills(amounts, player)
+local function combineBills(amounts, player)
   local amount = table.sum(amounts)
   local amountsToDeal = calculateAmounts(amount, player)
   return amountsToDeal
 end
+
+return {
+  init = init,
+  breakBill = breakBill,
+  combineBills = combineBills,
+  payPlayer = payPlayer,
+}

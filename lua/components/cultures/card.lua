@@ -1,7 +1,8 @@
 require("lua/utils/table")
+local constants = require("lua/global/constants")
 
 function discover(player)
-  local allowedColors = Global.getVar("ALLOWED_PLAYER_COLORS")
+  local allowedColors = constants.ALLOWED_PLAYER_COLORS
   local playerIsAllowed = table.includes(allowedColors, player.color)
   if (not playerIsAllowed) then return end
 
@@ -28,11 +29,11 @@ function getSystem()
 end
 
 function getCultureTag()
-  return table.find(Global.getVar('CULTURE_TAGS'), |cultureTag| self.hasTag(cultureTag))
+  return table.find(constants.CULTURE_TAGS, |cultureTag| self.hasTag(cultureTag))
 end
 
 function getSystemTag(system)
-  return table.find(Global.getVar('SYSTEM_TAGS'), |systemTag| system.hasTag(systemTag))
+  return table.find(constants.SYSTEM_TAGS, |systemTag| system.hasTag(systemTag))
 end
 
 function dealCultureTokensToSystem(cultureTag, systemTag)

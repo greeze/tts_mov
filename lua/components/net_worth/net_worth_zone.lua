@@ -18,6 +18,8 @@ end
 
 function updatePlayerDisplay()
   local containedObjects = self.getObjects()
+  if (containedObjects == nil or #containedObjects == 0) then return end
+
   local cashValue = calculateCash(containedObjects) .. ' c'
   local totalValue = calculateTotal(containedObjects) .. ' c'
   local playerDisplay = table.find(containedObjects, isPlayerDisplay)

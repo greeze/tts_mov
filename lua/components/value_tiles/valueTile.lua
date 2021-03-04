@@ -1,5 +1,5 @@
-require("lua/utils/stringToNum")
 require("lua/utils/table")
+local stringHelpers = require("lua/utils/stringHelpers")
 
 local groups = {
   credits = 1
@@ -14,7 +14,7 @@ function onSpawn()
 end
 
 function setTileValue()
-  self.value = stringToNum(self.getGMNotes())
+  self.value = stringHelpers.stringToNum(self.getGMNotes())
   self.setVar('val', self.value)
   if (self.hasTag('credits')) then
     self.value_flags = groups['credits']
