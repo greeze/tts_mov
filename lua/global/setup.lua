@@ -1,4 +1,5 @@
 require("lua/utils/table")
+local constants = require("lua/global/constants")
 local money = require("lua/global/money")
 
 local snapPointList = {}
@@ -109,9 +110,9 @@ local function setupGame(player, setupButtonId)
   encounterSnaps = table.filter(snapPointList, isEncounterSnap)
 
   setupMoney()
-  setupEventTokens(eventTokens, EventTokenBagGUID)
-  setupCultureCards(cultureCards, CultureCardBagGUID)
-  setupEncounters(encounterTokens, EncounterBagGUID)
+  setupEventTokens(eventTokens, constants.GUIDS.EventTokenBagGUID)
+  setupCultureCards(cultureCards, constants.GUIDS.CultureCardBagGUID)
+  setupEncounters(encounterTokens, constants.GUIDS.EncounterBagGUID)
 end
 
 return {
