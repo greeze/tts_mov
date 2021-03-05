@@ -56,6 +56,12 @@ local function getEncounterTokens(allObjects)
   return table.filter(allObjects, isEncounterToken)
 end
 
+local function setupPlayers()
+  table.forEach(Player.getPlayers(), function(player)
+    player.promote()
+  end)
+end
+
 local function setupMoney()
   local seatedPlayers = getSeatedPlayers()
   local amount = #seatedPlayers * 20
@@ -109,6 +115,7 @@ local function setupGame(player, setupButtonId)
   cultureCardSnaps = table.filter(snapPointList, isCultureCardSnap)
   encounterSnaps = table.filter(snapPointList, isEncounterSnap)
 
+  setupPlayers()
   setupMoney()
   setupEventTokens(eventTokens, constants.GUIDS.EventTokenBagGUID)
   setupCultureCards(cultureCards, constants.GUIDS.CultureCardBagGUID)
