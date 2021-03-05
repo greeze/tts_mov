@@ -47,6 +47,7 @@ function sumValues(scoringItems)
   local values = table.map(
     scoringItems,
     function(scoringItem)
+      if (scoringItem == nil) then return 0 end
       return scoringItem.value or 0
     end
   )
@@ -54,13 +55,16 @@ function sumValues(scoringItems)
 end
 
 function isPlayerDisplay(obj)
+  if (obj == nil) then return false end
   return obj.hasTag('player') and obj.hasTag('display')
 end
 
 function isCash(obj)
+  if (obj == nil) then return false end
   return obj.hasTag('credits')
 end
 
 function isScoringItem(obj)
+  if (obj == nil) then return false end
   return obj.hasTag('scoring')
 end
