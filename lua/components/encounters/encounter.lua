@@ -17,19 +17,26 @@ function toggleTooltip()
   end
 end
 
-function pingTelegates(player_color)
-  if(self.is_face_down) then return end
-
-  if (self.hasTag('telegate')) then
-    local telegates = getObjectsWithAllTags({'telegate', 'encounter'})
-    table.forEach(telegates, function(telegate)
-      if (telegate ~= nil and telegate ~= self and not telegate.is_face_down) then
-        interactions.pingObject(telegate, player_color)
-      end
-    end)
-  end
+function isFaceUpTelegate(obj)
+  return obj.hasTag('telegate') and not obj.is_face_down
 end
 
-function onPickUp(player_color)
-  pingTelegates(player_color)
+function getFaceUpTelegates()
+  local telegates = getObjectsWithAllTags({'telegate', 'encounter'})
+  return table.filter(telegates, function(telegate)
+    return telegate ~= nil and telegate ~= self and isFaceUpTelegate(telegate)
+  end)
+end
+
+function pingTelegates(playerColor)
+  if(not isFaceUpTelegate(self)) then return end
+
+  table.forEach(getFaceUpTelegates(), function(telegate)
+    telegate.highlightOn(playerColor, 5)
+    interactions.pingObject(telegate, playerColor)
+  end)
+end
+
+function onPickUp(playerColor)
+  pingTelegates(playerColor)
 end

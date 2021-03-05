@@ -2,10 +2,6 @@ require("lua/utils/table")
 local constants = require("lua/global/constants")
 local money = require("lua/global/money")
 
-local snapPointList = {}
-local encounterSnaps = {}
-local cultureCardSnaps = {}
-
 local function dealFromContainerToSnaps(container, snaps, flip)
   local totalWaitTime = 0
   local delayBetween = 0.1
@@ -32,30 +28,6 @@ local function dealFromContainerToSnaps(container, snaps, flip)
   end)
 end
 
-local function getEventTokens(allObjects)
-  local function isEventToken(obj)
-    return obj.hasTag('event') and obj.hasTag('token')
-  end
-
-  return table.filter(allObjects, isEventToken)
-end
-
-local function getCultureCards(allObjects)
-  local function isCultureCard(obj)
-    return obj.hasTag('culture') and obj.hasTag('card')
-  end
-
-  return table.filter(allObjects, isCultureCard)
-end
-
-local function getEncounterTokens(allObjects)
-  local function isEncounterToken(obj)
-    return obj.hasTag('encounter') and obj.hasTag('token')
-  end
-
-  return table.filter(allObjects, isEncounterToken)
-end
-
 local function setupPlayers()
   table.forEach(Player.getPlayers(), function(player)
     player.promote()
@@ -70,16 +42,18 @@ local function setupMoney()
   end)
 end
 
-local function setupEventTokens(eventTokens, bagGUID)
-  local eventTokenBag = getObjectFromGUID(bagGUID)
+local function setupEventTokens()
+  local eventTokens = getObjectsWithAllTags({ 'event', 'token' })
+  local eventTokenBag = getObjectFromGUID(constants.GUIDS.EventTokenBagGUID)
   table.forEach(eventTokens, function(obj)
     obj.setLock(false)
     eventTokenBag.putObject(obj)
   end)
 end
 
-local function setupCultureCards(cultureCards, bagGUID)
-  local cultureCardBag = getObjectFromGUID(bagGUID)
+local function setupCultureCards(cultureCardSnaps)
+  local cultureCards = getObjectsWithAllTags({ 'culture', 'card' })
+  local cultureCardBag = getObjectFromGUID(constants.GUIDS.CultureCardBagGUID)
   table.forEach(cultureCards, function(obj)
     obj.setLock(false)
     cultureCardBag.putObject(obj)
@@ -87,8 +61,9 @@ local function setupCultureCards(cultureCards, bagGUID)
   dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)
 end
 
-local function setupEncounters(encounterTokens, bagGUID)
-  local encounterBag = getObjectFromGUID(bagGUID)
+local function setupEncounters(encounterSnaps)
+  local encounterTokens = getObjectsWithAllTags({ 'encounter', 'token' })
+  local encounterBag = getObjectFromGUID(constants.GUIDS.EncounterBagGUID)
   table.forEach(encounterTokens, function(obj)
     obj.setLock(false)
     encounterBag.putObject(obj)
@@ -106,20 +81,16 @@ end
 
 local function setupGame(player, setupButtonId)
   Global.UI.hide(setupButtonId)
-  local allObjects = getObjects()
-  local eventTokens = getEventTokens(allObjects)
-  local cultureCards = getCultureCards(allObjects)
-  local encounterTokens = getEncounterTokens(allObjects)
 
-  snapPointList = Global.getSnapPoints()
-  cultureCardSnaps = table.filter(snapPointList, isCultureCardSnap)
-  encounterSnaps = table.filter(snapPointList, isEncounterSnap)
+  local snapPointList = Global.getSnapPoints()
+  local cultureCardSnaps = table.filter(snapPointList, isCultureCardSnap)
+  local encounterSnaps = table.filter(snapPointList, isEncounterSnap)
 
   setupPlayers()
   setupMoney()
-  setupEventTokens(eventTokens, constants.GUIDS.EventTokenBagGUID)
-  setupCultureCards(cultureCards, constants.GUIDS.CultureCardBagGUID)
-  setupEncounters(encounterTokens, constants.GUIDS.EncounterBagGUID)
+  setupEventTokens()
+  setupCultureCards(cultureCardSnaps)
+  setupEncounters(encounterSnaps)
 end
 
 return {
