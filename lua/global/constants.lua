@@ -3,8 +3,8 @@
 -- ============================================================================
 local GUIDS = {
   CultureCardBagGUID = '711a6c',
-  EncounterBagGUID = 'e78408',
-  EventTokenBagGUID = '15ea2d',
+  EncounterBagGUID = '55db5c',
+  EventTokenBagGUID = 'f6a761',
 
   TableGUIDs = {
     Board = '332a2b',
