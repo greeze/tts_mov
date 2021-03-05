@@ -1,5 +1,5 @@
-require("lua/utils/table")
-local stringHelpers = require("lua/utils/stringHelpers")
+require('lua/utils/table')
+local stringHelpers = require('lua/utils/stringHelpers')
 
 local groups = {
   credits = 1

@@ -1,8 +1,8 @@
-require("lua/utils/table")
-local constants = require("lua/global/constants")
-local setup = require("lua/global/setup")
-local money = require("lua/global/money")
-local valueTileUpdater = require("lua/components/value_tiles/valueTileUpdater")
+require('lua/utils/table')
+local constants = require('lua/global/constants')
+local setup = require('lua/global/setup')
+local money = require('lua/global/money')
+local valueTileUpdater = require('lua/components/value_tiles/valueTileUpdater')
 
 function onLoad(save_state)
   disableNonInteractables()

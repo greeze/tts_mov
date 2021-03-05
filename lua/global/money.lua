@@ -1,5 +1,5 @@
-require("lua/utils/table")
-local constants = require("lua/global/constants")
+require('lua/utils/table')
+local constants = require('lua/global/constants')
 
 local lookupTable
 local denominations

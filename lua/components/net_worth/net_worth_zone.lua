@@ -1,4 +1,4 @@
-require("lua/utils/table")
+require('lua/utils/table')
 
 function onLoad(save_state)
   updatePlayerDisplay()

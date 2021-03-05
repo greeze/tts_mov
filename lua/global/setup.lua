@@ -1,6 +1,6 @@
-require("lua/utils/table")
-local constants = require("lua/global/constants")
-local money = require("lua/global/money")
+require('lua/utils/table')
+local constants = require('lua/global/constants')
+local money = require('lua/global/money')
 
 local function dealFromContainerToSnaps(container, snaps, flip)
   local totalWaitTime = 0
@@ -15,7 +15,7 @@ local function dealFromContainerToSnaps(container, snaps, flip)
 
     local destRotation = snap.rotation
     if (flip) then
-      destRotation.z = 180 -- the "flip" opt of takeObject doesn't work
+      destRotation.z = 180 -- the 'flip' opt of takeObject doesn't work
     end
 
     local takeOptions = {

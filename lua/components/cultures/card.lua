@@ -1,5 +1,5 @@
-require("lua/utils/table")
-local constants = require("lua/global/constants")
+require('lua/utils/table')
+local constants = require('lua/global/constants')
 
 function discover(player)
   local allowedColors = constants.ALLOWED_PLAYER_COLORS
