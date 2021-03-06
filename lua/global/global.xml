@@ -1,11 +1,22 @@
 <Button
   id="setupButton"
   onClick="setupGame(setupButton)"
-  offsetXY="400 0"
+  offsetXY="453 0"
   rectAlignment="UpperCenter"
   width="50"
   height="50"
   fontStyle="bold"
 >
   Setup
+</Button>
+<Button
+  id="resetButton"
+  onClick="resetGame(resetButton)"
+  offsetXY="400 0"
+  rectAlignment="UpperCenter"
+  width="50"
+  height="50"
+  fontStyle="bold"
+>
+  Reset
 </Button>
