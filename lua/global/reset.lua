@@ -3,22 +3,25 @@ local constants = require('lua/global/constants')
 
 local function getDefaultConfig()
   return {
-    xStart = 0,
-    yStart = 1,
-    zStart = 0,
+    start = {
+      x = 0,
+      y = 1,
+      z = 0,
+    },
 
-    xStep = 5,
-    zStep = -5,
+    step = {
+      x = 5,
+      z = -5,
+    },
 
-    itemsPerRow = 10,
+    row = 10,
   }
 end
 
 local function getDefaultTakeParams()
   return {
-    flip = false,
-    lock = true,
-    rotation = {0, 0, 0}
+    callback_function = |obj| obj.setLock(true),
+    rotation = {0, 0, 0},
   }
 end
 
@@ -26,26 +29,29 @@ local function layout(bag, configOverrides, takeOverrides)
   local config = table.merge(getDefaultConfig(), configOverrides or {})
   local takeParams = table.merge(getDefaultTakeParams(), takeOverrides or {})
 
-  local xStart = config.xStart
-  local yStart = config.yStart
-  local zStart = config.zStart
-  local xStep = config.xStep
-  local zStep = config.zStep
-  local row = config.itemsPerRow
+  local start = config.start
+  local step = config.step
+  local row = config.row
 
-  local total = #bag.getObjects() - 1
+  local objects = table.sort(
+    table.map(bag.getObjects(), |obj| { name = obj.name, guid = obj.guid }),
+    |a, b| a.name < b.name
+  )
 
-  for i = 0, total, 1 do
+  local multiplier = 0
+  table.forEach(objects, function(obj)
+    takeParams.guid = obj.guid
     takeParams.position = {
-      xStart + xStep * (i % row),
-      yStart,
-      zStart + zStep * math.floor(i / row)
+      start.x + step.x * (multiplier % row),
+      start.y,
+      start.z + step.z * math.floor(multiplier / row)
     }
-    obj = bag.takeObject(takeParams)
-  end
+    bag.takeObject(takeParams, true)
+    multiplier = multiplier + 1
+  end)
 end
 
-local function gatherTaggedItemsInBag(tags, bagGUID)
+local function gatherTaggedItemsIntoBag(tags, bagGUID)
   local objects = getObjectsWithAllTags(tags)
   local bag = getObjectFromGUID(bagGUID)
   table.forEach(objects, function(obj)
@@ -55,10 +61,66 @@ local function gatherTaggedItemsInBag(tags, bagGUID)
   return bag
 end
 
-local function resetEncounters()
-  local bag = gatherTaggedItemsInBag({ 'encounter', 'token' }, constants.GUIDS.EncounterBagGUID)
+local function resetEventTokens()
+  local bag = gatherTaggedItemsIntoBag({ 'event', 'token' }, constants.GUIDS.EventTokenBagGUID)
+
   local layoutConfig = {
-    itemsPerRow = 9,
+    start = {
+      x = 9.5,
+      y = 1,
+      z = 44.5,
+    },
+    step = {
+      x = 2.75,
+      z = -3.75,
+    },
+    row = 13,
+  }
+
+  local takeOptions = {
+    rotation = {0, 180, 0},
+  }
+
+  layout(bag, layoutConfig, takeOptions)
+end
+
+local function resetCultureCards()
+  local bag = gatherTaggedItemsIntoBag({ 'culture', 'card' }, constants.GUIDS.CultureCardBagGUID)
+
+  local layoutConfig = {
+    start = {
+      x = -44,
+      y = 1,
+      z = 44,
+    },
+    step = {
+      x = 3.75,
+      z = -5.25,
+    },
+    row = 5,
+  }
+
+  local takeOptions = {
+    rotation = {0, 180, 0},
+  }
+
+  layout(bag, layoutConfig, takeOptions)
+end
+
+local function resetEncounters()
+  local bag = gatherTaggedItemsIntoBag({ 'encounter', 'token' }, constants.GUIDS.EncounterBagGUID)
+
+  local layoutConfig = {
+    start = {
+      x = -25.5,
+      y = 1,
+      z = 45,
+    },
+    step = {
+      x = 2.75,
+      z = -3,
+    },
+    row = 7,
   }
 
   local takeOptions = {
@@ -69,7 +131,12 @@ local function resetEncounters()
 end
 
 local function resetGame(player, resetButtonId)
-  log('resetGame called!')
+  if (not player.host) then
+    broadcastToColor('Only the host may reset the table.', player.color, 'Red')
+    return
+  end
+  resetEventTokens()
+  resetCultureCards()
   resetEncounters()
 end
 
