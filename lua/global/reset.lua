@@ -3,17 +3,8 @@ local constants = require('lua/global/constants')
 
 local function getDefaultConfig()
   return {
-    start = {
-      x = 0,
-      y = 1,
-      z = 0,
-    },
-
-    step = {
-      x = 5,
-      z = -5,
-    },
-
+    start = { x = 0, y = 5, z = 0 },
+    step = { x = 5, z = -5 },
     row = 10,
   }
 end
@@ -21,7 +12,7 @@ end
 local function getDefaultTakeParams()
   return {
     callback_function = |obj| obj.setLock(true),
-    rotation = {0, 0, 0},
+    rotation = {0, 180, 0},
   }
 end
 
@@ -51,83 +42,103 @@ local function layout(bag, configOverrides, takeOverrides)
   end)
 end
 
-local function gatherTaggedItemsIntoBag(tags, bagGUID)
+local function gatherTaggedItemsIntoBag(tags, bag)
   local objects = getObjectsWithAllTags(tags)
-  local bag = getObjectFromGUID(bagGUID)
   table.forEach(objects, function(obj)
     obj.setLock(false)
     bag.putObject(obj)
   end)
-  return bag
+end
+
+local function spawnBagThen(callback)
+  spawnObject({
+    scale = { x = 0, y = 0, z = 0 },
+    type = 'Bag',
+    callback_function = callback,
+  })
 end
 
 local function resetEventTokens()
-  local bag = gatherTaggedItemsIntoBag({ 'event', 'token' }, constants.GUIDS.EventTokenBagGUID)
+  local bag = getObjectFromGUID(constants.GUIDS.EventTokenBagGUID)
+  gatherTaggedItemsIntoBag({ 'event', 'token' }, bag)
 
   local layoutConfig = {
-    start = {
-      x = 9.5,
-      y = 1,
-      z = 44.5,
-    },
-    step = {
-      x = 2.75,
-      z = -3.75,
-    },
+    start = { x = 9.5, y = 1.5, z = 44.5 },
+    step = { x = 2.75, z = -3.75 },
     row = 13,
   }
 
-  local takeOptions = {
-    rotation = {0, 180, 0},
-  }
-
-  layout(bag, layoutConfig, takeOptions)
+  layout(bag, layoutConfig)
 end
 
 local function resetCultureCards()
-  local bag = gatherTaggedItemsIntoBag({ 'culture', 'card' }, constants.GUIDS.CultureCardBagGUID)
+  local bag = getObjectFromGUID(constants.GUIDS.CultureCardBagGUID)
+  gatherTaggedItemsIntoBag({ 'culture', 'card' }, bag)
 
   local layoutConfig = {
-    start = {
-      x = -44,
-      y = 1,
-      z = 44,
-    },
-    step = {
-      x = 3.75,
-      z = -5.25,
-    },
+    start = { x = -44, y = 1.5, z = 44 },
+    step = { x = 3.75, z = -5.25 },
     row = 5,
   }
 
-  local takeOptions = {
-    rotation = {0, 180, 0},
-  }
-
-  layout(bag, layoutConfig, takeOptions)
+  layout(bag, layoutConfig)
 end
 
 local function resetEncounters()
-  local bag = gatherTaggedItemsIntoBag({ 'encounter', 'token' }, constants.GUIDS.EncounterBagGUID)
+  local bag = getObjectFromGUID(constants.GUIDS.EncounterBagGUID)
+  gatherTaggedItemsIntoBag({ 'encounter', 'token' }, bag)
 
   local layoutConfig = {
-    start = {
-      x = -25.5,
-      y = 1,
-      z = 45,
-    },
-    step = {
-      x = 2.75,
-      z = -3,
-    },
+    start = { x = -25.5, y = 1.5, z = 45 },
+    step = { x = 2.75, z = -3 },
     row = 7,
   }
 
-  local takeOptions = {
-    rotation = {0, 180, 0},
-  }
+  layout(bag, layoutConfig)
+end
 
-  layout(bag, layoutConfig, takeOptions)
+local function resetCultureTokens()
+  local tokenData = {
+    {
+      tags = { 'culture', 'details', 'token' },
+      layoutConfig = {
+        start = { x = -33.5, y = 1.5, z = 19.5 },
+        step = { x = 0, z = -3 },
+        row = 1,
+      },
+    },
+    {
+      tags = { 'good', 'normal', 'token' },
+      layoutConfig = {
+        start = { x = -37.5, y = 1.5, z = 19.5 },
+        step = { x = 0, z = -3 },
+        row = 1,
+      },
+    },
+    {
+      tags = { 'good', 'factory', 'token' },
+      layoutConfig = {
+        start = { x = -37.5, y = 2.25, z = 19.5 },
+        step = { x = 0, z = -3 },
+        row = 1,
+      },
+    },
+    {
+      tags = { 'deed', 'factory', 'token' },
+      layoutConfig = {
+        start = { x = -37.5, y = 2.5, z = 19.5 },
+        step = { x = 0, z = -3 },
+        row = 1,
+      },
+    },
+  }
+  spawnBagThen(function(bag)
+    table.forEach(tokenData, function(data)
+      gatherTaggedItemsIntoBag(data.tags, bag)
+      layout(bag, data.layoutConfig)
+    end)
+    bag.destruct()
+  end)
 end
 
 local function resetGame(player, resetButtonId)
@@ -138,6 +149,7 @@ local function resetGame(player, resetButtonId)
   resetEventTokens()
   resetCultureCards()
   resetEncounters()
+  resetCultureTokens()
 end
 
 return {
