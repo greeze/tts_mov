@@ -9,3 +9,15 @@
 >
   Setup
 </Button>
+<Button
+  id="resetButton"
+  onClick="resetGame(resetButton)"
+  offsetXY="453 0"
+  rectAlignment="UpperCenter"
+  width="50"
+  height="50"
+  fontStyle="bold"
+  visibility="Host"
+>
+  Reset
+</Button>

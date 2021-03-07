@@ -77,6 +77,16 @@ function table.map(tbl, fn)
   return out
 end
 
+function table.merge(...)
+  local t0 = {}
+  for _, tbl in ipairs({ ... }) do
+    for k, v in pairs(tbl) do
+      t0[k] = v
+    end
+  end
+  return t0
+end
+
 function table.reduce(tbl, fn, init)
   local acc = init
   for k, v in pairs(tbl) do
