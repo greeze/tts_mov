@@ -72,7 +72,7 @@ function table.map(tbl, fn)
   local out = {}
   local t_len = #tbl
   for i = 1, t_len do
-      out[i] = fn(tbl[i])
+    out[i] = fn(tbl[i])
   end
   return out
 end
