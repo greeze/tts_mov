@@ -2,6 +2,9 @@ require('lua/utils/table')
 local constants = require('lua/global/constants')
 local money = require('lua/global/money')
 
+---@param container table
+---@param snaps table[]
+---@param flip boolean
 local function dealFromContainerToSnaps(container, snaps, flip)
   local totalWaitTime = 0
   local delayBetween = 0.1
@@ -23,7 +26,7 @@ local function dealFromContainerToSnaps(container, snaps, flip)
       rotation = destRotation,
     }
 
-    Wait.time(|| container.takeObject(takeOptions), totalWaitTime)
+    Wait.time(function() container.takeObject(takeOptions) end, totalWaitTime)
     totalWaitTime = totalWaitTime + delayBetween
   end)
 end
@@ -51,6 +54,7 @@ local function setupEventTokens()
   end)
 end
 
+---@param cultureCardSnaps table[]
 local function setupCultureCards(cultureCardSnaps)
   local cultureCards = getObjectsWithAllTags({ 'culture', 'card' })
   local cultureCardBag = getObjectFromGUID(constants.GUIDS.CultureCardBagGUID)
@@ -61,6 +65,7 @@ local function setupCultureCards(cultureCardSnaps)
   dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)
 end
 
+---@param encounterSnaps table[]
 local function setupEncounters(encounterSnaps)
   local encounterTokens = getObjectsWithAllTags({ 'encounter', 'token' })
   local encounterBag = getObjectFromGUID(constants.GUIDS.EncounterBagGUID)
@@ -71,14 +76,20 @@ local function setupEncounters(encounterSnaps)
   dealFromContainerToSnaps(encounterBag, encounterSnaps, true)
 end
 
+---@param snap table
+---@return boolean
 local function isCultureCardSnap(snap)
   return table.includes(snap.tags, 'culture') and table.includes(snap.tags, 'card')
 end
 
+---@param snap table
+---@return boolean
 local function isEncounterSnap(snap)
   return table.includes(snap.tags, 'encounter')
 end
 
+---@param player table
+---@param setupButtonId string
 local function setupGame(player, setupButtonId)
   Global.UI.hide(setupButtonId)
 

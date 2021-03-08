@@ -1,3 +1,5 @@
+---@param str string
+---@return integer
 local function stringToNum(str)
   local numStr, _ = str:gsub('%D+', '')
   local num = tonumber(numStr)

@@ -1,15 +1,18 @@
 require('lua/utils/table')
 
+---@param save_state table
 function onLoad(save_state)
   updatePlayerDisplay()
 end
 
+---@param zone table
 function onObjectEnterScriptingZone(zone)
   if (zone == self) then
     updatePlayerDisplay()
   end
 end
 
+---@param zone table
 function onObjectLeaveScriptingZone(zone)
   if (zone ~= nil and zone == self) then
     updatePlayerDisplay()
@@ -31,18 +34,24 @@ function updatePlayerDisplay()
   end
 end
 
+---@param containedObjects table[]
+---@return integer
 function calculateCash(containedObjects)
   local cashItems = table.filter(containedObjects, isCash)
   local cashValue = sumValues(cashItems)
   return cashValue or 0
 end
 
+---@param containedObjects table[]
+---@return integer
 function calculateTotal(containedObjects)
   local scoringItems = table.filter(containedObjects, isScoringItem)
   local totalValue = sumValues(scoringItems)
   return totalValue or 0
 end
 
+---@param scoringItems table[]
+---@return number
 function sumValues(scoringItems)
   local values = table.map(
     scoringItems,
@@ -54,16 +63,22 @@ function sumValues(scoringItems)
   return table.sum(values)
 end
 
+---@param obj table
+---@return boolean
 function isPlayerDisplay(obj)
   if (obj == nil) then return false end
   return obj.hasTag('player') and obj.hasTag('display')
 end
 
+---@param obj table
+---@return boolean
 function isCash(obj)
   if (obj == nil) then return false end
   return obj.hasTag('credits')
 end
 
+---@param obj table
+---@return boolean
 function isScoringItem(obj)
   if (obj == nil) then return false end
   return obj.hasTag('scoring')

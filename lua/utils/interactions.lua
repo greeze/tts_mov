@@ -1,5 +1,7 @@
-local function pingObject(obj, player_color)
-  Player[player_color].pingTable(obj.getPosition())
+---@param obj table
+---@param playerColor string
+local function pingObject(obj, playerColor)
+  Player[playerColor].pingTable(obj.getPosition())
 end
 
 return {

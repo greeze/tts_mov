@@ -1,12 +1,15 @@
 require('lua/utils/table')
 local constants = require('lua/global/constants')
 
+---@type table<string, table | nil>
 local demands = {}
 
 function onLoad()
   updateDemandUI()
 end
 
+---@param player table
+---@param guid string
 function spawnDemand(player, guid)
   local allowedColors = constants.ALLOWED_PLAYER_COLORS
   local playerIsAllowed = table.includes(allowedColors, player.color)
@@ -22,7 +25,7 @@ function spawnDemand(player, guid)
     spawnObjectData({
       data = data,
       position = { x = selfPos.x, y = selfPos.y + 5, z = selfPos.z - 2 },
-      callback_function = |obj| obj.deal(1, player.color)
+      callback_function = function(obj) obj.deal(1, player.color) end,
     })
   end
   updateDemandUI()
@@ -54,6 +57,8 @@ function updateDemandUI()
   self.UI.setXmlTable({ gridLayout })
 end
 
+---@param obj table
+---@return boolean
 function isEventToken(obj)
   return obj.hasTag('event') and obj.hasTag('token')
 end
