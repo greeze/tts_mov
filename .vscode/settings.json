@@ -1,0 +1,18 @@
+{
+  "Lua.diagnostics.disable": [
+    "lowercase-global"
+  ],
+  "Lua.diagnostics.globals": [
+    "self",
+    "getObjects",
+    "getObjectsWithAllTags",
+    "Global",
+    "spawnObjectData",
+    "broadcastToColor",
+    "spawnObject",
+    "getObjectFromGUID",
+    "Wait",
+    "Player",
+    "getSeatedPlayers"
+  ]
+}

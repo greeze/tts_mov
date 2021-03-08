@@ -17,6 +17,8 @@ function toggleTooltip()
   end
 end
 
+---@param obj table
+---@return boolean
 function isFaceUpTelegate(obj)
   return obj.hasTag('telegate') and not obj.is_face_down
 end
@@ -28,6 +30,7 @@ function getFaceUpTelegates()
   end)
 end
 
+---@param playerColor string
 function pingTelegates(playerColor)
   if(not isFaceUpTelegate(self)) then return end
 
@@ -37,6 +40,7 @@ function pingTelegates(playerColor)
   end)
 end
 
+---@param playerColor string
 function onPickUp(playerColor)
   pingTelegates(playerColor)
 end

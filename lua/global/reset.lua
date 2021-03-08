@@ -11,11 +11,14 @@ end
 
 local function getDefaultTakeParams()
   return {
-    callback_function = |obj| obj.setLock(true),
+    callback_function = function(obj) obj.setLock(true) end,
     rotation = {0, 180, 0},
   }
 end
 
+---@param bag table
+---@param configOverrides table
+---@param takeOverrides table
 local function layout(bag, configOverrides, takeOverrides)
   local config = table.merge(getDefaultConfig(), configOverrides or {})
   local takeParams = table.merge(getDefaultTakeParams(), takeOverrides or {})
@@ -24,9 +27,10 @@ local function layout(bag, configOverrides, takeOverrides)
   local step = config.step
   local row = config.row
 
+  ---@type table[]
   local objects = table.sort(
-    table.map(bag.getObjects(), |obj| { name = obj.name, guid = obj.guid }),
-    |a, b| a.name < b.name
+    table.map(bag.getObjects(), function(obj) return { name = obj.name, guid = obj.guid } end),
+    function(a, b) return a.name < b.name end
   )
 
   local multiplier = 0
@@ -42,7 +46,10 @@ local function layout(bag, configOverrides, takeOverrides)
   end)
 end
 
+---@param tags string[]
+---@param bag table
 local function gatherTaggedItemsIntoBag(tags, bag)
+  ---@type table[]
   local objects = getObjectsWithAllTags(tags)
   table.forEach(objects, function(obj)
     obj.setLock(false)
@@ -50,6 +57,7 @@ local function gatherTaggedItemsIntoBag(tags, bag)
   end)
 end
 
+---@param callback fun(obj:table)
 local function spawnBagThen(callback)
   spawnObject({
     scale = { x = 0, y = 0, z = 0 },
@@ -141,6 +149,8 @@ local function resetCultureTokens()
   end)
 end
 
+---@param player table
+---@param resetButtonId string
 local function resetGame(player, resetButtonId)
   if (not player.host) then
     broadcastToColor('Only the host may reset the table.', player.color, 'Red')
