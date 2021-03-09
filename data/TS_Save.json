@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
   "GameMode": "MoV",
-  "Date": "3/6/2021 7:23:16 PM",
+  "Date": "3/8/2021 4:55:59 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Low Complexity",
@@ -2279,8 +2279,8 @@
         "posY": 0.99907887,
         "posZ": -33.5208054,
         "rotX": 359.8696,
-        "rotY": 0.0005248958,
-        "rotZ": 0.08972081,
+        "rotY": 0.0005254716,
+        "rotZ": 0.0897255,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2290,8 +2290,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6916378,
-        "g": 0.0583734959,
-        "b": 0.0518111736
+        "g": 0.0583734,
+        "b": 0.0518110842
       },
       "Tags": [
         "miniature",
@@ -2331,11 +2331,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -36.51431,
-        "posY": 0.999078751,
+        "posY": 0.999079,
         "posZ": -33.52081,
         "rotX": 359.8696,
-        "rotY": -0.00147396338,
-        "rotZ": 0.08972395,
+        "rotY": -0.00146642746,
+        "rotZ": 0.089724,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2346,7 +2346,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171990842
+        "b": 0.171990722
       },
       "Tags": [
         "miniature",
@@ -2386,11 +2386,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 12.4856615,
-        "posY": 0.999079,
+        "posY": 0.99907887,
         "posZ": -33.5217552,
         "rotX": 359.8696,
-        "rotY": 0.0006103497,
-        "rotZ": 0.0897244662,
+        "rotY": 0.0006143263,
+        "rotZ": 0.0897258,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2399,9 +2399,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191990852,
+        "r": 0.191990733,
         "g": 0.701,
-        "b": 0.167990834
+        "b": 0.167990714
       },
       "Tags": [
         "green",
@@ -2441,11 +2441,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 37.48568,
-        "posY": 0.999078751,
+        "posY": 0.999079,
         "posZ": -33.5217476,
         "rotX": 359.8696,
-        "rotY": -0.000221777664,
-        "rotZ": 0.08972392,
+        "rotY": -0.000220345755,
+        "rotZ": 0.08972451,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2455,8 +2455,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.391990334,
-        "b": 0.112990342
+        "g": 0.3919902,
+        "b": 0.112990208
       },
       "Tags": [
         "miniature",
@@ -2509,9 +2509,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249990463,
-        "g": 0.249990463,
-        "b": 0.249990463
+        "r": 0.249990344,
+        "g": 0.249990344,
+        "b": 0.249990344
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -2558,9 +2558,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249990851,
-        "g": 0.249990851,
-        "b": 0.249990851
+        "r": 0.249990731,
+        "g": 0.249990731,
+        "b": 0.249990731
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -2666,9 +2666,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249990463,
-        "g": 0.249990463,
-        "b": 0.249990463
+        "r": 0.249990344,
+        "g": 0.249990344,
+        "b": 0.249990344
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -3200,9 +3200,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -3371,9 +3371,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -3541,9 +3541,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -3712,9 +3712,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -3883,9 +3883,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -4054,9 +4054,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -4225,9 +4225,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -4396,9 +4396,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -4568,9 +4568,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -4739,9 +4739,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -4909,9 +4909,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -5080,9 +5080,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -5251,9 +5251,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -5422,9 +5422,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -5593,9 +5593,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -5764,9 +5764,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36062032,
-        "g": 0.36062032,
-        "b": 0.36062032
+        "r": 0.3606202,
+        "g": 0.3606202,
+        "b": 0.3606202
       },
       "Tags": [
         "bag",
@@ -7505,7 +7505,7 @@
         "posY": 1.33020031,
         "posZ": -29.5,
         "rotX": 90.0,
-        "rotY": -0.000680334633,
+        "rotY": -0.0007354642,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -7592,10 +7592,10 @@
       "Name": "Die_6",
       "Transform": {
         "posX": 0.49999994,
-        "posY": 1.33020031,
+        "posY": 1.33020043,
         "posZ": -29.5,
         "rotX": 90.0,
-        "rotY": -0.0006872708,
+        "rotY": -0.0007361834,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -7685,7 +7685,7 @@
         "posY": 1.33020031,
         "posZ": -29.5,
         "rotX": 90.0,
-        "rotY": -0.000665860134,
+        "rotY": -0.000723702251,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -7785,9 +7785,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -7960,9 +7960,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -8135,9 +8135,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -8310,9 +8310,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -8485,9 +8485,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -8660,9 +8660,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -8835,9 +8835,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -9010,9 +9010,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -9415,7 +9415,7 @@
         "posY": 1.33020031,
         "posZ": -29.5,
         "rotX": 90.0,
-        "rotY": -0.000638277852,
+        "rotY": -0.0006799534,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -9515,9 +9515,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -9672,9 +9672,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -9829,9 +9829,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -9986,9 +9986,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -10143,9 +10143,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -10255,9 +10255,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360782534,
-        "g": 0.360782534,
-        "b": 0.360782534
+        "r": 0.3607824,
+        "g": 0.3607824,
+        "b": 0.3607824
       },
       "Tags": [
         "bag",
@@ -10356,9 +10356,9 @@
         "posX": 9.5,
         "posY": 1.496917,
         "posZ": 44.5,
-        "rotX": 0.0701159,
+        "rotX": 0.07011596,
         "rotY": 180.02684,
-        "rotZ": 0.06152078,
+        "rotZ": 0.0615207553,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -10413,7 +10413,7 @@
         "posX": 12.25,
         "posY": 1.496917,
         "posZ": 44.5,
-        "rotX": 0.0700719953,
+        "rotX": 0.0700720251,
         "rotY": 179.9967,
         "rotZ": 0.06141604,
         "scaleX": 1.25,
@@ -10470,9 +10470,9 @@
         "posX": 15.0,
         "posY": 1.49075449,
         "posZ": 44.5,
-        "rotX": 0.0700986162,
+        "rotX": 0.0700986758,
         "rotY": 180.025375,
-        "rotZ": 0.06153911,
+        "rotZ": 0.0615390837,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -10584,7 +10584,7 @@
         "posX": 20.5,
         "posY": 1.49075449,
         "posZ": 44.5,
-        "rotX": 2.35910784E-06,
+        "rotX": 2.35910875E-06,
         "rotY": 179.995636,
         "rotZ": -1.40848015E-05,
         "scaleX": 1.25,
@@ -10926,9 +10926,9 @@
         "posX": 37.0,
         "posY": 1.496917,
         "posZ": 44.5,
-        "rotX": -2.45237588E-05,
+        "rotX": -2.45237661E-05,
         "rotY": 179.977112,
-        "rotZ": 2.02652445E-05,
+        "rotZ": 2.02652518E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -11840,7 +11840,7 @@
         "posZ": 37.0,
         "rotX": -9.706471E-06,
         "rotY": 180.004929,
-        "rotZ": -2.03634E-06,
+        "rotZ": -2.036341E-06,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -12465,7 +12465,7 @@
         "posX": 39.75,
         "posY": 1.496917,
         "posZ": 37.0,
-        "rotX": 1.22907841E-06,
+        "rotX": 1.22907886E-06,
         "rotY": 179.974365,
         "rotZ": -5.16354532E-07,
         "scaleX": 1.25,
@@ -12755,7 +12755,7 @@
         "posX": 17.75,
         "posY": 1.496917,
         "posZ": 33.25,
-        "rotX": 0.04334354,
+        "rotX": 0.0433435552,
         "rotY": 180.0,
         "rotZ": 0.03320826,
         "scaleX": 1.25,
@@ -13045,7 +13045,7 @@
         "posX": 31.5,
         "posY": 1.49075449,
         "posZ": 33.25,
-        "rotX": -6.303156E-05,
+        "rotX": -6.303159E-05,
         "rotY": 179.977051,
         "rotZ": -6.80048543E-05,
         "scaleX": 1.25,
@@ -13105,7 +13105,7 @@
         "posZ": 33.25,
         "rotX": 1.8415838E-05,
         "rotY": 180.026978,
-        "rotZ": -4.77220528E-05,
+        "rotZ": -4.77220674E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -13337,13 +13337,13 @@
         "posZ": 44.0,
         "rotX": 0.06955078,
         "rotY": 180.000061,
-        "rotZ": 0.0146469707,
+        "rotZ": 0.0146469576,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
       },
       "Nickname": "Culture 01 - Nillis",
-      "Description": "",
+      "Description": "These tranquil beings are masters of long-term cross-pollination. Young Nillis sprouts are vitually mindless, but as they grow, they become highly intelligent thinkers. Ancient Nillis can spend years immobile, meditating on the mysteries of life.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13400,7 +13400,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 02 - Volois",
-      "Description": "",
+      "Description": "These slug-like creatures comprise a collective intelligence that tends to be friendly yet enigmatic. The laws of time and space appear to bend wildly in their presence and it's unclear if they actually manipulate reality or if it's just a projected illusion.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13449,7 +13449,7 @@
         "posX": -36.5,
         "posY": 1.49075449,
         "posZ": 44.0,
-        "rotX": 0.07007019,
+        "rotX": 0.07007022,
         "rotY": 179.999985,
         "rotZ": 0.0614220649,
         "scaleX": 1.625,
@@ -13457,7 +13457,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 03 - Graw",
-      "Description": "",
+      "Description": "These degenerate, fish-like creatures are all that remain of the once proud race that ruled over the entire galaxy. Once highly advanced, they are now just primitive, superstitious brutes who worship their former students, the Qossuth.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13514,7 +13514,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 04 - Niks",
-      "Description": "",
+      "Description": "Small in stature and gregarious in demeanor, the Niks are impish creatures who chatter endlessly on all manner of topics. While they prefer living in rustic tree villages, they are by no means simple and are uniquely attuned to the natural world.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13563,15 +13563,15 @@
         "posX": -29.0,
         "posY": 1.496917,
         "posZ": 44.0,
-        "rotX": 0.0700703,
+        "rotX": 0.0700703561,
         "rotY": 180.000015,
-        "rotZ": 0.0614227764,
+        "rotZ": 0.06142275,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
       },
       "Nickname": "Culture 05 - Dell",
-      "Description": "",
+      "Description": "The Dell are identified by their multiple eyes and tentacular mandibles. The Rastur invasion brought financial ruin to the Dell and they regressed to an industrial state. They seek to acquire valuables at little or no expense to themselves.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13628,7 +13628,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 06 - Humans",
-      "Description": "",
+      "Description": "Humans are unusually flexible beings, adapting to any environment they occupy with an uncanny knack for inventing and using tools. While not particularly intelligent, Humans can be potentially hazardous if left unsupervised too long.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13685,7 +13685,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 07 - Shenna",
-      "Description": "",
+      "Description": "These aggressive beings can be identified by the tail-like protuberances at the backs of their heads. They live and hunt in small clans and make excellent soldiers. Without external enemies to engage them, they tend to fight amongst themselves.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13742,7 +13742,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 08 - Yxklyx",
-      "Description": "",
+      "Description": "These asocial, crab-like creatures are brilliant biochemists, capable of fusing machinery and organic materials in revolutionary ways. They are often avoided, due in no small part to their tendency to view other races as potential test subjects.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13799,7 +13799,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 09 - Zum",
-      "Description": "",
+      "Description": "Zum society is peculiar in that it has no formal structures of government or commerce. Each of these large hive insects acts in perfect harmony with its brethren, all seemingly experiencing the exact same thoughts, preferences, and impulses.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13856,7 +13856,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 10 - Eeepeeep",
-      "Description": "",
+      "Description": "The origin of the Eeepeeep is a mystery. One explanation is that they are descendents of a single orphaned kitchen appliance from a long-lost galaxy. They are known for their friendly, logical natures and incredible insight into advanced technology.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13905,15 +13905,15 @@
         "posX": -44.0,
         "posY": 1.496917,
         "posZ": 33.5,
-        "rotX": 0.07007112,
+        "rotX": 0.07007118,
         "rotY": 180.000015,
-        "rotZ": 0.06142312,
+        "rotZ": 0.0614230931,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
       },
       "Nickname": "Culture 11 - Whynom",
-      "Description": "",
+      "Description": "These pracical creatures are renowned for their dry wit. They are rumored to be descendents of irate, uncomfortable horses on a desperate quest to find a comfortable way to sit down. Their hoof-crafted goods are treasured throughout the galaxy.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -13962,7 +13962,7 @@
         "posX": -40.25,
         "posY": 1.496917,
         "posZ": 33.5,
-        "rotX": 0.07007008,
+        "rotX": 0.07007011,
         "rotY": 180.000031,
         "rotZ": 0.06142225,
         "scaleX": 1.625,
@@ -13970,7 +13970,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 12 - Cholos",
-      "Description": "",
+      "Description": "These microscopic bacteria are ingenious bioengineers who excel at cellular manipulation. They can be difficult to communicate with given that they 'speak' by inflicting precise symptoms upon their host, making it sneeze in a specific rhythm.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -14019,7 +14019,7 @@
         "posX": -36.5,
         "posY": 1.496917,
         "posZ": 33.5,
-        "rotX": 0.0700699538,
+        "rotX": 0.07006998,
         "rotY": 180.000046,
         "rotZ": 0.06142252,
         "scaleX": 1.625,
@@ -14027,7 +14027,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 13 - Wollow",
-      "Description": "",
+      "Description": "These imposing giant lizards follow a philosophy of peace and love. They seek to spread their harmonious message throughout the galaxy. Given their terrifying stature, most beings are inclined to agree with whatever the Wollow are saying.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -14076,7 +14076,7 @@
         "posX": -32.75,
         "posY": 1.49075449,
         "posZ": 33.5,
-        "rotX": 0.07007037,
+        "rotX": 0.0700704,
         "rotY": 180.0,
         "rotZ": 0.06142308,
         "scaleX": 1.625,
@@ -14084,7 +14084,7 @@
         "scaleZ": 1.625
       },
       "Nickname": "Culture 14 - Qossuth",
-      "Description": "",
+      "Description": "Upon discovering the nature of the universe, the Qossuth evolved into amorphous masses of fog and lightning. Their behavior grew erratic, sometimes despondent, sometimes cruelly ambitious. Still, their profoundly disturbing art fetches a high price.",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.713235259,
@@ -14133,7 +14133,7 @@
         "posX": -25.5,
         "posY": 1.496917,
         "posZ": 45.0,
-        "rotX": 0.07007466,
+        "rotX": 0.07007469,
         "rotY": 180.000122,
         "rotZ": 0.0614246055,
         "scaleX": 0.75,
@@ -14145,8 +14145,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779318,
-        "b": 0.311842829
+        "g": 0.163779259,
+        "b": 0.311842769
       },
       "Tags": [
         "encounter",
@@ -14188,9 +14188,9 @@
         "posX": -22.75,
         "posY": 1.496917,
         "posZ": 45.0,
-        "rotX": 0.070076324,
+        "rotX": 0.0700763538,
         "rotY": 180.000626,
-        "rotZ": 0.06142441,
+        "rotZ": 0.0614243858,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -14200,8 +14200,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779318,
-        "b": 0.311842829
+        "g": 0.163779259,
+        "b": 0.311842769
       },
       "Tags": [
         "encounter",
@@ -14243,7 +14243,7 @@
         "posX": -20.0,
         "posY": 1.49075449,
         "posZ": 45.0,
-        "rotX": 0.07007601,
+        "rotX": 0.07007604,
         "rotY": 179.999954,
         "rotZ": 0.06142443,
         "scaleX": 0.75,
@@ -14255,8 +14255,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779348,
-        "b": 0.3118429
+        "g": 0.163779289,
+        "b": 0.3118428
       },
       "Tags": [
         "encounter",
@@ -14300,7 +14300,7 @@
         "posZ": 45.0,
         "rotX": 0.0700784251,
         "rotY": 179.989365,
-        "rotZ": 0.06141615,
+        "rotZ": 0.0614161231,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -14310,8 +14310,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779348,
-        "b": 0.3118429
+        "g": 0.163779289,
+        "b": 0.3118428
       },
       "Tags": [
         "encounter",
@@ -14353,7 +14353,7 @@
         "posX": -14.5,
         "posY": 1.49075449,
         "posZ": 45.0,
-        "rotX": 0.0700782537,
+        "rotX": 0.07007828,
         "rotY": 180.000122,
         "rotZ": 0.0614174567,
         "scaleX": 0.75,
@@ -14365,8 +14365,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779438,
-        "b": 0.311842978
+        "g": 0.163779378,
+        "b": 0.311842918
       },
       "Tags": [
         "encounter",
@@ -14408,9 +14408,9 @@
         "posX": -11.75,
         "posY": 1.496917,
         "posZ": 45.0,
-        "rotX": 0.07007475,
+        "rotX": 0.07007481,
         "rotY": 180.000015,
-        "rotZ": 0.0614263266,
+        "rotZ": 0.0614263,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -14420,8 +14420,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779438,
-        "b": 0.311842978
+        "g": 0.163779378,
+        "b": 0.311842918
       },
       "Tags": [
         "encounter",
@@ -14475,8 +14475,8 @@
       "GMNotes": "Hazard - Blue 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637795,
-        "b": 0.311843038
+        "g": 0.163779438,
+        "b": 0.311842978
       },
       "Tags": [
         "encounter",
@@ -14530,8 +14530,8 @@
       "GMNotes": "Hazard - Red 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637795,
-        "b": 0.311843038
+        "g": 0.163779438,
+        "b": 0.311842978
       },
       "Tags": [
         "encounter",
@@ -14573,7 +14573,7 @@
         "posX": -22.75,
         "posY": 1.496917,
         "posZ": 42.0,
-        "rotX": 0.0700759962,
+        "rotX": 0.070076026,
         "rotY": 179.999954,
         "rotZ": 0.06142388,
         "scaleX": 0.75,
@@ -14585,8 +14585,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779378,
-        "b": 0.311842918
+        "g": 0.163779318,
+        "b": 0.311842829
       },
       "Tags": [
         "encounter",
@@ -14628,7 +14628,7 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 42.0,
-        "rotX": 0.07007706,
+        "rotX": 0.07007709,
         "rotY": 180.000122,
         "rotZ": 0.0614264943,
         "scaleX": 0.75,
@@ -14640,8 +14640,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779378,
-        "b": 0.311842918
+        "g": 0.163779318,
+        "b": 0.311842829
       },
       "Tags": [
         "encounter",
@@ -14683,7 +14683,7 @@
         "posX": -17.25,
         "posY": 1.496917,
         "posZ": 42.0,
-        "rotX": 0.07007406,
+        "rotX": 0.07007409,
         "rotY": 179.999954,
         "rotZ": 0.061424844,
         "scaleX": 0.75,
@@ -14695,8 +14695,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779318,
-        "b": 0.311842829
+        "g": 0.163779259,
+        "b": 0.311842769
       },
       "Tags": [
         "encounter",
@@ -14738,9 +14738,9 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 42.0,
-        "rotX": 0.07007537,
+        "rotX": 0.07007543,
         "rotY": 180.000015,
-        "rotZ": 0.0614235,
+        "rotZ": 0.0614234731,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -14750,8 +14750,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779318,
-        "b": 0.311842829
+        "g": 0.163779259,
+        "b": 0.311842769
       },
       "Tags": [
         "encounter",
@@ -14793,7 +14793,7 @@
         "posX": -11.75,
         "posY": 1.49075449,
         "posZ": 42.0,
-        "rotX": 0.07007656,
+        "rotX": 0.07007659,
         "rotY": 180.000122,
         "rotZ": 0.06142494,
         "scaleX": 0.75,
@@ -14805,8 +14805,8 @@
       "GMNotes": "Hazard - Red 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -14848,7 +14848,7 @@
         "posX": -9.0,
         "posY": 1.496917,
         "posZ": 42.0,
-        "rotX": 0.0700767338,
+        "rotX": 0.07007676,
         "rotY": 180.000122,
         "rotZ": 0.06142297,
         "scaleX": 0.75,
@@ -14860,8 +14860,8 @@
       "GMNotes": "Hazard - Yellow 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -14903,7 +14903,7 @@
         "posX": -25.5,
         "posY": 1.496917,
         "posZ": 39.0,
-        "rotX": 0.07007895,
+        "rotX": 0.07007898,
         "rotY": 179.999954,
         "rotZ": 0.0614273325,
         "scaleX": 0.75,
@@ -14915,8 +14915,8 @@
       "GMNotes": "Hazard - Yellow 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779378,
-        "b": 0.311842918
+        "g": 0.163779318,
+        "b": 0.311842829
       },
       "Tags": [
         "encounter",
@@ -14958,7 +14958,7 @@
         "posX": -22.75,
         "posY": 1.49075437,
         "posZ": 39.0,
-        "rotX": 0.0700770542,
+        "rotX": 0.070077084,
         "rotY": 180.000122,
         "rotZ": 0.0614249445,
         "scaleX": 0.75,
@@ -14970,8 +14970,8 @@
       "GMNotes": "Hazard - Yellow 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779378,
-        "b": 0.311842918
+        "g": 0.163779318,
+        "b": 0.311842829
       },
       "Tags": [
         "encounter",
@@ -15013,7 +15013,7 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 39.0,
-        "rotX": 0.0332165845,
+        "rotX": 0.0332166143,
         "rotY": 179.999146,
         "rotZ": 0.0528564751,
         "scaleX": 0.75,
@@ -15025,8 +15025,8 @@
       "GMNotes": "Hazard - Yellow 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779348,
-        "b": 0.3118429
+        "g": 0.163779289,
+        "b": 0.3118428
       },
       "Tags": [
         "encounter",
@@ -15068,7 +15068,7 @@
         "posX": -17.25,
         "posY": 1.49075449,
         "posZ": 39.0,
-        "rotX": 0.07007603,
+        "rotX": 0.07007606,
         "rotY": 179.999954,
         "rotZ": 0.06142388,
         "scaleX": 0.75,
@@ -15080,8 +15080,8 @@
       "GMNotes": "Relic - Air Foil",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -15124,7 +15124,7 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 39.0,
-        "rotX": 0.07007951,
+        "rotX": 0.07007954,
         "rotY": 179.997025,
         "rotZ": 0.0614206642,
         "scaleX": 0.75,
@@ -15136,8 +15136,8 @@
       "GMNotes": "Relic - Auto Pilot",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -15180,9 +15180,9 @@
         "posX": -11.75,
         "posY": 1.49075449,
         "posZ": 39.0,
-        "rotX": 0.07010781,
+        "rotX": 0.07010784,
         "rotY": 179.972122,
-        "rotZ": 0.0613854,
+        "rotZ": 0.06138537,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -15192,8 +15192,8 @@
       "GMNotes": "Relic - Gate Lock",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637795,
-        "b": 0.311843038
+        "g": 0.163779438,
+        "b": 0.311842978
       },
       "Tags": [
         "encounter",
@@ -15236,7 +15236,7 @@
         "posX": -9.0,
         "posY": 1.496917,
         "posZ": 39.0,
-        "rotX": 0.0700734,
+        "rotX": 0.07007343,
         "rotY": 179.999954,
         "rotZ": 0.0614238642,
         "scaleX": 0.75,
@@ -15248,8 +15248,8 @@
       "GMNotes": "Relic - Jump Start",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -15292,7 +15292,7 @@
         "posX": -25.5,
         "posY": 1.49691689,
         "posZ": 36.0,
-        "rotX": 0.07006471,
+        "rotX": 0.07006474,
         "rotY": 180.0039,
         "rotZ": 0.0614275336,
         "scaleX": 0.75,
@@ -15304,8 +15304,8 @@
       "GMNotes": "Relic - Mulligan Gear",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -15348,7 +15348,7 @@
         "posX": -22.75,
         "posY": 1.496917,
         "posZ": 36.0,
-        "rotX": 0.07007218,
+        "rotX": 0.07007221,
         "rotY": 179.999619,
         "rotZ": 0.06142109,
         "scaleX": 0.75,
@@ -15360,8 +15360,8 @@
       "GMNotes": "Relic - Shield",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637795,
-        "b": 0.311843038
+        "g": 0.163779438,
+        "b": 0.311842978
       },
       "Tags": [
         "encounter",
@@ -15404,9 +15404,9 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 36.0,
-        "rotX": 0.07007193,
+        "rotX": 0.07007198,
         "rotY": 180.000015,
-        "rotZ": 0.0614260249,
+        "rotZ": 0.061426,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -15416,8 +15416,8 @@
       "GMNotes": "Relic - Spy Eye",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779557,
-        "b": 0.3118431
+        "g": 0.1637795,
+        "b": 0.311843038
       },
       "Tags": [
         "encounter",
@@ -15460,7 +15460,7 @@
         "posX": -17.25,
         "posY": 1.49075449,
         "posZ": 36.0,
-        "rotX": 0.07007201,
+        "rotX": 0.07007204,
         "rotY": 180.000122,
         "rotZ": 0.061427407,
         "scaleX": 0.75,
@@ -15472,8 +15472,8 @@
       "GMNotes": "Relic - Switch Switch",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -15516,7 +15516,7 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 36.0,
-        "rotX": -0.005531928,
+        "rotX": -0.00553193,
         "rotY": 180.000412,
         "rotZ": 0.04701709,
         "scaleX": 0.75,
@@ -15528,8 +15528,8 @@
       "GMNotes": "Relic - Yellow Drive",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637795,
-        "b": 0.311843038
+        "g": 0.163779438,
+        "b": 0.311842978
       },
       "Tags": [
         "encounter",
@@ -15584,8 +15584,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779438,
-        "b": 0.311842978
+        "g": 0.163779378,
+        "b": 0.311842918
       },
       "Tags": [
         "encounter",
@@ -15627,7 +15627,7 @@
         "posX": -9.0,
         "posY": 1.49075449,
         "posZ": 36.0,
-        "rotX": 0.0700745955,
+        "rotX": 0.0700746253,
         "rotY": 180.000122,
         "rotZ": 0.0614251457,
         "scaleX": 0.75,
@@ -15639,8 +15639,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779438,
-        "b": 0.311842978
+        "g": 0.163779378,
+        "b": 0.311842918
       },
       "Tags": [
         "encounter",
@@ -15682,7 +15682,7 @@
         "posX": -25.5,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.0700752363,
+        "rotX": 0.0700752661,
         "rotY": 180.000122,
         "rotZ": 0.0614252649,
         "scaleX": 0.75,
@@ -15694,8 +15694,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779438,
-        "b": 0.311842978
+        "g": 0.163779378,
+        "b": 0.311842918
       },
       "Tags": [
         "encounter",
@@ -15737,7 +15737,7 @@
         "posX": -22.75,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.0700765252,
+        "rotX": 0.070076555,
         "rotY": 180.000122,
         "rotZ": 0.0614249,
         "scaleX": 0.75,
@@ -15749,8 +15749,8 @@
       "GMNotes": "Telegate 1",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779438,
-        "b": 0.311842978
+        "g": 0.163779378,
+        "b": 0.311842918
       },
       "Tags": [
         "encounter",
@@ -15792,7 +15792,7 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.07007134,
+        "rotX": 0.07007137,
         "rotY": 179.999954,
         "rotZ": 0.0614271872,
         "scaleX": 0.75,
@@ -15804,8 +15804,8 @@
       "GMNotes": "Telegate 2",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779438,
-        "b": 0.311842978
+        "g": 0.163779378,
+        "b": 0.311842918
       },
       "Tags": [
         "encounter",
@@ -15859,8 +15859,8 @@
       "GMNotes": "Telegate 3",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -15902,7 +15902,7 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.07007274,
+        "rotX": 0.07007277,
         "rotY": 179.999954,
         "rotZ": 0.06142454,
         "scaleX": 0.75,
@@ -15914,8 +15914,8 @@
       "GMNotes": "Telegate 4",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -15957,7 +15957,7 @@
         "posX": -11.75,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.07007431,
+        "rotX": 0.07007434,
         "rotY": 179.999466,
         "rotZ": 0.0614254475,
         "scaleX": 0.75,
@@ -15969,8 +15969,8 @@
       "GMNotes": "Telegate 5",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -16012,7 +16012,7 @@
         "posX": -9.0,
         "posY": 1.49075449,
         "posZ": 33.0,
-        "rotX": 0.07007669,
+        "rotX": 0.07007672,
         "rotY": 179.999954,
         "rotZ": 0.0614239722,
         "scaleX": 0.75,
@@ -16024,8 +16024,8 @@
       "GMNotes": "Telegate 6",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163779467,
-        "b": 0.311843
+        "g": 0.163779408,
+        "b": 0.311842948
       },
       "Tags": [
         "encounter",
@@ -16069,7 +16069,7 @@
         "posZ": 19.5,
         "rotX": 0.054860387,
         "rotY": 179.999954,
-        "rotZ": 0.03894473,
+        "rotZ": 0.0389447436,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16124,9 +16124,9 @@
         "posX": -33.5,
         "posY": 1.496917,
         "posZ": 16.5,
-        "rotX": 0.07009108,
+        "rotX": 0.07009111,
         "rotY": 179.999817,
-        "rotZ": 0.0614376441,
+        "rotZ": 0.061437618,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16181,7 +16181,7 @@
         "posX": -33.5,
         "posY": 1.496917,
         "posZ": 13.5,
-        "rotX": 0.07009876,
+        "rotX": 0.07009879,
         "rotY": 179.98111,
         "rotZ": 0.06141086,
         "scaleX": 0.75,
@@ -16238,9 +16238,9 @@
         "posX": -33.5,
         "posY": 1.49075449,
         "posZ": 10.5,
-        "rotX": 0.0700811744,
+        "rotX": 0.0700812042,
         "rotY": 179.999924,
-        "rotZ": 0.0614256673,
+        "rotZ": 0.06142564,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16295,7 +16295,7 @@
         "posX": -33.5,
         "posY": 1.49075449,
         "posZ": 7.5,
-        "rotX": 0.07006952,
+        "rotX": 0.07006955,
         "rotY": 180.0,
         "rotZ": 0.0614100173,
         "scaleX": 0.75,
@@ -16352,7 +16352,7 @@
         "posX": -33.5,
         "posY": 1.49075449,
         "posZ": 4.5,
-        "rotX": 0.07008782,
+        "rotX": 0.07008785,
         "rotY": 179.999725,
         "rotZ": 0.0614387244,
         "scaleX": 0.75,
@@ -16409,9 +16409,9 @@
         "posX": -33.5,
         "posY": 1.49075449,
         "posZ": 1.5,
-        "rotX": 0.0700542,
+        "rotX": 0.07005423,
         "rotY": 179.999741,
-        "rotZ": 0.0613996275,
+        "rotZ": 0.0613995977,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16466,9 +16466,9 @@
         "posX": -33.5,
         "posY": 1.49075449,
         "posZ": -1.5,
-        "rotX": 0.07010018,
+        "rotX": 0.07010021,
         "rotY": 179.999741,
-        "rotZ": 0.06140204,
+        "rotZ": 0.0614020154,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16580,7 +16580,7 @@
         "posX": -33.5,
         "posY": 1.49075449,
         "posZ": -7.5,
-        "rotX": 0.07009481,
+        "rotX": 0.07009484,
         "rotY": 179.999878,
         "rotZ": 0.0614158064,
         "scaleX": 0.75,
@@ -16694,7 +16694,7 @@
         "posX": -33.5,
         "posY": 1.496917,
         "posZ": -13.5,
-        "rotX": 0.07007459,
+        "rotX": 0.07007462,
         "rotY": 179.999832,
         "rotZ": 0.0614313968,
         "scaleX": 0.75,
@@ -16808,7 +16808,7 @@
         "posX": -33.5,
         "posY": 1.496917,
         "posZ": -19.5,
-        "rotX": 0.0700301155,
+        "rotX": 0.0700301453,
         "rotY": 180.000046,
         "rotZ": 0.0613948777,
         "scaleX": 0.75,
@@ -16865,7 +16865,7 @@
         "posX": -37.5,
         "posY": 1.496917,
         "posZ": 19.5,
-        "rotX": 0.07010649,
+        "rotX": 0.07010652,
         "rotY": 179.985931,
         "rotZ": 0.06140356,
         "scaleX": 1.25,
@@ -16876,9 +16876,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429939,
-        "g": 0.2309939,
-        "b": 0.08999505
+        "r": 0.44299382,
+        "g": 0.230993837,
+        "b": 0.08999499
       },
       "Tags": [
         "c01",
@@ -16936,9 +16936,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429939,
-        "g": 0.2309939,
-        "b": 0.08999505
+        "r": 0.44299382,
+        "g": 0.230993837,
+        "b": 0.08999499
       },
       "Tags": [
         "c02",
@@ -16996,9 +16996,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c03",
@@ -17045,7 +17045,7 @@
         "posX": -37.5,
         "posY": 1.49075449,
         "posZ": 10.5,
-        "rotX": 0.0708206147,
+        "rotX": 0.0708206743,
         "rotY": 179.985062,
         "rotZ": 0.064380914,
         "scaleX": 1.25,
@@ -17056,9 +17056,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c04",
@@ -17116,9 +17116,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429939,
-        "g": 0.2309939,
-        "b": 0.08999505
+        "r": 0.44299382,
+        "g": 0.230993837,
+        "b": 0.08999499
       },
       "Tags": [
         "c05",
@@ -17165,9 +17165,9 @@
         "posX": -37.5,
         "posY": 1.496917,
         "posZ": 4.5,
-        "rotX": 0.07084636,
+        "rotX": 0.07084637,
         "rotY": 179.989914,
-        "rotZ": 0.0646080747,
+        "rotZ": 0.06460804,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -17176,9 +17176,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c06",
@@ -17236,9 +17236,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c07",
@@ -17296,9 +17296,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c08",
@@ -17356,9 +17356,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c09",
@@ -17416,9 +17416,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c10",
@@ -17465,7 +17465,7 @@
         "posX": -37.5,
         "posY": 1.49075449,
         "posZ": -10.5,
-        "rotX": 0.07083946,
+        "rotX": 0.07083951,
         "rotY": 180.013,
         "rotZ": 0.0647308,
         "scaleX": 1.25,
@@ -17476,9 +17476,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c11",
@@ -17527,7 +17527,7 @@
         "posZ": -13.5,
         "rotX": 0.0706832,
         "rotY": 180.011627,
-        "rotZ": 0.06400719,
+        "rotZ": 0.06400721,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -17536,9 +17536,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c12",
@@ -17596,9 +17596,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c13",
@@ -17656,9 +17656,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442993939,
-        "g": 0.230993927,
-        "b": 0.0899950638
+        "r": 0.442993879,
+        "g": 0.230993867,
+        "b": 0.08999502
       },
       "Tags": [
         "c14",
@@ -17718,7 +17718,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c01",
@@ -17775,7 +17775,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c02",
@@ -17832,7 +17832,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c03",
@@ -17889,7 +17889,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c04",
@@ -17946,7 +17946,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c05",
@@ -18003,7 +18003,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c06",
@@ -18060,7 +18060,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c07",
@@ -18117,7 +18117,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c08",
@@ -18161,7 +18161,7 @@
         "posX": -37.5,
         "posY": 2.246917,
         "posZ": -4.5,
-        "rotX": 0.08122046,
+        "rotX": 0.08122049,
         "rotY": 179.988312,
         "rotZ": 0.069601506,
         "scaleX": 1.25,
@@ -18174,7 +18174,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c09",
@@ -18231,7 +18231,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c10",
@@ -18288,7 +18288,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c11",
@@ -18345,7 +18345,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c12",
@@ -18402,7 +18402,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c13",
@@ -18459,7 +18459,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c14",
@@ -18516,7 +18516,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c01",
@@ -18562,7 +18562,7 @@
         "posZ": 16.5,
         "rotX": 0.0740076452,
         "rotY": 180.016266,
-        "rotZ": 0.07908386,
+        "rotZ": 0.07908389,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -18573,7 +18573,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c02",
@@ -18630,7 +18630,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c03",
@@ -18687,7 +18687,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c04",
@@ -18731,9 +18731,9 @@
         "posX": -37.5,
         "posY": 2.496917,
         "posZ": 7.5,
-        "rotX": 0.08069351,
+        "rotX": 0.08069354,
         "rotY": 180.00209,
-        "rotZ": 0.07344576,
+        "rotZ": 0.07344573,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -18744,7 +18744,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c05",
@@ -18788,9 +18788,9 @@
         "posX": -37.5,
         "posY": 2.496917,
         "posZ": 4.5,
-        "rotX": 0.08563425,
+        "rotX": 0.0856342763,
         "rotY": 180.00267,
-        "rotZ": 0.07626765,
+        "rotZ": 0.07626768,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -18801,7 +18801,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c06",
@@ -18858,7 +18858,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c07",
@@ -18902,9 +18902,9 @@
         "posX": -37.5,
         "posY": 2.496917,
         "posZ": -1.5,
-        "rotX": 0.08489851,
+        "rotX": 0.08489857,
         "rotY": 180.006042,
-        "rotZ": 0.07548663,
+        "rotZ": 0.07548666,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -18915,7 +18915,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c08",
@@ -18961,7 +18961,7 @@
         "posZ": -4.5,
         "rotX": 0.08071242,
         "rotY": 179.998871,
-        "rotZ": 0.07341722,
+        "rotZ": 0.07341717,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -18972,7 +18972,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c09",
@@ -19016,9 +19016,9 @@
         "posX": -37.5,
         "posY": 2.496917,
         "posZ": -7.5,
-        "rotX": 0.08419313,
+        "rotX": 0.08419316,
         "rotY": 180.000427,
-        "rotZ": 0.07731638,
+        "rotZ": 0.07731641,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -19029,7 +19029,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c10",
@@ -19086,7 +19086,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c11",
@@ -19143,7 +19143,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c12",
@@ -19200,7 +19200,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c13",
@@ -19257,7 +19257,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171994239
+        "b": 0.171994179
       },
       "Tags": [
         "c14",

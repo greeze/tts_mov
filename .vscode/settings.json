@@ -13,6 +13,8 @@
     "getObjectFromGUID",
     "Wait",
     "Player",
-    "getSeatedPlayers"
+    "getSeatedPlayers",
+    "log",
+    "WebRequest"
   ]
 }
