@@ -1,0 +1,196 @@
+<Defaults>
+  <!-- =========================================================== -->
+  <!-- Color Defaults -->
+  <!-- =========================================================== -->
+  <Color name="playerColor" color="white" />
+
+  <!-- =========================================================== -->
+  <!-- Text Defaults -->
+  <!-- =========================================================== -->
+  <Text color="#FFFFFF" fontSize="18" fontStyle="bold" />
+  <Text class="title" fontSize="42" />
+
+  <!-- =========================================================== -->
+  <!-- Button Defaults -->
+  <!-- =========================================================== -->
+  <Dropdown
+    fontSize="18"
+    fontStyle="bold"
+    textColor="#FFFFFF"
+    itemTextColor="#666666"
+    colors="#666666|#999999|#333333|#000000"
+    itemBackgroundColors="#333333|#999999|#666666|#000000"
+  />
+  <!-- normalColor|highlightedColor|pressedColor|disabledColor -->
+  <Button
+    fontSize="18"
+    textColor="#FFFFFF"
+    colors="#666666|#999999|#333333|#000000"
+    fontStyle="bold"
+  />
+  <!-- normalColor|highlightedColor|pressedColor|disabledColor -->
+  <ToggleButton
+    fontSize="18"
+    deselectedBackgroundColor="#333333"
+    textColor="#FFFFFF"
+    colors="#999999|#666666|#333333|#000000"
+    fontStyle="bold"
+  />
+
+  <!-- =========================================================== -->
+  <!-- Layout Defaults -->
+  <!-- =========================================================== -->
+  <HorizontalLayout childAlignment="MiddleCenter" childForceExpandWidth="false" />
+  <HorizontalLayout class="@ToggleGroup>@HorizontalLayout" childForceExpandWidth="true" />
+  <VerticalLayout childAlignment="MiddleCenter" childForceExpandHeight="false" />
+  <VerticalLayout class="@ToggleGroup>@VerticalLayout" childForceExpandHeight="true" />
+
+  <!-- =========================================================== -->
+  <!--Layout Structure -->
+  <!-- =========================================================== -->
+  <VerticalLayout class="Container" color="clear" width="750" height="550" position="0 0 -20" />
+  <Panel class="VerticalDivider" color="playerColor" preferredWidth="2" />
+  <Panel class="HorizontalDivider" color="playerColor" preferredHeight="2" />
+  <Panel class="yellow:VerticalDivider" color="yellow" preferredWidth="2" />
+  <Panel class="yellow:HorizontalDivider" color="yellow" preferredHeight="2" />
+  <Panel class="red:VerticalDivider" color="red" preferredWidth="2" />
+  <Panel class="red:HorizontalDivider" color="red" preferredHeight="2" />
+  <Panel class="green:VerticalDivider" color="green" preferredWidth="2" />
+  <Panel class="green:HorizontalDivider" color="green" preferredHeight="2" />
+  <Panel class="orange:VerticalDivider" color="orange" preferredWidth="2" />
+  <Panel class="orange:HorizontalDivider" color="orange" preferredHeight="2" />
+
+  <!-- Header -->
+  <Panel class="ColorBar" color="playerColor" preferredHeight="10" />
+  <Panel class="TransactionToggleWrapper" color="playerColor" preferredHeight="50" />
+  <Panel class="yellow:ColorBar" color="yellow" preferredHeight="10" />
+  <Panel class="yellow:TransactionToggleWrapper" color="yellow" preferredHeight="50" />
+  <Panel class="red:ColorBar" color="red" preferredHeight="10" />
+  <Panel class="red:TransactionToggleWrapper" color="red" preferredHeight="50" />
+  <Panel class="green:ColorBar" color="green" preferredHeight="10" />
+  <Panel class="green:TransactionToggleWrapper" color="green" preferredHeight="50" />
+  <Panel class="orange:ColorBar" color="orange" preferredHeight="10" />
+  <Panel class="orange:TransactionToggleWrapper" color="orange" preferredHeight="50" />
+
+  <!-- Body -->
+  <HorizontalLayout class="TransactionArea" preferredHeight="450" />
+    <Panel class="TransactionDropZone" padding="100" preferredWidth="500" />
+    <VerticalLayout class="TransactionSettings" padding="10 10 0 0" preferredWidth="250" spacing="15" />
+      <Text class="TransactionSettings:SettingTitle" preferredHeight="40" />
+      <VerticalLayout class="TransactionSettings>Section" preferredHeight="120" />
+      <Button class="PlayerOwes>@Button" preferredHeight="80" />
+      <ToggleGroup class="TransactionCut>@ToggleGroup" preferredHeight="80" />
+    <VerticalLayout class="TransactionSettings Sell>Section" preferredHeight="175" />
+  <!-- Footer -->
+  <Panel class="SubmitWrapper" preferredHeight="50" />
+</Defaults>
+<!-- =========================================================== -->
+
+
+<!-- =========================================================== -->
+<!-- Transactions UI -->
+<!-- =========================================================== -->
+<VerticalLayout class="Container" id="Container">
+  <!-- Header -->
+  <Panel class="ColorBar" />
+  <Panel class="TransactionToggleWrapper">
+    <ToggleGroup onValueChanged="onTransactionChanged">
+      <HorizontalLayout>
+        <ToggleButton id="BuyToggleButton" selected="true">Buy</ToggleButton>
+        <ToggleButton id="SellToggleButton">Sell</ToggleButton>
+      </HorizontalLayout>
+    </ToggleGroup>
+  </Panel>
+
+  <Panel class="HorizontalDivider" />
+
+  <!-- Body -->
+  <HorizontalLayout class="TransactionArea">
+    <Panel class="TransactionDropZone">
+      <Text>Drop all items and cash related to this transaction here.</Text>
+    </Panel>
+    <Panel class="VerticalDivider" />
+
+    <!-- Buy Settings -->
+    <VerticalLayout active="true" class="Buy TransactionSettings" id="BuySettings">
+      <VerticalLayout class="PlayerOwes Section">
+        <Text class="SettingTitle" id="PlayerOwesText">Player Owes: 350c</Text>
+        <Button id="PlayerOwesButton">Pay 350c</Button>
+      </VerticalLayout>
+      <Panel class="HorizontalDivider" />
+      <VerticalLayout class="TransactionCut Section">
+        <Text class="SettingTitle" id="FactoryGetsText">Factory Gets: 150c</Text>
+        <ToggleGroup preferredHeight="80">
+          <TableLayout>
+            <Row>
+              <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
+            </Row>
+            <Row>
+              <Cell><ToggleButton>Yellow</ToggleButton></Cell>
+              <Cell><ToggleButton>Red</ToggleButton></Cell>
+            </Row>
+            <Row>
+              <Cell><ToggleButton>Green</ToggleButton></Cell>
+              <Cell><ToggleButton>Orange</ToggleButton></Cell>
+            </Row>
+          </TableLayout>
+        </ToggleGroup>
+      </VerticalLayout>
+      <Panel class="HorizontalDivider" />
+      <VerticalLayout class="TransactionCut">
+        <Text class="SettingTitle" id="SpaceportGetsTextBuy">Spaceport Gets: 36c</Text>
+        <ToggleGroup preferredHeight="80">
+          <TableLayout>
+            <Row>
+              <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
+            </Row>
+            <Row>
+              <Cell><ToggleButton>Yellow</ToggleButton></Cell>
+              <Cell><ToggleButton>Red</ToggleButton></Cell>
+            </Row>
+            <Row>
+              <Cell><ToggleButton>Green</ToggleButton></Cell>
+              <Cell><ToggleButton>Orange</ToggleButton></Cell>
+            </Row>
+          </TableLayout>
+        </ToggleGroup>
+      </VerticalLayout>
+    </VerticalLayout>
+    <!-- =========================================================== -->
+
+    <!-- Sell Settings -->
+    <VerticalLayout active="false" class="Sell TransactionSettings" id="SellSettings">
+      <VerticalLayout class="PlayerGets Section">
+        <Text>Player Gets:</Text>
+        <Text fontSize="36" id="PlayerGetsText">350c</Text>
+      </VerticalLayout>
+      <Panel class="HorizontalDivider" />
+      <VerticalLayout class="TransactionCut Section">
+        <Text class="SettingTitle" id="SpaceportGetsTextSell">Spaceport Gets: 36c</Text>
+        <ToggleGroup preferredHeight="80">
+          <TableLayout>
+            <Row>
+              <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
+            </Row>
+            <Row>
+              <Cell><ToggleButton>Yellow</ToggleButton></Cell>
+              <Cell><ToggleButton>Red</ToggleButton></Cell>
+            </Row>
+            <Row>
+              <Cell><ToggleButton>Green</ToggleButton></Cell>
+              <Cell><ToggleButton>Orange</ToggleButton></Cell>
+            </Row>
+          </TableLayout>
+        </ToggleGroup>
+      </VerticalLayout>
+    </VerticalLayout>
+  </HorizontalLayout>
+  <!-- =========================================================== -->
+
+  <Panel class="HorizontalDivider" />
+
+  <!-- Footer -->
+  <Panel class="SubmitWrapper">
+    <Button class="SubmitButton">Submit</Button>
+  </Panel>
+</VerticalLayout>
