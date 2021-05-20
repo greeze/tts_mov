@@ -57,7 +57,7 @@ function sumValues(scoringItems)
     scoringItems,
     function(scoringItem)
       if (scoringItem == nil) then return 0 end
-      return scoringItem.value or 0
+      return scoringItem.value * math.abs(scoringItem.getQuantity())
     end
   )
   return table.sum(values)
