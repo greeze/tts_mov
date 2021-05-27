@@ -1,0 +1,19 @@
+<Panel
+  width="550"
+  height="750"
+  position="0 0 -11"
+  rotation="0 0 90"
+>
+  <Button
+    fontSize="72"
+    textColor="#FFFFFF"
+    colors="#666666|#999999|#333333|#000000"
+    fontStyle="bold"
+    width="400"
+    height="100"
+    position="0 -290 0"
+    onClick="handleClick"
+  >
+    Roll Dice
+  </Button>
+</Panel>

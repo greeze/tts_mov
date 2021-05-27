@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
-  "EpochTime": 1622076528,
-  "Date": "5/26/2021 5:48:48 PM",
+  "EpochTime": 1622082031,
+  "Date": "5/26/2021 7:20:31 PM",
   "VersionNumber": "v13.1.1",
   "GameMode": "MoV",
   "GameType": "Game",
@@ -298,8 +298,8 @@
     "Snapping": false,
     "Offset": false,
     "BothSnapping": true,
-    "xSize": 1.0,
-    "ySize": 1.0,
+    "xSize": 0.5,
+    "ySize": 0.5,
     "PosOffset": {
       "x": 0.0,
       "y": 1.0,
@@ -2411,12 +2411,12 @@
       "GUID": "63b39b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -12.5020876,
-        "posY": 0.99907887,
-        "posZ": -45.5012169,
+        "posX": -12.5020781,
+        "posY": 0.9990784,
+        "posZ": -33.5012779,
         "rotX": 359.8696,
-        "rotY": 0.004673731,
-        "rotZ": 0.08972643,
+        "rotY": 0.005250072,
+        "rotZ": 0.08971957,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2426,8 +2426,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6916378,
-        "g": 0.05837194,
-        "b": 0.0518096164
+        "g": 0.058371745,
+        "b": 0.05180943
       },
       "Tags": [
         "miniature",
@@ -2467,12 +2467,12 @@
       "GUID": "2f8c98",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -36.5020752,
-        "posY": 0.999078751,
-        "posZ": -45.50129,
+        "posX": -36.50206,
+        "posY": 0.99907887,
+        "posZ": -33.50128,
         "rotX": 359.8696,
-        "rotY": 0.003190093,
-        "rotZ": 0.0897292,
+        "rotY": 0.00499209855,
+        "rotZ": 0.0897235647,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2483,7 +2483,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171988875
+        "b": 0.171988636
       },
       "Tags": [
         "miniature",
@@ -2523,12 +2523,12 @@
       "GUID": "3da2d6",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 12.4979153,
+        "posX": 12.4979334,
         "posY": 0.99907887,
-        "posZ": -45.50125,
+        "posZ": -33.5011826,
         "rotX": 359.8696,
-        "rotY": 0.004697721,
-        "rotZ": 0.08972435,
+        "rotY": 0.005347954,
+        "rotZ": 0.08972248,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2537,9 +2537,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191988885,
+        "r": 0.191988647,
         "g": 0.701,
-        "b": 0.167988867
+        "b": 0.167988628
       },
       "Tags": [
         "green",
@@ -2579,12 +2579,12 @@
       "GUID": "f17c87",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 37.4979324,
-        "posY": 0.9990785,
-        "posZ": -45.5012856,
+        "posX": 37.4979248,
+        "posY": 0.9990791,
+        "posZ": -33.5013123,
         "rotX": 359.8696,
-        "rotY": 0.00426659733,
-        "rotZ": 0.08972566,
+        "rotY": 0.00504632248,
+        "rotZ": 0.0897259638,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2594,8 +2594,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.391988248,
-        "b": 0.112988271
+        "g": 0.391988,
+        "b": 0.112988017
       },
       "Tags": [
         "miniature",
@@ -2649,9 +2649,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.2499884,
-        "g": 0.2499884,
-        "b": 0.2499884
+        "r": 0.249988139,
+        "g": 0.249988139,
+        "b": 0.249988139
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -2699,9 +2699,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249988765,
-        "g": 0.249988765,
-        "b": 0.249988765
+        "r": 0.249988526,
+        "g": 0.249988526,
+        "b": 0.249988526
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -2809,9 +2809,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.2499884,
-        "g": 0.2499884,
-        "b": 0.2499884
+        "r": 0.249988139,
+        "g": 0.249988139,
+        "b": 0.249988139
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -4446,452 +4446,14 @@
       }
     },
     {
-      "GUID": "ab78e5",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -12.5,
-        "posY": 1.01360488,
-        "posZ": -39.5,
-        "rotX": -1.26039312E-08,
-        "rotY": 180.001556,
-        "rotZ": -6.46558451E-09,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "Scout",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "Tags": [
-        "card",
-        "player",
-        "red"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 1900,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "19": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "States": {
-        "2": {
-          "GUID": "6f439d",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -12.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -1.26039312E-08,
-            "rotY": 180.001556,
-            "rotZ": -6.46558451E-09,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Clipper",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1500,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "15": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        "3": {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -12.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -1.26039312E-08,
-            "rotY": 180.001556,
-            "rotZ": -6.46558451E-09,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Transport",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1600,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "16": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        "4": {
-          "GUID": "a22f79",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -12.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -1.26039312E-08,
-            "rotY": 180.001556,
-            "rotZ": -6.46558451E-09,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Freighter",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1700,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "17": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      }
-    },
-    {
-      "GUID": "25cd30",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -36.5,
-        "posY": 1.01360488,
-        "posZ": -39.5,
-        "rotX": -5.2477322E-08,
-        "rotY": 180.009491,
-        "rotZ": -2.14331912E-08,
-        "scaleX": 3.0,
-        "scaleY": 1.0,
-        "scaleZ": 3.0
-      },
-      "Nickname": "Scout",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "Tags": [
-        "card",
-        "player",
-        "yellow"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 2000,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "20": {
-          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 1
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "States": {
-        "3": {
-          "GUID": "14b32b",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -5.2477322E-08,
-            "rotY": 180.009491,
-            "rotZ": -2.14331912E-08,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Transport",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1600,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "16": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        "4": {
-          "GUID": "a22f79",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -5.2477322E-08,
-            "rotY": 180.009491,
-            "rotZ": -2.14331912E-08,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Freighter",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1300,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "13": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        "2": {
-          "GUID": "6f439d",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -36.5,
-            "posY": 1.01360488,
-            "posZ": -39.5,
-            "rotX": -5.2477322E-08,
-            "rotY": 180.009491,
-            "rotZ": -2.14331912E-08,
-            "scaleX": 3.0,
-            "scaleY": 1.0,
-            "scaleZ": 3.0
-          },
-          "Nickname": "Clipper",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": false,
-          "CardID": 1500,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "15": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      }
-    },
-    {
       "GUID": "425839",
       "Name": "Die_6",
       "Transform": {
-        "posX": -17.5,
-        "posY": 1.3302002,
-        "posZ": -28.5,
+        "posX": -45.2503853,
+        "posY": 1.430132,
+        "posZ": -41.2501869,
         "rotX": 90.0,
-        "rotY": -0.00156219583,
+        "rotY": 0.0322631039,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -4978,11 +4540,11 @@
       "GUID": "21e609",
       "Name": "Die_6",
       "Transform": {
-        "posX": -16.5,
-        "posY": 1.33020031,
-        "posZ": -28.5,
+        "posX": -45.7501259,
+        "posY": 1.4301672,
+        "posZ": -40.2502251,
         "rotX": 90.0,
-        "rotY": -0.00156791217,
+        "rotY": 0.0265742149,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -5069,11 +4631,11 @@
       "GUID": "8d31fc",
       "Name": "Die_6",
       "Transform": {
-        "posX": -15.5,
-        "posY": 1.33020031,
-        "posZ": -28.5,
+        "posX": -46.25002,
+        "posY": 1.43014073,
+        "posZ": -41.24978,
         "rotX": 90.0,
-        "rotY": -0.00154432352,
+        "rotY": 0.03432189,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -5174,9 +4736,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -5352,9 +4914,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -5530,9 +5092,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -5708,9 +5270,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -5886,9 +5448,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -6064,9 +5626,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -6242,9 +5804,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -6420,9 +5982,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -6828,11 +6390,11 @@
       "GUID": "beed72",
       "Name": "Die_6",
       "Transform": {
-        "posX": -18.5,
-        "posY": 1.33020031,
-        "posZ": -28.5,
+        "posX": -44.5,
+        "posY": 1.3302002,
+        "posZ": -38.0,
         "rotX": 90.0,
-        "rotY": -0.001460882,
+        "rotY": 0.503224134,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -6933,9 +6495,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -7093,9 +6655,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -7253,9 +6815,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -7413,9 +6975,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -7573,9 +7135,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -7687,9 +7249,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -7790,9 +7352,9 @@
         "posX": 9.5,
         "posY": 1.496917,
         "posZ": 44.5,
-        "rotX": 0.0701168254,
+        "rotX": 0.0701169446,
         "rotY": 180.02684,
-        "rotZ": 0.06152034,
+        "rotZ": 0.06152029,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7906,9 +7468,9 @@
         "posX": 15.0,
         "posY": 1.49075449,
         "posZ": 44.5,
-        "rotX": 0.07009955,
+        "rotX": 0.07009966,
         "rotY": 180.025375,
-        "rotZ": 0.06153867,
+        "rotZ": 0.0615386181,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -8370,7 +7932,7 @@
         "posX": 37.0,
         "posY": 1.496917,
         "posZ": 44.5,
-        "rotX": -2.45238789E-05,
+        "rotX": -2.45238934E-05,
         "rotY": 179.977112,
         "rotZ": 2.026527E-05,
         "scaleX": 1.25,
@@ -10587,7 +10149,7 @@
         "posZ": 33.25,
         "rotX": 1.8415838E-05,
         "rotY": 180.026978,
-        "rotZ": -4.77222929E-05,
+        "rotZ": -4.77223221E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -10823,7 +10385,7 @@
         "posZ": 44.0,
         "rotX": 0.06955078,
         "rotY": 180.000061,
-        "rotZ": 0.0146467509,
+        "rotZ": 0.0146467239,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11053,9 +10615,9 @@
         "posX": -29.0,
         "posY": 1.496917,
         "posZ": 44.0,
-        "rotX": 0.07007123,
+        "rotX": 0.07007134,
         "rotY": 180.000015,
-        "rotZ": 0.0614223368,
+        "rotZ": 0.0614222847,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11401,9 +10963,9 @@
         "posX": -44.0,
         "posY": 1.496917,
         "posZ": 33.5,
-        "rotX": 0.0700720549,
+        "rotX": 0.07007217,
         "rotY": 180.000015,
-        "rotZ": 0.06142268,
+        "rotZ": 0.0614226237,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11645,8 +11207,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778335,
-        "b": 0.311841816
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -11692,7 +11254,7 @@
         "posZ": 45.0,
         "rotX": 0.07007645,
         "rotY": 180.000626,
-        "rotZ": 0.0614239722,
+        "rotZ": 0.06142392,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -11702,8 +11264,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778335,
-        "b": 0.311841816
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -11759,8 +11321,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778365,
-        "b": 0.311841846
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -11806,7 +11368,7 @@
         "posZ": 45.0,
         "rotX": 0.0700784251,
         "rotY": 179.989365,
-        "rotZ": 0.06141571,
+        "rotZ": 0.0614156537,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -11816,8 +11378,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778365,
-        "b": 0.311841846
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -11873,8 +11435,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778454,
-        "b": 0.311841935
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -11918,9 +11480,9 @@
         "posX": -11.75,
         "posY": 1.496917,
         "posZ": 45.0,
-        "rotX": 0.07007568,
+        "rotX": 0.07007579,
         "rotY": 180.000015,
-        "rotZ": 0.061425887,
+        "rotZ": 0.06142583,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -11930,8 +11492,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778454,
-        "b": 0.311841935
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -11987,8 +11549,8 @@
       "GMNotes": "Hazard - Blue 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778514,
-        "b": 0.311842
+        "g": 0.1637784,
+        "b": 0.311841875
       },
       "Tags": [
         "encounter",
@@ -12044,8 +11606,8 @@
       "GMNotes": "Hazard - Red 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778514,
-        "b": 0.311842
+        "g": 0.1637784,
+        "b": 0.311841875
       },
       "Tags": [
         "encounter",
@@ -12101,8 +11663,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637784,
-        "b": 0.311841875
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -12158,8 +11720,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637784,
-        "b": 0.311841875
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -12215,8 +11777,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778335,
-        "b": 0.311841816
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -12260,9 +11822,9 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 42.0,
-        "rotX": 0.0700762942,
+        "rotX": 0.070076406,
         "rotY": 180.000015,
-        "rotZ": 0.06142306,
+        "rotZ": 0.0614230037,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -12272,8 +11834,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778335,
-        "b": 0.311841816
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -12317,7 +11879,7 @@
         "posX": -11.75,
         "posY": 1.49075449,
         "posZ": 42.0,
-        "rotX": 0.0700770542,
+        "rotX": 0.0700771138,
         "rotY": 180.000122,
         "rotZ": 0.06142494,
         "scaleX": 0.75,
@@ -12329,8 +11891,8 @@
       "GMNotes": "Hazard - Red 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -12386,8 +11948,8 @@
       "GMNotes": "Hazard - Yellow 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -12443,8 +12005,8 @@
       "GMNotes": "Hazard - Yellow 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637784,
-        "b": 0.311841875
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -12500,8 +12062,8 @@
       "GMNotes": "Hazard - Yellow 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637784,
-        "b": 0.311841875
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -12545,7 +12107,7 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 39.0,
-        "rotX": 0.0332170464,
+        "rotX": 0.033217106,
         "rotY": 179.999146,
         "rotZ": 0.0528564751,
         "scaleX": 0.75,
@@ -12557,8 +12119,8 @@
       "GMNotes": "Hazard - Yellow 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778365,
-        "b": 0.311841846
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -12614,8 +12176,8 @@
       "GMNotes": "Relic - Air Foil",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -12671,8 +12233,8 @@
       "GMNotes": "Relic - Auto Pilot",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -12718,7 +12280,7 @@
         "posZ": 39.0,
         "rotX": 0.07010816,
         "rotY": 179.972122,
-        "rotZ": 0.0613849573,
+        "rotZ": 0.0613849051,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -12728,8 +12290,8 @@
       "GMNotes": "Relic - Gate Lock",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778514,
-        "b": 0.311842
+        "g": 0.1637784,
+        "b": 0.311841875
       },
       "Tags": [
         "encounter",
@@ -12785,8 +12347,8 @@
       "GMNotes": "Relic - Jump Start",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -12842,8 +12404,8 @@
       "GMNotes": "Relic - Mulligan Gear",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -12899,8 +12461,8 @@
       "GMNotes": "Relic - Shield",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778514,
-        "b": 0.311842
+        "g": 0.1637784,
+        "b": 0.311841875
       },
       "Tags": [
         "encounter",
@@ -12944,9 +12506,9 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 36.0,
-        "rotX": 0.07007285,
+        "rotX": 0.07007296,
         "rotY": 180.000015,
-        "rotZ": 0.0614255853,
+        "rotZ": 0.0614255331,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -12956,8 +12518,8 @@
       "GMNotes": "Relic - Spy Eye",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778573,
-        "b": 0.311842054
+        "g": 0.163778454,
+        "b": 0.311841935
       },
       "Tags": [
         "encounter",
@@ -13013,8 +12575,8 @@
       "GMNotes": "Relic - Switch Switch",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -13058,7 +12620,7 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 36.0,
-        "rotX": -0.005531959,
+        "rotX": -0.0055319625,
         "rotY": 180.000412,
         "rotZ": 0.04701709,
         "scaleX": 0.75,
@@ -13070,8 +12632,8 @@
       "GMNotes": "Relic - Yellow Drive",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778514,
-        "b": 0.311842
+        "g": 0.1637784,
+        "b": 0.311841875
       },
       "Tags": [
         "encounter",
@@ -13127,8 +12689,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778454,
-        "b": 0.311841935
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -13184,8 +12746,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778454,
-        "b": 0.311841935
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -13229,7 +12791,7 @@
         "posX": -25.5,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.07007573,
+        "rotX": 0.07007575,
         "rotY": 180.000122,
         "rotZ": 0.0614252649,
         "scaleX": 0.75,
@@ -13241,8 +12803,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778454,
-        "b": 0.311841935
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -13286,7 +12848,7 @@
         "posX": -22.75,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.07007702,
+        "rotX": 0.07007708,
         "rotY": 180.000122,
         "rotZ": 0.0614249,
         "scaleX": 0.75,
@@ -13298,8 +12860,8 @@
       "GMNotes": "Telegate 1",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778454,
-        "b": 0.311841935
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -13355,8 +12917,8 @@
       "GMNotes": "Telegate 2",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778454,
-        "b": 0.311841935
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -13412,8 +12974,8 @@
       "GMNotes": "Telegate 3",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -13469,8 +13031,8 @@
       "GMNotes": "Telegate 4",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -13526,8 +13088,8 @@
       "GMNotes": "Telegate 5",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -13583,8 +13145,8 @@
       "GMNotes": "Telegate 6",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778484,
-        "b": 0.311841965
+        "g": 0.163778365,
+        "b": 0.311841846
       },
       "Tags": [
         "encounter",
@@ -13630,7 +13192,7 @@
         "posZ": 19.5,
         "rotX": 0.054860387,
         "rotY": 179.999954,
-        "rotZ": 0.0389449745,
+        "rotZ": 0.0389449969,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -13686,9 +13248,9 @@
         "posX": -33.5,
         "posY": 1.496917,
         "posZ": 16.5,
-        "rotX": 0.0700915754,
+        "rotX": 0.0700916052,
         "rotY": 179.999817,
-        "rotZ": 0.0614372045,
+        "rotZ": 0.0614371523,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -13804,7 +13366,7 @@
         "posZ": 10.5,
         "rotX": 0.07008123,
         "rotY": 179.999924,
-        "rotZ": 0.0614252277,
+        "rotZ": 0.06142517,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -13978,7 +13540,7 @@
         "posZ": 1.5,
         "rotX": 0.07005442,
         "rotY": 179.999741,
-        "rotZ": 0.0613991842,
+        "rotZ": 0.061399132,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -14036,7 +13598,7 @@
         "posZ": -1.5,
         "rotX": 0.07010058,
         "rotY": 179.999741,
-        "rotZ": 0.0614016019,
+        "rotZ": 0.061401546,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -14451,9 +14013,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992866,
-        "g": 0.230992854,
-        "b": 0.0899942
+        "r": 0.442992747,
+        "g": 0.230992734,
+        "b": 0.0899940953
       },
       "Tags": [
         "c01",
@@ -14512,9 +14074,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992866,
-        "g": 0.230992854,
-        "b": 0.0899942
+        "r": 0.442992747,
+        "g": 0.230992734,
+        "b": 0.0899940953
       },
       "Tags": [
         "c02",
@@ -14573,9 +14135,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c03",
@@ -14623,7 +14185,7 @@
         "posX": -37.5,
         "posY": 1.49075449,
         "posZ": 10.5,
-        "rotX": 0.07082154,
+        "rotX": 0.07082165,
         "rotY": 179.985062,
         "rotZ": 0.064380914,
         "scaleX": 1.25,
@@ -14634,9 +14196,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c04",
@@ -14695,9 +14257,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992866,
-        "g": 0.230992854,
-        "b": 0.0899942
+        "r": 0.442992747,
+        "g": 0.230992734,
+        "b": 0.0899940953
       },
       "Tags": [
         "c05",
@@ -14747,7 +14309,7 @@
         "posZ": 4.5,
         "rotX": 0.0708464,
         "rotY": 179.989914,
-        "rotZ": 0.06460748,
+        "rotZ": 0.06460741,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -14756,9 +14318,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c06",
@@ -14817,9 +14379,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c07",
@@ -14878,9 +14440,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c08",
@@ -14939,9 +14501,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c09",
@@ -15000,9 +14562,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c10",
@@ -15050,7 +14612,7 @@
         "posX": -37.5,
         "posY": 1.49075449,
         "posZ": -10.5,
-        "rotX": 0.07084037,
+        "rotX": 0.0708404854,
         "rotY": 180.013,
         "rotZ": 0.0647308,
         "scaleX": 1.25,
@@ -15061,9 +14623,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c11",
@@ -15122,9 +14684,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c12",
@@ -15183,9 +14745,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c13",
@@ -15244,9 +14806,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.4429929,
-        "g": 0.230992883,
-        "b": 0.0899942145
+        "r": 0.442992777,
+        "g": 0.230992764,
+        "b": 0.0899941251
       },
       "Tags": [
         "c14",
@@ -15307,7 +14869,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c01",
@@ -15365,7 +14927,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c02",
@@ -15423,7 +14985,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c03",
@@ -15481,7 +15043,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c04",
@@ -15539,7 +15101,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c05",
@@ -15597,7 +15159,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c06",
@@ -15655,7 +15217,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c07",
@@ -15713,7 +15275,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c08",
@@ -15771,7 +15333,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c09",
@@ -15829,7 +15391,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c10",
@@ -15887,7 +15449,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c11",
@@ -15945,7 +15507,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c12",
@@ -16003,7 +15565,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c13",
@@ -16061,7 +15623,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c14",
@@ -16119,7 +15681,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c01",
@@ -16178,7 +15740,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c02",
@@ -16237,7 +15799,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c03",
@@ -16296,7 +15858,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c04",
@@ -16355,7 +15917,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c05",
@@ -16401,7 +15963,7 @@
         "posX": -37.5,
         "posY": 2.496917,
         "posZ": 4.5,
-        "rotX": 0.08563474,
+        "rotX": 0.08563477,
         "rotY": 180.00267,
         "rotZ": 0.07626802,
         "scaleX": 0.75,
@@ -16414,7 +15976,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c06",
@@ -16473,7 +16035,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c07",
@@ -16519,7 +16081,7 @@
         "posX": -37.5,
         "posY": 2.496917,
         "posZ": -1.5,
-        "rotX": 0.08489944,
+        "rotX": 0.08489955,
         "rotY": 180.006042,
         "rotZ": 0.0754871145,
         "scaleX": 0.75,
@@ -16532,7 +16094,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c08",
@@ -16580,7 +16142,7 @@
         "posZ": -4.5,
         "rotX": 0.08071242,
         "rotY": 179.998871,
-        "rotZ": 0.07341637,
+        "rotZ": 0.07341626,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16591,7 +16153,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c09",
@@ -16639,7 +16201,7 @@
         "posZ": -7.5,
         "rotX": 0.0841932446,
         "rotY": 180.000427,
-        "rotZ": 0.07731687,
+        "rotZ": 0.07731693,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16650,7 +16212,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c10",
@@ -16709,7 +16271,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c11",
@@ -16768,7 +16330,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c12",
@@ -16827,7 +16389,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c13",
@@ -16886,7 +16448,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993256
+        "b": 0.171993136
       },
       "Tags": [
         "c14",
@@ -17074,9 +16636,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -17244,9 +16806,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -17414,9 +16976,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -17573,9 +17135,9 @@
         "posX": 16.509325,
         "posY": 1.075,
         "posZ": 28.5201111,
-        "rotX": -2.65265015E-07,
+        "rotX": -2.65265243E-07,
         "rotY": 0.0253932029,
-        "rotZ": -6.2967797E-07,
+        "rotZ": -6.296784E-07,
         "scaleX": 1.75,
         "scaleY": 0.15,
         "scaleZ": 1.0
@@ -17584,9 +17146,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -17754,9 +17316,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -17924,9 +17486,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -18083,9 +17645,9 @@
         "posX": 25.5093269,
         "posY": 1.07499993,
         "posZ": 28.5201225,
-        "rotX": 1.85769579E-06,
+        "rotX": 1.85769409E-06,
         "rotY": 359.9649,
-        "rotZ": 3.78270244E-07,
+        "rotZ": 3.782701E-07,
         "scaleX": 1.75,
         "scaleY": 0.15,
         "scaleZ": 1.0
@@ -18094,9 +17656,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -18253,7 +17815,7 @@
         "posX": 28.5093269,
         "posY": 1.07499993,
         "posZ": 28.5201111,
-        "rotX": 7.148602E-07,
+        "rotX": 7.148607E-07,
         "rotY": 0.0137768621,
         "rotZ": -5.58489546E-07,
         "scaleX": 1.75,
@@ -18264,9 +17826,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -18434,9 +17996,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -18604,9 +18166,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -18774,9 +18336,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -18944,9 +18506,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -19114,9 +18676,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -19284,9 +18846,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -19454,9 +19016,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -19624,9 +19186,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.360780448,
-        "g": 0.360780448,
-        "b": 0.360780448
+        "r": 0.3607802,
+        "g": 0.3607802,
+        "b": 0.3607802
       },
       "Tags": [
         "bag",
@@ -19773,6 +19335,1776 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "25cd30",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": -36.5,
+        "posY": 1.01360488,
+        "posZ": -39.5,
+        "rotX": -5.2477322E-08,
+        "rotY": 180.009491,
+        "rotZ": -2.14331912E-08,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "card",
+        "player",
+        "yellow"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 2000,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "20": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_yellow.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "6f439d",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -5.2477322E-08,
+            "rotY": 180.009491,
+            "rotZ": -2.14331912E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Clipper",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 2100,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "21": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "3": {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -5.2477322E-08,
+            "rotY": 180.009491,
+            "rotZ": -2.14331912E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Transport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 2200,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "22": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "4": {
+          "GUID": "a22f79",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -36.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -5.2477322E-08,
+            "rotY": 180.009491,
+            "rotZ": -2.14331912E-08,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Freighter",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 2300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "23": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_yellow.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
+    },
+    {
+      "GUID": "fa76ee",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -45.7499046,
+        "posY": 0.999936342,
+        "posZ": -41.2500877,
+        "rotX": 0.000500809343,
+        "rotY": 90.04588,
+        "rotZ": -0.001762322,
+        "scaleX": 0.66,
+        "scaleY": 1.0,
+        "scaleZ": 0.66
+      },
+      "Nickname": "Dice Roller",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.obj",
+        "DiffuseURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Dice Roller.fa76ee.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Dice Roller.fa76ee.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/dice_rollers/diceRoller\")\r\n\nend)\n__bundle_register(\"lua/components/dice_rollers/diceRoller\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction getHitObjectRef(hitObj)\r\n  return hitObj.hit_object\r\nend\r\n\r\nfunction isDice(obj)\r\n  return obj.name == 'Die_6'\r\nend\r\n\r\nfunction rollDie(obj)\r\n  obj.roll()\r\nend\r\n\r\nfunction handleClick()\r\n  local hitObjs = Physics.cast({\r\n    type = 3,\r\n    origin = self.getPosition(),\r\n    direction = {0, 1, 0},\r\n    size = self.getBounds().size,\r\n  })\r\n\r\n  local hitRefs = table.map(hitObjs, getHitObjectRef)\r\n  local dice = table.filter(hitRefs, isDice)\r\n  table.forEach(dice, rollDie)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\n---Turns a table into a Set of uniques\r\n---@generic V\r\n---@param tbl V[]\r\n---@return table<V, boolean>\r\nfunction table.set(tbl)\r\n  local u = { }\r\n  for _, v in ipairs(tbl)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@return number[] | K[]\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic V\r\n---@param tbl V[] | table<string, V>\r\n---@return V[]\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl table<K, V>\r\n---@return table<V, K>\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return string | number\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return boolean\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V | nil\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\n---Returns table of elements from tbl that satisfy fn(v)\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V[]\r\nfunction table.filter(tbl, fn)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(v:V, k:K)\r\nfunction table.forEach(tbl, fn)\r\n  for k, v in pairs(tbl) do\r\n    fn(v, k)\r\n  end\r\nend\r\n\r\n---@generic V, T\r\n---@param tbl V[]\r\n---@param fn fun(val:V):T\r\n---@return T[]\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n    out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@vararg table\r\n---@return table<K, V>\r\nfunction table.merge(...)\r\n  local t0 = {}\r\n  for _, tbl in ipairs({ ... }) do\r\n    for k, v in pairs(tbl) do\r\n      t0[k] = v\r\n    end\r\n  end\r\n  return t0\r\nend\r\n\r\n---@generic K, V, T\r\n---@param tbl table<K, V>\r\n---@param fn fun(acc:T, val:V, key:K, tbl:table):T\r\n---@param init T\r\n---@return T\r\nfunction table.reduce(tbl, fn, init)\r\n  local acc = init\r\n  for k, v in pairs(tbl) do\r\n    acc = fn(acc, v, k, tbl)\r\n  end\r\n  return acc\r\nend\r\n\r\n---@param tbl number[]\r\n---@return number\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, function(a, b) return a + b end, 0)\r\nend\r\n\nend)\nreturn __bundle_require(\"Dice Roller.fa76ee.lua\")",
+      "LuaScriptState": "",
+      "XmlUI": "<!-- include lua/components/dice_rollers/diceRoller.xml -->\n<Panel\r\n  width=\"550\"\r\n  height=\"750\"\r\n  position=\"0 0 -11\"\r\n  rotation=\"0 0 90\"\r\n>\r\n  <Button\r\n    fontSize=\"72\"\r\n    textColor=\"#FFFFFF\"\r\n    colors=\"#666666|#999999|#333333|#000000\"\r\n    fontStyle=\"bold\"\r\n    width=\"400\"\r\n    height=\"100\"\r\n    position=\"0 -290 0\"\r\n    onClick=\"handleClick\"\r\n  >\r\n    Roll Dice\r\n  </Button>\r\n</Panel>\r\n\n<!-- include lua/components/dice_rollers/diceRoller.xml -->"
+    },
+    {
+      "GUID": "ab78e5",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": -12.5,
+        "posY": 1.01360488,
+        "posZ": -39.5,
+        "rotX": -1.26039312E-08,
+        "rotY": 180.001556,
+        "rotZ": -6.46558451E-09,
+        "scaleX": 3.0,
+        "scaleY": 1.0,
+        "scaleZ": 3.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "card",
+        "player",
+        "red"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 1900,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "19": {
+          "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+          "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_scout_red.jpg",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 1
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "6f439d",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -1.26039312E-08,
+            "rotY": 180.001556,
+            "rotZ": -6.46558451E-09,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Clipper",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 2100,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "21": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_clipper_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "3": {
+          "GUID": "14b32b",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -1.26039312E-08,
+            "rotY": 180.001556,
+            "rotZ": -6.46558451E-09,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Transport",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 2200,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "22": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_transport_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        "4": {
+          "GUID": "a22f79",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": -12.5,
+            "posY": 1.01360488,
+            "posZ": -39.5,
+            "rotX": -1.26039312E-08,
+            "rotY": 180.001556,
+            "rotZ": -6.46558451E-09,
+            "scaleX": 3.0,
+            "scaleY": 1.0,
+            "scaleZ": 3.0
+          },
+          "Nickname": "Freighter",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "CardID": 2300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "23": {
+              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_mat_freighter_red.jpg",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 1
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
+    },
+    {
+      "GUID": "fa06c4",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": -22.2469349,
+        "posY": 1.43014574,
+        "posZ": -41.249958,
+        "rotX": 90.0,
+        "rotY": 0.0253525712,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "9f9424",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": -21.2473049,
+        "posY": 1.43013811,
+        "posZ": -41.2503,
+        "rotX": 90.0,
+        "rotY": -0.003777446,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "a6f34d",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": -21.74734,
+        "posY": 1.43017,
+        "posZ": -40.2501335,
+        "rotX": 90.0,
+        "rotY": 0.029113071,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "54d6a1",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.7502842,
+        "posY": 0.9999418,
+        "posZ": -41.2501831,
+        "rotX": 0.000458686671,
+        "rotY": 90.03686,
+        "rotZ": -0.00161163567,
+        "scaleX": 0.66,
+        "scaleY": 1.0,
+        "scaleZ": 0.66
+      },
+      "Nickname": "Dice Roller",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.obj",
+        "DiffuseURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Dice Roller.fa76ee.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Dice Roller.fa76ee.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/dice_rollers/diceRoller\")\r\n\nend)\n__bundle_register(\"lua/components/dice_rollers/diceRoller\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction getHitObjectRef(hitObj)\r\n  return hitObj.hit_object\r\nend\r\n\r\nfunction isDice(obj)\r\n  return obj.name == 'Die_6'\r\nend\r\n\r\nfunction rollDie(obj)\r\n  obj.roll()\r\nend\r\n\r\nfunction handleClick()\r\n  local hitObjs = Physics.cast({\r\n    type = 3,\r\n    origin = self.getPosition(),\r\n    direction = {0, 1, 0},\r\n    size = self.getBounds().size,\r\n  })\r\n\r\n  local hitRefs = table.map(hitObjs, getHitObjectRef)\r\n  local dice = table.filter(hitRefs, isDice)\r\n  table.forEach(dice, rollDie)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\n---Turns a table into a Set of uniques\r\n---@generic V\r\n---@param tbl V[]\r\n---@return table<V, boolean>\r\nfunction table.set(tbl)\r\n  local u = { }\r\n  for _, v in ipairs(tbl)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@return number[] | K[]\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic V\r\n---@param tbl V[] | table<string, V>\r\n---@return V[]\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl table<K, V>\r\n---@return table<V, K>\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return string | number\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return boolean\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V | nil\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\n---Returns table of elements from tbl that satisfy fn(v)\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V[]\r\nfunction table.filter(tbl, fn)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(v:V, k:K)\r\nfunction table.forEach(tbl, fn)\r\n  for k, v in pairs(tbl) do\r\n    fn(v, k)\r\n  end\r\nend\r\n\r\n---@generic V, T\r\n---@param tbl V[]\r\n---@param fn fun(val:V):T\r\n---@return T[]\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n    out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@vararg table\r\n---@return table<K, V>\r\nfunction table.merge(...)\r\n  local t0 = {}\r\n  for _, tbl in ipairs({ ... }) do\r\n    for k, v in pairs(tbl) do\r\n      t0[k] = v\r\n    end\r\n  end\r\n  return t0\r\nend\r\n\r\n---@generic K, V, T\r\n---@param tbl table<K, V>\r\n---@param fn fun(acc:T, val:V, key:K, tbl:table):T\r\n---@param init T\r\n---@return T\r\nfunction table.reduce(tbl, fn, init)\r\n  local acc = init\r\n  for k, v in pairs(tbl) do\r\n    acc = fn(acc, v, k, tbl)\r\n  end\r\n  return acc\r\nend\r\n\r\n---@param tbl number[]\r\n---@return number\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, function(a, b) return a + b end, 0)\r\nend\r\n\nend)\nreturn __bundle_require(\"Dice Roller.fa76ee.lua\")",
+      "LuaScriptState": "",
+      "XmlUI": "<!-- include lua/components/dice_rollers/diceRoller.xml -->\n<Panel\r\n  width=\"550\"\r\n  height=\"750\"\r\n  position=\"0 0 -11\"\r\n  rotation=\"0 0 90\"\r\n>\r\n  <Button\r\n    fontSize=\"72\"\r\n    textColor=\"#FFFFFF\"\r\n    colors=\"#666666|#999999|#333333|#000000\"\r\n    fontStyle=\"bold\"\r\n    width=\"400\"\r\n    height=\"100\"\r\n    position=\"0 -290 0\"\r\n    onClick=\"handleClick\"\r\n  >\r\n    Roll Dice\r\n  </Button>\r\n</Panel>\r\n\n<!-- include lua/components/dice_rollers/diceRoller.xml -->"
+    },
+    {
+      "GUID": "dd9abc",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": -20.5,
+        "posY": 1.3302002,
+        "posZ": -38.0,
+        "rotX": 90.0,
+        "rotY": 0.50322783,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "98a62d",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 2.74987388,
+        "posY": 1.43013525,
+        "posZ": -41.2497635,
+        "rotX": 90.0,
+        "rotY": 0.0261257458,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "b3a3c9",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 3.74998426,
+        "posY": 1.43012583,
+        "posZ": -41.24927,
+        "rotX": 90.0,
+        "rotY": 0.1345297,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "15ec65",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 3.250061,
+        "posY": 1.43016422,
+        "posZ": -40.2498169,
+        "rotX": 90.0,
+        "rotY": 0.01735936,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "cfb387",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 3.24989963,
+        "posY": 0.9999305,
+        "posZ": -41.2499733,
+        "rotX": 0.0005429137,
+        "rotY": 90.02673,
+        "rotZ": -0.00192126189,
+        "scaleX": 0.66,
+        "scaleY": 1.0,
+        "scaleZ": 0.66
+      },
+      "Nickname": "Dice Roller",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.obj",
+        "DiffuseURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Dice Roller.fa76ee.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Dice Roller.fa76ee.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/dice_rollers/diceRoller\")\r\n\nend)\n__bundle_register(\"lua/components/dice_rollers/diceRoller\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction getHitObjectRef(hitObj)\r\n  return hitObj.hit_object\r\nend\r\n\r\nfunction isDice(obj)\r\n  return obj.name == 'Die_6'\r\nend\r\n\r\nfunction rollDie(obj)\r\n  obj.roll()\r\nend\r\n\r\nfunction handleClick()\r\n  local hitObjs = Physics.cast({\r\n    type = 3,\r\n    origin = self.getPosition(),\r\n    direction = {0, 1, 0},\r\n    size = self.getBounds().size,\r\n  })\r\n\r\n  local hitRefs = table.map(hitObjs, getHitObjectRef)\r\n  local dice = table.filter(hitRefs, isDice)\r\n  table.forEach(dice, rollDie)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\n---Turns a table into a Set of uniques\r\n---@generic V\r\n---@param tbl V[]\r\n---@return table<V, boolean>\r\nfunction table.set(tbl)\r\n  local u = { }\r\n  for _, v in ipairs(tbl)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@return number[] | K[]\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic V\r\n---@param tbl V[] | table<string, V>\r\n---@return V[]\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl table<K, V>\r\n---@return table<V, K>\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return string | number\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return boolean\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V | nil\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\n---Returns table of elements from tbl that satisfy fn(v)\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V[]\r\nfunction table.filter(tbl, fn)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(v:V, k:K)\r\nfunction table.forEach(tbl, fn)\r\n  for k, v in pairs(tbl) do\r\n    fn(v, k)\r\n  end\r\nend\r\n\r\n---@generic V, T\r\n---@param tbl V[]\r\n---@param fn fun(val:V):T\r\n---@return T[]\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n    out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@vararg table\r\n---@return table<K, V>\r\nfunction table.merge(...)\r\n  local t0 = {}\r\n  for _, tbl in ipairs({ ... }) do\r\n    for k, v in pairs(tbl) do\r\n      t0[k] = v\r\n    end\r\n  end\r\n  return t0\r\nend\r\n\r\n---@generic K, V, T\r\n---@param tbl table<K, V>\r\n---@param fn fun(acc:T, val:V, key:K, tbl:table):T\r\n---@param init T\r\n---@return T\r\nfunction table.reduce(tbl, fn, init)\r\n  local acc = init\r\n  for k, v in pairs(tbl) do\r\n    acc = fn(acc, v, k, tbl)\r\n  end\r\n  return acc\r\nend\r\n\r\n---@param tbl number[]\r\n---@return number\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, function(a, b) return a + b end, 0)\r\nend\r\n\nend)\nreturn __bundle_require(\"Dice Roller.fa76ee.lua\")",
+      "LuaScriptState": "",
+      "XmlUI": "<!-- include lua/components/dice_rollers/diceRoller.xml -->\n<Panel\r\n  width=\"550\"\r\n  height=\"750\"\r\n  position=\"0 0 -11\"\r\n  rotation=\"0 0 90\"\r\n>\r\n  <Button\r\n    fontSize=\"72\"\r\n    textColor=\"#FFFFFF\"\r\n    colors=\"#666666|#999999|#333333|#000000\"\r\n    fontStyle=\"bold\"\r\n    width=\"400\"\r\n    height=\"100\"\r\n    position=\"0 -290 0\"\r\n    onClick=\"handleClick\"\r\n  >\r\n    Roll Dice\r\n  </Button>\r\n</Panel>\r\n\n<!-- include lua/components/dice_rollers/diceRoller.xml -->"
+    },
+    {
+      "GUID": "6c929a",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 4.5,
+        "posY": 1.3302002,
+        "posZ": -38.0,
+        "rotX": 90.0,
+        "rotY": 0.5032273,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "43c5ff",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 27.7499619,
+        "posY": 1.4301461,
+        "posZ": -41.24982,
+        "rotX": 90.0,
+        "rotY": 0.0101318825,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "336f43",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 28.7499676,
+        "posY": 1.43013787,
+        "posZ": -41.2497864,
+        "rotX": 90.0,
+        "rotY": 0.007836862,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "f6006d",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 28.2500553,
+        "posY": 1.4301703,
+        "posZ": -40.24993,
+        "rotX": 90.0,
+        "rotY": 0.00933479,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "7d86be",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 28.2499828,
+        "posY": 0.9999417,
+        "posZ": -41.2499428,
+        "rotX": 0.0004596323,
+        "rotY": 90.0178452,
+        "rotZ": -0.00161293289,
+        "scaleX": 0.66,
+        "scaleY": 1.0,
+        "scaleZ": 0.66
+      },
+      "Nickname": "Dice Roller",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.obj",
+        "DiffuseURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Dice Roller.fa76ee.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Dice Roller.fa76ee.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/components/dice_rollers/diceRoller\")\r\n\nend)\n__bundle_register(\"lua/components/dice_rollers/diceRoller\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"lua/utils/table\")\r\n\r\nfunction getHitObjectRef(hitObj)\r\n  return hitObj.hit_object\r\nend\r\n\r\nfunction isDice(obj)\r\n  return obj.name == 'Die_6'\r\nend\r\n\r\nfunction rollDie(obj)\r\n  obj.roll()\r\nend\r\n\r\nfunction handleClick()\r\n  local hitObjs = Physics.cast({\r\n    type = 3,\r\n    origin = self.getPosition(),\r\n    direction = {0, 1, 0},\r\n    size = self.getBounds().size,\r\n  })\r\n\r\n  local hitRefs = table.map(hitObjs, getHitObjectRef)\r\n  local dice = table.filter(hitRefs, isDice)\r\n  table.forEach(dice, rollDie)\r\nend\r\n\nend)\n__bundle_register(\"lua/utils/table\", function(require, _LOADED, __bundle_register, __bundle_modules)\n---Turns a table into a Set of uniques\r\n---@generic V\r\n---@param tbl V[]\r\n---@return table<V, boolean>\r\nfunction table.set(tbl)\r\n  local u = { }\r\n  for _, v in ipairs(tbl)do\r\n    u[v] = true\r\n  end\r\n  return u\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@return number[] | K[]\r\nfunction table.keys(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, k)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic V\r\n---@param tbl V[] | table<string, V>\r\n---@return V[]\r\nfunction table.values(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    table.insert(out, v)\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl table<K, V>\r\n---@return table<V, K>\r\nfunction table.reverseLookup(tbl)\r\n  local out = {}\r\n  for k, v in pairs(tbl) do\r\n    out[v] = k\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return string | number\r\nfunction table.indexOf(tbl, val)\r\n  for k, v in pairs(tbl) do\r\n    if (v == val) then\r\n      return k\r\n    end\r\n  end\r\n  return 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param val V\r\n---@return boolean\r\nfunction table.includes(tbl, val)\r\n  return table.indexOf(tbl, val) > 0\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V | nil\r\nfunction table.find(tbl, fn)\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      return v\r\n    end\r\n  end\r\n  return nil\r\nend\r\n\r\n---Returns table of elements from tbl that satisfy fn(v)\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(val:V):boolean\r\n---@return V[]\r\nfunction table.filter(tbl, fn)\r\n  local out = {}\r\n  for _, v in pairs(tbl) do\r\n    if fn(v) then\r\n      table.insert(out, v)\r\n    end\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@param tbl V[] | table<K, V>\r\n---@param fn fun(v:V, k:K)\r\nfunction table.forEach(tbl, fn)\r\n  for k, v in pairs(tbl) do\r\n    fn(v, k)\r\n  end\r\nend\r\n\r\n---@generic V, T\r\n---@param tbl V[]\r\n---@param fn fun(val:V):T\r\n---@return T[]\r\nfunction table.map(tbl, fn)\r\n  local out = {}\r\n  local t_len = #tbl\r\n  for i = 1, t_len do\r\n    out[i] = fn(tbl[i])\r\n  end\r\n  return out\r\nend\r\n\r\n---@generic K, V\r\n---@vararg table\r\n---@return table<K, V>\r\nfunction table.merge(...)\r\n  local t0 = {}\r\n  for _, tbl in ipairs({ ... }) do\r\n    for k, v in pairs(tbl) do\r\n      t0[k] = v\r\n    end\r\n  end\r\n  return t0\r\nend\r\n\r\n---@generic K, V, T\r\n---@param tbl table<K, V>\r\n---@param fn fun(acc:T, val:V, key:K, tbl:table):T\r\n---@param init T\r\n---@return T\r\nfunction table.reduce(tbl, fn, init)\r\n  local acc = init\r\n  for k, v in pairs(tbl) do\r\n    acc = fn(acc, v, k, tbl)\r\n  end\r\n  return acc\r\nend\r\n\r\n---@param tbl number[]\r\n---@return number\r\nfunction table.sum(tbl)\r\n  return table.reduce(tbl, function(a, b) return a + b end, 0)\r\nend\r\n\nend)\nreturn __bundle_require(\"Dice Roller.fa76ee.lua\")",
+      "LuaScriptState": "",
+      "XmlUI": "<!-- include lua/components/dice_rollers/diceRoller.xml -->\n<Panel\r\n  width=\"550\"\r\n  height=\"750\"\r\n  position=\"0 0 -11\"\r\n  rotation=\"0 0 90\"\r\n>\r\n  <Button\r\n    fontSize=\"72\"\r\n    textColor=\"#FFFFFF\"\r\n    colors=\"#666666|#999999|#333333|#000000\"\r\n    fontStyle=\"bold\"\r\n    width=\"400\"\r\n    height=\"100\"\r\n    position=\"0 -290 0\"\r\n    onClick=\"handleClick\"\r\n  >\r\n    Roll Dice\r\n  </Button>\r\n</Panel>\r\n\n<!-- include lua/components/dice_rollers/diceRoller.xml -->"
+    },
+    {
+      "GUID": "69d610",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 29.5,
+        "posY": 1.3302002,
+        "posZ": -38.0,
+        "rotX": 90.0,
+        "rotY": 0.5032278,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 0,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "RotationValues": [
+        {
+          "Value": "1",
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "2",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": "3",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": "4",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": "5",
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": "6",
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
         }
       ]
     }
