@@ -6,14 +6,14 @@ function onLoad(save_state)
 end
 
 ---@param zone table
-function onObjectEnterScriptingZone(zone)
+function onObjectEnterZone(zone)
   if (zone == self) then
     updatePlayerDisplay()
   end
 end
 
 ---@param zone table
-function onObjectLeaveScriptingZone(zone)
+function onObjectLeaveZone(zone)
   if (zone ~= nil and zone == self) then
     updatePlayerDisplay()
   end
