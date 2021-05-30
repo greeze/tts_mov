@@ -1,7 +1,7 @@
 <Panel
   width="550"
   height="750"
-  position="0 0 -11"
+  position="200 0 -11"
   rotation="0 0 90"
 >
   <Button
