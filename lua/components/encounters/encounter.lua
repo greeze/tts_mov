@@ -1,15 +1,7 @@
 require('lua/utils/table')
 local interactions = require('lua/utils/interactions')
 
-function onCollisionEnter()
-  toggleTooltip()
-end
-
-function onCollisionExit()
-  toggleTooltip()
-end
-
-function toggleTooltip()
+local function toggleTooltip()
   if (self.is_face_down) then
     self.setName('Encounter')
   else
@@ -19,11 +11,11 @@ end
 
 ---@param obj table
 ---@return boolean
-function isFaceUpTelegate(obj)
+local function isFaceUpTelegate(obj)
   return obj.hasTag('telegate') and not obj.is_face_down
 end
 
-function getFaceUpTelegates()
+local function getFaceUpTelegates()
   local telegates = getObjectsWithAllTags({'telegate', 'encounter'})
   return table.filter(telegates, function(telegate)
     return telegate ~= nil and telegate ~= self and isFaceUpTelegate(telegate)
@@ -31,13 +23,21 @@ function getFaceUpTelegates()
 end
 
 ---@param playerColor string
-function pingTelegates(playerColor)
+local function pingTelegates(playerColor)
   if(not isFaceUpTelegate(self)) then return end
 
   table.forEach(getFaceUpTelegates(), function(telegate)
     telegate.highlightOn(playerColor, 5)
     interactions.pingObject(telegate, playerColor)
   end)
+end
+
+function onCollisionEnter()
+  toggleTooltip()
+end
+
+function onCollisionExit()
+  toggleTooltip()
 end
 
 ---@param playerColor string

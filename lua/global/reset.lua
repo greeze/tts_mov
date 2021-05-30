@@ -1,6 +1,16 @@
 require('lua/utils/table')
 local constants = require('lua/global/constants')
 
+---@class Vector
+---@field x number
+---@field y number
+---@field z number
+
+---@class Config
+---@field start Vector
+---@field step Vector
+---@field row number
+
 local function getDefaultConfig()
   return {
     start = { x = 0, y = 5, z = 0 },
@@ -17,9 +27,10 @@ local function getDefaultTakeParams()
 end
 
 ---@param bag table
----@param configOverrides table
+---@param configOverrides Config
 ---@param takeOverrides table
 local function layout(bag, configOverrides, takeOverrides)
+  ---@type Config
   local config = table.merge(getDefaultConfig(), configOverrides or {})
   local takeParams = table.merge(getDefaultTakeParams(), takeOverrides or {})
 
