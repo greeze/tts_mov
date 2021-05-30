@@ -1,7 +1,7 @@
 {
   "SaveName": "MoV",
-  "EpochTime": 1622402623,
-  "Date": "5/30/2021 12:23:43 PM",
+  "EpochTime": 1622405570,
+  "Date": "5/30/2021 1:12:50 PM",
   "VersionNumber": "v13.1.1",
   "GameMode": "MoV",
   "GameType": "Game",
@@ -2415,8 +2415,8 @@
         "posY": 0.99907887,
         "posZ": -33.508213,
         "rotX": 359.8696,
-        "rotY": 0.005298082,
-        "rotZ": 0.089724876,
+        "rotY": 0.00530131347,
+        "rotZ": 0.0897229761,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2426,8 +2426,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6916378,
-        "g": 0.0583716035,
-        "b": 0.05180929
+        "g": 0.05837156,
+        "b": 0.0518092439
       },
       "Tags": [
         "miniature",
@@ -2471,8 +2471,8 @@
         "posY": 0.99907887,
         "posZ": -33.5082169,
         "rotX": 359.8696,
-        "rotY": 0.004690139,
-        "rotZ": 0.08972612,
+        "rotY": 0.004693229,
+        "rotZ": 0.08972494,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2483,7 +2483,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171988457
+        "b": 0.1719884
       },
       "Tags": [
         "miniature",
@@ -2527,8 +2527,8 @@
         "posY": 0.99907887,
         "posZ": -33.5081177,
         "rotX": 359.8696,
-        "rotY": 0.00539483,
-        "rotZ": 0.0897212,
+        "rotY": 0.005396938,
+        "rotZ": 0.0897220448,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2537,9 +2537,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.191988468,
+        "r": 0.191988409,
         "g": 0.701,
-        "b": 0.167988449
+        "b": 0.16798839
       },
       "Tags": [
         "green",
@@ -2583,8 +2583,8 @@
         "posY": 0.99907887,
         "posZ": -33.5082474,
         "rotX": 359.8696,
-        "rotY": 0.00475145271,
-        "rotZ": 0.08972408,
+        "rotY": 0.004755474,
+        "rotZ": 0.08972231,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -2594,8 +2594,8 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.9559999,
-        "g": 0.39198783,
-        "b": 0.112987824
+        "g": 0.391987741,
+        "b": 0.112987764
       },
       "Tags": [
         "miniature",
@@ -2649,9 +2649,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.24998796,
-        "g": 0.24998796,
-        "b": 0.24998796
+        "r": 0.2499879,
+        "g": 0.2499879,
+        "b": 0.2499879
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -2699,9 +2699,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249988317,
-        "g": 0.249988317,
-        "b": 0.249988317
+        "r": 0.249988258,
+        "g": 0.249988258,
+        "b": 0.249988258
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -2809,9 +2809,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.24998796,
-        "g": 0.24998796,
-        "b": 0.24998796
+        "r": 0.2499879,
+        "g": 0.2499879,
+        "b": 0.2499879
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -4449,11 +4449,11 @@
       "GUID": "425839",
       "Name": "Die_6",
       "Transform": {
-        "posX": -45.25,
-        "posY": 1.43011653,
-        "posZ": -41.75,
+        "posX": -45.2499962,
+        "posY": 1.43011665,
+        "posZ": -41.75001,
         "rotX": 90.0,
-        "rotY": 0.0308116674,
+        "rotY": 0.03038573,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -4540,11 +4540,11 @@
       "GUID": "21e609",
       "Name": "Die_6",
       "Transform": {
-        "posX": -45.75,
+        "posX": -45.7499962,
         "posY": 1.43015194,
-        "posZ": -40.75,
+        "posZ": -40.75001,
         "rotX": 90.0,
-        "rotY": 0.02525896,
+        "rotY": 0.02475698,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -4631,11 +4631,11 @@
       "GUID": "8d31fc",
       "Name": "Die_6",
       "Transform": {
-        "posX": -46.25,
+        "posX": -46.2499962,
         "posY": 1.43012547,
-        "posZ": -41.75,
+        "posZ": -41.75001,
         "rotX": 90.0,
-        "rotY": 0.03306308,
+        "rotY": 0.03255914,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -4736,9 +4736,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -4914,9 +4914,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -5092,9 +5092,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -5270,9 +5270,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -5448,9 +5448,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -5626,9 +5626,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -5804,9 +5804,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -5982,9 +5982,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -6143,250 +6143,6 @@
       ]
     },
     {
-      "GUID": "b57fbe",
-      "Name": "Custom_Model_Bag",
-      "Transform": {
-        "posX": -24.5,
-        "posY": 1.01360488,
-        "posZ": -26.5,
-        "rotX": -6.644295E-08,
-        "rotY": 179.999924,
-        "rotZ": -2.95807126E-07,
-        "scaleX": 4.177989,
-        "scaleY": 0.0272097588,
-        "scaleZ": 1.01980352
-      },
-      "Nickname": "Discards",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 0.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cube.obj",
-        "DiffuseURL": "",
-        "NormalURL": "",
-        "ColliderURL": "",
-        "Convex": true,
-        "MaterialIndex": 3,
-        "TypeIndex": 6,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "SpecularIntensity": 0.0,
-          "SpecularSharpness": 2.0,
-          "FresnelStrength": 0.0
-        },
-        "CastShadows": true
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ChildObjects": [
-        {
-          "GUID": "c097f7",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -2.95873243E-12,
-            "posY": 3.2411503E-13,
-            "posZ": 9.351549E-07,
-            "rotX": 1.31770569E-14,
-            "rotY": 3.83182E-06,
-            "rotZ": -5.08888755E-14,
-            "scaleX": 0.466476321,
-            "scaleY": 2.38884854,
-            "scaleZ": 0.326533467
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 2100,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "21": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/discard.png",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/discard.png",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
-    },
-    {
-      "GUID": "5786c8",
-      "Name": "Custom_Model_Bag",
-      "Transform": {
-        "posX": 24.5,
-        "posY": 1.01360488,
-        "posZ": -26.5,
-        "rotX": 2.59870149E-07,
-        "rotY": 179.999924,
-        "rotZ": 3.02406065E-08,
-        "scaleX": 4.177989,
-        "scaleY": 0.0272097588,
-        "scaleZ": 1.01980352
-      },
-      "Nickname": "Discards",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 0.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "MaterialIndex": -1,
-      "MeshIndex": -1,
-      "Number": 0,
-      "CustomMesh": {
-        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/cube.obj",
-        "DiffuseURL": "",
-        "NormalURL": "",
-        "ColliderURL": "",
-        "Convex": true,
-        "MaterialIndex": 3,
-        "TypeIndex": 6,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "SpecularIntensity": 0.0,
-          "SpecularSharpness": 2.0,
-          "FresnelStrength": 0.0
-        },
-        "CastShadows": true
-      },
-      "Bag": {
-        "Order": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "ChildObjects": [
-        {
-          "GUID": "c097f7",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": -2.95873243E-12,
-            "posY": 3.2411503E-13,
-            "posZ": 9.351549E-07,
-            "rotX": 1.31770569E-14,
-            "rotY": 3.83182E-06,
-            "rotZ": -5.08888755E-14,
-            "scaleX": 0.466476321,
-            "scaleY": 2.38884854,
-            "scaleZ": 0.326533467
-          },
-          "Nickname": "",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 2100,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "21": {
-              "FaceURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/discard.png",
-              "BackURL": "https://github.com/greeze/tts_mov/raw/main/assets/environment/discard.png",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 1
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        }
-      ]
-    },
-    {
       "GUID": "beed72",
       "Name": "Die_6",
       "Transform": {
@@ -6495,9 +6251,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -6655,9 +6411,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -6815,9 +6571,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -6975,9 +6731,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -7135,9 +6891,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -7249,9 +7005,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -7352,9 +7108,9 @@
         "posX": 9.5,
         "posY": 1.496917,
         "posZ": 44.5,
-        "rotX": 0.07011702,
+        "rotX": 0.07011705,
         "rotY": 180.02684,
-        "rotZ": 0.06152025,
+        "rotZ": 0.0615202338,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7468,9 +7224,9 @@
         "posX": 15.0,
         "posY": 1.49075449,
         "posZ": 44.5,
-        "rotX": 0.07009974,
+        "rotX": 0.07009977,
         "rotY": 180.025375,
-        "rotZ": 0.0615385771,
+        "rotZ": 0.0615385659,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -7932,7 +7688,7 @@
         "posX": 37.0,
         "posY": 1.496917,
         "posZ": 44.5,
-        "rotX": -2.45239044E-05,
+        "rotX": -2.4523908E-05,
         "rotY": 179.977112,
         "rotZ": 2.026527E-05,
         "scaleX": 1.25,
@@ -10149,7 +9905,7 @@
         "posZ": 33.25,
         "rotX": 1.8415838E-05,
         "rotY": 180.026978,
-        "rotZ": -4.77223439E-05,
+        "rotZ": -4.772235E-05,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -10385,7 +10141,7 @@
         "posZ": 44.0,
         "rotX": 0.06955078,
         "rotY": 180.000061,
-        "rotZ": 0.0146467043,
+        "rotZ": 0.0146466969,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10615,9 +10371,9 @@
         "posX": -29.0,
         "posY": 1.496917,
         "posZ": 44.0,
-        "rotX": 0.07007142,
+        "rotX": 0.07007145,
         "rotY": 180.000015,
-        "rotZ": 0.0614222437,
+        "rotZ": 0.0614222325,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -10963,9 +10719,9 @@
         "posX": -44.0,
         "posY": 1.496917,
         "posZ": 33.5,
-        "rotX": 0.07007225,
+        "rotX": 0.07007227,
         "rotY": 180.000015,
-        "rotZ": 0.0614225864,
+        "rotZ": 0.06142257,
         "scaleX": 1.625,
         "scaleY": 1.0,
         "scaleZ": 1.625
@@ -11207,8 +10963,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778126,
-        "b": 0.311841577
+        "g": 0.1637781,
+        "b": 0.311841547
       },
       "Tags": [
         "encounter",
@@ -11254,7 +11010,7 @@
         "posZ": 45.0,
         "rotX": 0.07007645,
         "rotY": 180.000626,
-        "rotZ": 0.06142388,
+        "rotZ": 0.0614238642,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -11264,8 +11020,8 @@
       "GMNotes": "Hazard - Blue 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778126,
-        "b": 0.311841577
+        "g": 0.1637781,
+        "b": 0.311841547
       },
       "Tags": [
         "encounter",
@@ -11321,8 +11077,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778156,
-        "b": 0.3118416
+        "g": 0.163778126,
+        "b": 0.311841577
       },
       "Tags": [
         "encounter",
@@ -11368,7 +11124,7 @@
         "posZ": 45.0,
         "rotX": 0.0700784251,
         "rotY": 179.989365,
-        "rotZ": 0.0614156127,
+        "rotZ": 0.0614156,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -11378,8 +11134,8 @@
       "GMNotes": "Hazard - Blue 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778156,
-        "b": 0.3118416
+        "g": 0.163778126,
+        "b": 0.311841577
       },
       "Tags": [
         "encounter",
@@ -11435,8 +11191,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778245,
-        "b": 0.3118417
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -11480,9 +11236,9 @@
         "posX": -11.75,
         "posY": 1.496917,
         "posZ": 45.0,
-        "rotX": 0.07007588,
+        "rotX": 0.0700759,
         "rotY": 180.000015,
-        "rotZ": 0.0614257939,
+        "rotZ": 0.06142578,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -11492,8 +11248,8 @@
       "GMNotes": "Hazard - Blue 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778245,
-        "b": 0.3118417
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -11549,8 +11305,8 @@
       "GMNotes": "Hazard - Blue 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637783,
-        "b": 0.3118418
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -11606,8 +11362,8 @@
       "GMNotes": "Hazard - Red 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637783,
-        "b": 0.3118418
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -11663,8 +11419,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778186,
-        "b": 0.311841637
+        "g": 0.163778156,
+        "b": 0.3118416
       },
       "Tags": [
         "encounter",
@@ -11720,8 +11476,8 @@
       "GMNotes": "Hazard - Red 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778186,
-        "b": 0.311841637
+        "g": 0.163778156,
+        "b": 0.3118416
       },
       "Tags": [
         "encounter",
@@ -11777,8 +11533,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778126,
-        "b": 0.311841577
+        "g": 0.1637781,
+        "b": 0.311841547
       },
       "Tags": [
         "encounter",
@@ -11822,9 +11578,9 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 42.0,
-        "rotX": 0.07007649,
+        "rotX": 0.07007652,
         "rotY": 180.000015,
-        "rotZ": 0.0614229664,
+        "rotZ": 0.06142295,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -11834,8 +11590,8 @@
       "GMNotes": "Hazard - Red 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778126,
-        "b": 0.311841577
+        "g": 0.1637781,
+        "b": 0.311841547
       },
       "Tags": [
         "encounter",
@@ -11891,8 +11647,8 @@
       "GMNotes": "Hazard - Red 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -11948,8 +11704,8 @@
       "GMNotes": "Hazard - Yellow 10",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -12005,8 +11761,8 @@
       "GMNotes": "Hazard - Yellow 20",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778186,
-        "b": 0.311841637
+        "g": 0.163778156,
+        "b": 0.3118416
       },
       "Tags": [
         "encounter",
@@ -12062,8 +11818,8 @@
       "GMNotes": "Hazard - Yellow 30",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778186,
-        "b": 0.311841637
+        "g": 0.163778156,
+        "b": 0.3118416
       },
       "Tags": [
         "encounter",
@@ -12107,7 +11863,7 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 39.0,
-        "rotX": 0.033217147,
+        "rotX": 0.0332171619,
         "rotY": 179.999146,
         "rotZ": 0.0528564751,
         "scaleX": 0.75,
@@ -12119,8 +11875,8 @@
       "GMNotes": "Hazard - Yellow 40",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778156,
-        "b": 0.3118416
+        "g": 0.163778126,
+        "b": 0.311841577
       },
       "Tags": [
         "encounter",
@@ -12176,8 +11932,8 @@
       "GMNotes": "Relic - Air Foil",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -12233,8 +11989,8 @@
       "GMNotes": "Relic - Auto Pilot",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -12280,7 +12036,7 @@
         "posZ": 39.0,
         "rotX": 0.07010816,
         "rotY": 179.972122,
-        "rotZ": 0.0613848642,
+        "rotZ": 0.061384853,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -12290,8 +12046,8 @@
       "GMNotes": "Relic - Gate Lock",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637783,
-        "b": 0.3118418
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -12347,8 +12103,8 @@
       "GMNotes": "Relic - Jump Start",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -12404,8 +12160,8 @@
       "GMNotes": "Relic - Mulligan Gear",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -12461,8 +12217,8 @@
       "GMNotes": "Relic - Shield",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637783,
-        "b": 0.3118418
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -12506,9 +12262,9 @@
         "posX": -20.0,
         "posY": 1.496917,
         "posZ": 36.0,
-        "rotX": 0.0700730458,
+        "rotX": 0.0700730756,
         "rotY": 180.000015,
-        "rotZ": 0.0614254922,
+        "rotZ": 0.06142548,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -12518,8 +12274,8 @@
       "GMNotes": "Relic - Spy Eye",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778365,
-        "b": 0.311841846
+        "g": 0.163778335,
+        "b": 0.311841816
       },
       "Tags": [
         "encounter",
@@ -12575,8 +12331,8 @@
       "GMNotes": "Relic - Switch Switch",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -12620,7 +12376,7 @@
         "posX": -14.5,
         "posY": 1.496917,
         "posZ": 36.0,
-        "rotX": -0.00553196529,
+        "rotX": -0.005531966,
         "rotY": 180.000412,
         "rotZ": 0.04701709,
         "scaleX": 0.75,
@@ -12632,8 +12388,8 @@
       "GMNotes": "Relic - Yellow Drive",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.1637783,
-        "b": 0.3118418
+        "g": 0.163778275,
+        "b": 0.311841756
       },
       "Tags": [
         "encounter",
@@ -12689,8 +12445,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778245,
-        "b": 0.3118417
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -12746,8 +12502,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778245,
-        "b": 0.3118417
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -12803,8 +12559,8 @@
       "GMNotes": "Spaceport",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778245,
-        "b": 0.3118417
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -12848,7 +12604,7 @@
         "posX": -22.75,
         "posY": 1.496917,
         "posZ": 33.0,
-        "rotX": 0.07007712,
+        "rotX": 0.0700771362,
         "rotY": 180.000122,
         "rotZ": 0.0614249,
         "scaleX": 0.75,
@@ -12860,8 +12616,8 @@
       "GMNotes": "Telegate 1",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778245,
-        "b": 0.3118417
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -12917,8 +12673,8 @@
       "GMNotes": "Telegate 2",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778245,
-        "b": 0.3118417
+        "g": 0.163778216,
+        "b": 0.311841667
       },
       "Tags": [
         "encounter",
@@ -12974,8 +12730,8 @@
       "GMNotes": "Telegate 3",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -13031,8 +12787,8 @@
       "GMNotes": "Telegate 4",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -13088,8 +12844,8 @@
       "GMNotes": "Telegate 5",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -13145,8 +12901,8 @@
       "GMNotes": "Telegate 6",
       "ColorDiffuse": {
         "r": 0.0342270657,
-        "g": 0.163778275,
-        "b": 0.311841756
+        "g": 0.163778245,
+        "b": 0.3118417
       },
       "Tags": [
         "encounter",
@@ -13250,7 +13006,7 @@
         "posZ": 16.5,
         "rotX": 0.0700916052,
         "rotY": 179.999817,
-        "rotZ": 0.06143711,
+        "rotZ": 0.0614371,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -13366,7 +13122,7 @@
         "posZ": 10.5,
         "rotX": 0.07008123,
         "rotY": 179.999924,
-        "rotZ": 0.06142513,
+        "rotZ": 0.06142512,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -13540,7 +13296,7 @@
         "posZ": 1.5,
         "rotX": 0.07005442,
         "rotY": 179.999741,
-        "rotZ": 0.06139909,
+        "rotZ": 0.06139908,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -13598,7 +13354,7 @@
         "posZ": -1.5,
         "rotX": 0.07010058,
         "rotY": 179.999741,
-        "rotZ": 0.06140151,
+        "rotZ": 0.0614014938,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -14013,9 +13769,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992628,
-        "g": 0.230992645,
-        "b": 0.08999402
+        "r": 0.4429926,
+        "g": 0.230992615,
+        "b": 0.0899940059
       },
       "Tags": [
         "c01",
@@ -14074,9 +13830,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992628,
-        "g": 0.230992645,
-        "b": 0.08999402
+        "r": 0.4429926,
+        "g": 0.230992615,
+        "b": 0.0899940059
       },
       "Tags": [
         "c02",
@@ -14135,9 +13891,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c03",
@@ -14185,7 +13941,7 @@
         "posX": -37.5,
         "posY": 1.49075449,
         "posZ": 10.5,
-        "rotX": 0.07082173,
+        "rotX": 0.07082176,
         "rotY": 179.985062,
         "rotZ": 0.064380914,
         "scaleX": 1.25,
@@ -14196,9 +13952,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c04",
@@ -14257,9 +14013,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992628,
-        "g": 0.230992645,
-        "b": 0.08999402
+        "r": 0.4429926,
+        "g": 0.230992615,
+        "b": 0.0899940059
       },
       "Tags": [
         "c05",
@@ -14309,7 +14065,7 @@
         "posZ": 4.5,
         "rotX": 0.0708464,
         "rotY": 179.989914,
-        "rotZ": 0.06460735,
+        "rotZ": 0.06460734,
         "scaleX": 1.25,
         "scaleY": 1.0,
         "scaleZ": 1.25
@@ -14318,9 +14074,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c06",
@@ -14379,9 +14135,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c07",
@@ -14440,9 +14196,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c08",
@@ -14501,9 +14257,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c09",
@@ -14562,9 +14318,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c10",
@@ -14612,7 +14368,7 @@
         "posX": -37.5,
         "posY": 1.49075449,
         "posZ": -10.5,
-        "rotX": 0.0708405748,
+        "rotX": 0.0708406046,
         "rotY": 180.013,
         "rotZ": 0.0647308,
         "scaleX": 1.25,
@@ -14623,9 +14379,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c11",
@@ -14684,9 +14440,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c12",
@@ -14745,9 +14501,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c13",
@@ -14806,9 +14562,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442992657,
-        "g": 0.230992675,
-        "b": 0.08999405
+        "r": 0.442992628,
+        "g": 0.230992645,
+        "b": 0.08999402
       },
       "Tags": [
         "c14",
@@ -14869,7 +14625,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c01",
@@ -14927,7 +14683,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c02",
@@ -14985,7 +14741,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c03",
@@ -15043,7 +14799,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c04",
@@ -15101,7 +14857,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c05",
@@ -15159,7 +14915,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c06",
@@ -15217,7 +14973,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c07",
@@ -15275,7 +15031,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c08",
@@ -15333,7 +15089,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c09",
@@ -15391,7 +15147,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c10",
@@ -15449,7 +15205,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c11",
@@ -15507,7 +15263,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c12",
@@ -15565,7 +15321,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c13",
@@ -15623,7 +15379,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c14",
@@ -15681,7 +15437,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c01",
@@ -15740,7 +15496,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c02",
@@ -15799,7 +15555,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c03",
@@ -15858,7 +15614,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c04",
@@ -15917,7 +15673,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c05",
@@ -15976,7 +15732,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c06",
@@ -16035,7 +15791,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c07",
@@ -16081,7 +15837,7 @@
         "posX": -37.5,
         "posY": 2.496917,
         "posZ": -1.5,
-        "rotX": 0.0848996341,
+        "rotX": 0.0848996639,
         "rotY": 180.006042,
         "rotZ": 0.0754871145,
         "scaleX": 0.75,
@@ -16094,7 +15850,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c08",
@@ -16142,7 +15898,7 @@
         "posZ": -4.5,
         "rotX": 0.08071242,
         "rotY": 179.998871,
-        "rotZ": 0.07341619,
+        "rotZ": 0.073416166,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16153,7 +15909,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c09",
@@ -16201,7 +15957,7 @@
         "posZ": -7.5,
         "rotX": 0.0841932446,
         "rotY": 180.000427,
-        "rotZ": 0.07731698,
+        "rotZ": 0.07731699,
         "scaleX": 0.75,
         "scaleY": 1.0,
         "scaleZ": 0.75
@@ -16212,7 +15968,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c10",
@@ -16271,7 +16027,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c11",
@@ -16330,7 +16086,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c12",
@@ -16389,7 +16145,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c13",
@@ -16448,7 +16204,7 @@
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
-        "b": 0.171993047
+        "b": 0.171993017
       },
       "Tags": [
         "c14",
@@ -16636,9 +16392,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -16806,9 +16562,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -16976,9 +16732,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -17135,9 +16891,9 @@
         "posX": 16.509325,
         "posY": 1.075,
         "posZ": 28.5201111,
-        "rotX": -2.652654E-07,
+        "rotX": -2.6526547E-07,
         "rotY": 0.0253932029,
-        "rotZ": -6.29678766E-07,
+        "rotZ": -6.296789E-07,
         "scaleX": 1.75,
         "scaleY": 0.15,
         "scaleZ": 1.0
@@ -17146,9 +16902,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -17316,9 +17072,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -17486,9 +17242,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -17645,7 +17401,7 @@
         "posX": 25.5093269,
         "posY": 1.07499993,
         "posZ": 28.5201225,
-        "rotX": 1.857693E-06,
+        "rotX": 1.8576925E-06,
         "rotY": 359.9649,
         "rotZ": 3.782701E-07,
         "scaleX": 1.75,
@@ -17656,9 +17412,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -17815,7 +17571,7 @@
         "posX": 28.5093269,
         "posY": 1.07499993,
         "posZ": 28.5201111,
-        "rotX": 7.14861E-07,
+        "rotX": 7.1486113E-07,
         "rotY": 0.0137768621,
         "rotZ": -5.58489546E-07,
         "scaleX": 1.75,
@@ -17826,9 +17582,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -17996,9 +17752,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -18166,9 +17922,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -18336,9 +18092,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -18506,9 +18262,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -18676,9 +18432,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -18846,9 +18602,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -19016,9 +18772,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -19186,9 +18942,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.36078,
-        "g": 0.36078,
-        "b": 0.36078
+        "r": 0.360779941,
+        "g": 0.360779941,
+        "b": 0.360779941
       },
       "Tags": [
         "bag",
@@ -19575,9 +19331,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999911,
-        "g": 0.249999911,
-        "b": 0.249999911
+        "r": 0.249999851,
+        "g": 0.249999851,
+        "b": 0.249999851
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -19840,11 +19596,11 @@
       "GUID": "fa06c4",
       "Name": "Die_6",
       "Transform": {
-        "posX": -22.25,
+        "posX": -22.2499981,
         "posY": 1.43013191,
-        "posZ": -41.75,
+        "posZ": -41.7500076,
         "rotX": 90.0,
-        "rotY": 0.0241217427,
+        "rotY": 0.02367464,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -19931,11 +19687,11 @@
       "GUID": "9f9424",
       "Name": "Die_6",
       "Transform": {
-        "posX": -21.25,
+        "posX": -21.2499962,
         "posY": 1.430124,
-        "posZ": -41.75,
+        "posZ": -41.7500076,
         "rotX": 90.0,
-        "rotY": -0.004927534,
+        "rotY": -0.005429236,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20022,11 +19778,11 @@
       "GUID": "a6f34d",
       "Name": "Die_6",
       "Transform": {
-        "posX": -21.75,
-        "posY": 1.430156,
-        "posZ": -40.75,
+        "posX": -21.7499981,
+        "posY": 1.43015623,
+        "posZ": -40.75001,
         "rotX": 90.0,
-        "rotY": 0.0278811958,
+        "rotY": 0.0274341386,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20127,9 +19883,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999911,
-        "g": 0.249999911,
-        "b": 0.249999911
+        "r": 0.249999851,
+        "g": 0.249999851,
+        "b": 0.249999851
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20264,11 +20020,11 @@
       "GUID": "98a62d",
       "Name": "Die_6",
       "Transform": {
-        "posX": 2.74999976,
+        "posX": 2.75000286,
         "posY": 1.43011868,
-        "posZ": -41.75,
+        "posZ": -41.75001,
         "rotX": 90.0,
-        "rotY": 0.0245103668,
+        "rotY": 0.0239759348,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20355,11 +20111,11 @@
       "GUID": "b3a3c9",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3.75,
+        "posX": 3.75000286,
         "posY": 1.43010914,
-        "posZ": -41.75,
+        "posZ": -41.75001,
         "rotX": 90.0,
-        "rotY": 0.132840112,
+        "rotY": 0.132310852,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20446,11 +20202,11 @@
       "GUID": "15ec65",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3.25,
+        "posX": 3.25000334,
         "posY": 1.43014777,
-        "posZ": -40.75,
+        "posZ": -40.75001,
         "rotX": 90.0,
-        "rotY": 0.0157787465,
+        "rotY": 0.0152439568,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20551,9 +20307,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999911,
-        "g": 0.249999911,
-        "b": 0.249999911
+        "r": 0.249999851,
+        "g": 0.249999851,
+        "b": 0.249999851
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20601,7 +20357,7 @@
         "posY": 1.3302002,
         "posZ": -37.25,
         "rotX": 90.0,
-        "rotY": 0.503228247,
+        "rotY": 0.5032287,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20688,11 +20444,11 @@
       "GUID": "43c5ff",
       "Name": "Die_6",
       "Transform": {
-        "posX": 27.75,
-        "posY": 1.43013191,
-        "posZ": -41.75,
+        "posX": 27.7500019,
+        "posY": 1.430132,
+        "posZ": -41.7500076,
         "rotX": 90.0,
-        "rotY": 0.008718342,
+        "rotY": 0.008289371,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20779,11 +20535,11 @@
       "GUID": "336f43",
       "Name": "Die_6",
       "Transform": {
-        "posX": 28.75,
-        "posY": 1.43012381,
-        "posZ": -41.75,
+        "posX": 28.7500038,
+        "posY": 1.43012393,
+        "posZ": -41.7500076,
         "rotX": 90.0,
-        "rotY": 0.006810675,
+        "rotY": 0.00626477273,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20870,11 +20626,11 @@
       "GUID": "f6006d",
       "Name": "Die_6",
       "Transform": {
-        "posX": 28.25,
-        "posY": 1.43015611,
-        "posZ": -40.75,
+        "posX": 28.2500019,
+        "posY": 1.430156,
+        "posZ": -40.7500076,
         "rotX": 90.0,
-        "rotY": 0.008040221,
+        "rotY": 0.007623513,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -20975,9 +20731,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999911,
-        "g": 0.249999911,
-        "b": 0.249999911
+        "r": 0.249999851,
+        "g": 0.249999851,
+        "b": 0.249999851
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -21107,6 +20863,138 @@
           }
         }
       ]
+    },
+    {
+      "GUID": "85a2c2",
+      "Name": "Custom_Model_Bag",
+      "Transform": {
+        "posX": -22.0,
+        "posY": 1.00000012,
+        "posZ": -26.5,
+        "rotX": 5.99521741E-07,
+        "rotY": 1.34268575E-05,
+        "rotZ": -2.216608E-07,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Discards",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "Number": 0,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/greeze/tts_mov/main/assets/environment/discard_tablet_8x6.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "Bag": {
+        "Order": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "60d535",
+      "Name": "Custom_Model_Bag",
+      "Transform": {
+        "posX": 22.5,
+        "posY": 0.99999994,
+        "posZ": -26.5,
+        "rotX": -7.334748E-08,
+        "rotY": 1.343325E-05,
+        "rotZ": 9.326344E-08,
+        "scaleX": 0.75,
+        "scaleY": 1.0,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Discards",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": -1,
+      "MeshIndex": -1,
+      "Number": 0,
+      "CustomMesh": {
+        "MeshURL": "https://github.com/greeze/tts_mov/raw/main/assets/players/player_tablet_8x6.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/greeze/tts_mov/main/assets/environment/discard_tablet_8x6.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "Bag": {
+        "Order": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
     }
   ]
 }
