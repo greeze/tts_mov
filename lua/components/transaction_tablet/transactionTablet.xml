@@ -24,15 +24,15 @@
   <!-- normalColor|highlightedColor|pressedColor|disabledColor -->
   <Button
     fontSize="18"
-    textColor="#FFFFFF"
-    colors="#666666|#999999|#333333|#000000"
+    textColors="#FFFFFF|#FFFFFF|#FFFFFF|#666666"
+    colors="#666666|#999999|#333333|#333333"
     fontStyle="bold"
   />
   <!-- normalColor|highlightedColor|pressedColor|disabledColor -->
   <ToggleButton
     fontSize="18"
     deselectedBackgroundColor="#333333"
-    textColor="#FFFFFF"
+    textColors="#FFFFFF|#FFFFFF|#FFFFFF|#666666"
     colors="#999999|#666666|#333333|#000000"
     fontStyle="bold"
   />
@@ -48,7 +48,7 @@
   <!-- =========================================================== -->
   <!--Layout Structure -->
   <!-- =========================================================== -->
-  <VerticalLayout class="Container" color="clear" width="750" height="550" position="0 0 -20" />
+  <VerticalLayout class="Container" color="clear" width="750" height="550" position="0 0 -12" />
   <Panel class="VerticalDivider" color="playerColor" preferredWidth="2" />
   <Panel class="HorizontalDivider" color="playerColor" preferredHeight="2" />
   <Panel class="yellow:VerticalDivider" color="yellow" preferredWidth="2" />
@@ -94,9 +94,9 @@
   <!-- Header -->
   <Panel class="ColorBar" />
   <Panel class="TransactionToggleWrapper">
-    <ToggleGroup onValueChanged="onTransactionChanged">
+    <ToggleGroup onValueChanged="handleTransactionTabChanged">
       <HorizontalLayout>
-        <ToggleButton id="BuyToggleButton" selected="true">Buy</ToggleButton>
+        <ToggleButton id="BuyToggleButton" isOn="true">Buy</ToggleButton>
         <ToggleButton id="SellToggleButton">Sell</ToggleButton>
       </HorizontalLayout>
     </ToggleGroup>
@@ -114,13 +114,13 @@
     <!-- Buy Settings -->
     <VerticalLayout active="true" class="Buy TransactionSettings" id="BuySettings">
       <VerticalLayout class="PlayerOwes Section">
-        <Text class="SettingTitle" id="PlayerOwesText">Player Owes: 350c</Text>
-        <Button id="PlayerOwesButton">Pay 350c</Button>
+        <Text class="SettingTitle" id="PlayerOwesTitleText">Player Owes</Text>
+        <Text id="PlayerOwesText" fontSize="36">0c</Text>
       </VerticalLayout>
       <Panel class="HorizontalDivider" />
       <VerticalLayout class="TransactionCut Section">
-        <Text class="SettingTitle" id="FactoryGetsText">Factory Gets: 150c</Text>
-        <ToggleGroup preferredHeight="80">
+        <Text class="SettingTitle" id="FactoryGetsText">Factory Gets: 0c</Text>
+        <ToggleGroup preferredHeight="80" onValueChanged="handleFactoryChanged">
           <TableLayout>
             <Row>
               <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
@@ -138,8 +138,8 @@
       </VerticalLayout>
       <Panel class="HorizontalDivider" />
       <VerticalLayout class="TransactionCut">
-        <Text class="SettingTitle" id="SpaceportGetsTextBuy">Spaceport Gets: 36c</Text>
-        <ToggleGroup preferredHeight="80">
+        <Text class="SettingTitle" id="SpaceportGetsTextBuy">Spaceport Gets: 0c</Text>
+        <ToggleGroup preferredHeight="80" onValueChanged="handleSpaceportChanged">
           <TableLayout>
             <Row>
               <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
@@ -161,13 +161,13 @@
     <!-- Sell Settings -->
     <VerticalLayout active="false" class="Sell TransactionSettings" id="SellSettings">
       <VerticalLayout class="PlayerGets Section">
-        <Text>Player Gets:</Text>
-        <Text fontSize="36" id="PlayerGetsText">350c</Text>
+        <Text class="SettingTitle">Player Gets:</Text>
+        <Text id="PlayerGetsText" fontSize="36">0c</Text>
       </VerticalLayout>
       <Panel class="HorizontalDivider" />
       <VerticalLayout class="TransactionCut Section">
-        <Text class="SettingTitle" id="SpaceportGetsTextSell">Spaceport Gets: 36c</Text>
-        <ToggleGroup preferredHeight="80">
+        <Text class="SettingTitle" id="SpaceportGetsTextSell">Spaceport Gets: 0c</Text>
+        <ToggleGroup preferredHeight="80" onValueChanged="handleSpaceportChanged">
           <TableLayout>
             <Row>
               <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
@@ -191,6 +191,6 @@
 
   <!-- Footer -->
   <Panel class="SubmitWrapper">
-    <Button class="SubmitButton">Submit</Button>
+    <Button class="SubmitButton" id="SubmitButton" interactable="false" onClick="handleSubmitClicked">Submit</Button>
   </Panel>
 </VerticalLayout>

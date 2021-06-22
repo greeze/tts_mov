@@ -59,8 +59,10 @@ local function setupCultureCards(cultureCardSnaps)
   local cultureCards = getObjectsWithAllTags({ 'culture', 'card' })
   local cultureCardBag = getObjectFromGUID(constants.GUIDS.CultureCardBagGUID)
   table.forEach(cultureCards, function(obj)
-    obj.setLock(false)
-    cultureCardBag.putObject(obj)
+    if (obj.type == 'Card') then
+      obj.setLock(false)
+      cultureCardBag.putObject(obj)
+    end
   end)
   dealFromContainerToSnaps(cultureCardBag, cultureCardSnaps, true)
 end

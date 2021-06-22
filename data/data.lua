@@ -1,4 +1,4 @@
-return {
+local data = {
   cardboard = { {
     type = "angled_square",
     dimensions = {
@@ -644,3 +644,5 @@ return {
     cost = 300
   } }
 }
+
+return data

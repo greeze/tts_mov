@@ -1,7 +1,6 @@
-
 ---@param obj table
 ---@return boolean
-function isCash(obj)
+local function isCash(obj)
   if (obj == nil) then return false end
   return obj.hasTag('credits')
 end

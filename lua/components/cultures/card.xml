@@ -10,7 +10,7 @@
 
   <Button
     id="discoverButton"
-    onClick="discover"
+    onClick="handleDiscoverClick"
     width="375"
     height="48"
     position="0 0 -100"
