@@ -6692,7 +6692,7 @@
           "HideWhenFaceDown": false,
           "Hands": false,
           "CustomImage": {
-            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/equipment/equipment_drive_red.png",
+            "ImageURL": "https://github.com/greeze/tts_mov/raw/main/assets/equipment/equipment_drive_yellow.png",
             "ImageSecondaryURL": "",
             "ImageScalar": 1.0,
             "WidthScale": 0.0,
