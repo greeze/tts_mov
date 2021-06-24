@@ -8,6 +8,12 @@ local money = require('lua/global/money')
 function onLoad(save_state)
   disableNonInteractables()
   money.init()
+
+  -- local goods = getObjectsWithAllTags({ 'good', 'token' })
+  -- table.forEach(goods, function(obj)
+  --   obj.setLuaScript('require("lua/components/value_tiles/goodsTile")')
+  -- end)
+
 end
 
 ---@param player table
