@@ -9,9 +9,9 @@ function onLoad(save_state)
   disableNonInteractables()
   money.init()
 
-  -- local goods = getObjectsWithAllTags({ 'passenger', 'event' })
-  -- table.forEach(goods, function(obj)
-  --   obj.setLuaScript('require("lua/components/passengers/passenger")')
+  -- local demands = getObjectsWithAllTags({ 'demand', 'event' })
+  -- table.forEach(demands, function(obj)
+  --   obj.setLuaScript('require("lua/components/demands/demand")')
   -- end)
 
 end

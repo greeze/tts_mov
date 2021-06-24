@@ -4,23 +4,25 @@ local tagHelpers = require('lua/utils/tagHelpers')
 local interactions = require('lua/utils/interactions')
 local cultureData = require('data/cultures')
 
+local function setCardValue()
+  local cultureId = tonumber(string.match(self.getName(), 'Culture (%d%d).*'))
+  local cardData = table.find(cultureData, function (data)
+    return data.id == cultureId
+  end)
+
+  self.setVar('data', cardData)
+  self.setVar('iou', cardData.iou)
+end
+
 --- Get the scripting zone for this card's system
 ---@return table
 local function getSystem()
-  local systemZones = table.filter(getObjects(), function(obj)
-    return obj.hasTag('system') and obj.hasTag('zone')
+  local systemZones = getObjectsWithAllTags({ 'system', 'zone' })
+  local systemZone = table.find(systemZones, function(zone)
+    return table.includes(zone.getObjects(), self)
   end)
 
-  ---@type table
-  local systemZone = table.find(systemZones, function(zone) return table.includes(zone.getObjects(), self) end)
-
   return systemZone
-end
-
---- Get the tagName for this card's culture (eg 'C09')
----@return string
-local function getCultureTag()
-  return table.find(constants.CULTURE_TAGS, function(cultureTag) return self.hasTag(cultureTag) end)
 end
 
 --- Get the tagName for this card's system (eg 'S05')
@@ -31,10 +33,11 @@ local function getSystemTag(system)
 end
 
 --- Deals the Goods, Factory Deed, and Culture Token for a given culture to a given system.
----@param cultureTag string
 ---@param systemTag string
-local function dealCultureTokensToSystem(cultureTag, systemTag)
+local function dealCultureTokensToSystem(systemTag)
   if (systemTag == nil) then return end
+
+  local cultureTag = 'c' .. string.match(self.getName(), 'Culture (%d%d).*')
 
   local cultureTokens = getObjectsWithAllTags({ cultureTag, 'token' })
   local systemSnaps = table.filter(Global.getSnapPoints(), function(snap) return tagHelpers.snapHasTag(snap, systemTag) end)
@@ -68,19 +71,22 @@ local function discover(player)
   if (systemZone == nil) then return end
 
   local systemTag = getSystemTag(systemZone)
-  local cultureTag = getCultureTag()
-
-  local cultureId = table.indexOf(constants.CULTURE_TAGS, cultureTag)
-  local cardData = table.find(cultureData, function (data) return data.id == cultureId end)
-  self.setVar('iou', cardData.iou)
 
   self.UI.hide('discoverButton')
   self.deal(1, player.color)
 
-  dealCultureTokensToSystem(cultureTag, systemTag)
+  dealCultureTokensToSystem(systemTag)
 end
 
 --- Called from a button in the XML UI. Cannot be `local` function.
 function handleDiscoverClick(player)
   discover(player)
+end
+
+function onLoad()
+  setCardValue()
+end
+
+function onSpawn()
+  setCardValue()
 end

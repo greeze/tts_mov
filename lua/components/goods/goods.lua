@@ -1,12 +1,8 @@
 require('lua/utils/table')
 local goodsData = require('data/goods')
 
-local function getCultureId()
-  return tonumber(string.match(self.getName(), '.*Good (%d%d).*'))
-end
-
 local function setTileValue()
-  local cultureId = getCultureId()
+  local cultureId = tonumber(string.match(self.getName(), '.*Good (%d%d).*'))
   local goodData = table.find(goodsData, function (data) return data.from == cultureId end)
 
   local buyValue = goodData.buy

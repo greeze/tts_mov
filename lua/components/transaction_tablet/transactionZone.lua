@@ -1,7 +1,6 @@
 require('lua/utils/table')
 local constants = require('lua/global/constants')
 local money = require('lua/global/money')
-local passengerData = require('data/passengers')
 local sumValueItems = require('lua/utils/sumValueItems')
 local tagHelpers = require('lua/utils/tagHelpers')
 local interactions = require('lua/utils/interactions')
@@ -40,6 +39,26 @@ end
 ---@return boolean
 local function isCultureCard(obj)
   return tagHelpers.objHasAllTags(obj, { 'culture', 'card' })
+end
+
+local function getCash(containedObjects)
+  return table.filter(containedObjects, isCash)
+end
+
+local function getGoods(containedObjects)
+  return table.filter(containedObjects, isGood)
+end
+
+local function getPassengers(containedObjects)
+  return table.filter(containedObjects, isPassenger)
+end
+
+local function getDemands(containedObjects)
+  return table.filter(containedObjects, isDemand)
+end
+
+local function getCultureCards(containedObjects)
+  return table.filter(containedObjects, isCultureCard)
 end
 
 ---@param cashItems table[]
@@ -93,34 +112,12 @@ end
 local function calculateDemandValues(demands)
   local demandTotal = 0
   table.forEach(demands, function (demand)
-    local _, _, valStr = string.find(demand.getName(), '%+(%d%d)')
-    local value = valStr and tonumber(valStr) or 0
-    demandTotal = demandTotal + value
+    demandTotal = demandTotal + demand.getVar('value')
   end)
   return demandTotal
 end
 
-local function getCash(containedObjects)
-  return table.filter(containedObjects, isCash)
-end
-
-local function getGoods(containedObjects)
-  return table.filter(containedObjects, isGood)
-end
-
-local function getPassengers(containedObjects)
-  return table.filter(containedObjects, isPassenger)
-end
-
-local function getDemands(containedObjects)
-  return table.filter(containedObjects, isDemand)
-end
-
-local function getCultureCards(containedObjects)
-  return table.filter(containedObjects, isCultureCard)
-end
-
-local function getIou(containedObjects)
+local function calculateIou(containedObjects)
   local iou = 0
   local cultureCards = getCultureCards(containedObjects)
   if (#cultureCards > 0) then
@@ -146,7 +143,7 @@ local function updateTransactionTablet()
     local demands = getDemands(containedObjects)
     local demandTotal = calculateDemandValues(demands)
 
-    local iou = getIou(containedObjects)
+    local iou = calculateIou(containedObjects)
 
     local playerGets = sellTotal + cashTotal + passengerTotal + demandTotal
     local playerOwes = buyTotal - (cashTotal + iou)
