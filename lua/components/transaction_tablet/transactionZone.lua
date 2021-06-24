@@ -14,7 +14,13 @@ end
 ---@param obj table
 ---@return boolean
 local function isCash(obj)
-  return tagHelpers.objHasAllTags(obj, { 'credits' })
+  return tagHelpers.objHasAllTags(obj, { 'credits', 'token' })
+end
+
+---@param obj table
+---@return boolean
+local function isSpaceportDeed(obj)
+  return tagHelpers.objHasAllTags(obj, { 'spaceport', 'deed', 'token' })
 end
 
 ---@param obj table
@@ -49,6 +55,10 @@ end
 
 local function getCash(containedObjects)
   return table.filter(containedObjects, isCash)
+end
+
+local function getSpaceportDeeds(containedObjects)
+  return table.filter(containedObjects, isSpaceportDeed)
 end
 
 local function getGoods(containedObjects)
@@ -168,7 +178,7 @@ local function updateTransactionTablet()
 
     local iou = calculateIou(containedObjects)
 
-    local playerGets = sellTotal + cashTotal + passengerTotal + demandTotal
+    local playerGets = sellTotal + cashTotal + passengerTotal + demandTotal + (equipmentTotal / 2)
     local playerOwes = (buyTotal + equipmentTotal) - (cashTotal + iou)
 
     ---@type State
@@ -193,8 +203,8 @@ local function updateTransactionTablet()
 end
 
 local function discardItems(items, discard)
-  table.forEach(items, function(cashItem)
-    discard.putObject(cashItem)
+  table.forEach(items, function(item)
+    discard.putObject(item)
   end)
 end
 
@@ -202,7 +212,8 @@ local function resolveBuy(player, transactionState, goods, equipments)
   if (transactionState.transaction == 'buy') then
     if (transactionState.playerOwes < 0) then
       local playerRefund = transactionState.playerOwes * -1
-      money.payPlayer(playerRefund, player)
+      local adjustedAmount = math.min(playerRefund * -1, transactionState.cashTotal)
+      money.payPlayer(adjustedAmount, player)
     end
 
     if (transactionState.factoryColor) then
@@ -220,7 +231,7 @@ local function resolveBuy(player, transactionState, goods, equipments)
   end
 end
 
-local function resolveSell(player, transactionState, goods, passengers, demands)
+local function resolveSell(player, transactionState, goods, passengers, demands, equipment)
   if (transactionState.transaction == 'sell') then
     money.payPlayer(transactionState.playerGets, player)
 
@@ -250,10 +261,14 @@ local function resolveTransaction(player, transactionState)
   local discard = discards[(math.random(1, #discards))]
 
   discardItems(cashItems, discard)
-  discardItems(cultureCards, discard)
+  if (transactionState.transaction == 'buy') then
+    discardItems(cultureCards, discard)
+  else
+    discardItems(equipment, discard)
+  end
 
   resolveBuy(player, transactionState, goods, equipment)
-  resolveSell(player, transactionState, goods, passengers, { firstDemand })
+  resolveSell(player, transactionState, goods, passengers, { firstDemand }, equipment)
 
   if (transactionState.spaceportColor) then
     money.payPlayer(transactionState.spaceportGets, Player[transactionState.spaceportColor])
