@@ -7,7 +7,6 @@ local demands = {}
 
 --- Refreshes the grid layout of demands for this culture's token.
 local function updateDemandUI()
-  local assets = {}
   local gridLayout = {
     tag = 'GridLayout',
     attributes = {
@@ -23,10 +22,22 @@ local function updateDemandUI()
     children = {},
   }
 
+  local assetsLookup = {}
   table.forEach(demands, function(demand, guid)
-    table.insert(assets, { name = guid, url = demand.CustomImage.ImageURL })
-    table.insert(gridLayout.children, { tag = "Button", attributes = { image = guid, onClick = 'handleDemandButtonClick(' .. guid .. ')' } })
+    -- TTS hates assets that have the same URL for some reason. Store a single URL per unique filename.
+    local url = demand.CustomImage.ImageURL
+    local assetName = string.match(url, '([^/]+)%.%w%w%w$')
+    assetsLookup[assetName] = url
+
+    -- Create a button the uses the filename as the `image` attr.
+    table.insert(gridLayout.children, { tag = "Button", attributes = { image = assetName, onClick = 'handleDemandButtonClick(' .. guid .. ')' } })
   end)
+
+  -- Iterate the unique URLs and create a single asset for each
+  local assets = table.reduce(assetsLookup, function (acc, url, assetName)
+    table.insert(acc, { name = assetName, url = url })
+    return acc
+  end, {})
 
   self.UI.setCustomAssets(assets)
   self.UI.setXmlTable({ gridLayout })
@@ -70,7 +81,12 @@ function handleDemandButtonClick(player, guid)
   spawnDemand(player, guid)
 end
 
+local collisionDebounce = 0
 function onCollisionEnter(collisionInfo)
+  local timestamp = os.clock()
+  if (timestamp < collisionDebounce) then return end
+  collisionDebounce = timestamp + 0.3
+
   local obj = collisionInfo.collision_object
   if (isEventToken(obj)) then
     local guid = obj.getGUID()
