@@ -1,7 +1,8 @@
 require('lua/utils/table')
 local constants = require('lua/global/constants')
 local money = require('lua/global/money')
-local valueData = require('data/data')
+local goodsData = require('data/goods')
+local passengerData = require('data/passengers')
 local sumValueItems = require('lua/utils/sumValueItems')
 local tagHelpers = require('lua/utils/tagHelpers')
 local interactions = require('lua/utils/interactions')
@@ -60,7 +61,7 @@ local function getValuesForGood(obj)
     return 0, 0, 0
   end
 
-  local cultureData = table.find(valueData.goods, function (data) return data.from == cultureId end)
+  local cultureData = table.find(goodsData, function (data) return data.from == cultureId end)
 
   local buyValue = cultureData.buy * quantity
   local sellValue = cultureData.sell * quantity
@@ -100,7 +101,7 @@ local function calculatePassengerValues(passengers)
     local fullName = passenger.getName()
     local _, idx = string.find(fullName, 'Passenger %- ')
     local passengerName = string.sub(fullName, idx + 1)
-    local passengerData = table.find(valueData.passengers, function (data)
+    local passengerData = table.find(passengerData, function (data)
       return data.name == string.lower(passengerName)
     end)
     if (passengerData) then

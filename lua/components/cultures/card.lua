@@ -2,7 +2,7 @@ require('lua/utils/table')
 local constants = require('lua/global/constants')
 local tagHelpers = require('lua/utils/tagHelpers')
 local interactions = require('lua/utils/interactions')
-local cultureData = require('data/data').cultures
+local cultureData = require('data/cultures')
 
 --- Get the scripting zone for this card's system
 ---@return table
