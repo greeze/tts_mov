@@ -7,18 +7,19 @@ end
 
 local function setTileValue()
   local cultureId = getCultureId()
-  local cultureData = table.find(goodsData, function (data) return data.from == cultureId end)
+  local goodData = table.find(goodsData, function (data) return data.from == cultureId end)
 
-  local buyValue = cultureData.buy
-  local sellValue = cultureData.sell
+  local buyValue = goodData.buy
+  local sellValue = goodData.sell
   local factoryValue = 0
 
   if(self.hasTag('factory')) then
-    buyValue = cultureData.factory.buy
-    sellValue = cultureData.factory.sell
+    buyValue = goodData.factory.buy
+    sellValue = goodData.factory.sell
     factoryValue = buyValue * 0.5
   end
 
+  self.setVar('data', goodData)
   self.setVar('buyValue', buyValue)
   self.setVar('sellValue', sellValue)
   self.setVar('factoryValue', factoryValue)

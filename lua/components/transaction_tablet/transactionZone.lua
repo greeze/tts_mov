@@ -83,15 +83,7 @@ end
 local function calculatePassengerValues(passengers)
   local passengerTotal = 0
   table.forEach(passengers, function (passenger)
-    local fullName = passenger.getName()
-    local _, idx = string.find(fullName, 'Passenger %- ')
-    local passengerName = string.sub(fullName, idx + 1)
-    local passengerData = table.find(passengerData, function (data)
-      return data.name == string.lower(passengerName)
-    end)
-    if (passengerData) then
-      passengerTotal = passengerTotal + passengerData.value
-    end
+    passengerTotal = passengerTotal + passenger.getVar('value')
   end)
   return passengerTotal
 end
