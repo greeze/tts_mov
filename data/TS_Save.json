@@ -16361,7 +16361,8 @@
           "Tags": [
             "deed",
             "scoring",
-            "spaceport"
+            "spaceport",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -16531,7 +16532,8 @@
           "Tags": [
             "credits",
             "m0001",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 1,
@@ -16701,7 +16703,8 @@
           "Tags": [
             "credits",
             "m0005",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 5,
@@ -16871,7 +16874,8 @@
           "Tags": [
             "credits",
             "m0010",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 10,
@@ -17041,7 +17045,8 @@
           "Tags": [
             "credits",
             "m0050",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 50,
@@ -17211,7 +17216,8 @@
           "Tags": [
             "credits",
             "m0100",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 100,
@@ -17381,7 +17387,8 @@
           "Tags": [
             "credits",
             "m0500",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 500,
@@ -17551,7 +17558,8 @@
           "Tags": [
             "credits",
             "m1000",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 1000,
@@ -17721,7 +17729,8 @@
           "Tags": [
             "credits",
             "m1000",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 1000,
@@ -17891,7 +17900,8 @@
           "Tags": [
             "credits",
             "m0005",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 5,
@@ -18061,7 +18071,8 @@
           "Tags": [
             "credits",
             "m0010",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 10,
@@ -18231,7 +18242,8 @@
           "Tags": [
             "credits",
             "m0050",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 50,
@@ -18401,7 +18413,8 @@
           "Tags": [
             "deed",
             "scoring",
-            "spaceport"
+            "spaceport",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -18571,7 +18584,8 @@
           "Tags": [
             "credits",
             "m0100",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 100,
@@ -18741,7 +18755,8 @@
           "Tags": [
             "credits",
             "m0500",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 500,
@@ -18911,7 +18926,8 @@
           "Tags": [
             "credits",
             "m0001",
-            "scoring"
+            "scoring",
+            "token"
           ],
           "LayoutGroupSortIndex": 0,
           "Value": 1,
