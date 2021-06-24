@@ -20,7 +20,7 @@ end
 ---@param obj table
 ---@return boolean
 local function isGood(obj)
-  return tagHelpers.objHasAllTags(obj, { 'good' })
+  return tagHelpers.objHasAllTags(obj, { 'good', 'token' })
 end
 
 ---@param obj table
@@ -41,6 +41,12 @@ local function isCultureCard(obj)
   return tagHelpers.objHasAllTags(obj, { 'culture', 'card' })
 end
 
+---@param obj table
+---@return boolean
+local function isEquipment(obj)
+  return tagHelpers.objHasAllTags(obj, { 'equipment', 'token' })
+end
+
 local function getCash(containedObjects)
   return table.filter(containedObjects, isCash)
 end
@@ -59,6 +65,10 @@ end
 
 local function getCultureCards(containedObjects)
   return table.filter(containedObjects, isCultureCard)
+end
+
+local function getEquipment(containedObjects)
+  return table.filter(containedObjects, isEquipment)
 end
 
 ---@param cashItems table[]
@@ -101,7 +111,7 @@ end
 ---@return integer
 local function calculatePassengerValues(passengers)
   local passengerTotal = 0
-  table.forEach(passengers, function (passenger)
+  table.forEach(passengers, function(passenger)
     passengerTotal = passengerTotal + passenger.getVar('value')
   end)
   return passengerTotal
@@ -111,10 +121,20 @@ end
 ---@return integer
 local function calculateDemandValues(demands)
   local demandTotal = 0
-  table.forEach(demands, function (demand)
+  table.forEach(demands, function(demand)
     demandTotal = demandTotal + demand.getVar('value')
   end)
   return demandTotal
+end
+
+---@param equipments table[]
+---@return integer
+local function calculateEquipmentValues(equipments)
+  local equipmentTotal = 0
+  table.forEach(equipments, function(equipment)
+    equipmentTotal = equipmentTotal + equipment.getVar('value')
+  end)
+  return equipmentTotal
 end
 
 local function calculateIou(containedObjects)
@@ -143,10 +163,13 @@ local function updateTransactionTablet()
     local demands = getDemands(containedObjects)
     local demandTotal = calculateDemandValues(demands)
 
+    local equipment = getEquipment(containedObjects)
+    local equipmentTotal = calculateEquipmentValues(equipment)
+
     local iou = calculateIou(containedObjects)
 
     local playerGets = sellTotal + cashTotal + passengerTotal + demandTotal
-    local playerOwes = buyTotal - (cashTotal + iou)
+    local playerOwes = (buyTotal + equipmentTotal) - (cashTotal + iou)
 
     ---@type State
     local buyState = {
@@ -175,7 +198,7 @@ local function discardItems(items, discard)
   end)
 end
 
-local function resolveBuy(player, transactionState, goods)
+local function resolveBuy(player, transactionState, goods, equipments)
   if (transactionState.transaction == 'buy') then
     if (transactionState.playerOwes < 0) then
       local playerRefund = transactionState.playerOwes * -1
@@ -189,6 +212,10 @@ local function resolveBuy(player, transactionState, goods)
     table.forEach(goods, function(good)
       -- I tried 9999, but it glitched out. 10 stacked goods is still impossibly high without cheating.
       good.deal(10, player.color)
+    end)
+
+    table.forEach(equipments, function(equipment)
+      equipment.deal(10, player.color)
     end)
   end
 end
@@ -217,13 +244,15 @@ local function resolveTransaction(player, transactionState)
   local passengers = getPassengers(containedObjects)
   local firstDemand = getDemands(containedObjects)[1]
   local cultureCards = getCultureCards(containedObjects)
+  local equipment = getEquipment(containedObjects)
+
   local discards = getObjectsWithTag('discard')
   local discard = discards[(math.random(1, #discards))]
 
   discardItems(cashItems, discard)
   discardItems(cultureCards, discard)
 
-  resolveBuy(player, transactionState, goods)
+  resolveBuy(player, transactionState, goods, equipment)
   resolveSell(player, transactionState, goods, passengers, { firstDemand })
 
   if (transactionState.spaceportColor) then
