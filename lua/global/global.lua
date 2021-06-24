@@ -11,7 +11,7 @@ function onLoad(save_state)
 
   -- local goods = getObjectsWithAllTags({ 'good', 'token' })
   -- table.forEach(goods, function(obj)
-  --   obj.setLuaScript('require("lua/components/value_tiles/goodsTile")')
+  --   obj.setLuaScript('require("lua/components/goods/goods")')
   -- end)
 
 end

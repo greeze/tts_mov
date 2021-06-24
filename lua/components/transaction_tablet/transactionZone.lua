@@ -1,7 +1,6 @@
 require('lua/utils/table')
 local constants = require('lua/global/constants')
 local money = require('lua/global/money')
-local goodsData = require('data/goods')
 local passengerData = require('data/passengers')
 local sumValueItems = require('lua/utils/sumValueItems')
 local tagHelpers = require('lua/utils/tagHelpers')
@@ -54,24 +53,10 @@ end
 ---@return integer, integer, number
 local function getValuesForGood(obj)
   local quantity = math.abs(obj.getQuantity())
-  local cultureTag = table.find(constants.CULTURE_TAGS, function(cultureTag) return obj.hasTag(cultureTag) end)
-  local cultureId = table.indexOf(constants.CULTURE_TAGS, cultureTag)
 
-  if (cultureId == 0) then
-    return 0, 0, 0
-  end
-
-  local cultureData = table.find(goodsData, function (data) return data.from == cultureId end)
-
-  local buyValue = cultureData.buy * quantity
-  local sellValue = cultureData.sell * quantity
-  local factoryValue = 0
-
-  if(obj.hasTag('factory')) then
-    buyValue = cultureData.factory.buy
-    sellValue = cultureData.factory.sell
-    factoryValue = buyValue * 0.5
-  end
+  local buyValue = obj.getVar('buyValue') * quantity
+  local sellValue = obj.getVar('sellValue') * quantity
+  local factoryValue = obj.getVar('factoryValue')
 
   return buyValue, sellValue, factoryValue
 end
