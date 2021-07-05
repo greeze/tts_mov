@@ -87,6 +87,23 @@ local function calculateCash(cashItems)
   return sumValueItems(cashItems) or 0
 end
 
+---@param containedObjects table[]
+---@return integer
+local function calculateIou(containedObjects)
+  local iou = 0
+  local cultureCards = getCultureCards(containedObjects)
+  if (#cultureCards > 0) then
+    iou = cultureCards[1].getVar('iou') or 0
+  end
+  return iou
+end
+
+---@param spaceportDeeds table[]
+---@return integer
+local function calculateSpaceportDeedValues(spaceportDeeds)
+  return sumValueItems(spaceportDeeds) or 0
+end
+
 --- Sets buyValue and sellValue for the given good
 ---@param obj table
 ---@return integer, integer, number
@@ -147,52 +164,59 @@ local function calculateEquipmentValues(equipments)
   return equipmentTotal
 end
 
-local function calculateIou(containedObjects)
-  local iou = 0
-  local cultureCards = getCultureCards(containedObjects)
-  if (#cultureCards > 0) then
-    iou = cultureCards[1].getVar('iou') or 0
-  end
-  return iou
-end
-
 local function updateTransactionTablet()
   local containedObjects = self.getObjects()
   local transactionTablet = table.find(containedObjects, isTransactionTablet)
 
   if (transactionTablet ~= nil) then
+    -- ========================================================================
+    -- Buy
+    -- ========================================================================
+    -- Payments
     local cashItems = getCash(containedObjects)
     local cashTotal = calculateCash(cashItems)
+    local iou = calculateIou(containedObjects)
 
-    local goods = getGoods(containedObjects)
-    local buyTotal, sellTotal, factoryTotal = calculateGoodsValues(goods)
+    -- Items
+    local spaceportDeeds = getSpaceportDeeds(containedObjects)
+    local spaceportDeedTotal = calculateSpaceportDeedValues(spaceportDeeds)
 
+    -- ========================================================================
+    -- Sell
+    -- ========================================================================
     local passengers = getPassengers(containedObjects)
     local passengerTotal = calculatePassengerValues(passengers)
 
     local demands = getDemands(containedObjects)
     local demandTotal = calculateDemandValues(demands)
 
+    -- ========================================================================
+    -- Both Buy and Sell
+    -- ========================================================================
+    local goods = getGoods(containedObjects)
+    local buyGoodsTotal, sellGoodsTotal, factoryTotal = calculateGoodsValues(goods)
+
     local equipment = getEquipment(containedObjects)
     local equipmentTotal = calculateEquipmentValues(equipment)
 
-    local iou = calculateIou(containedObjects)
-
-    local playerGets = sellTotal + cashTotal + passengerTotal + demandTotal + (equipmentTotal / 2)
-    local playerOwes = (buyTotal + equipmentTotal) - (cashTotal + iou)
+    -- ========================================================================
+    -- Totals
+    -- ========================================================================
+    local playerGets = sellGoodsTotal + cashTotal + passengerTotal + demandTotal + (equipmentTotal / 2)
+    local playerOwes = (buyGoodsTotal + equipmentTotal + spaceportDeedTotal) - (cashTotal + iou)
 
     ---@type State
     local buyState = {
       cashTotal = cashTotal,
       playerOwes = playerOwes,
       factoryGets = factoryTotal,
-      spaceportGets = buyTotal * 0.1,
+      spaceportGets = buyGoodsTotal * 0.1,
     }
 
     ---@type State
     local sellState = {
       playerGets = playerGets,
-      spaceportGets = (sellTotal + demandTotal) * 0.1,
+      spaceportGets = (sellGoodsTotal + demandTotal) * 0.1,
     }
 
     ---@type TransactionStates
@@ -208,11 +232,11 @@ local function discardItems(items, discard)
   end)
 end
 
-local function resolveBuy(player, transactionState, goods, equipments)
+local function resolveBuy(player, transactionState, goods, equipments, spaceportDeeds)
   if (transactionState.transaction == 'buy') then
     if (transactionState.playerOwes < 0) then
       local playerRefund = transactionState.playerOwes * -1
-      local adjustedAmount = math.min(playerRefund * -1, transactionState.cashTotal)
+      local adjustedAmount = math.min(playerRefund, transactionState.cashTotal)
       money.payPlayer(adjustedAmount, player)
     end
 
@@ -228,10 +252,14 @@ local function resolveBuy(player, transactionState, goods, equipments)
     table.forEach(equipments, function(equipment)
       equipment.deal(10, player.color)
     end)
+
+    table.forEach(spaceportDeeds, function(spaceport)
+      spaceport.deal(10, player.color)
+    end)
   end
 end
 
-local function resolveSell(player, transactionState, goods, passengers, demands, equipment)
+local function resolveSell(player, transactionState, goods, passengers, demands)
   if (transactionState.transaction == 'sell') then
     money.payPlayer(transactionState.playerGets, player)
 
@@ -251,12 +279,14 @@ end
 local function resolveTransaction(player, transactionState)
   local containedObjects = self.getObjects()
   local cashItems = getCash(containedObjects)
-  local goods = getGoods(containedObjects)
+  local spaceportDeeds = getSpaceportDeeds(containedObjects)
+  local cultureCards = getCultureCards(containedObjects)
   local passengers = getPassengers(containedObjects)
   local firstDemand = getDemands(containedObjects)[1]
-  local cultureCards = getCultureCards(containedObjects)
+  local goods = getGoods(containedObjects)
   local equipment = getEquipment(containedObjects)
 
+  -- Randomly choose a discard location for discarded items
   local discards = getObjectsWithTag('discard')
   local discard = discards[(math.random(1, #discards))]
 
@@ -267,8 +297,8 @@ local function resolveTransaction(player, transactionState)
     discardItems(equipment, discard)
   end
 
-  resolveBuy(player, transactionState, goods, equipment)
-  resolveSell(player, transactionState, goods, passengers, { firstDemand }, equipment)
+  resolveBuy(player, transactionState, goods, equipment, spaceportDeeds)
+  resolveSell(player, transactionState, goods, passengers, { firstDemand })
 
   if (transactionState.spaceportColor) then
     money.payPlayer(transactionState.spaceportGets, Player[transactionState.spaceportColor])
