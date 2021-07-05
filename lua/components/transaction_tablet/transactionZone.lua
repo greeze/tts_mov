@@ -73,6 +73,12 @@ end
 
 ---@param containedObjects table[]
 ---@return table[]
+local function getFactoryDeeds(containedObjects)
+  return table.filter(containedObjects, isFactoryDeed)
+end
+
+---@param containedObjects table[]
+---@return table[]
 local function getGoods(containedObjects)
   return table.filter(containedObjects, isGood)
 end
@@ -122,6 +128,12 @@ end
 ---@return integer
 local function calculateSpaceportDeedValues(spaceportDeeds)
   return sumValueItems(spaceportDeeds) or 0
+end
+
+---@param factoryDeeds table[]
+---@return integer
+local function calculateFactoryDeedValues(factoryDeeds)
+  return sumValueItems(factoryDeeds) or 0
 end
 
 --- Sets buyValue and sellValue for the given good
@@ -201,6 +213,9 @@ local function updateTransactionTablet()
     local spaceportDeeds = getSpaceportDeeds(containedObjects)
     local spaceportDeedTotal = calculateSpaceportDeedValues(spaceportDeeds)
 
+    local factoryDeeds = getFactoryDeeds(containedObjects)
+    local factoryDeedTotal = calculateFactoryDeedValues(factoryDeeds)
+
     -- ========================================================================
     -- Sell
     -- ========================================================================
@@ -223,7 +238,7 @@ local function updateTransactionTablet()
     -- Totals
     -- ========================================================================
     local playerGets = sellGoodsTotal + cashTotal + passengerTotal + demandTotal + (equipmentTotal / 2)
-    local playerOwes = (buyGoodsTotal + equipmentTotal + spaceportDeedTotal) - (cashTotal + iou)
+    local playerOwes = (buyGoodsTotal + equipmentTotal + spaceportDeedTotal + factoryDeedTotal) - (cashTotal + iou)
 
     ---@type State
     local buyState = {
@@ -252,7 +267,7 @@ local function discardItems(items, discard)
   end)
 end
 
-local function resolveBuy(player, transactionState, goods, equipments, spaceportDeeds)
+local function resolveBuy(player, transactionState, goods, equipments, spaceportDeeds, factoryDeeds)
   if (transactionState.transaction == 'buy') then
     if (transactionState.playerOwes < 0) then
       local playerRefund = transactionState.playerOwes * -1
@@ -275,6 +290,10 @@ local function resolveBuy(player, transactionState, goods, equipments, spaceport
 
     table.forEach(spaceportDeeds, function(spaceport)
       spaceport.deal(10, player.color)
+    end)
+
+    table.forEach(factoryDeeds, function(factory)
+      factory.deal(10, player.color)
     end)
   end
 end
@@ -300,6 +319,7 @@ local function resolveTransaction(player, transactionState)
   local containedObjects = self.getObjects()
   local cashItems = getCash(containedObjects)
   local spaceportDeeds = getSpaceportDeeds(containedObjects)
+  local factoryDeeds = getFactoryDeeds(containedObjects)
   local cultureCards = getCultureCards(containedObjects)
   local passengers = getPassengers(containedObjects)
   local firstDemand = getDemands(containedObjects)[1]
@@ -317,7 +337,7 @@ local function resolveTransaction(player, transactionState)
     discardItems(equipment, discard)
   end
 
-  resolveBuy(player, transactionState, goods, equipment, spaceportDeeds)
+  resolveBuy(player, transactionState, goods, equipment, spaceportDeeds, factoryDeeds)
   resolveSell(player, transactionState, goods, passengers, { firstDemand })
 
   if (transactionState.spaceportColor) then

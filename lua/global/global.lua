@@ -8,12 +8,6 @@ local money = require('lua/global/money')
 function onLoad(save_state)
   disableNonInteractables()
   money.init()
-
-  -- local equipments = getObjectsWithAllTags({ 'equipment', 'token' })
-  -- table.forEach(equipments, function(obj)
-  --   obj.setLuaScript('require("lua/components/equipment/equipment")')
-  -- end)
-
 end
 
 ---@param player table
