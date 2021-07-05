@@ -25,6 +25,12 @@ end
 
 ---@param obj table
 ---@return boolean
+local function isFactoryDeed(obj)
+  return tagHelpers.objHasAllTags(obj, { 'factory', 'deed', 'token' })
+end
+
+---@param obj table
+---@return boolean
 local function isGood(obj)
   return tagHelpers.objHasAllTags(obj, { 'good', 'token' })
 end
@@ -53,30 +59,44 @@ local function isEquipment(obj)
   return tagHelpers.objHasAllTags(obj, { 'equipment', 'token' })
 end
 
+---@param containedObjects table[]
+---@return table[]
 local function getCash(containedObjects)
   return table.filter(containedObjects, isCash)
 end
 
+---@param containedObjects table[]
+---@return table[]
 local function getSpaceportDeeds(containedObjects)
   return table.filter(containedObjects, isSpaceportDeed)
 end
 
+---@param containedObjects table[]
+---@return table[]
 local function getGoods(containedObjects)
   return table.filter(containedObjects, isGood)
 end
 
+---@param containedObjects table[]
+---@return table[]
 local function getPassengers(containedObjects)
   return table.filter(containedObjects, isPassenger)
 end
 
+---@param containedObjects table[]
+---@return table[]
 local function getDemands(containedObjects)
   return table.filter(containedObjects, isDemand)
 end
 
+---@param containedObjects table[]
+---@return table[]
 local function getCultureCards(containedObjects)
   return table.filter(containedObjects, isCultureCard)
 end
 
+---@param containedObjects table[]
+---@return table[]
 local function getEquipment(containedObjects)
   return table.filter(containedObjects, isEquipment)
 end
