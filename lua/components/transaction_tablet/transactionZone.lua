@@ -1,8 +1,6 @@
 require('lua/utils/table')
 local constants = require('lua/global/constants')
 local money = require('lua/global/money')
-local goodsData = require('data/goods')
-local passengerData = require('data/passengers')
 local sumValueItems = require('lua/utils/sumValueItems')
 local tagHelpers = require('lua/utils/tagHelpers')
 local interactions = require('lua/utils/interactions')
@@ -16,13 +14,25 @@ end
 ---@param obj table
 ---@return boolean
 local function isCash(obj)
-  return tagHelpers.objHasAllTags(obj, { 'credits' })
+  return tagHelpers.objHasAllTags(obj, { 'credits', 'token' })
+end
+
+---@param obj table
+---@return boolean
+local function isSpaceportDeed(obj)
+  return tagHelpers.objHasAllTags(obj, { 'spaceport', 'deed', 'token' })
+end
+
+---@param obj table
+---@return boolean
+local function isFactoryDeed(obj)
+  return tagHelpers.objHasAllTags(obj, { 'factory', 'deed', 'token' })
 end
 
 ---@param obj table
 ---@return boolean
 local function isGood(obj)
-  return tagHelpers.objHasAllTags(obj, { 'good' })
+  return tagHelpers.objHasAllTags(obj, { 'good', 'token' })
 end
 
 ---@param obj table
@@ -43,10 +53,87 @@ local function isCultureCard(obj)
   return tagHelpers.objHasAllTags(obj, { 'culture', 'card' })
 end
 
+---@param obj table
+---@return boolean
+local function isEquipment(obj)
+  return tagHelpers.objHasAllTags(obj, { 'equipment', 'token' })
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getCash(containedObjects)
+  return table.filter(containedObjects, isCash)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getSpaceportDeeds(containedObjects)
+  return table.filter(containedObjects, isSpaceportDeed)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getFactoryDeeds(containedObjects)
+  return table.filter(containedObjects, isFactoryDeed)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getGoods(containedObjects)
+  return table.filter(containedObjects, isGood)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getPassengers(containedObjects)
+  return table.filter(containedObjects, isPassenger)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getDemands(containedObjects)
+  return table.filter(containedObjects, isDemand)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getCultureCards(containedObjects)
+  return table.filter(containedObjects, isCultureCard)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getEquipment(containedObjects)
+  return table.filter(containedObjects, isEquipment)
+end
+
 ---@param cashItems table[]
 ---@return integer
 local function calculateCash(cashItems)
   return sumValueItems(cashItems) or 0
+end
+
+---@param containedObjects table[]
+---@return integer
+local function calculateIou(containedObjects)
+  local iou = 0
+  local cultureCards = getCultureCards(containedObjects)
+  if (#cultureCards > 0) then
+    iou = cultureCards[1].getVar('iou') or 0
+  end
+  return iou
+end
+
+---@param spaceportDeeds table[]
+---@return integer
+local function calculateSpaceportDeedValues(spaceportDeeds)
+  return sumValueItems(spaceportDeeds) or 0
+end
+
+---@param factoryDeeds table[]
+---@return integer
+local function calculateFactoryDeedValues(factoryDeeds)
+  return sumValueItems(factoryDeeds) or 0
 end
 
 --- Sets buyValue and sellValue for the given good
@@ -54,24 +141,10 @@ end
 ---@return integer, integer, number
 local function getValuesForGood(obj)
   local quantity = math.abs(obj.getQuantity())
-  local cultureTag = table.find(constants.CULTURE_TAGS, function(cultureTag) return obj.hasTag(cultureTag) end)
-  local cultureId = table.indexOf(constants.CULTURE_TAGS, cultureTag)
 
-  if (cultureId == 0) then
-    return 0, 0, 0
-  end
-
-  local cultureData = table.find(goodsData, function (data) return data.from == cultureId end)
-
-  local buyValue = cultureData.buy * quantity
-  local sellValue = cultureData.sell * quantity
-  local factoryValue = 0
-
-  if(obj.hasTag('factory')) then
-    buyValue = cultureData.factory.buy
-    sellValue = cultureData.factory.sell
-    factoryValue = buyValue * 0.5
-  end
+  local buyValue = obj.getVar('buyValue') * quantity
+  local sellValue = obj.getVar('sellValue') * quantity
+  local factoryValue = obj.getVar('factoryValue')
 
   return buyValue, sellValue, factoryValue
 end
@@ -97,16 +170,8 @@ end
 ---@return integer
 local function calculatePassengerValues(passengers)
   local passengerTotal = 0
-  table.forEach(passengers, function (passenger)
-    local fullName = passenger.getName()
-    local _, idx = string.find(fullName, 'Passenger %- ')
-    local passengerName = string.sub(fullName, idx + 1)
-    local passengerData = table.find(passengerData, function (data)
-      return data.name == string.lower(passengerName)
-    end)
-    if (passengerData) then
-      passengerTotal = passengerTotal + passengerData.value
-    end
+  table.forEach(passengers, function(passenger)
+    passengerTotal = passengerTotal + passenger.getVar('value')
   end)
   return passengerTotal
 end
@@ -115,41 +180,20 @@ end
 ---@return integer
 local function calculateDemandValues(demands)
   local demandTotal = 0
-  table.forEach(demands, function (demand)
-    local _, _, valStr = string.find(demand.getName(), '%+(%d%d)')
-    local value = valStr and tonumber(valStr) or 0
-    demandTotal = demandTotal + value
+  table.forEach(demands, function(demand)
+    demandTotal = demandTotal + demand.getVar('value')
   end)
   return demandTotal
 end
 
-local function getCash(containedObjects)
-  return table.filter(containedObjects, isCash)
-end
-
-local function getGoods(containedObjects)
-  return table.filter(containedObjects, isGood)
-end
-
-local function getPassengers(containedObjects)
-  return table.filter(containedObjects, isPassenger)
-end
-
-local function getDemands(containedObjects)
-  return table.filter(containedObjects, isDemand)
-end
-
-local function getCultureCards(containedObjects)
-  return table.filter(containedObjects, isCultureCard)
-end
-
-local function getIou(containedObjects)
-  local iou = 0
-  local cultureCards = getCultureCards(containedObjects)
-  if (#cultureCards > 0) then
-    iou = cultureCards[1].getVar('iou') or 0
-  end
-  return iou
+---@param equipments table[]
+---@return integer
+local function calculateEquipmentValues(equipments)
+  local equipmentTotal = 0
+  table.forEach(equipments, function(equipment)
+    equipmentTotal = equipmentTotal + equipment.getVar('value')
+  end)
+  return equipmentTotal
 end
 
 local function updateTransactionTablet()
@@ -157,35 +201,57 @@ local function updateTransactionTablet()
   local transactionTablet = table.find(containedObjects, isTransactionTablet)
 
   if (transactionTablet ~= nil) then
+    -- ========================================================================
+    -- Buy
+    -- ========================================================================
+    -- Payments
     local cashItems = getCash(containedObjects)
     local cashTotal = calculateCash(cashItems)
+    local iou = calculateIou(containedObjects)
 
-    local goods = getGoods(containedObjects)
-    local buyTotal, sellTotal, factoryTotal = calculateGoodsValues(goods)
+    -- Items
+    local spaceportDeeds = getSpaceportDeeds(containedObjects)
+    local spaceportDeedTotal = calculateSpaceportDeedValues(spaceportDeeds)
 
+    local factoryDeeds = getFactoryDeeds(containedObjects)
+    local factoryDeedTotal = calculateFactoryDeedValues(factoryDeeds)
+
+    -- ========================================================================
+    -- Sell
+    -- ========================================================================
     local passengers = getPassengers(containedObjects)
     local passengerTotal = calculatePassengerValues(passengers)
 
     local demands = getDemands(containedObjects)
     local demandTotal = calculateDemandValues(demands)
 
-    local iou = getIou(containedObjects)
+    -- ========================================================================
+    -- Both Buy and Sell
+    -- ========================================================================
+    local goods = getGoods(containedObjects)
+    local buyGoodsTotal, sellGoodsTotal, factoryTotal = calculateGoodsValues(goods)
 
-    local playerGets = sellTotal + cashTotal + passengerTotal + demandTotal
-    local playerOwes = buyTotal - (cashTotal + iou)
+    local equipment = getEquipment(containedObjects)
+    local equipmentTotal = calculateEquipmentValues(equipment)
+
+    -- ========================================================================
+    -- Totals
+    -- ========================================================================
+    local playerGets = sellGoodsTotal + cashTotal + passengerTotal + demandTotal + (equipmentTotal / 2)
+    local playerOwes = (buyGoodsTotal + equipmentTotal + spaceportDeedTotal + factoryDeedTotal) - (cashTotal + iou)
 
     ---@type State
     local buyState = {
       cashTotal = cashTotal,
       playerOwes = playerOwes,
       factoryGets = factoryTotal,
-      spaceportGets = buyTotal * 0.1,
+      spaceportGets = buyGoodsTotal * 0.1,
     }
 
     ---@type State
     local sellState = {
       playerGets = playerGets,
-      spaceportGets = (sellTotal + demandTotal) * 0.1,
+      spaceportGets = (sellGoodsTotal + demandTotal) * 0.1,
     }
 
     ---@type TransactionStates
@@ -196,16 +262,17 @@ local function updateTransactionTablet()
 end
 
 local function discardItems(items, discard)
-  table.forEach(items, function(cashItem)
-    discard.putObject(cashItem)
+  table.forEach(items, function(item)
+    discard.putObject(item)
   end)
 end
 
-local function resolveBuy(player, transactionState, goods)
+local function resolveBuy(player, transactionState, goods, equipments, spaceportDeeds, factoryDeeds)
   if (transactionState.transaction == 'buy') then
     if (transactionState.playerOwes < 0) then
       local playerRefund = transactionState.playerOwes * -1
-      money.payPlayer(playerRefund, player)
+      local adjustedAmount = math.min(playerRefund, transactionState.cashTotal)
+      money.payPlayer(adjustedAmount, player)
     end
 
     if (transactionState.factoryColor) then
@@ -215,6 +282,18 @@ local function resolveBuy(player, transactionState, goods)
     table.forEach(goods, function(good)
       -- I tried 9999, but it glitched out. 10 stacked goods is still impossibly high without cheating.
       good.deal(10, player.color)
+    end)
+
+    table.forEach(equipments, function(equipment)
+      equipment.deal(10, player.color)
+    end)
+
+    table.forEach(spaceportDeeds, function(spaceport)
+      spaceport.deal(10, player.color)
+    end)
+
+    table.forEach(factoryDeeds, function(factory)
+      factory.deal(10, player.color)
     end)
   end
 end
@@ -239,17 +318,26 @@ end
 local function resolveTransaction(player, transactionState)
   local containedObjects = self.getObjects()
   local cashItems = getCash(containedObjects)
-  local goods = getGoods(containedObjects)
+  local spaceportDeeds = getSpaceportDeeds(containedObjects)
+  local factoryDeeds = getFactoryDeeds(containedObjects)
+  local cultureCards = getCultureCards(containedObjects)
   local passengers = getPassengers(containedObjects)
   local firstDemand = getDemands(containedObjects)[1]
-  local cultureCards = getCultureCards(containedObjects)
+  local goods = getGoods(containedObjects)
+  local equipment = getEquipment(containedObjects)
+
+  -- Randomly choose a discard location for discarded items
   local discards = getObjectsWithTag('discard')
   local discard = discards[(math.random(1, #discards))]
 
   discardItems(cashItems, discard)
-  discardItems(cultureCards, discard)
+  if (transactionState.transaction == 'buy') then
+    discardItems(cultureCards, discard)
+  else
+    discardItems(equipment, discard)
+  end
 
-  resolveBuy(player, transactionState, goods)
+  resolveBuy(player, transactionState, goods, equipment, spaceportDeeds, factoryDeeds)
   resolveSell(player, transactionState, goods, passengers, { firstDemand })
 
   if (transactionState.spaceportColor) then

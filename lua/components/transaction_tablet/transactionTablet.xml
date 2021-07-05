@@ -8,7 +8,8 @@
   <!-- Text Defaults -->
   <!-- =========================================================== -->
   <Text color="#FFFFFF" fontSize="18" fontStyle="bold" />
-  <Text class="title" fontSize="42" />
+  <Text class="large" fontSize="24" />
+  <Text class="small" fontSize="12" />
 
   <!-- =========================================================== -->
   <!-- Button Defaults -->
@@ -74,7 +75,7 @@
 
   <!-- Body -->
   <HorizontalLayout class="TransactionArea" preferredHeight="450" />
-    <Panel class="TransactionDropZone" padding="100" preferredWidth="500" />
+    <Panel class="TransactionDropZone" padding="70" preferredWidth="500" />
     <VerticalLayout class="TransactionSettings" padding="10 10 0 0" preferredWidth="250" spacing="15" />
       <Text class="TransactionSettings:SettingTitle" preferredHeight="40" />
       <VerticalLayout class="TransactionSettings>Section" preferredHeight="120" />
@@ -107,7 +108,11 @@
   <!-- Body -->
   <HorizontalLayout class="TransactionArea">
     <Panel class="TransactionDropZone">
-      <Text>Drop all items and cash related to this transaction here.</Text>
+      <VerticalLayout>
+        <Text class="large">Drop all items and cash related to this transaction here.</Text>
+        <Text />
+        <Text class="small">Warning: Home Culture Discounts are not calculated. Refund with money from the bank when making discounted purchases.</Text>
+      </VerticalLayout>
     </Panel>
     <Panel class="VerticalDivider" />
 
