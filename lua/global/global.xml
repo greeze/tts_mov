@@ -6,6 +6,8 @@
   width="50"
   height="50"
   fontStyle="bold"
+  textColors="#FFFFFF|#FFFFFF|#FFFFFF|#666666"
+  colors="#FF0000|#999999|#333333|#333333"
 >
   Setup
 </Button>

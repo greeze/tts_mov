@@ -8,6 +8,7 @@ local money = require('lua/global/money')
 function onLoad(save_state)
   disableNonInteractables()
   money.init()
+  broadcastToAll('\nClick the Setup button after all players are seated.')
 end
 
 ---@param player table
