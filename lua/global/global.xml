@@ -9,7 +9,7 @@
 >
   Setup
 </Button>
-<Button
+<!-- <Button
   id="resetButton"
   onClick="resetGame(resetButton)"
   offsetXY="453 0"
@@ -20,4 +20,4 @@
   visibility="Host"
 >
   Reset
-</Button>
+</Button> -->
