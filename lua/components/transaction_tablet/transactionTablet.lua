@@ -39,11 +39,14 @@ local transactionToggleButtons = { buy = 'BuyToggleButton', sell = 'SellToggleBu
 local transactionPanes = { buy = 'BuySettings', sell = 'SellSettings' }
 local xmlIDs = {
   factoryGetsText = 'FactoryGetsText',
+  factoryToggleNoneBuy="FactoryToggleNoneBuy",
   playerGetsText = 'PlayerGetsText',
   playerOwesTitleText = 'PlayerOwesTitleText',
   playerOwesText = 'PlayerOwesText',
   spaceportGetsTextBuy = 'SpaceportGetsTextBuy',
   spaceportGetsTextSell = 'SpaceportGetsTextSell',
+  spaceportToggleNoneBuy="SpaceportToggleNoneBuy",
+  spaceportToggleNoneSell="SpaceportToggleNoneSell",
   submitButton = 'SubmitButton',
 }
 
@@ -126,6 +129,22 @@ local function resetUi()
   updateTransactionTabletUi(initialState)
 end
 
+--- Sets factory and spaceport toggles to "none"
+local function resetFactoryAndSpaceportUi()
+  state.factoryColor = false
+  state.spaceportColor = false
+
+  table.forEach({
+    xmlIDs.factoryToggleNoneBuy,
+    xmlIDs.spaceportToggleNoneBuy,
+    xmlIDs.spaceportToggleNoneSell,
+  }, function(toggleButtonId)
+    local attrs = self.UI.getAttributes(toggleButtonId)
+    attrs.isOn = true
+    self.UI.setAttributes(toggleButtonId, attrs)
+  end)
+end
+
 --- Receives updated buy and sell values from handleNewStateFromTransactionZone
 ---@param transactionStates TransactionStates
 function handleNewStateFromTransactionZone(transactionStates)
@@ -165,6 +184,7 @@ function handleSubmitClicked(player)
   local transactionZone = getObjectFromGUID(constants.GUIDS.TransactionZoneGUID)
   if (transactionZone ~= nil) then
     transactionZone.call('handleSubmit', { player = player, transactionState = state })
+    resetFactoryAndSpaceportUi()
   end
 end
 

@@ -125,10 +125,10 @@
       <Panel class="HorizontalDivider" />
       <VerticalLayout class="TransactionCut Section">
         <Text class="SettingTitle" id="FactoryGetsText">Factory Gets: 0c</Text>
-        <ToggleGroup preferredHeight="80" onValueChanged="handleFactoryChanged">
+        <ToggleGroup id="FactoryToggleGroupBuy" preferredHeight="80" onValueChanged="handleFactoryChanged">
           <TableLayout>
             <Row>
-              <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
+              <Cell columnSpan="2"><ToggleButton id="FactoryToggleNoneBuy" selected="true">None</ToggleButton></Cell>
             </Row>
             <Row>
               <Cell><ToggleButton>Yellow</ToggleButton></Cell>
@@ -147,7 +147,7 @@
         <ToggleGroup preferredHeight="80" onValueChanged="handleSpaceportChanged">
           <TableLayout>
             <Row>
-              <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
+              <Cell columnSpan="2"><ToggleButton id="SpaceportToggleNoneBuy" selected="true">None</ToggleButton></Cell>
             </Row>
             <Row>
               <Cell><ToggleButton>Yellow</ToggleButton></Cell>
@@ -175,7 +175,7 @@
         <ToggleGroup preferredHeight="80" onValueChanged="handleSpaceportChanged">
           <TableLayout>
             <Row>
-              <Cell columnSpan="2"><ToggleButton selected="true">None</ToggleButton></Cell>
+              <Cell columnSpan="2"><ToggleButton id="SpaceportToggleNoneSell" selected="true">None</ToggleButton></Cell>
             </Row>
             <Row>
               <Cell><ToggleButton>Yellow</ToggleButton></Cell>
