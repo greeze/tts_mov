@@ -18,6 +18,7 @@
     "WebRequest",
     "Physics",
     "getObjectsWithTag",
-    "broadcastToAll"
+    "broadcastToAll",
+    "Vector"
   ]
 }

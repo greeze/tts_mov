@@ -59,6 +59,12 @@ local function isEquipment(obj)
   return tagHelpers.objHasAllTags(obj, { 'equipment', 'token' })
 end
 
+---@param obj table
+---@return boolean
+local function isRelic(obj)
+  return tagHelpers.objHasAllTags(obj, { 'relic', 'encounter' })
+end
+
 ---@param containedObjects table[]
 ---@return table[]
 local function getCash(containedObjects)
@@ -105,6 +111,12 @@ end
 ---@return table[]
 local function getEquipment(containedObjects)
   return table.filter(containedObjects, isEquipment)
+end
+
+---@param containedObjects table[]
+---@return table[]
+local function getRelics(containedObjects)
+  return table.filter(containedObjects, isRelic)
 end
 
 ---@param cashItems table[]
@@ -196,6 +208,16 @@ local function calculateEquipmentValues(equipments)
   return equipmentTotal
 end
 
+---@param relics table[]
+---@return integer
+local function calculateRelicValues(relics)
+  local relicTotal = 0
+  table.forEach(relics, function(relic)
+    relicTotal = relicTotal + relic.getVar('value')
+  end)
+  return relicTotal
+end
+
 local function updateTransactionTablet()
   local containedObjects = self.getObjects()
   local transactionTablet = table.find(containedObjects, isTransactionTablet)
@@ -234,11 +256,14 @@ local function updateTransactionTablet()
     local equipment = getEquipment(containedObjects)
     local equipmentTotal = calculateEquipmentValues(equipment)
 
+    local relics = getRelics(containedObjects)
+    local relicTotal = calculateRelicValues(relics)
+
     -- ========================================================================
     -- Totals
     -- ========================================================================
-    local playerGets = sellGoodsTotal + cashTotal + passengerTotal + demandTotal + (equipmentTotal / 2)
-    local playerOwes = (buyGoodsTotal + equipmentTotal + spaceportDeedTotal + factoryDeedTotal) - (cashTotal + iou)
+    local playerGets = sellGoodsTotal + cashTotal + passengerTotal + demandTotal + (equipmentTotal / 2) + (relicTotal / 2)
+    local playerOwes = (buyGoodsTotal + equipmentTotal + relicTotal + spaceportDeedTotal + factoryDeedTotal) - (cashTotal + iou)
 
     ---@type State
     local buyState = {
@@ -267,7 +292,7 @@ local function discardItems(items, discard)
   end)
 end
 
-local function resolveBuy(player, transactionState, goods, equipments, spaceportDeeds, factoryDeeds)
+local function resolveBuy(player, transactionState, goods, equipments, relics, spaceportDeeds, factoryDeeds)
   if (transactionState.transaction == 'buy') then
     if (transactionState.playerOwes < 0) then
       local playerRefund = transactionState.playerOwes * -1
@@ -288,6 +313,10 @@ local function resolveBuy(player, transactionState, goods, equipments, spaceport
       equipment.deal(10, player.color)
     end)
 
+    table.forEach(relics, function(relic)
+      relic.deal(10, player.color)
+    end)
+
     table.forEach(spaceportDeeds, function(spaceport)
       spaceport.deal(10, player.color)
     end)
@@ -298,19 +327,35 @@ local function resolveBuy(player, transactionState, goods, equipments, spaceport
   end
 end
 
-local function resolveSell(player, transactionState, goods, passengers, demands)
+local function resolveSell(player, transactionState, goods, passengers, demands, relics)
   if (transactionState.transaction == 'sell') then
     money.payPlayer(transactionState.playerGets, player)
 
     local eventStagingZone = getObjectFromGUID(constants.GUIDS.EventStagingLayoutGUID)
     local eventStagingPosition = eventStagingZone.getPosition()
+    local drawbag = getObjectFromGUID(constants.GUIDS.EventTokenBagGUID)
+    local drawbagPosition = drawbag.getPosition() + Vector(0, 5, 0)
+    local nextToTablet = self.getPosition() + Vector(-7, 5, 0)
 
     interactions.dealObjectsToPosition(goods, eventStagingPosition)
     interactions.dealObjectsToPosition(passengers, eventStagingPosition)
     interactions.dealObjectsToPosition(demands, eventStagingPosition)
+    interactions.dealObjectsToPosition(relics, nextToTablet)
+
+    local relicsNeedPlacing = relics and #relics > 0
+    local drawbagItemsNeedPlacing = (goods and #goods > 0) or (passengers and #passengers > 0) or (demands and #demands > 0)
 
     Wait.time(function()
       eventStagingZone.LayoutZone.layout()
+      if (relicsNeedPlacing) then
+        Player[player.color].pingTable(nextToTablet + Vector(0, -5, 0))
+        broadcastToAll('Remember to place sold relics on the system you sold them to.', player.color)
+      end
+      if (drawbagItemsNeedPlacing) then
+        Player[player.color].pingTable(drawbagPosition)
+        Player[player.color].lookAt({ position = drawbagPosition, pitch = 30, yaw = 30 })
+        broadcastToAll('Remember to place sold goods, passengers, and demands into the drawbag and draw new ones.', player.color)
+      end
     end, 1)
   end
 end
@@ -325,6 +370,7 @@ local function resolveTransaction(player, transactionState)
   local firstDemand = getDemands(containedObjects)[1]
   local goods = getGoods(containedObjects)
   local equipment = getEquipment(containedObjects)
+  local relics = getRelics(containedObjects)
 
   -- Randomly choose a discard location for discarded items
   local discards = getObjectsWithTag('discard')
@@ -337,8 +383,8 @@ local function resolveTransaction(player, transactionState)
     discardItems(equipment, discard)
   end
 
-  resolveBuy(player, transactionState, goods, equipment, spaceportDeeds, factoryDeeds)
-  resolveSell(player, transactionState, goods, passengers, { firstDemand })
+  resolveBuy(player, transactionState, goods, equipment, relics, spaceportDeeds, factoryDeeds)
+  resolveSell(player, transactionState, goods, passengers, { firstDemand }, relics)
 
   if (transactionState.spaceportColor) then
     money.payPlayer(transactionState.spaceportGets, Player[transactionState.spaceportColor])

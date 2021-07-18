@@ -1,11 +1,33 @@
 require('lua/utils/table')
 local interactions = require('lua/utils/interactions')
+local tagHelpers = require('lua/utils/tagHelpers')
+local encountersData = require('data/encounters')
+
+local function setTileValue()
+  local isRelic = tagHelpers.objHasAllTags(self, { 'relic', 'encounter' })
+
+  if (isRelic) then
+    local fullName = string.lower(self.getGMNotes())
+    local name = string.match(fullName, '.* %- (.*)')
+    local relicData = table.find(encountersData.relics, function (data)
+      return string.lower(data.name) == name
+    end)
+
+    self.setVar('data', relicData)
+    self.setVar('value', relicData.value)
+  end
+end
 
 local function toggleTooltip()
   if (self.is_face_down) then
     self.setName('Encounter')
+    self.setDescription('')
   else
     self.setName(self.getGMNotes() or 'Encounter')
+    local data = self.getVar('data')
+    if (data) then
+      self.setDescription(data.description)
+    end
   end
 end
 
@@ -43,4 +65,14 @@ end
 ---@param playerColor string
 function onPickUp(playerColor)
   pingTelegates(playerColor)
+end
+
+function onLoad()
+  setTileValue()
+  toggleTooltip()
+end
+
+function onSpawn()
+  setTileValue()
+  toggleTooltip()
 end

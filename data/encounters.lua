@@ -28,7 +28,7 @@ local encounters = {
     {
       name = "Mulligan Gear",
       value = 120,
-      description = "House rule: Optionally reroll one die after rolling for speed. (See instructions for original rule.)"
+      description = "Optionally reroll one die after rolling for speed."
     },
     {
       name = "Shield",
@@ -38,7 +38,7 @@ local encounters = {
     {
       name = "Spy Eye",
       value = 100,
-      description = "House rule: May sneak a peak at an encounter token before choosing to ignore it by leaving it face down, or accept it by turning it face up. May observe a culture from anywhere within its system, rather than just in orbit. (See instructions for original rule.)"
+      description = "May observe a culture from anywhere within its system, rather than just in orbit. House rule: When passing over an encounter token, may peak at it before choosing to ignore it by leaving it face down, or accept it by turning it face up. (See instructions for original rule.)"
     },
     {
       name = "Switch Switch",
