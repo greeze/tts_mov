@@ -5,6 +5,10 @@ local sumValueItems = require('lua/utils/sumValueItems')
 local tagHelpers = require('lua/utils/tagHelpers')
 local interactions = require('lua/utils/interactions')
 
+-- likelihood that a user's intent is to buy or sell, based on items added
+local initialLikelihoods = { buy = 0, sell = 0 }
+local transactionLikelihoods = {}
+
 ---@param obj table
 ---@return boolean
 local function isTransactionTablet(obj)
@@ -63,6 +67,53 @@ end
 ---@return boolean
 local function isRelic(obj)
   return tagHelpers.objHasAllTags(obj, { 'relic', 'encounter' })
+end
+
+--- Resets the estimated transaction types
+local function resetLikelihoods()
+  transactionLikelihoods = table.merge({}, initialLikelihoods)
+end
+
+--- Attempts to guess the likeliest transaction intended for the given obj
+---@param obj table
+---@return boolean | string
+local function determineLikelyTransactionFromObject(obj)
+  local likelyTransactionType = false
+  if (isGood(obj)) then
+    if (obj.is_face_down) then
+      likelyTransactionType = 'sell'
+    else
+      likelyTransactionType = 'buy'
+    end
+  elseif (
+    isSpaceportDeed(obj) or
+    isFactoryDeed(obj) or
+    isCultureCard(obj)
+  ) then
+    likelyTransactionType = 'buy'
+  elseif (
+    isDemand(obj) or
+    isRelic(obj) or
+    isPassenger(obj)
+  ) then
+    likelyTransactionType = 'sell'
+  end
+
+  return likelyTransactionType
+end
+
+local function addToLikelihoods(obj)
+  local estimatedTransactionType = determineLikelyTransactionFromObject(obj)
+  if (estimatedTransactionType) then
+    transactionLikelihoods[estimatedTransactionType] = transactionLikelihoods[estimatedTransactionType] + 1
+  end
+end
+
+local function removeFromLikelihoods(obj)
+  local estimatedTransactionType = determineLikelyTransactionFromObject(obj)
+  if (estimatedTransactionType) then
+    transactionLikelihoods[estimatedTransactionType] = transactionLikelihoods[estimatedTransactionType] - 1
+  end
 end
 
 ---@param containedObjects table[]
@@ -279,8 +330,17 @@ local function updateTransactionTablet()
       spaceportGets = (sellGoodsTotal + demandTotal) * 0.1,
     }
 
+    local likelyTransactionType = false
+    local likelyBuyWeight = transactionLikelihoods.buy
+    local likelySellWeight = transactionLikelihoods.sell
+    if (likelyBuyWeight > likelySellWeight) then
+      likelyTransactionType = 'buy'
+    elseif (likelySellWeight > likelyBuyWeight) then
+      likelyTransactionType = 'sell'
+    end
+
     ---@type TransactionStates
-    local transactionStates = { buyState = buyState, sellState = sellState }
+    local transactionStates = { buyState = buyState, sellState = sellState, likelyTransactionType = likelyTransactionType }
 
     transactionTablet.call('handleNewStateFromTransactionZone', transactionStates)
   end
@@ -390,7 +450,10 @@ local function resolveTransaction(player, transactionState)
     money.payPlayer(transactionState.spaceportGets, Player[transactionState.spaceportColor])
   end
 
-  updateTransactionTablet()
+  Wait.time(function ()
+    resetLikelihoods()
+    updateTransactionTablet()
+  end, 1)
 end
 
 --- Called by transactionTablet when submit is clicked. Takes player and transactionState.
@@ -399,22 +462,26 @@ function handleSubmit(submitParams)
   local player = submitParams.player
   local transactionState = submitParams.transactionState
   resolveTransaction(player, transactionState)
+  resetLikelihoods()
 end
 
 ---@param zone table
-function onObjectEnterZone(zone)
+function onObjectEnterZone(zone, obj)
   if (zone == self) then
+    addToLikelihoods(obj)
     updateTransactionTablet()
   end
 end
 
 ---@param zone table
-function onObjectLeaveZone(zone)
+function onObjectLeaveZone(zone, obj)
   if (zone == self) then
+    removeFromLikelihoods(obj)
     updateTransactionTablet()
   end
 end
 
 function onLoad()
+  resetLikelihoods()
   money.init()
 end

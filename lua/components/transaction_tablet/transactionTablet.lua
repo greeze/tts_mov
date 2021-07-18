@@ -14,6 +14,7 @@ local constants = require('lua/global/constants')
 ---@class TransactionStates
 ---@field buyState State
 ---@field sellState State
+---@field likelyTransactionType string | boolean
 
 ---@type State
 local initialState = {
@@ -148,7 +149,15 @@ end
 --- Receives updated buy and sell values from handleNewStateFromTransactionZone
 ---@param transactionStates TransactionStates
 function handleNewStateFromTransactionZone(transactionStates)
+  if (transactionStates.likelyTransactionType) then
+    if (not previousTransactionStates or previousTransactionStates.likelyTransactionType ~= transactionStates.likelyTransactionType) then
+      state.transaction = transactionStates.likelyTransactionType
+      switchUiPane(state.transaction)
+      end
+  end
+
   previousTransactionStates = transactionStates
+
   if (state.transaction == 'buy') then
     updateTransactionTabletUi(transactionStates.buyState)
   else
