@@ -31,7 +31,7 @@ return {
   -- Constants
   -- ============================================================================
   WORKSHOP_ID = '2413086259',
-  ALLOWED_PLAYER_COLORS = { 'Yellow', 'Red', 'Green', 'Orange' },
+  ALLOWED_PLAYER_COLORS = { 'Yellow', 'Red', 'Green', 'Orange', 'Black' },
   CULTURE_TAGS = { 'c01', 'c02', 'c03', 'c04', 'c05', 'c06', 'c07', 'c08', 'c09', 'c10', 'c11', 'c12', 'c13', 'c14', 'c00' },
   SYSTEM_TAGS = { 's01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09', 's10', 's11', 's12', 's13', 's14', 's00' },
   MONEY_VALUES = { 1, 5, 10, 50, 100, 500, 1000 },

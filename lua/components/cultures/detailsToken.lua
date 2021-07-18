@@ -1,9 +1,20 @@
 require('lua/utils/table')
 local constants = require('lua/global/constants')
 local tagHelpers = require('lua/utils/tagHelpers')
+local culturesData = require('data/cultures')
 
 ---@type table<string, table | nil>
 local demands = {}
+
+local function setTileData()
+  local fullName = string.lower(self.getName())
+  local cultureId = tonumber(string.match(self.getName(), 'Culture (%d%d).*'))
+  local cultureData = table.find(culturesData, function(data)
+    return data.id == cultureId
+  end)
+
+  self.setVar('data', cultureData)
+end
 
 --- Refreshes the grid layout of demands for this culture's token.
 local function updateDemandUI()
@@ -74,6 +85,12 @@ local function isEventToken(obj)
 end
 
 function onLoad()
+  setTileData()
+  updateDemandUI()
+end
+
+function onSpawn()
+  setTileData()
   updateDemandUI()
 end
 
@@ -89,10 +106,17 @@ function onCollisionEnter(collisionInfo)
 
   local obj = collisionInfo.collision_object
   if (isEventToken(obj)) then
-    local guid = obj.getGUID()
-    local data = obj.getData()
-    demands[guid] = data
-    obj.destruct()
+    local objData = obj.getVar('data')
+    local objDest = objData and (objData.from or objData.to)
+    local selfData = self.getVar('data')
+    local selfId = selfData.id
+    log('Token Destination: ' .. objDest .. ' | Culture ID: ' .. selfId)
+    if (objDest == selfId) then
+      local guid = obj.getGUID()
+      local data = obj.getData()
+      demands[guid] = data
+      obj.destruct()
+    end
+    updateDemandUI()
   end
-  updateDemandUI()
 end

@@ -14,6 +14,12 @@ end
 ---@param player table
 ---@param setupButtonId string
 function setupGame(player, setupButtonId)
+  local allowedColors = constants.ALLOWED_PLAYER_COLORS
+  local playerIsAllowed = table.includes(allowedColors, player.color)
+  if (not playerIsAllowed) then
+    broadcastToColor('Please choose a spot at the table before setting up the game.', player.color, 'Red')
+    return
+  end
   setup.setupGame(player, setupButtonId)
 end
 
