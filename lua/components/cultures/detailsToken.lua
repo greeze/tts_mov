@@ -110,7 +110,6 @@ function onCollisionEnter(collisionInfo)
     local objDest = objData and (objData.from or objData.to)
     local selfData = self.getVar('data')
     local selfId = selfData.id
-    log('Token Destination: ' .. objDest .. ' | Culture ID: ' .. selfId)
     if (objDest == selfId) then
       local guid = obj.getGUID()
       local data = obj.getData()
